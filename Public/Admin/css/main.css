@@ -1,0 +1,6 @@
+/**
+ * news_list.html
+ */
+.table th, .table td { 
+  vertical-align: middle;
+}
