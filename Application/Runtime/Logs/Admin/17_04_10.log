@@ -1270,3 +1270,2129 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
 ERR: 非法操作:database_backups
 
+[ 2017-04-10T14:05:57+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2017-04-10T14:05:57+08:00 ] 127.0.0.1 /index.php/Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-04-10T14:05:58+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2017-04-10T14:06:02+08:00 ] 127.0.0.1 /index.php/Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2017-04-10T14:06:03+08:00 ] 127.0.0.1 /index.php/Admin/Index/trash_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+ERR: 非法操作:trash_list
+
+[ 2017-04-10T14:06:03+08:00 ] 127.0.0.1 /index.php/Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2017-04-10T14:06:04+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2017-04-10T14:06:26+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2017-04-10T14:06:27+08:00 ] 127.0.0.1 /index.php/Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004525s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2017-04-10T14:06:28+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-04-10T14:07:53+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000592s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000836s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2017-04-10T14:21:31+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2017-04-10T14:21:33+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2017-04-10T14:26:39+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001228s ]
+
+[ 2017-04-10T14:26:43+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2017-04-10T14:32:08+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-04-10T14:32:09+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2017-04-10T14:32:44+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\tpcms\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`,`titleimg`) VALUES ('php实现确保多个进程同时写入一个文件成功','2','1','','php实现确保多个进程同时写入一个文件成功','','1','&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;lt;?php
+/**
+&amp;nbsp;*&amp;nbsp;php实现确保多个进程同时写入一个文件成功
+&amp;nbsp;*/
+$fp&amp;nbsp;=&amp;nbsp;fopen(&amp;#39;lock.txt&amp;#39;,&amp;#39;w+&amp;#39;);
+
+$lock&amp;nbsp;=&amp;nbsp;false;
+//如果锁文件失败，尝试10次
+$num&amp;nbsp;=&amp;nbsp;10;
+do{
+	if(flock($fp,LOCK_EX)){
+		$lock&amp;nbsp;=&amp;nbsp;true;
+	}
+	$num--;
+	//每次尝试锁文件休息0.1秒
+	usleep(100000);
+}while(($lock&amp;nbsp;==&amp;nbsp;false)&amp;nbsp;||&amp;nbsp;($num&amp;nbsp;&amp;gt;=&amp;nbsp;0));
+
+if($lock&amp;nbsp;==&amp;nbsp;true){
+	echo&amp;nbsp;&amp;#39;1111&amp;#39;;
+	fwrite($fp,&amp;#39;something......&amp;#39;);
+	flock($fp,LOCK_UN);
+}else{
+	echo&amp;nbsp;&amp;#39;文件已经被锁定&amp;#39;;
+}
+fclose($fp);&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491805964','0','0','0','201704/thumb_1491805964_583078769.jpg') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2017-04-10T14:32:45+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001518s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2017-04-10T14:36:41+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005882s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2017-04-10T14:37:10+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\tpcms\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`,`titleimg`) VALUES ('PHP实现获取全路径文件的扩展名','2','1','','PHP实现获取全路径文件的扩展名','','1','&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;lt;?php
+//PHP实现获取全路径文件的扩展名
+$path&amp;nbsp;=&amp;nbsp;&amp;nbsp;str_replace(&amp;#39;\\\\&amp;#39;,&amp;nbsp;&amp;#39;/&amp;#39;,&amp;nbsp;__FILE__);
+
+function&amp;nbsp;ext_1($path){
+	return&amp;nbsp;ltrim(strrchr($path,&amp;#39;.&amp;#39;),&amp;#39;.&amp;#39;);
+}
+
+function&amp;nbsp;ext_2($path){
+	return&amp;nbsp;substr($path,strrpos($path,&amp;#39;.&amp;#39;)+1);
+}
+
+function&amp;nbsp;ext_3($path){
+	$array&amp;nbsp;=&amp;nbsp;explode(&amp;#39;.&amp;#39;,$path);
+	return&amp;nbsp;array_pop($array);
+}
+
+function&amp;nbsp;ext_4($path){
+	$array&amp;nbsp;=&amp;nbsp;pathinfo($path);
+	return&amp;nbsp;$array[&amp;#39;extension&amp;#39;];
+}
+
+function&amp;nbsp;ext_5($path){
+	$path&amp;nbsp;=&amp;nbsp;basename($path);
+	$pattern&amp;nbsp;=&amp;nbsp;&amp;#39;/^[^\\.]+\\.([\\w]+)$/&amp;#39;;
+	return&amp;nbsp;preg_replace($pattern,&amp;#39;${1}&amp;#39;,$path);
+}&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491806230','0','0','0','201704/thumb_1491806230_758599867.jpg') [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2017-04-10T14:37:11+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-04-10T14:38:30+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2017-04-10T14:39:05+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0038s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\tpcms\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`,`titleimg`) VALUES ('二维数组的排序','2','1','','二维数组的排序','','1','&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;/**
+&amp;nbsp;*&amp;nbsp;排序二维数组&amp;nbsp;
+&amp;nbsp;*&amp;nbsp;@param&amp;nbsp;&amp;nbsp;&amp;nbsp;array&amp;nbsp;$array&amp;nbsp;需要排序的数组
+&amp;nbsp;*&amp;nbsp;@param&amp;nbsp;&amp;nbsp;string&amp;nbsp;$row&amp;nbsp;根据哪一列排序
+&amp;nbsp;*/
+
+function&amp;nbsp;array_sort($array,$row,$type=&amp;#39;asc&amp;#39;){
+	$array_temp&amp;nbsp;=&amp;nbsp;array();
+	foreach($array&amp;nbsp;as&amp;nbsp;$val){
+		$array_temp[$val[$row]]&amp;nbsp;=&amp;nbsp;$val;
+	}
+	
+	if($type&amp;nbsp;==&amp;nbsp;&amp;#39;asc&amp;#39;&amp;nbsp;||&amp;nbsp;!isset($type)){
+		ksort($array_temp);
+	}elseif($type&amp;nbsp;==&amp;nbsp;&amp;#39;desc&amp;#39;){
+		krsort($array_temp);
+	}
+	return&amp;nbsp;$array_temp;
+}
+
+$array&amp;nbsp;=&amp;nbsp;array(
+	&amp;nbsp;array(&amp;#39;name&amp;#39;=&amp;gt;&amp;#39;xiaoming&amp;#39;,&amp;#39;age&amp;#39;=&amp;gt;&amp;#39;18&amp;#39;,&amp;#39;hobby&amp;#39;=&amp;gt;&amp;quot;tv&amp;quot;),
+	&amp;nbsp;array(&amp;#39;name&amp;#39;=&amp;gt;&amp;#39;wangwu&amp;#39;,&amp;#39;age&amp;#39;=&amp;gt;&amp;#39;15&amp;#39;,&amp;#39;hobby&amp;#39;=&amp;gt;&amp;quot;play&amp;quot;),
+	&amp;nbsp;array(&amp;#39;name&amp;#39;=&amp;gt;&amp;#39;heihei&amp;#39;,&amp;#39;age&amp;#39;=&amp;gt;&amp;#39;20&amp;#39;,&amp;#39;hobby&amp;#39;=&amp;gt;&amp;quot;ball&amp;quot;),
+	&amp;nbsp;array(&amp;#39;name&amp;#39;=&amp;gt;&amp;#39;zhangsan&amp;#39;,&amp;#39;age&amp;#39;=&amp;gt;&amp;#39;13&amp;#39;,&amp;#39;hobby&amp;#39;=&amp;gt;&amp;quot;dance&amp;quot;)
+	);
+
+//第3个参数不填也是正序排
+print_r(array_sort($array,&amp;#39;name&amp;#39;,&amp;#39;desc&amp;#39;));&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491806344','0','0','0','201704/thumb_1491806344_1411861923.jpg') [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2017-04-10T14:39:06+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2017-04-10T14:44:28+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+
+[ 2017-04-10T14:45:22+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\tpcms\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`,`titleimg`) VALUES ('PHP中全局变量$_SERVER的常见元素','2','1','','PHP中全局变量$_SERVER的常见元素','','1','&lt;p&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;1、&lt;/span&gt;&lt;strong style=&quot;font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;$_SERVER[&amp;#39;PHP_SELF&amp;#39;]&lt;/strong&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;:当前执行脚本的文件名。&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;比如：请求地址为 http://example.com/test.php ，那么使用$_SERVER[&amp;#39;PHP_SELF&amp;#39;]将得到 /test.php&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;2、&lt;/span&gt;&lt;strong style=&quot;font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;$_SERVER[&amp;#39;SERVER_ADDR&amp;#39;]&lt;/strong&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;:当前运行脚本所在的服务器的ip地址。&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;3、&lt;/span&gt;&lt;strong style=&quot;font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;$_SERVER[&amp;#39;SCRIPT_NAME&amp;#39;]&lt;/strong&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;:当前运行脚本所在的服务器的主机名。&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;比如：请求地址为 http://www.example.com/test.php ，那么使用$_SERVER[&amp;#39;SERVER_NAME&amp;#39;]将得到 www.example.com&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;4、&lt;/span&gt;&lt;strong style=&quot;font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;$_SERVER[&amp;#39;QUERY_STRING&amp;#39;]&lt;/strong&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;:查询字符串。&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;比如：请求地址为 http://www.example.com/test.php?name=xiaoming&amp;amp;amp;age=20 ，那么使用$_SERVER[&amp;#39;QUERY_STRING&amp;#39;]将得到 name=xiaoming&amp;amp;amp;age=20&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;5、&lt;/span&gt;&lt;strong style=&quot;font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;$_SERVER[&amp;#39;DOCUMENT_ROOT&amp;#39;]&lt;/strong&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;:当前运行脚本所在的文档根目录。&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;比如：请求地址为 http://www.example.com/test.php ,那么会返回test.php所在服务器的绝对路径的目录,D:/wamp/www/example&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;6、&lt;/span&gt;&lt;strong style=&quot;font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;$_SERVER[&amp;#39;REMOTE_ADDR&amp;#39;]&lt;/strong&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;:浏览当前页面的用户的ip地址。&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;7、&lt;/span&gt;&lt;strong style=&quot;font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;$_SERVER[&amp;#39;SCRIPT_FILENAME&amp;#39;]&lt;/strong&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;:当前执行脚本的绝对路径。&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;比如：请求地址为 http://www.example.com/test.php ,那么会返回 test.php 所在服务器的绝对路径,D:/wamp/www/example/test.php&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;9、&lt;/span&gt;&lt;strong style=&quot;font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;$_SERVER[&amp;#39;SCRIPT_NAME&amp;#39;]&lt;/strong&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;:当前脚本的路径。&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;比如：请求地址为 http://example.com/test.php ，那么使用$_SERVER[&amp;#39;SCRIPT_NAME&amp;#39;]将得到 /test.php&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;10、&lt;/span&gt;&lt;strong style=&quot;font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;$_SERVER[&amp;#39;REQUEST_URI&amp;#39;]&lt;/strong&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;:当前请求的页面url。&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;比如：请求地址为 http://www.example.com/test.php?name=xiaoming ,那么会返回 /test.php?name=xiaoming&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;11、&lt;/span&gt;&lt;strong style=&quot;font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;$_SERVER[&amp;#39;HTTP_HOST&amp;#39;]&lt;/strong&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;:当前请求的HOST头部的信息&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;12、&lt;/span&gt;&lt;strong style=&quot;font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;$_SERVER[&amp;#39;HTTP_REFERER&amp;#39;]&lt;/strong&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;:链接到当前页面的前一页面的URL地址&lt;/span&gt;&lt;/p&gt;','1491806722','0','0','0','201704/thumb_1491806722_921307791.png') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2017-04-10T14:45:23+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2017-04-10T14:45:50+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002349s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2017-04-10T14:46:24+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\tpcms\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`,`titleimg`) VALUES ('php无乱码截取字符串','2','1','','php无乱码截取字符串','','1','&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;/**&amp;nbsp;
+&amp;nbsp;*&amp;nbsp;[sub_utf8&amp;nbsp;utf-8无乱码截取字符串]
+&amp;nbsp;*&amp;nbsp;@param&amp;nbsp;&amp;nbsp;[string]&amp;nbsp;$str&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[要截取的字符串]
+&amp;nbsp;*&amp;nbsp;@param&amp;nbsp;&amp;nbsp;[int]&amp;nbsp;$start&amp;nbsp;&amp;nbsp;[从start位置开始截取，从0开始]
+&amp;nbsp;*&amp;nbsp;@param&amp;nbsp;&amp;nbsp;[type]&amp;nbsp;$length&amp;nbsp;[要截取的字符串长度]
+&amp;nbsp;*&amp;nbsp;@return&amp;nbsp;[string]&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;[截取到的字符串]
+&amp;nbsp;*/
+function&amp;nbsp;sub_utf8($str,$start,$length&amp;nbsp;=&amp;nbsp;null){
+	return&amp;nbsp;implode(array_slice(preg_split(&amp;#39;//u&amp;#39;,$str,-1,PREG_SPLIT_NO_EMPTY),$start,$length));
+}&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491806784','0','0','0','201704/thumb_1491806784_437668800.png') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2017-04-10T14:46:26+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2017-04-10T14:47:06+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2017-04-10T14:47:57+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\tpcms\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`,`titleimg`) VALUES ('PHP工具类之分页类','2','1','','PHP工具类之分页类','','1','&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;lt;?php&amp;nbsp;
+//分页类&amp;nbsp;
+Class&amp;nbsp;Page{&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;private&amp;nbsp;$_total;&amp;nbsp;//总记录数&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;private&amp;nbsp;$_pageSize;&amp;nbsp;//每页显示条数&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;private&amp;nbsp;$_limit;&amp;nbsp;//limit&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;private&amp;nbsp;$_page;&amp;nbsp;//当前页码&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;private&amp;nbsp;$_pageCount;&amp;nbsp;//总页码&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;private&amp;nbsp;$_url;&amp;nbsp;//地址&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;private&amp;nbsp;$_sideNum&amp;nbsp;=&amp;nbsp;2;&amp;nbsp;//两边保持分页的量&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//构造方法初始化&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;public&amp;nbsp;function&amp;nbsp;__construct($total,$pageSize){&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$this-&amp;gt;_total&amp;nbsp;=&amp;nbsp;isset($total)&amp;nbsp;?&amp;nbsp;$total&amp;nbsp;:&amp;nbsp;50;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$this-&amp;gt;_pageSize&amp;nbsp;=&amp;nbsp;isset($pageSize)&amp;nbsp;?&amp;nbsp;$pageSize&amp;nbsp;:&amp;nbsp;5;
+		$this-&amp;gt;_pageCount&amp;nbsp;=&amp;nbsp;ceil($this-&amp;gt;_total/$this-&amp;gt;_pageSize);
+		$this-&amp;gt;_page&amp;nbsp;=&amp;nbsp;$this-&amp;gt;setPage();
+		$this-&amp;gt;_limit&amp;nbsp;=&amp;nbsp;&amp;quot;LIMIT&amp;nbsp;&amp;quot;.(($this-&amp;gt;_page&amp;nbsp;-&amp;nbsp;1)&amp;nbsp;*&amp;nbsp;($this-&amp;gt;_pageSize)&amp;nbsp;).&amp;quot;,&amp;nbsp;{$this-&amp;gt;_pageSize}&amp;quot;;
+		$this-&amp;gt;_url&amp;nbsp;=&amp;nbsp;$this-&amp;gt;setUrl();
+	}
+
+	public&amp;nbsp;&amp;nbsp;function&amp;nbsp;__get($key){
+		return&amp;nbsp;$this-&amp;gt;$key;
+	}
+
+	/*
+		获取当前页码
+	&amp;nbsp;*/
+	private&amp;nbsp;function&amp;nbsp;setPage(){
+		if(!empty($_GET[&amp;#39;page&amp;#39;])){
+			if($_GET[&amp;#39;page&amp;#39;]&amp;nbsp;&amp;gt;&amp;nbsp;0){
+				if($_GET[&amp;#39;page&amp;#39;]&amp;nbsp;&amp;gt;&amp;nbsp;$this-&amp;gt;_pageCount){
+					return&amp;nbsp;$this-&amp;gt;_pageCount;		
+				}else{
+					return&amp;nbsp;$_GET[&amp;#39;page&amp;#39;];
+				}
+			}else{
+				return&amp;nbsp;1;
+			}
+		}else{
+			return&amp;nbsp;1;
+		}
+	}
+
+	/*
+		获取地址
+	&amp;nbsp;*/
+	private&amp;nbsp;function&amp;nbsp;setUrl(){
+		$url&amp;nbsp;=&amp;nbsp;$_SERVER[&amp;#39;REQUEST_URI&amp;#39;];
+		$url_arr&amp;nbsp;=&amp;nbsp;parse_url($url);
+		if(isset($url_arr[&amp;#39;query&amp;#39;])){
+			parse_str($url_arr[&amp;#39;query&amp;#39;],$query);
+			unset($query[&amp;#39;page&amp;#39;]);
+			$url&amp;nbsp;=&amp;nbsp;$url_arr[&amp;#39;path&amp;#39;].&amp;#39;?&amp;#39;.http_build_query($query);
+		}
+		return&amp;nbsp;$url;
+	}
+
+	/*
+		数字目录
+	&amp;nbsp;*/
+	private&amp;nbsp;function&amp;nbsp;pageList(){
+		$pageList&amp;nbsp;=&amp;nbsp;&amp;#39;&amp;#39;;
+		//当前页左边的内容
+		for($i&amp;nbsp;=&amp;nbsp;$this-&amp;gt;_sideNum;&amp;nbsp;$i&amp;gt;0;&amp;nbsp;$i--){
+			$page&amp;nbsp;=&amp;nbsp;$this-&amp;gt;_page&amp;nbsp;-&amp;nbsp;$i;
+			if($page&amp;nbsp;&amp;lt;=&amp;nbsp;1)&amp;nbsp;continue;
+			$pageList&amp;nbsp;.=&amp;nbsp;&amp;quot;&amp;lt;a&amp;nbsp;href&amp;nbsp;=&amp;#39;&amp;quot;.$this-&amp;gt;_url.&amp;quot;&amp;amp;page=&amp;quot;.$page.&amp;quot;&amp;#39;&amp;gt;&amp;quot;.$page.&amp;quot;&amp;lt;/a&amp;gt;&amp;quot;;
+		}
+		//当前页
+		$pageList&amp;nbsp;.=&amp;nbsp;&amp;quot;&amp;lt;a&amp;nbsp;href=&amp;#39;&amp;quot;.$this-&amp;gt;_url.&amp;quot;&amp;amp;page=&amp;quot;.$this-&amp;gt;_page.&amp;quot;&amp;#39;&amp;nbsp;class=&amp;#39;current&amp;#39;&amp;gt;&amp;quot;.$this-&amp;gt;_page.&amp;quot;&amp;lt;/a&amp;gt;&amp;quot;;
+		//当前页右边的内容
+		for($i&amp;nbsp;=&amp;nbsp;1;&amp;nbsp;$i&amp;nbsp;&amp;lt;=&amp;nbsp;$this-&amp;gt;_sideNum;&amp;nbsp;$i++){
+			$page&amp;nbsp;=&amp;nbsp;$this-&amp;gt;_page&amp;nbsp;+&amp;nbsp;$i;
+			if($page&amp;nbsp;&amp;gt;=&amp;nbsp;$this-&amp;gt;_pageCount)&amp;nbsp;continue;
+			$pageList&amp;nbsp;.=&amp;nbsp;&amp;quot;&amp;lt;a&amp;nbsp;href=&amp;#39;&amp;quot;.$this-&amp;gt;_url.&amp;quot;&amp;amp;page=&amp;quot;.$page.&amp;quot;&amp;#39;&amp;gt;&amp;quot;.$page.&amp;quot;&amp;lt;/a&amp;gt;&amp;quot;;
+		}
+		return&amp;nbsp;$pageList;
+	}
+
+	/*
+		首页
+	&amp;nbsp;*/
+	private&amp;nbsp;function&amp;nbsp;first(){
+		return&amp;nbsp;&amp;quot;&amp;lt;a&amp;nbsp;href=&amp;#39;&amp;quot;.$this-&amp;gt;_url.&amp;quot;&amp;amp;page=1&amp;#39;&amp;gt;首页&amp;lt;/a&amp;gt;...&amp;quot;;
+	}
+
+	/*
+		尾页
+	&amp;nbsp;*/
+	private&amp;nbsp;function&amp;nbsp;last(){
+		return&amp;nbsp;&amp;quot;...&amp;lt;a&amp;nbsp;href=&amp;#39;&amp;quot;.$this-&amp;gt;_url.&amp;quot;&amp;amp;page=&amp;quot;.$this-&amp;gt;_pageCount.&amp;quot;&amp;#39;&amp;gt;尾页&amp;lt;/a&amp;gt;&amp;quot;;
+	}
+
+	/*
+		上一页
+	&amp;nbsp;*/
+	private&amp;nbsp;function&amp;nbsp;prev(){
+		if($this-&amp;gt;_page&amp;nbsp;&amp;gt;&amp;nbsp;1){
+			return&amp;nbsp;&amp;quot;&amp;lt;a&amp;nbsp;href=&amp;#39;&amp;quot;.$this-&amp;gt;_url.&amp;quot;&amp;amp;page=&amp;quot;.($this-&amp;gt;_page-1).&amp;quot;&amp;#39;&amp;gt;上一页&amp;lt;/a&amp;gt;&amp;quot;;
+		}
+	}
+
+	/*
+		下一页
+	&amp;nbsp;*/
+	private&amp;nbsp;function&amp;nbsp;next(){
+		if($this-&amp;gt;_page&amp;nbsp;&amp;lt;&amp;nbsp;$this-&amp;gt;_pageCount){
+			return&amp;nbsp;&amp;quot;&amp;lt;a&amp;nbsp;href=&amp;#39;&amp;quot;.$this-&amp;gt;_url.&amp;quot;&amp;amp;page=&amp;quot;.($this-&amp;gt;_page&amp;nbsp;+&amp;nbsp;1).&amp;quot;&amp;#39;&amp;gt;下一页&amp;lt;/a&amp;gt;&amp;quot;;
+		}
+	}
+
+	/*
+		展示分页信息
+	&amp;nbsp;*/
+	public&amp;nbsp;function&amp;nbsp;showPage(){
+		$page&amp;nbsp;=&amp;nbsp;&amp;#39;&amp;#39;;
+		$page&amp;nbsp;.=&amp;nbsp;$this-&amp;gt;first();&amp;nbsp;
+		$page&amp;nbsp;.=&amp;nbsp;$this-&amp;gt;pageList();
+		$page&amp;nbsp;.=&amp;nbsp;$this-&amp;gt;last();
+		$page&amp;nbsp;.=&amp;nbsp;$this-&amp;gt;prev();
+		$page&amp;nbsp;.=&amp;nbsp;$this-&amp;gt;next();
+		return&amp;nbsp;$page;&amp;nbsp;&amp;nbsp;
+	}
+
+}&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491806877','0','0','0','201704/thumb_1491806877_569499420.jpg') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2017-04-10T14:47:58+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2017-04-10T14:50:54+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2017-04-10T14:51:43+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\tpcms\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`,`titleimg`) VALUES ('PHP实现冒泡排序(Bubble Sort)','2','1','','PHP实现冒泡排序(Bubble Sort)','','1','&lt;p&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;PHP实现冒泡排序(Bubble Sort)&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;相邻的两个数之间进行比较，大数向后移动，移动一轮之后，保证最大的数在数列的最后端；再按相同的做法，比较剩余的数，直至数列的数全部比较完。&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;原理解析：&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;1、比较相邻的两个元素，如果第一个比第二个大，就交换位置。这里可以使用第3个变量进行交换。&amp;lt;!--more--&amp;gt;&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;2、对每一对相邻的元素做同样的操作，从开始的第一对到结尾的最后的一对。最后的那个元素应该是最大的数。&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;3、针对所有的元素重复上面的操作，最后一个元素除外，因为不能比较了。所以比较的轮数应该是总数-1.&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;4、在一轮中比较的次数变化：假设有10个数，那么要比较9轮，在第一轮中要比较9次，第二轮中还剩9个数，所以比较8次，第3轮中还剩8个数，所以比较7次。最后得出，一轮中比较的次数为数据总数-轮数。&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;下面来贴出代码：&lt;/span&gt;&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;/*
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;冒泡排序
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;@param&amp;nbsp;$array&amp;nbsp;待排序的列表
+&amp;nbsp;*/
+function&amp;nbsp;bubbleSort(&amp;amp;$array){
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//双层循环完成，外层控制轮数，内层控制比较次数
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;for($i=1,&amp;nbsp;$num=count($array);&amp;nbsp;$i&amp;lt;$num;&amp;nbsp;$i++){
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;for($j=0;&amp;nbsp;$j&amp;lt;$num-$i;&amp;nbsp;$j++){&amp;nbsp;//比较j与j+1&amp;nbsp;if($array[$j]&amp;nbsp;&amp;gt;&amp;nbsp;$array[$j+1]){
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//进行交换
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$third&amp;nbsp;=&amp;nbsp;$array[$j];
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$array[$j]&amp;nbsp;=&amp;nbsp;$array[$j+1];
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;$array[$j+1]&amp;nbsp;=&amp;nbsp;$third;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return&amp;nbsp;$array;
+}&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491807103','0','0','0','201704/thumb_1491807103_1836760827.jpg') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2017-04-10T14:51:44+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-04-10T14:52:42+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-04-10T14:53:36+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`) VALUES ('Yii2中urlManager的简单配置说明','2','1','','Yii2中urlManager的简单配置说明','','1','&lt;p&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;Yii2可以非常简单地实现网址伪静态的需求，通过配置组件 urlManager 来实现。&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;1、首先在配置文件中的组件配置 components 中添加 urlManager 的配置&lt;/span&gt;&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;#39;urlManager&amp;#39;&amp;nbsp;=&amp;gt;&amp;nbsp;[
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;enablePrettyUrl&amp;#39;&amp;nbsp;=&amp;gt;&amp;nbsp;true,&amp;nbsp;&amp;nbsp;//是否美化&amp;nbsp;Url
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;showScriptName&amp;#39;&amp;nbsp;=&amp;gt;&amp;nbsp;false,&amp;nbsp;&amp;nbsp;//是否显示脚本名&amp;nbsp;index.php
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;suffix&amp;#39;&amp;nbsp;=&amp;gt;&amp;nbsp;&amp;#39;.html&amp;#39;,&amp;nbsp;//后缀名
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;rules&amp;#39;&amp;nbsp;=&amp;gt;&amp;nbsp;[
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;&amp;lt;controller:\\w+&amp;gt;/&amp;lt;action:\\w+&amp;gt;&amp;#39;=&amp;gt;&amp;#39;&amp;lt;controller&amp;gt;/&amp;lt;action&amp;gt;&amp;#39;,&amp;nbsp;//网址匹配规则
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;],
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;],&lt;/pre&gt;&lt;p&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;2、开启服务器的重写功能。这里用 apache 举例。&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;首先开启 apache 的 rewrite 重写模块，然后在网站根目录里的添加 .htaccess 配置文件，并且输入以下内容。&lt;/span&gt;&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;RewriteEngine&amp;nbsp;on
+#if&amp;nbsp;a&amp;nbsp;directory&amp;nbsp;or&amp;nbsp;a&amp;nbsp;file&amp;nbsp;exists,&amp;nbsp;use&amp;nbsp;it&amp;nbsp;directly
+RewriteCond&amp;nbsp;%{REQUEST_FILENAME}&amp;nbsp;!-f
+RewriteCond&amp;nbsp;%{REQUEST_FILENAME}&amp;nbsp;!-d
+#Otherwise&amp;nbsp;forward&amp;nbsp;it&amp;nbsp;to&amp;nbsp;index.php
+RewriteRule&amp;nbsp;.&amp;nbsp;index.php&lt;/pre&gt;&lt;p&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;3、然后对 rules 配置进行编辑，以下举例一些常用的。&lt;/span&gt;&lt;/p&gt;&lt;pre class=&quot;brush:php;toolbar:false&quot;&gt;&amp;#39;rules&amp;#39;&amp;nbsp;=&amp;gt;&amp;nbsp;[
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//&amp;nbsp;为路由指定一个别名简化网址
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;reg&amp;#39;&amp;nbsp;=&amp;gt;&amp;nbsp;&amp;#39;user/register&amp;#39;,
+&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//&amp;nbsp;加id参数，这里用到了一点点正则，\\d+在正则中表示至少一位的纯数字
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;article/&amp;lt;id:\\d+&amp;gt;&amp;#39;&amp;nbsp;=&amp;gt;&amp;nbsp;&amp;#39;article/view&amp;#39;,
+
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//标准的控制器/方法显示
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;&amp;lt;controller:\\w+&amp;gt;/&amp;lt;action:\\w+&amp;gt;&amp;#39;=&amp;gt;&amp;#39;&amp;lt;controller&amp;gt;/&amp;lt;action&amp;gt;&amp;#39;,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//加id参数
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;&amp;lt;controller:\\w+&amp;gt;/&amp;lt;action:\\w+&amp;gt;/&amp;lt;id:\\d+&amp;gt;&amp;#39;=&amp;gt;&amp;#39;&amp;lt;controller&amp;gt;/&amp;lt;action&amp;gt;&amp;#39;,
+&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//&amp;nbsp;controller和action进行严格限制
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;&amp;lt;controller:(post|comment)&amp;gt;/&amp;lt;id:\\d+&amp;gt;/&amp;lt;action:(create|update|delete)&amp;gt;&amp;#39;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;=&amp;gt;&amp;nbsp;&amp;#39;&amp;lt;controller&amp;gt;/&amp;lt;action&amp;gt;&amp;#39;,
+&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//&amp;nbsp;包含了&amp;nbsp;HTTP&amp;nbsp;方法限定，用于restful风格的Web&amp;nbsp;Server
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;DELETE&amp;nbsp;&amp;lt;controller:\\w+&amp;gt;/&amp;lt;id:\\d+&amp;gt;&amp;#39;&amp;nbsp;=&amp;gt;&amp;nbsp;&amp;#39;&amp;lt;controller&amp;gt;/delete&amp;#39;,
+&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//&amp;nbsp;配置Web&amp;nbsp;Server&amp;nbsp;,接收&amp;nbsp;*.cn09.com&amp;nbsp;域名的请求
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;#39;http://&amp;lt;user:\\w+&amp;gt;.cn09.com/&amp;lt;lang:\\w+&amp;gt;/profile&amp;#39;&amp;nbsp;=&amp;gt;&amp;nbsp;&amp;#39;user/profile&amp;#39;,&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491807216','0','0','0') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-04-10T14:53:37+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000824s ]
+
+[ 2017-04-10T14:54:57+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2017-04-10T14:55:25+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\tpcms\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`,`titleimg`) VALUES ('Linux 中 Vi 编辑器的简单操作','5','1','','Linux 中 Vi 编辑器的简单操作','','1','&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;Linux 中 Vi 编辑器的简单操作&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;Vi 编辑器一共有3种模式：命名模式（默认），尾行模式，编辑模式。3种模式彼此需要切换。&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;一、进入 Vi 编辑器的的命令&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;vi&amp;nbsp; filename　　//打开或新建文件，并将光标置于第一行首&lt;br/&gt;vi&amp;nbsp; +n&amp;nbsp; filename　　//打开文件，并将光标置于第n行首&lt;br/&gt;vi&amp;nbsp; +&amp;nbsp; filename　　//打开文件，并将光标置于最后一行首&lt;br/&gt;vi&amp;nbsp; +/pattern&amp;nbsp; filename　　//打开文件，并将光标置于第一个与 pattern 匹配处&lt;br/&gt;vi&amp;nbsp; -r&amp;nbsp; filename　　//在上次使用 vi 编辑时发生系统崩溃，恢复 filename&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;二、Vi 3种模式的切换&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;一）、从命令模式到编辑模式&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;在命令模式下按以下命令将进入到编辑模式&lt;br/&gt;1、a　　在光标后进入编辑模式&lt;br/&gt;2、i　　在光标前进入编辑模式&lt;br/&gt;3、A　　在当前行尾进入编辑模式&lt;br/&gt;4、I　　在当前行首进入编辑模式&lt;br/&gt;5、o　　在当前行之下新开一行&lt;br/&gt;6、O　　在当前行之上新开一行&lt;br/&gt;7、s　　删除光标所对应的字符，进入编辑模式&lt;br/&gt;8、ns　　//删除 n 个字符后进入编辑模式&lt;br/&gt;9、S　　删除光标所在的行，然后进入编辑模式&lt;br/&gt;10、nS　　//删除 n 行后，进入编辑模式&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;三、命令模式下的操作&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;一）、光标的移动&lt;br/&gt;1、j　　光标向下移动一行&lt;br/&gt;2、k　　光标向上移动一行&lt;br/&gt;3、h　　光标向左移动一个字符&lt;br/&gt;4、l　　光标向右移动一个字符&lt;br/&gt;5、ctrl + b　　//光标向上移动一屏，向后翻页&lt;br/&gt;6、ctrl + f　　//光标向下移动一屏，向前翻页&lt;br/&gt;7、$　　//光标移动至行尾&lt;br/&gt;8、0（数字）　　//光标移动至行首&lt;br/&gt;9、gg　　//光标移动至文档开始处&lt;br/&gt;10、G　　//光标移动至文档尾部&lt;br/&gt;11、nG　　//光标移动到第 n 行&lt;br/&gt;12、w　　//移动到下个单词的首字母&lt;br/&gt;13、b　　//移动到本单词或者上个单词的首字母&lt;br/&gt;14、e　　//移动到本单词或者下个单词的尾字母&lt;br/&gt;15、{　　//光标移动到段落首部&lt;br/&gt;16、}　　//光标移动到段落尾部&lt;br/&gt;17、L　　//光标移动到当前屏幕尾部（不会走到下一屏）&lt;br/&gt;18、H　　//光标移动到当前屏幕首部&lt;br/&gt;19、M　　//光标移动至当前屏幕中间行&lt;br/&gt;20、space　　//光标向前移动一个字符&lt;br/&gt;21、Backspace　　//光标向后移动一个字符&lt;br/&gt;22、n+　　//光标下移 n 行&lt;br/&gt;23、n-　　//光标上移 n 行&lt;br/&gt;24、n$　　//光标移动至第 n 行尾&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;二）、文本内容的删除&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;1、x　　//删除光标所在位置的一个字符&lt;br/&gt;2、nx　　//删除光标所在位置起 n个字符&lt;br/&gt;3、dx　　//从当前字符删除到下个单词前，包括空格&lt;br/&gt;4、ndx　　//从当前字符（单词）起，删除n个单词，包括最后一个空格后面的空格&lt;br/&gt;5、dd　　//删除当前行&lt;br/&gt;6、ndd　　//删除当前行起向下 n 行&lt;br/&gt;7、J　　//删除光标所在行与下一行之间的空格，把光标行和下一行接在一起&lt;br/&gt;通用删除：d+光标移动距离&lt;br/&gt;8、d$　　//删除光标到行尾的内容&lt;br/&gt;9、d0　　//删除光标到行首的内容&lt;br/&gt;10、d}　　//删除从光标到段落尾部的内容&lt;br/&gt;11、d{　　//删除从光标到段落首部的内容&lt;br/&gt;12、dL　　//删除当前行至屏幕尾部的内容&lt;br/&gt;13、dH　　//删除当前行至屏幕首部的内容&lt;br/&gt;14、dG　　//删除当前行至文档尾部的内容&lt;br/&gt;15、d1G　　//删除当前行至文档首部的内容&lt;br/&gt;16、dnG　　//删除当前行至文档的第 n 行&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;三）、文本内容的复制与粘帖&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;1、yy　　复制当前行&lt;br/&gt;2、nyy　　复制从当前行开始向下的n行&lt;br/&gt;3、y+光标移动的距离，可以进行灵活复制 （可以参考删除命令）&lt;br/&gt;3、p　　在光标之后粘贴（光标当前行的下一行进行粘贴）&lt;br/&gt;4、P(大写)　　在光标之前粘贴&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;三）、其他命令模式下的操作&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;1、u　　//撤销修改或删除操作&lt;br/&gt;2、r+字符　　//对光标当前单个字符进行替换&lt;br/&gt;3、R　　//替换当前字符及其后的字符，直至按 ESC 键&lt;br/&gt;3、.　　//重复执行上个命令&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;四、尾行模式下的操作&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;一）、文件的保存与退出&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;1、：w　　//保存&lt;br/&gt;2、：w&amp;nbsp; filename　　//另存为到 filename 文件&lt;br/&gt;3、：wq　　//保存退出&lt;br/&gt;4、：q　　//退出&lt;br/&gt;5、：wq!　　//强制保存退出&lt;br/&gt;6、：q!　　//不保存强制退出&lt;br/&gt;7、：x　　//保存并退出 ，应该和 wq! 功能一样&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;二）、查找与替换&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;1）、/search　　正向查找字符串 search，按 n 键查找下一个，按 N 键查找上一个&lt;br/&gt;2）、?search　　反向查找字符串 search&lt;br/&gt;3）、s /search/replace　　替换当前行首次出现的 search&lt;br/&gt;4）、s /search/replace/g　　把当前光标所在行中的 search 替换成 replace，并把文档中其余的 search 高亮显示&lt;br/&gt;5）、%s /search/replace　　把文档中所有的 search 替换成 replace&lt;br/&gt;6）、m,n s /search/replace/g　　把文档中从第m行到第n行中的 search 替换成 replace ，将把文档中其余的 search 高亮显示&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;三）、尾行模式下的文本编辑（复制，删除）&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;1）、n1,n2 co n3　　//将 n1 行到 n2 行的内容复制到 n3 行下&lt;br/&gt;2）、n1,n2 m n3　　//将 n1 行到 n2 行的内容移动至 n3 行下&lt;br/&gt;3）、n1,n2 d　　//将 n1 行到 n2 行之间的内容删除&lt;br/&gt;：set nu/number　　//给文件每行内容设置编号&lt;br/&gt;：set&amp;nbsp; nonu/nonumber　　//取消设置编号&lt;br/&gt;：n　　光标跳转到第 n 行位置&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;五、编辑模式下的操作&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;1、ctrl+u　　//删除编辑模式下输入的文本内容&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491807325','0','0','0','201704/thumb_1491807325_1048393042.jpg') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2017-04-10T14:55:26+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2017-04-10T14:56:46+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2017-04-10T14:57:19+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\tpcms\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`,`titleimg`) VALUES ('Centos 压缩、解压和打包命令','5','1','','Centos 压缩、解压和打包命令','','1','&lt;h2 style=&quot;padding: 0px; margin: 0px; font-weight: normal; font-size: 14px; font-family: Verdana; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;&lt;strong&gt;gzip命令&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;--功能说明：gz文件的压缩和解压缩。&lt;br/&gt;--命令格式：gzip [参数] &amp;lt;文件&amp;gt;&lt;br/&gt;--常用参数：&lt;br/&gt;-d　　解开压缩文件&lt;br/&gt;-l　　列出压缩文件的相关信息&lt;br/&gt;-q　　不显示警告信息&lt;br/&gt;-v　　显示执行过程&lt;br/&gt;-c　　把压缩后的文件输出到标准输出设备，不改变原文件&lt;br/&gt;--压缩率：压缩率是一个介于1-9的数值，默认值为6，数值越大压缩率越高。&lt;br/&gt;-best 与 -9 相同， -fast 与 -1 相同。&lt;br/&gt;--使用示例：&lt;br/&gt;gzip&amp;nbsp; filename　　//生成filename.gz的 压缩文件，原文件消失&lt;br/&gt;gzip&amp;nbsp; -d&amp;nbsp; filename.gz　　//解压缩filename.gz文件，原文件消失&lt;br/&gt;gzip&amp;nbsp; -c filename &amp;gt; filename.gz　　//不改变原文件&lt;/p&gt;&lt;h2 style=&quot;padding: 0px; margin: 0px; font-weight: normal; font-size: 14px; font-family: Verdana; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;&lt;strong&gt;bzip2命令&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;--功能说明：.bz2文件的压缩与解压缩&lt;br/&gt;--命令格式：bzip2&amp;nbsp; [参数]&amp;nbsp; &amp;lt;文件&amp;gt;&lt;br/&gt;--常用参数：&lt;br/&gt;-k　　保留原始文件，默认在压缩或解压缩后会删除原始的文件&lt;br/&gt;-v　　显示指令执行过程&lt;br/&gt;-d　　解压缩文件&lt;br/&gt;-c　　把压缩后的文件输出到标准输出设备，不改变原文件&lt;br/&gt;-f　　强行压缩文件&lt;br/&gt;-s　　降低程序执行时内存的使用量，但会加长执行时间。&lt;br/&gt;-t　　测试压缩文件是否正确无误&lt;br/&gt;--压缩等级：压缩等级是一个介于1-9的数值，指定压缩时的区块大小。&lt;br/&gt;-repetitive-best : 若文件中有重复出现的资料时，可利用此参数提高压缩效果。&lt;br/&gt;-repetitive-fast : 若文件中有重复出现的资料时，可利用此参数加快执行速度。&lt;br/&gt;--使用示例：&lt;br/&gt;bzip2&amp;nbsp; filename　　//压缩filename文件，生成filename.bz2文件，原文件消失&lt;br/&gt;bzip2&amp;nbsp; filename.bz2　　//解压缩filename.bz2，生成filename文件，原文件消失&lt;br/&gt;--提示： bzip2 以区块的方式来压缩文件，每个区块视为独立的单位。因此，当某一区块损坏时，便可利用 bzip2recover 命令试着将文件中的区块分隔开来，以便解缩正常的区块。通常只适用压缩文件很大的情况。&lt;/p&gt;&lt;h2 style=&quot;padding: 0px; margin: 0px; font-weight: normal; font-size: 14px; font-family: Verdana; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;&lt;strong&gt;Zip命令&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;--功能说明：zip文件的压缩&lt;br/&gt;--命令格式：zip&amp;nbsp; [参数]&amp;nbsp; &amp;lt;文件&amp;gt;&lt;br/&gt;--常用参数：&lt;br/&gt;-r　　递归压缩子目录下所有文件&lt;br/&gt;-d　　删除压缩文件中的某个文件&lt;br/&gt;-m　　向压缩文件中添加某个文件&lt;br/&gt;-t　　检查压缩文件是否完整&lt;br/&gt;--使用示例：&lt;br/&gt;zip&amp;nbsp; -r&amp;nbsp; mydata.zip&amp;nbsp; mydata　　//压缩 mydata 目录&lt;br/&gt;zip&amp;nbsp; -r&amp;nbsp; filename.zip&amp;nbsp; file1&amp;nbsp; file2&amp;nbsp;&amp;nbsp; file3&amp;nbsp; /usr/work/school　　//zip 命令能同时处理多个文件和目录，这个命令是 将file1 file2 file3 /usr/work/school 一起压缩放入 filename.zip 中&lt;br/&gt;zip&amp;nbsp; -d&amp;nbsp; mydata.zip&amp;nbsp; smart.txt　　//删除 mydata.zip 中的 smart.txt 文件&lt;br/&gt;zip&amp;nbsp; -m&amp;nbsp; mydata.zip&amp;nbsp; smart.txt　　//向 mydata.zip 中添加 smart.txt 文件&lt;/p&gt;&lt;h2 style=&quot;padding: 0px; margin: 0px; font-weight: normal; font-size: 14px; font-family: Verdana; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;&lt;strong&gt;unzip命名&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;--功能说明：zip文件的解压缩&lt;br/&gt;--命令格式：unzip&amp;nbsp; [参数]&amp;nbsp; &amp;lt;文件&amp;gt;&amp;nbsp; &amp;lt;目录&amp;gt;&lt;br/&gt;--常用参数：&lt;br/&gt;-o　　不提示的情况下覆盖文件&lt;br/&gt;-d　　指明文件将解压到某个目录下&lt;br/&gt;--使用示例：&lt;br/&gt;unzip&amp;nbsp; mydata.zip&amp;nbsp; -d&amp;nbsp;&amp;nbsp; mydata　　//将 mydata.zip 中的内容解压到 mydata 中去&lt;br/&gt;unzip mydata.zip　　//直接将 mydata.zip 解压到当前目录&lt;/p&gt;&lt;h2 style=&quot;padding: 0px; margin: 0px; font-weight: normal; font-size: 14px; font-family: Verdana; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;&lt;strong&gt;tar命令&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;--功能说明：文件的打包和解包&lt;br/&gt;--命令格式：tar&amp;nbsp; [参数]&amp;nbsp; &amp;lt;目录&amp;gt;&lt;br/&gt;--常用参数：&lt;br/&gt;-z　　使用gzip压缩文件或解压&lt;br/&gt;-Z　　用compress压缩文件或解压&lt;br/&gt;-j　　用bzip2压缩文件或解压&lt;br/&gt;-c　　用于创建一个新的存档文件，即打包&lt;br/&gt;-x　　从归档文件中恢复备份文件，即解包&lt;br/&gt;-v　　列出处理的详细信息&lt;br/&gt;-f filename　　使用filename指定存档文件名&lt;br/&gt;-t　　用于列出一个存档文件中的文件名&lt;br/&gt;--使用示例：&lt;br/&gt;tar&amp;nbsp; -cvf&amp;nbsp; my.tar&amp;nbsp; somedirname　　//将somedirname等多个文件打包到 my.tar中，原文件不变&lt;br/&gt;tar&amp;nbsp; -tf&amp;nbsp; my.tar　　//列出 my.tar 中的文件&lt;br/&gt;tar&amp;nbsp; -xvf　my.tar　　//将 my.tar 包中的文件解包出来,原文件不变&lt;br/&gt;tar&amp;nbsp; -zcvf　my.tar.gz&amp;nbsp;&amp;nbsp; somedirname 　　//将 somedirname等多个文件打包并使用 gzip进行压缩&lt;br/&gt;tar&amp;nbsp; -jcvf&amp;nbsp;&amp;nbsp; my.tar.bz2&amp;nbsp; somedirname　　//将 somedirname等多个文件打包并使用 bzip2进行压缩&lt;br/&gt;tar&amp;nbsp; -ztf&amp;nbsp; my.tar.gz　　//查看my.tar.gz 中的文件&lt;br/&gt;tar&amp;nbsp; -jtf&amp;nbsp; my.tar.bz2　　//查看 my.tar.bz2中的文件&lt;br/&gt;tar&amp;nbsp; -zxvf&amp;nbsp; my.tar.gz　　//对 my.tar.gz 进行解压缩并解包&lt;br/&gt;tar&amp;nbsp; -jxvf&amp;nbsp; my.tar.bz2　　//对 my.tar.bz2 进行解压缩并解包&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491807439','0','0','0','201704/thumb_1491807439_663883695.jpg') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2017-04-10T14:57:20+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2017-04-10T14:59:26+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2017-04-10T15:00:12+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0033s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\tpcms\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`,`titleimg`) VALUES ('Linux用户和组的管理操作','5','1','','Linux用户和组的管理操作','','1','&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;命令中涉及的单词和简写：&lt;br/&gt;用户：user；组：group ； 增加：add ；&amp;nbsp; 修改：modify&amp;nbsp; mod ;&amp;nbsp; 删除 : delete&amp;nbsp; del&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;&lt;strong&gt;增加用户&lt;/strong&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; /etc/passwd 存放系统用户信息(组编号、家目录等)&lt;br/&gt;useradd&amp;nbsp; 用户名&lt;br/&gt;useradd -g&amp;nbsp;&amp;nbsp; 编号&amp;nbsp;&amp;nbsp; 用户名&amp;nbsp;&amp;nbsp;&amp;nbsp; //增加用户的同时设置&amp;quot;组编号&amp;quot;，常用操作&lt;br/&gt;useradd -d&amp;nbsp; 目录名&amp;nbsp; 用户名&amp;nbsp; //增加用户的同时会设置&amp;quot;家目录&amp;quot;，目录没有会自动创建&lt;br/&gt;passwd&amp;nbsp; 用户名&amp;nbsp; //给一个用户设置密码，可以让其登录系统，密码按照提示输入两遍&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491807612','0','0','0','201704/thumb_1491807612_360014038.jpg') [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000629s ]
+
+[ 2017-04-10T15:00:14+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2017-04-10T15:01:43+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2017-04-10T15:02:17+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\tpcms\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`,`titleimg`) VALUES ('Linux设备的挂载与卸载','5','1','','Linux设备的挂载与卸载','','1','&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;在Windows里边，给光驱放入光盘，系统G盘符会“自动”与光盘进行连接。&lt;br/&gt;在Liunx系统里边，给光驱放入光盘，系统并不会让我们使用这个光盘，因为他还没有“挂载”的过程。&lt;br/&gt;Liunx系统的光盘在 /dev/cdrom ,但是 cdrom 是硬件设备，我们不能直接读取，因为需要把这个硬件设备与我们硬盘里面具体的一个目录（Windows系统就是G盘符）给链接上。新建一个目录，让这个目录与 /dev/cdrom 联系，这个过程就是“挂载”。&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;挂载的基本命令： mount&amp;nbsp; 设备&amp;nbsp; 目录地址&lt;br/&gt;挂载光盘： mount&amp;nbsp; /dev/cdrom&amp;nbsp; 目录地址&lt;br/&gt;挂载U盘： mount&amp;nbsp; /dev/had1&amp;nbsp; 目录地址&lt;br/&gt;挂载硬盘 : mount&amp;nbsp; /dev/sda3&amp;nbsp; 目录地址&lt;br/&gt;卸载命令 ：&amp;nbsp; umount&amp;nbsp;&amp;nbsp; 设备（或者挂载点）&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491807737','0','0','0','201704/thumb_1491807737_2091357044.jpg') [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2017-04-10T15:02:18+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2017-04-10T15:03:01+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000564s ]
+
+[ 2017-04-10T15:03:39+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\tpcms\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`,`titleimg`) VALUES ('Linux中 ls 命令的使用语法','5','1','','Linux中 ls 命令的使用语法','','1','&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;-功能说明：&lt;/strong&gt;显示指定工作目录下的内容&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;-命令格式:&lt;/strong&gt;ls [-alrtAFR] [name...]&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;-常用参数：&lt;/strong&gt;&lt;br/&gt;-a或--all &amp;nbsp; 显示所有文件及目录(ls内定将文件名或目录名称开头为&amp;#39;.&amp;#39;的视为隐藏文档，不会列出)&lt;br/&gt;-l&amp;nbsp; 显示是文件还是目录，它的大小、修改日期和时间、文件或目录的名字以及文件的属主和它的权限。&lt;br/&gt;-h或--human-readable&amp;nbsp;&amp;nbsp; 用&amp;quot;K&amp;quot;,&amp;quot;M&amp;quot;,&amp;quot;G&amp;quot;来显示文件和目录的大小。&lt;br/&gt;-F或--classify&amp;nbsp; 在执行文件后加&amp;quot;*&amp;quot;，目录后加上&amp;quot;/&amp;quot;，Socket后面加上&amp;quot;=&amp;quot;，符号连接后面加上&amp;quot;@&amp;quot;，管道名称后面加上&amp;quot;|&amp;quot;。&lt;br/&gt;-r或--reverse&amp;nbsp; 反向排序。&lt;br/&gt;-R或--recursive&amp;nbsp; 递归处理，将指定目录下的所有文件及子目录一并处理。&lt;br/&gt;-t&amp;nbsp; 用文件和目录的更改时间排序。&lt;br/&gt;-S&amp;nbsp; 用文件和目录的大小排序。&lt;br/&gt;-i或--inode&amp;nbsp; 显示文件和目录的inode编号。&lt;br/&gt;--version&amp;nbsp; 显示版本信息。&lt;br/&gt;--help&amp;nbsp; 在线帮助。&lt;br/&gt;-d或--directory&amp;nbsp; 显示目录名称而非其内容。&lt;br/&gt;-n或--numeric-uid-gid&amp;nbsp; 以用户识别码和群组识别码替代其名称。&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;-使用实例：&lt;/strong&gt;&lt;br/&gt;ls&amp;nbsp; //不带任何选项列出文件&lt;br/&gt;ls -l&amp;nbsp; //列出文件列表，显示大小、修改日期、时间、文件、目录名字、权限等信息&lt;br/&gt;ls -a&amp;nbsp; //浏览所有文件，包括隐藏文件&lt;br/&gt;ls -lh&amp;nbsp; //以易读方式列出文件信息&lt;br/&gt;ls -F&amp;nbsp; //以尾部以‘/’字符结尾的方式列出文件和目录&lt;br/&gt;ls -r&amp;nbsp; //倒序列出文件&lt;br/&gt;ls -R&amp;nbsp; //递归列出子目录&lt;br/&gt;ls -ltr&amp;nbsp; //以修改时间倒叙列出&lt;br/&gt;ls -lS&amp;nbsp; //按文件大小排序&lt;br/&gt;ls -i&amp;nbsp; //显示文件或目录的索引节点号&lt;br/&gt;ls --version&amp;nbsp; //显示ls命令的版本&lt;br/&gt;ls -l /tmp&amp;nbsp; //列出指定目录的信息&lt;br/&gt;ls -ld /tmp/&amp;nbsp; //只显示/tmp/目录本身的信息&lt;br/&gt;ls -n&amp;nbsp; //显示文件的UID和GID&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491807819','0','0','0','201704/thumb_1491807819_1143107366.jpg') [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2017-04-10T15:03:40+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2017-04-10T15:05:27+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2017-04-10T15:05:49+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\tpcms\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`,`titleimg`) VALUES ('Linux中 cd 命令的使用语法','5','1','','Linux中 cd 命令的使用语法','','1','&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;-功能说明：&lt;/strong&gt;切换目录&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;-命令格式：&lt;/strong&gt;cd [目标目录]&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;-使用实例：&lt;/strong&gt;&lt;br/&gt;cd /&amp;nbsp; //进入系统根目录&lt;br/&gt;cd ..&amp;nbsp; //切换到上级目录&lt;br/&gt;cd&amp;nbsp; //进入当前用户主目录&lt;br/&gt;cd ~ //进入当前用户主目录&lt;br/&gt;cd /tmp/&amp;nbsp; //进入 tmp 指定目录&lt;br/&gt;cd -&amp;nbsp; //返回进入此目录之前所在的目录&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491807949','0','0','0','201704/thumb_1491807949_2116547239.jpg') [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2017-04-10T15:05:50+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2017-04-10T15:06:55+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2017-04-10T15:10:04+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\tpcms\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`,`titleimg`) VALUES ('Mysql数据库定义语句','3','1','','Mysql数据库定义语句','','1','&lt;p&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;1、创建数据库&lt;/span&gt;&lt;/p&gt;&lt;pre class=&quot;brush:sql;toolbar:false&quot;&gt;CREATE&amp;nbsp;DATABASE&amp;nbsp;数据库名&amp;nbsp;charset&amp;nbsp;utf8;&lt;/pre&gt;&lt;p&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;2、删除数据库&lt;/span&gt;&lt;/p&gt;&lt;pre class=&quot;brush:sql;toolbar:false&quot;&gt;DROP&amp;nbsp;DATABASE&amp;nbsp;数据库名;&lt;/pre&gt;&lt;p&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;3、创建表语句&lt;/span&gt;&lt;/p&gt;&lt;pre class=&quot;brush:sql;toolbar:false&quot;&gt;CREATE&amp;nbsp;TABLE&amp;nbsp;`workers_info`&amp;nbsp;(&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;`id`&amp;nbsp;int(11)&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;AUTO_INCREMENT,&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;`workername`&amp;nbsp;varchar(20)&amp;nbsp;NOT&amp;nbsp;NULL,&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;`sex`&amp;nbsp;enum(F,M,S),&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;`salary`&amp;nbsp;int(11)&amp;nbsp;DEFAULT&amp;nbsp;&amp;#39;0&amp;#39;,&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;`email`&amp;nbsp;&amp;nbsp;varchar(30),&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;`EmployedDates`&amp;nbsp;&amp;nbsp;date,&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;`department`&amp;nbsp;&amp;nbsp;varchar(30),&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;PRIMARY&amp;nbsp;KEY&amp;nbsp;(`id`)&amp;nbsp;&amp;nbsp;
+)&amp;nbsp;ENGINE=MyISAM&amp;nbsp;&amp;nbsp;DEFAULT&amp;nbsp;CHARSET=utf8;&lt;/pre&gt;&lt;p&gt;4、&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;新增列信息&lt;/span&gt;&lt;/p&gt;&lt;pre class=&quot;brush:sql;toolbar:false&quot;&gt;ALTER&amp;nbsp;TABLE&amp;nbsp;表名&amp;nbsp;ADD&amp;nbsp;[COLUMN]&amp;nbsp;列字段定义&amp;nbsp;[FIRST&amp;nbsp;|&amp;nbsp;AFTER&amp;nbsp;列名称]&amp;nbsp;
+ALTER&amp;nbsp;TABLE&amp;nbsp;product&amp;nbsp;ADD&amp;nbsp;pro_name&amp;nbsp;varchar(50)&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;DEFAULT&amp;nbsp;&amp;#39;&amp;#39;&amp;nbsp;AFTER&amp;nbsp;id;&lt;/pre&gt;&lt;p&gt;5、&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;修改列信息&lt;/span&gt;&lt;/p&gt;&lt;pre class=&quot;brush:sql;toolbar:false&quot;&gt;ALTER&amp;nbsp;TABLE&amp;nbsp;表名&amp;nbsp;MODIFY&amp;nbsp;[COLUMN]&amp;nbsp;列字段定义&amp;nbsp;[FIRST&amp;nbsp;|&amp;nbsp;AFTER&amp;nbsp;列名称]&amp;nbsp;
+ALTER&amp;nbsp;TABLE&amp;nbsp;product&amp;nbsp;MODIFY&amp;nbsp;status&amp;nbsp;TINYINT(1)&amp;nbsp;NOT&amp;nbsp;NULL&amp;nbsp;DEFAULT&amp;nbsp;1&amp;nbsp;;&lt;/pre&gt;&lt;p&gt;6、&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;删除列信息&lt;/span&gt;&lt;/p&gt;&lt;pre class=&quot;brush:sql;toolbar:false&quot;&gt;ALTER&amp;nbsp;TABLE&amp;nbsp;表名&amp;nbsp;DROP&amp;nbsp;&amp;nbsp;[column]&amp;nbsp;&amp;nbsp;列名;&amp;nbsp;
+ALTER&amp;nbsp;TABLE&amp;nbsp;product&amp;nbsp;&amp;nbsp;DROP&amp;nbsp;&amp;nbsp;&amp;nbsp;cat_id;&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491808204','0','0','0','201704/thumb_1491808204_86470571.jpg') [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2017-04-10T15:10:05+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2017-04-10T15:12:38+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2017-04-10T15:13:10+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0039s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`) VALUES ('html5兼容处理(ie8以下版本兼容问题)','4','1','','html5兼容处理(ie8以下版本兼容问题)','','1','&lt;p&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;(我们在测试ie 的兼容的时候，有一个叫做ietest 的软件，这个软件可以模拟ie6-ie11)&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;在不支持HTML5新标签的浏览器里，会将这些新的标签解析成行内元素(inline)对待，所以我们只需要将其转换成块元素(block)即可使用，但是在IE9版本以下，并不能正常解析这些新标签，但是却可以识别通过document.createElement(&amp;#39;tagName&amp;#39;)创建的自定义标签，于是我们的解决方案就是将HTML5的新标签全部通过document.createElement(&amp;#39;tagName&amp;#39;)来创建一遍，这样IE低版本也能正常解析HTML5新标签了，在实际开发中我们更多采用的是通过检测IE浏览器的版本来加载三方的一个JS库来解决兼容问题。&lt;/span&gt;&lt;/p&gt;&lt;pre class=&quot;brush:html;toolbar:false&quot;&gt;&amp;lt;!--条件注释，只有ie能识别--&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;!--[if&amp;nbsp;lte&amp;nbsp;ie&amp;nbsp;8]&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;script&amp;nbsp;src=&amp;quot;html5shiv.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;![endif]--&amp;gt;&lt;/pre&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491808390','0','0','0') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2017-04-10T15:13:11+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000801s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2017-04-10T15:13:35+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `tpcms_category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tpcms_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2017-04-10T15:14:10+08:00 ] 127.0.0.1 /index.php/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+SQL: SHOW COLUMNS FROM `tpcms_article` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+NOTIC: [2] Missing argument 1 for judgeCheck() D:\wamp\www\tpcms\Application\Common\Common\function.php 第 10 行.
+NOTIC: [8] Undefined variable: str D:\wamp\www\tpcms\Application\Common\Common\function.php 第 11 行.
+SQL: INSERT INTO `tpcms_article` (`title`,`cate_id`,`status`,`keywords`,`synopsis`,`author`,`clicks`,`content`,`newstime`,`is_new`,`is_hot`,`is_recommend`) VALUES ('html5表单新增表单类型，表单元素，表单属性','4','1','','html5表单新增表单类型，表单元素，表单属性','','1','&lt;p&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;3.1输入类型 (表单类型，表单元素，表单属性,表单事件.)&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;email 输入email格式&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;tel 手机号码&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;url 只能输入url格式&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;number 只能输入数字&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;search 搜索框&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;range 范围 滑动条&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;color 拾色器&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;time 时间&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;date 日期 不是绝对的&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;--datetime 时间日期&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;month 月份&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;week 星期&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;部分类型是针对移动设备生效的，且具有一定的兼容性，在实际应用当中可选择性的使用。&lt;/span&gt;&lt;br/&gt;&lt;span style=&quot;font-family: Verdana; font-size: 14px; background-color: rgb(255, 255, 255);&quot;&gt;3.2表单元素（标签）&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&amp;lt;datalist&amp;gt; 数据列表与input 配合使用&lt;/p&gt;&lt;pre class=&quot;brush:html;toolbar:false&quot;&gt;&amp;lt;input&amp;nbsp;type=”text”&amp;nbsp;list=”data”&amp;gt;
+
+&amp;lt;datalist&amp;nbsp;id=”data”&amp;gt;
+
+&amp;lt;option&amp;gt;男&amp;lt;/option&amp;gt;
+
+&amp;lt;option&amp;gt;女&amp;lt;/option&amp;gt;
+
+&amp;lt;option&amp;gt;不详&amp;lt;/option&amp;gt;
+
+&amp;lt;/datalist&amp;gt;&lt;/pre&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;&amp;lt;keygen&amp;gt; &amp;nbsp;生成加密字符串&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;keygen 元素的作用是提供一种验证用户的可靠方法。&lt;br/&gt;keygen 元素是密钥对生成器（key-pair generator）。当提交表单时，会生成两个键， 一个是私钥，一个公钥。&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;私钥（private key）存储于客户端，公钥（public key）则被发送到服务器。公钥可用于之后验证用户的客户端证书（client certificate）。&lt;br/&gt;3.3表单属性&lt;br/&gt;placeholder 占位符&lt;br/&gt;autofocus 获取焦点&lt;br/&gt;multiple 文件上传多选或多个邮箱地址&lt;br/&gt;autocomplete 自动完成，用于表单元素，也可用于表单自身(on/off)&lt;br/&gt;form 指定表单项属于哪个form，处理复杂表单时会需要&lt;br/&gt;novalidate 关闭验证，可用于&amp;lt;form&amp;gt;标签&lt;br/&gt;required 必填项&lt;br/&gt;pattern 正则表达式 验证表单&lt;/p&gt;&lt;p style=&quot;padding: 15px 0px 0px; margin-top: 0px; margin-bottom: 0px; font-family: Verdana; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);&quot;&gt;3.4表单事件&lt;br/&gt;oninput 用户输入内容时触发，可用于移动端输入字数统计&lt;br/&gt;oninvalid 验证不通过时触发&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','1491808450','0','0','0') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-04-10T15:14:12+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2017-04-10T15:16:17+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2017-04-10T15:16:17+08:00 ] 127.0.0.1 /index.php/Admin/Index/head.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2017-04-10T15:16:17+08:00 ] 127.0.0.1 /index.php/Admin/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2017-04-10T15:16:17+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2017-04-10T15:16:18+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2017-04-10T15:16:18+08:00 ] 127.0.0.1 /index.php/Admin/Index/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
+
+[ 2017-04-10T15:16:18+08:00 ] 127.0.0.1 /index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000421s ]
+
+[ 2017-04-10T15:16:18+08:00 ] 127.0.0.1 /index.php/Admin/Index/head.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001549s ]
+
+[ 2017-04-10T15:16:19+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2017-04-10T15:16:26+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2017-04-10T15:16:28+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2017-04-10T15:16:28+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2017-04-10T15:16:30+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2017-04-10T15:16:31+08:00 ] 127.0.0.1 /index.php/Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
