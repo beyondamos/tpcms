@@ -3,8 +3,8 @@
  * 文章模型
  */
 namespace Common\Model;
-use Think\Model;
-class ArticleModel extends Model{
+use Think\Model\RelationModel;
+class ArticleModel extends RelationModel{
 
 	protected $_validate = array(
 		array('title', 'require', '标题不能为空', self::MUST_VALIDATE, 'regex', self::MODEL_BOTH),
@@ -27,5 +27,33 @@ class ArticleModel extends Model{
 		array('status', 'judgeCheck', self::MODEL_BOTH, 'function'),
 	);
 
+	protected $_link = array(
+		'Category' => array(
+			'mapping_type' => self::BELONGS_TO,
+			'class_name' => 'Category',
+			'foreign_key' => 'cate_id',
+			'mapping_name' => 'category',
+			'as_fields' => 'cate_name',
+		),
+
+	);
+
+	/**
+	 * 删除信息
+	 * @param  mixed $id 需要处理的文章id
+	 * @return [type] [description]
+	 */
+	public function recycle($id){
+		if(!is_array($id)){
+			$ids[] = $id;
+		}
+		$ids = $id;
+		$data = array('status',0);
+		$map['article_id'] = array('in', $ids); 
+		if($this->where($map)->save($data)){
+			return true;
+		}
+		return false;
+	}
 
 }
