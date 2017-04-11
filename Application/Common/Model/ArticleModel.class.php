@@ -48,7 +48,7 @@ class ArticleModel extends RelationModel{
 			$ids[] = $id;
 		}
 		$ids = $id;
-		$data = array('status',0);
+		$data = array('status' => 0);
 		$map['article_id'] = array('in', $ids); 
 		if($this->where($map)->save($data)){
 			return true;
