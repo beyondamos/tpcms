@@ -79,6 +79,31 @@ class ArticleController extends CommonController{
 
 
 	/**
+	 * 审核文章
+	 * @return [type] [description]
+	 */
+	public function check(){
+		if(IS_GET){
+			//单个审核
+			$article_id = I('get.article_id');
+			if(!$article_id){
+				$this->error('未知错误');
+			}
+		}elseif(IS_POST){
+			//多个审核
+
+		}
+
+		$article_model = D('Article');
+		if($article_model->check($article_id)){
+			$this->success('文章审核成功', $_SERVER['HTTP_REFERER'], 1);
+		}else{
+			$this->success('文章审核失败');
+		}		
+	}
+
+
+	/**
 	 * 取消审核
 	 * @return [type] [description]
 	 */

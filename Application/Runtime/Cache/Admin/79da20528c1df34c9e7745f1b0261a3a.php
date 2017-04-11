@@ -34,8 +34,8 @@
 				<td class="text-center"><?php echo date('Y-m-d H:i:s',$vo['newstime']);?></td>
 				<td class="text-center">
 					<a class="btn btn-info" href="#" role="button">编辑</a>
-					<a class="btn btn-warning" href="#" role="button">审核</a>
-					<a class="btn btn-danger" href="<?php echo U('delete',array('article_id' => $vo['article_id']));?>" role="button">彻底删除</a>
+					<a class="btn btn-warning" href="<?php echo U('check',array('article_id' => $vo['article_id']));?>" role="button">审核</a>
+					<a class="btn btn-danger" href="<?php echo U('recycleBin',array('article_id' => $vo['article_id']));?>" role="button">回收站</a>
 				</td>
 			</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 		</table>

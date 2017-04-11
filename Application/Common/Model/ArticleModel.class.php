@@ -39,6 +39,24 @@ class ArticleModel extends RelationModel{
 	);
 
 	/**
+	 * 文章审核
+	 * @param  mixed $id 需要处理的文章id
+	 * @return bool  成功返回true  失败返回false
+	 */
+	public function check($id){
+		if(!is_array($id)){
+			$ids[] = $id;
+		}
+		$ids = $id;
+		$data = array('status' => 1);
+		$map['article_id'] = array('in', $ids); 
+		if($this->where($map)->save($data)){
+			return true;
+		}
+		return false;
+	}	
+
+	/**
 	 * 取消文章审核
 	 * @param  mixed $id 需要处理的文章id
 	 * @return bool  成功返回true  失败返回false
