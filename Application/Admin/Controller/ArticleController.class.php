@@ -99,9 +99,8 @@ class ArticleController extends CommonController{
 			}
 		}elseif(IS_POST){
 			//多个审核
-
+			$article_id = I('post.article_id');
 		}
-
 		$article_model = D('Article');
 		if($article_model->check($article_id)){
 			$this->success('文章审核成功', $_SERVER['HTTP_REFERER'], 1);
@@ -144,7 +143,7 @@ class ArticleController extends CommonController{
 	public function delete(){
 		if(IS_POST){
 			//多个删除
-			$id = I('post.id');
+			$id = I('post.article_id');
 		}elseif(IS_GET){
 			//单个删除
 			$id = I('get.article_id');

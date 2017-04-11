@@ -15,9 +15,9 @@
 			<li><a href="#">信息中心</a></li>
 			<li class="active">未审核列表</li>
 		</ol>
-		<a class="btn btn-danger" href="#" role="button"><span class="glyphicon glyphicon-trash"></span> 批量删除</a>
-		<a class="btn btn-primary" href="#" role="button"><span class="glyphicon glyphicon-trash"></span> 批量审核</a>
-		<form action="<?php echo U('delete');?>" method="post">
+		<button id="check" class="btn btn-primary"><span class="glyphicon glyphicon-trash"></span> 批量审核</button>
+		<button id="delete" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> 批量删除</button>
+		<form id="checkform" action="" method="post">
 		<table class="table table-bordered table-striped table-condensed">
 			<tr>
 				<th class="text-center">选择</th>
@@ -28,7 +28,7 @@
 				<th class="text-center">操作</th>
 			</tr>
 			<?php if(is_array($article_info)): $i = 0; $__LIST__ = $article_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-				<td class="text-center"><input type="checkbox" name="id[]" value="<?php echo ($vo["article_id"]); ?>"></td>
+				<td class="text-center"><input type="checkbox" name="article_id[]" value="<?php echo ($vo["article_id"]); ?>"></td>
 				<td class="text-center"><?php echo ($vo["article_id"]); ?></td>
 				<td><?php echo ($vo["title"]); ?></td>
 				<td class="text-center"><?php echo ($vo["cate_name"]); ?></td>
@@ -63,5 +63,19 @@
 	</div>
 	<script src="/Public/Admin/lib/jquery/jquery-1.11.3.js"></script>
 	<script src="/Public/Admin/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script>
+	$().ready(function(){
+		$('#check').click(function(){
+			$('#checkform').attr('action','<?php echo U('check');?>');
+			$('#checkform').submit();
+		});
+		$('#delete').click(function(){
+			$('#checkform').attr('action','<?php echo U('delete');?>');
+			$('#checkform').submit();
+		});
+
+
+	});
+	</script>
 </body>
 </html>

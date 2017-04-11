@@ -15,9 +15,9 @@
 			<li><a href="#">信息中心</a></li>
 			<li class="active">未审核列表</li>
 		</ol>
-		<a class="btn btn-danger" href="#" role="button"><span class="glyphicon glyphicon-trash"></span> 批量删除</a>
-		<a class="btn btn-primary" href="#" role="button"><span class="glyphicon glyphicon-trash"></span> 批量审核</a>
-		<form action="<{:U('delete')}>" method="post">
+		<button id="check" class="btn btn-primary"><span class="glyphicon glyphicon-trash"></span> 批量审核</button>
+		<button id="delete" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> 批量删除</button>
+		<form id="checkform" action="" method="post">
 		<table class="table table-bordered table-striped table-condensed">
 			<tr>
 				<th class="text-center">选择</th>
@@ -29,7 +29,7 @@
 			</tr>
 			<volist name="article_info" id="vo">
 			<tr>
-				<td class="text-center"><input type="checkbox" name="id[]" value="<{$vo.article_id}>"></td>
+				<td class="text-center"><input type="checkbox" name="article_id[]" value="<{$vo.article_id}>"></td>
 				<td class="text-center"><{$vo.article_id}></td>
 				<td><{$vo.title}></td>
 				<td class="text-center"><{$vo.cate_name}></td>
@@ -65,5 +65,19 @@
 	</div>
 	<script src="__LIB__/jquery/jquery-1.11.3.js"></script>
 	<script src="__LIB__/bootstrap/js/bootstrap.min.js"></script>
+	<script>
+	$().ready(function(){
+		$('#check').click(function(){
+			$('#checkform').attr('action','<{:U('check')}>');
+			$('#checkform').submit();
+		});
+		$('#delete').click(function(){
+			$('#checkform').attr('action','<{:U('delete')}>');
+			$('#checkform').submit();
+		});
+
+
+	});
+	</script>
 </body>
 </html>
