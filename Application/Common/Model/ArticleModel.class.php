@@ -45,11 +45,12 @@ class ArticleModel extends RelationModel{
 	 */
 	public function check($id){
 		if(!is_array($id)){
-			$ids[] = $id;
+			$map['article_id'] = $id;
+		}else{
+			$id = implode(',', $id);
+			$map['article_id'] = array('in', $id);
 		}
-		$ids = $id;
 		$data = array('status' => 1);
-		$map['article_id'] = array('in', $ids); 
 		if($this->where($map)->save($data)){
 			return true;
 		}
@@ -63,11 +64,12 @@ class ArticleModel extends RelationModel{
 	 */
 	public function unCheck($id){
 		if(!is_array($id)){
-			$ids[] = $id;
+			$map['article_id'] = $id;
+		}else{
+			$id = implode(',', $id);
+			$map['article_id'] = array('in', $id);
 		}
-		$ids = $id;
 		$data = array('status' => 2);
-		$map['article_id'] = array('in', $ids); 
 		if($this->where($map)->save($data)){
 			return true;
 		}
@@ -81,11 +83,12 @@ class ArticleModel extends RelationModel{
 	 */
 	public function recycle($id){
 		if(!is_array($id)){
-			$ids[] = $id;
+			$map['article_id'] = $id;
+		}else{
+			$id = implode(',', $id);
+			$map['article_id'] = array('in', $id);
 		}
-		$ids = $id;
 		$data = array('status' => 0);
-		$map['article_id'] = array('in', $ids); 
 		if($this->where($map)->save($data)){
 			return true;
 		}
@@ -93,8 +96,25 @@ class ArticleModel extends RelationModel{
 	}
 
 
-	public function delete($id){
+	public function del($id){
+		if(!is_array($id)){
+			$map['article_id'] = $id;
+		}else{
+			$id = implode(',', $id);
+			$map['article_id'] = array('in', $id);
+		}
 		
+		$image_info = $this->field('titleimg, big_image')->where($map)->select();
+		foreach($image_info as $val){
+			if(is_file($val['titleimg'])) unlink($val['titleimg']);
+			if(is_file($val['big_image'])) unlink($val['big_image']);
+		}
+		
+		if( $this->where($map)->delete()){
+			return true;
+		}else{
+			return false;
+		}
 	}
 
 

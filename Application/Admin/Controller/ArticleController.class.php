@@ -151,11 +151,21 @@ class ArticleController extends CommonController{
 	 */
 	public function delete(){
 		if(IS_POST){
+			//多个删除
 			$id = I('post.id');
 		}elseif(IS_GET){
+			//单个删除
 			$id = I('get.article_id');
+			if(!$id){
+				$this->error('未知错误');
+			}
 		}
-
+		$article_model = D('Article');
+		if($article_model->del($id)){
+			$this->success('文章彻底删除成功', $_SERVER['HTTP_REFERER'], 1);
+		}else{
+			$this->error('文章彻底删除错误');
+		}
 
 	}
 
