@@ -39,9 +39,27 @@ class ArticleModel extends RelationModel{
 	);
 
 	/**
+	 * 取消文章审核
+	 * @param  mixed $id 需要处理的文章id
+	 * @return bool  成功返回true  失败返回false
+	 */
+	public function unCheck($id){
+		if(!is_array($id)){
+			$ids[] = $id;
+		}
+		$ids = $id;
+		$data = array('status' => 2);
+		$map['article_id'] = array('in', $ids); 
+		if($this->where($map)->save($data)){
+			return true;
+		}
+		return false;
+	}
+
+	/**
 	 * 移至回收站
 	 * @param  mixed $id 需要处理的文章id
-	 * @return [type] [description]
+	 * @return bool  成功返回true  失败返回false
 	 */
 	public function recycle($id){
 		if(!is_array($id)){

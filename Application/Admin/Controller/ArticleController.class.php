@@ -52,6 +52,56 @@ class ArticleController extends CommonController{
 		}
 	}
 
+
+
+	/**
+	 * 未审核信息列表
+	 */
+	public function checkList(){
+		$article_model = D('Article');
+		$map['status'] = 2;  //状态为2 是 未审核
+		$article_info = $article_model->where($map)->field('article_id,cate_id,title,newstime')->relation(true)->select();
+		$this->assign('article_info', $article_info);
+		$this->display();
+	}
+
+
+	/**
+	 * 回收站列表
+	 */
+	public function binList(){
+		$article_model = D('Article');
+		$map['status'] = 0;
+		$article_info = $article_model->where($map)->field('article_id,cate_id,title,newstime')->relation(true)->select();
+		$this->assign('article_info', $article_info);
+		$this->display();
+	}
+
+
+	/**
+	 * 取消审核
+	 * @return [type] [description]
+	 */
+	public function unCheck(){
+		if(IS_GET){
+			//单个取消审核
+			$article_id = I('get.article_id');
+			if(!$article_id){
+				$this->error('未知错误');
+			}
+		}elseif(IS_POST){
+			//多个取消审核
+
+		}
+
+		$article_model = D('Article');
+		if($article_model->unCheck($article_id)){
+			$this->success('文章取消审核成功', $_SERVER['HTTP_REFERER'], 1);
+		}else{
+			$this->success('文章取消审核失败');
+		}
+	}
+
 	/**
 	 * 将信息移至回收站
 	 * @return bool 移除成功返回true 失败返回false
@@ -67,18 +117,6 @@ class ArticleController extends CommonController{
 		}else{
 			$this->error('文章删除错误');
 		}
-	}
-
-	/**
-	 * 回收站列表
-	 * @return array 
-	 */
-	public function binList(){
-		$article_model = D('Article');
-		$map['status'] = 0;
-		$article_info = $article_model->where($map)->field('article_id,cate_id,title,newstime')->relation(true)->select();
-		$this->assign('article_info', $article_info);
-		$this->display();
 	}
 
 	/**
