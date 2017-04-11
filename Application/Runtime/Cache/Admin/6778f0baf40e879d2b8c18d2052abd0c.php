@@ -17,7 +17,6 @@
 					<li><a href="<?php echo U('Article/listing');?>" target="main-frame">文章管理</a></li>
 					<li><a href="<?php echo U('Category/listing');?>" target="main-frame">分类管理</a></li>
 					<li><a href="<?php echo U('Article/checkList');?>" target="main-frame">未审核信息</a></li>
-					<li><a href="<?php echo U('Article/binList');?>" target="main-frame">回收站</a></li>
 				</ul>	
 				<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> 用户管理&nbsp;&nbsp;&nbsp;&nbsp;<span class="caret"></span></button>
 				<ul class="nav nav-pills nav-stacked">

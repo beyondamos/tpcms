@@ -72,26 +72,6 @@ class ArticleModel extends RelationModel{
 		return false;
 	}
 
-	/**
-	 * 移至回收站
-	 * @param  mixed $id 需要处理的文章id
-	 * @return bool  成功返回true  失败返回false
-	 */
-	public function recycle($id){
-		if(!is_array($id)){
-			$map['article_id'] = $id;
-		}else{
-			$id = implode(',', $id);
-			$map['article_id'] = array('in', $id);
-		}
-		$data = array('status' => 0);
-		if($this->where($map)->save($data)){
-			return true;
-		}
-		return false;
-	}
-
-
 	public function del($id){
 		if(!is_array($id)){
 			$map['article_id'] = $id;

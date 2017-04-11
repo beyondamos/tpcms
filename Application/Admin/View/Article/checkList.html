@@ -13,9 +13,10 @@
 		<ol class="breadcrumb">
 			<li><a href="#">首页</a></li>
 			<li><a href="#">信息中心</a></li>
-			<li class="active">回收站</li>
+			<li class="active">未审核列表</li>
 		</ol>
 		<a class="btn btn-danger" href="#" role="button"><span class="glyphicon glyphicon-trash"></span> 批量删除</a>
+		<a class="btn btn-danger" href="#" role="button"><span class="glyphicon glyphicon-trash"></span> 批量审核</a>
 		<form action="<{:U('delete')}>" method="post">
 		<table class="table table-bordered table-striped table-condensed">
 			<tr>
@@ -36,7 +37,7 @@
 				<td class="text-center">
 					<a class="btn btn-info" href="<{:U('edit', array('article_id' => $vo['article_id']))}>" role="button">编辑</a>
 					<a class="btn btn-warning" href="<{:U('check',array('article_id' => $vo['article_id']))}>" role="button">审核</a>
-					<a class="btn btn-danger" href="<{:U('recycleBin',array('article_id' => $vo['article_id']))}>" role="button">回收站</a>
+					<a class="btn btn-danger" href="<{:U('delete',array('article_id' => $vo['article_id']))}>" role="button">删除</a>
 				</td>
 			</tr>
 			</volist>

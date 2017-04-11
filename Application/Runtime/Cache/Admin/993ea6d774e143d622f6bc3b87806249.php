@@ -15,7 +15,7 @@
 			<li><a href="#">信息中心</a></li>
 			<li class="active">文章管理</li>
 		</ol>
-		<a class="btn btn-danger" href="#" role="button"><span class="glyphicon glyphicon-trash"></span> 批量回收站</a>
+		<button id="recycleBin" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> 批量取消审核</button>
 		<a class="btn btn-primary" href="<?php echo U('add');?>" role="button"><span class="glyphicon glyphicon-plus"></span> 添加文章</a>
 		<table class="table table-bordered table-striped table-condensed table-hover">
 			<tr>
@@ -35,7 +35,6 @@
 				<td class="text-center">
 					<a class="btn btn-info" href="<?php echo U('edit', array('article_id' => $vo['article_id']));?>" role="button">编辑</a>
 					<a class="btn btn-warning" href="<?php echo U('unCheck',array('article_id'=>$vo['article_id']));?>" role="button">取消审核</a>
-					<a class="btn btn-danger" href="<?php echo U('recycleBin', array('article_id'=>$vo['article_id']));?>" role="button">回收站</a>
 				</td>
 			</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 		</table>
@@ -63,21 +62,7 @@
 	<script src="/Public/Admin/lib/bootstrap/js/bootstrap.min.js"></script>
 	<script>
 		$().ready(function(){
-			$(".btn-group button").first().click(function(){
-				$(":checkbox").attr("checked","true");
-			});
-			$(".btn-group button").eq(1).click(function(){
-				$(":checkbox").each(function(){
-					if($(this).attr("checked")){
-						$(this).removeAttr("checked");
-					}else{
-						$(this).attr("checked","true");
-					}
-				});
-			});
-			$(".btn-group button").last().click(function(){
-				$(":checkbox").removeAttr("checked");
-			});
+			
 		});
 	</script>
 </body>

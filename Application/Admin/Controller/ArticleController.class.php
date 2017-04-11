@@ -87,18 +87,6 @@ class ArticleController extends CommonController{
 
 
 	/**
-	 * 回收站列表
-	 */
-	public function binList(){
-		$article_model = D('Article');
-		$map['status'] = 0;
-		$article_info = $article_model->where($map)->field('article_id,cate_id,title,newstime')->relation(true)->select();
-		$this->assign('article_info', $article_info);
-		$this->display();
-	}
-
-
-	/**
 	 * 审核文章
 	 * @return [type] [description]
 	 */
@@ -147,22 +135,6 @@ class ArticleController extends CommonController{
 		}
 	}
 
-	/**
-	 * 将信息移至回收站
-	 * @return bool 移除成功返回true 失败返回false
-	 */
-	public function recycleBin(){	
-		$article_id = I('get.article_id');
-		if(!$article_id){
-			$this->error('未知错误');
-		}
-		$article_model = D('Article');
-		if($article_model->recycle($article_id)){
-			$this->success('文章删除成功', $_SERVER['HTTP_REFERER'], 1);
-		}else{
-			$this->error('文章删除错误');
-		}
-	}
 
 	/**
 	 * 彻底删除
