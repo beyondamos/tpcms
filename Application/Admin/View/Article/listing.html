@@ -17,6 +17,7 @@
 		</ol>
 		<button id="unCheck" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> 批量取消审核</button>
 		<a class="btn btn-primary" href="<{:U('add')}>" role="button"><span class="glyphicon glyphicon-plus"></span> 添加文章</a>
+		<form id="checkform" method="post" action="">
 		<table class="table table-bordered table-striped table-condensed table-hover">
 			<tr>
 				<th class="text-center">选择</th>
@@ -40,6 +41,7 @@
 			</tr>
 			</volist>
 		</table>
+		</form>
 		<nav>
 			<ul class="pagination">
 				<li>
@@ -64,7 +66,10 @@
 	<script src="__LIB__/bootstrap/js/bootstrap.min.js"></script>
 	<script>
 		$().ready(function(){
-			
+			$('#unCheck').click(function(){
+				$('#checkform').attr('action','<{:U('unCheck')}>');
+				$("#checkform").submit();
+			});
 		});
 	</script>
 </body>

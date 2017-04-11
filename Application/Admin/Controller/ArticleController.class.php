@@ -124,7 +124,7 @@ class ArticleController extends CommonController{
 			}
 		}elseif(IS_POST){
 			//多个取消审核
-
+			$article_id = I('post.article_id');
 		}
 
 		$article_model = D('Article');

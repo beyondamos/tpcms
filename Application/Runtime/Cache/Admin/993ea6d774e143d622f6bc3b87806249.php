@@ -15,8 +15,9 @@
 			<li><a href="#">信息中心</a></li>
 			<li class="active">文章管理</li>
 		</ol>
-		<button id="recycleBin" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> 批量取消审核</button>
+		<button id="unCheck" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> 批量取消审核</button>
 		<a class="btn btn-primary" href="<?php echo U('add');?>" role="button"><span class="glyphicon glyphicon-plus"></span> 添加文章</a>
+		<form id="checkform" method="post" action="">
 		<table class="table table-bordered table-striped table-condensed table-hover">
 			<tr>
 				<th class="text-center">选择</th>
@@ -38,6 +39,7 @@
 				</td>
 			</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 		</table>
+		</form>
 		<nav>
 			<ul class="pagination">
 				<li>
@@ -62,7 +64,10 @@
 	<script src="/Public/Admin/lib/bootstrap/js/bootstrap.min.js"></script>
 	<script>
 		$().ready(function(){
-			
+			$('#unCheck').click(function(){
+				$('#checkform').attr('action','<?php echo U('unCheck');?>');
+				$("#checkform").submit();
+			});
 		});
 	</script>
 </body>
