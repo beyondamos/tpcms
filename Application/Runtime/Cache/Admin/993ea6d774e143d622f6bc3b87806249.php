@@ -39,7 +39,7 @@
 				<td class="text-center"><?php echo ($vo["cate_name"]); ?></td>
 				<td class="text-center"><?php echo date('Y-m-d H:i:s',$vo['newstime']);?></td>
 				<td class="text-center">
-					<a class="btn btn-info" href="#" role="button">编辑</a>
+					<a class="btn btn-info" href="<?php echo U('edit', array('article_id' => $vo['article_id']));?>" role="button">编辑</a>
 					<a class="btn btn-warning" href="<?php echo U('unCheck',array('article_id'=>$vo['article_id']));?>" role="button">取消审核</a>
 					<a class="btn btn-danger" href="<?php echo U('recycleBin', array('article_id'=>$vo['article_id']));?>" role="button">回收站</a>
 				</td>

@@ -4,6 +4,7 @@
  */
 namespace Admin\Controller;
 use Admin\Controller\CommonController;
+use Common\Controller\ToolsController;
 
 class CategoryController extends CommonController{
 	/**
@@ -27,8 +28,12 @@ class CategoryController extends CommonController{
 			if($category_model->create()){
 				if($_FILES['cate_img']['error'] != 4){
 					//上传图片
-					$category_model->cate_img = $this->upload($_FILES['cate_img']);
-					$category_model->cate_thumb = $this->thumbnail($category_model->cate_img);
+					$ob_tools = new ToolsController();
+					$cate_image = $ob_tools->upload($_FILES['cate_img']);
+					$cate_thumb = $ob_tools->thumbnail($cate_image);
+					$category_model->cate_image = C('UPLOAD_IMAGE_DIR').$cate_image;
+					$category_model->cate_thumb = C('UPLOAD_THUMB_DIR').$cate_thumb;
+
 				}	
 				if($category_model->add()){
 					$this->success('分类添加成功',U('listing'),1);

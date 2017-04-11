@@ -25,7 +25,7 @@ class ArticleController extends CommonController{
 		if(IS_POST){
 			//添加
 			$article_model = D('Article');
-			if($article_model->create()){
+			if($article_model->create(I('post.'), 1)){
 				//存在标题图片
 				if($_FILES['titleimg']['error'] != 4){
 					$ob_tools = new ToolsController();
@@ -52,7 +52,27 @@ class ArticleController extends CommonController{
 		}
 	}
 
+	/**
+	 * 编辑文章
+	 * @return [type] [description]
+	 */
+	public function edit(){
+		if(IS_POST){
 
+		}elseif(IS_GET){
+			$article_id = I('get.article_id');
+			if(!$article_id) $this->error('未知错误');
+			$article_model = D('Article');
+			//文章信息
+			$article_info = $article_model->find($article_id);
+			//文章分类信息
+			$category_model = D('Category');
+			$category_data = $category_model->getSortCategories();
+			$this->assign('article_info',array('category'=> $category_data, 'article'=> $article_info));
+			$this->display();
+		}
+		
+	}
 
 	/**
 	 * 未审核信息列表

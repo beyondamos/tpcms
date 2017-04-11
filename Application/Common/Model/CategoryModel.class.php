@@ -6,7 +6,7 @@ namespace Common\Model;
 use Think\Model;
 class CategoryModel extends Model{
 
-	protected $_vilidate = array(
+	protected $_validate = array(
 		array('cate_name', 'require', '分类名称不能为空', self::EXISTS_VALIDATE, 'regex', self::MODEL_BOTH),
 		array('cate_name', '', '分类名称已经存在', self::EXISTS_VALIDATE, 'unique', self::MODEL_BOTH),
 		array('parent_id', 'number', '分类名称不合法', self::EXISTS_VALIDATE, 'regex', self::MODEL_BOTH),

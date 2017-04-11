@@ -34,7 +34,7 @@
 				<td class="text-center"><{$vo.cate_name}></td>
 				<td class="text-center"><{:date('Y-m-d H:i:s',$vo['newstime'])}></td>
 				<td class="text-center">
-					<a class="btn btn-info" href="#" role="button">编辑</a>
+					<a class="btn btn-info" href="<{:U('edit', array('article_id' => $vo['article_id']))}>" role="button">编辑</a>
 					<a class="btn btn-warning" href="<{:U('check',array('article_id' => $vo['article_id']))}>" role="button">审核</a>
 					<a class="btn btn-danger" href="<{:U('recycleBin',array('article_id' => $vo['article_id']))}>" role="button">回收站</a>
 				</td>
