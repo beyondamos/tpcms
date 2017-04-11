@@ -16,7 +16,7 @@ class ToolsController extends Controller{
 		$upload = new \Think\Upload();// 实例化上传类
 	    $upload->maxSize   =     3145728 ;// 设置附件上传大小
 	    $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-	    $upload->rootPath  =      './Public/Upload/thumbnail/'; // 设置附件上传根目录
+	    $upload->rootPath  =      C('UPLOAD_IMAGE_DIR'); // 设置附件上传根目录
 	    $upload->saveName  =	time().'_'.mt_rand();	//保存文件名
 	    $upload->autoSub = true;	//开启子目录保存
 		$upload->subName = array('date','Ym');	//子目录
@@ -37,11 +37,9 @@ class ToolsController extends Controller{
 	 */
 	public function thumbnail($file){
 		$image = new \Think\Image();
-		$image->open(C('THUMB_DIR').$file);
-		$tmp_array = explode('/',$file);
-		$thumb_name = $tmp_array[0].'/thumb_'.$tmp_array[1];
-		$image->thumb(300, 150)->save(C('THUMB_DIR').$thumb_name);
-		return $thumb_name;
+		$image->open(C('UPLOAD_IMAGE_DIR').$file);
+		$image->thumb(300, 150)->save(C('UPLOAD_THUMB_DIR').$file);
+		return $file;
 	}
 
 

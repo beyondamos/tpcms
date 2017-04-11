@@ -24,6 +24,7 @@ create table tpcms_article(
 	cat_id smallint unsigned not null default 0 comment '分类id',
 	title varchar(32) not null default '' comment '标题',
 	titleimg varchar(128) not null default '' comment '标题图片',
+	big_image varchar(128) not null default '' comment '文章大图',
 	content	text not null comment '文章正文',
 	author varchar(32) not null default '' comment '作者', 
 	keywords varchar(128) not null default '' comment '关键词',
@@ -49,3 +50,4 @@ create table tpcms_category(
 )engine = myisam charset = utf8;
 
 
+alter table `tpcms_article` add `big_image` varchar(128) not null default '' comment '文章大图' after `titleimg`;

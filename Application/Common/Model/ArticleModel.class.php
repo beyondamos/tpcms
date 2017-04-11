@@ -39,7 +39,7 @@ class ArticleModel extends RelationModel{
 	);
 
 	/**
-	 * 删除信息
+	 * 移至回收站
 	 * @param  mixed $id 需要处理的文章id
 	 * @return [type] [description]
 	 */
@@ -55,5 +55,12 @@ class ArticleModel extends RelationModel{
 		}
 		return false;
 	}
+
+
+	public function delete($id){
+		
+	}
+
+
 
 }

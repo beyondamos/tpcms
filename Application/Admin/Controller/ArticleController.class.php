@@ -13,7 +13,7 @@ class ArticleController extends CommonController{
 	public function listing(){
 		$article_model = D('Article');
 		$map['status'] = 1;
-		$article_info = $article_model->field('article_id,cate_id,title,newstime')->where($map)->relation(true)->select();
+		$article_info = $article_model->field('article_id,cate_id,title,newstime')->where($map)->order('article_id desc')->relation(true)->select();
 		$this->assign('article_info',$article_info);
 		$this->display();
 	}
@@ -29,7 +29,10 @@ class ArticleController extends CommonController{
 				//存在标题图片
 				if($_FILES['titleimg']['error'] != 4){
 					$ob_tools = new ToolsController();
-					$article_model->titleimg = $ob_tools->thumbnail($ob_tools->upload($_FILES['titleimg']));
+					$big_image = $ob_tools->upload($_FILES['titleimg']);
+					$titleimg = $ob_tools->thumbnail($big_image);
+					$article_model->big_image = C('UPLOAD_IMAGE_DIR').$big_image;
+					$article_model->titleimg = C('UPLOAD_THUMB_DIR').$titleimg;
 				}
 				if($article_model->add()){
 					$this->success('文章添加成功', U('listing'), 1);
@@ -64,8 +67,34 @@ class ArticleController extends CommonController{
 		}else{
 			$this->error('文章删除错误');
 		}
+	}
+
+	/**
+	 * 回收站列表
+	 * @return array 
+	 */
+	public function binList(){
+		$article_model = D('Article');
+		$map['status'] = 0;
+		$article_info = $article_model->where($map)->field('article_id,cate_id,title,newstime')->relation(true)->select();
+		$this->assign('article_info', $article_info);
+		$this->display();
+	}
+
+	/**
+	 * 彻底删除
+	 * 彻底删除文章的同时删除文章相关的文件,比如:图片
+	 * @return [type] [description]
+	 */
+	public function delete(){
+		if(IS_POST){
+			$id = I('post.id');
+		}elseif(IS_GET){
+			$id = I('get.article_id');
+		}
 
 
 	}
+
 
 }
