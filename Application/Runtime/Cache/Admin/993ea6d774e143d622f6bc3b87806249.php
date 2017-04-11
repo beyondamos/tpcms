@@ -19,13 +19,7 @@
 		<a class="btn btn-primary" href="<?php echo U('add');?>" role="button"><span class="glyphicon glyphicon-plus"></span> 添加文章</a>
 		<table class="table table-bordered table-striped table-condensed table-hover">
 			<tr>
-				<th class="text-center">
-					<div class="btn-group" role="group" aria-label="...">
-  						<button type="button" class="btn btn-default">全选</button>
-  						<button type="button" class="btn btn-default">反选</button>
-  						<button type="button" class="btn btn-default">取消</button>
-					</div>
-				</th>
+				<th class="text-center">选择</th>
 				<th class="text-center">编号</th>
 				<th class="text-center">标题</th>
 				<th class="text-center">分类</th>
