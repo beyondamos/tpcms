@@ -14,6 +14,4 @@ class LoginController extends CommonController{
 
 	}
 
-	
-
 }
