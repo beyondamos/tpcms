@@ -12,9 +12,15 @@ class ArticleController extends CommonController{
 	 */
 	public function listing(){
 		$article_model = D('Article');
+		// 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
 		$map['status'] = 1;
-		$article_info = $article_model->field('article_id,cate_id,title,newstime')->where($map)->order('article_id desc')->relation(true)->select();
-		$this->assign('article_info',$article_info);
+		$p = I('get.p') ? I('get.p') : 1;
+		$article_info = $article_model->field('article_id,cate_id,title,newstime')->where($map)->order('article_id')->page($p.',10')->relation(true)->select();
+		$this->assign('article_info',$article_info);// 赋值数据集
+		$count = $article_model->where($map)->count();// 查询满足要求的总记录数
+		$Page = new \Think\Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数
+		$show = $Page->show();	// 分页显示输出
+		$this->assign('page',$show);	// 赋值分页输出
 		$this->display();
 	}
 

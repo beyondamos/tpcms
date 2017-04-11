@@ -40,6 +40,7 @@
 			</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 		</table>
 		</form>
+		<?php echo ($page); ?>
 		<nav>
 			<ul class="pagination">
 				<li>
