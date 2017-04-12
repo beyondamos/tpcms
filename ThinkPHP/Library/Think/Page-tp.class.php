@@ -16,22 +16,20 @@ class Page{
     public $parameter; // 分页跳转时要带的参数
     public $totalRows; // 总行数
     public $totalPages; // 分页总页面数
-    public $rollPage   = 10;// 分页栏每页显示的页数
-    public $lastSuffix = true; // 最后一页是否显示总页数
+    public $rollPage   = 11;// 分页栏每页显示的页数
+	public $lastSuffix = true; // 最后一页是否显示总页数
 
-    public $p       = 'p'; //分页参数名
-    public $url     = ''; //当前链接URL
-    public $nowPage = 1;
+    private $p       = 'p'; //分页参数名
+    private $url     = ''; //当前链接URL
+    private $nowPage = 1;
 
 	// 分页显示定制
     private $config  = array(
         'header' => '<span class="rows">共 %TOTAL_ROW% 条记录</span>',
-        /*
-        'prev'   => '<<',
-        'next'   => '>>',
-        'first'  => '1...',
-        'last'   => '...%TOTAL_PAGE%',
-        */
+        // 'prev'   => '<<',
+        // 'next'   => '>>',
+        // 'first'  => '1...',
+        // 'last'   => '...%TOTAL_PAGE%',
         'prev'   => '上一页',
         'next'   => '下一页',
         'first'  => '首页',
@@ -51,14 +49,9 @@ class Page{
         $this->totalRows  = $totalRows; //设置总记录数
         $this->listRows   = $listRows;  //设置每页显示行数
         $this->parameter  = empty($parameter) ? $_GET : $parameter;
-        $this->nowPage    = empty($_REQUEST[$this->p]) ? 1 : intval($_REQUEST[$this->p]);
-//        $this->parameter  = empty($parameter) ? $_REQUEST : $parameter;
-//        $this->nowPage    = empty($_REQUEST[$this->p]) ? 1 : intval($_REQUEST[$this->p]);        
+        $this->nowPage    = empty($_GET[$this->p]) ? 1 : intval($_GET[$this->p]);
         $this->nowPage    = $this->nowPage>0 ? $this->nowPage : 1;
         $this->firstRow   = $this->listRows * ($this->nowPage - 1);
-        /* 计算分页信息 */
-        $this->totalPages = ceil($this->totalRows / $this->listRows)>0 ? ceil($this->totalRows / $this->listRows) : 1; //总页数
-        
     }
 
     /**
@@ -77,7 +70,7 @@ class Page{
      * @param  integer $page 页码
      * @return string
      */
-    public function url($page){
+    private function url($page){
         return str_replace(urlencode('[PAGE]'), $page, $this->url);
     }
 
@@ -91,6 +84,8 @@ class Page{
         /* 生成URL */
         $this->parameter[$this->p] = '[PAGE]';
         $this->url = U(ACTION_NAME, $this->parameter);
+        /* 计算分页信息 */
+        $this->totalPages = ceil($this->totalRows / $this->listRows); //总页数
         if(!empty($this->totalPages) && $this->nowPage > $this->totalPages) {
             $this->nowPage = $this->totalPages;
         }
@@ -99,25 +94,25 @@ class Page{
         $now_cool_page      = $this->rollPage/2;
 		$now_cool_page_ceil = ceil($now_cool_page);
 		$this->lastSuffix && $this->config['last'] = $this->totalPages;
-        $this->config['last'] = '尾页';
+
         //上一页
         $up_row  = $this->nowPage - 1;
-        $up_page = $up_row > 0 ? '<li id="example1_previous" class="paginate_button previous"><a class="prev" href="' . $this->url($up_row) . '">' . $this->config['prev'] . '</a></li>' : '';
+        $up_page = $up_row > 0 ? '<a class="prev" href="' . $this->url($up_row) . '">' . $this->config['prev'] . '</a>' : '';
 
         //下一页
         $down_row  = $this->nowPage + 1;
-        $down_page = ($down_row <= $this->totalPages) ? '<li id="example1_next" class="paginate_button next"><a class="next" href="' . $this->url($down_row) . '">' . $this->config['next'] . '</a></li>' : '';
+        $down_page = ($down_row <= $this->totalPages) ? '<a class="next" href="' . $this->url($down_row) . '">' . $this->config['next'] . '</a>' : '';
 
         //第一页
         $the_first = '';
         if($this->totalPages > $this->rollPage && ($this->nowPage - $now_cool_page) >= 1){
-            $the_first = '<li id="example1_previous" class="paginate_button previous "><a class="first" href="' . $this->url(1) . '">' . $this->config['first'] . '</a></li>';
+            $the_first = '<a class="first" href="' . $this->url(1) . '">' . $this->config['first'] . '</a>';
         }
 
         //最后一页
         $the_end = '';
         if($this->totalPages > $this->rollPage && ($this->nowPage + $now_cool_page) < $this->totalPages){
-            $the_end = '<li id="example1_previous" class="paginate_button previous"><a class="end" href="' . $this->url($this->totalPages) . '">' . $this->config['last'] . '</a></li>';
+            $the_end = '<a class="end" href="' . $this->url($this->totalPages) . '">' . $this->config['last'] . '</a>';
         }
 
         //数字连接
@@ -133,15 +128,13 @@ class Page{
             if($page > 0 && $page != $this->nowPage){
 
                 if($page <= $this->totalPages){
-                    $link_page .= '<li class="paginate_button"><a class="num" href="' . $this->url($page) . '">' . $page . '</a></li>';
+                    $link_page .= '<a class="num" href="' . $this->url($page) . '">' . $page . '</a>';
                 }else{
                     break;
                 }
             }else{
                 if($page > 0 && $this->totalPages != 1){
-//                    $link_page .= '<span class="current">' . $page . '</span>';
-                    $link_page .= '<li class="paginate_button active"><a tabindex="0" data-dt-idx="1" aria-controls="example1" href="#">' . $page . '</a></li>';
-
+                    $link_page .= '<span class="current">' . $page . '</span>';
                 }
             }
         }
@@ -151,6 +144,6 @@ class Page{
             array('%HEADER%', '%NOW_PAGE%', '%UP_PAGE%', '%DOWN_PAGE%', '%FIRST%', '%LINK_PAGE%', '%END%', '%TOTAL_ROW%', '%TOTAL_PAGE%'),
             array($this->config['header'], $this->nowPage, $up_page, $down_page, $the_first, $link_page, $the_end, $this->totalRows, $this->totalPages),
             $this->config['theme']);
-        return "<div class='dataTables_paginate paging_simple_numbers'><ul class='pagination'>{$page_str}</ul></div>";
+        return "<div>{$page_str}</div>";
     }
 }
