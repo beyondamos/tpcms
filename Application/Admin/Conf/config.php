@@ -7,4 +7,7 @@ return array(
         '__JS__'     => __ROOT__ . '/Public/' . MODULE_NAME . '/js',
         '__LIB__'    => __ROOT__ . '/Public/' . MODULE_NAME . '/lib',
     ),
+
+    'LIST_NUM'		 => 	10,	//后台列表页的每页显示数量
+
 );

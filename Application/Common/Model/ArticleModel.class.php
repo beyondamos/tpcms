@@ -3,8 +3,8 @@
  * 文章模型
  */
 namespace Common\Model;
-use Think\Model\RelationModel;
-class ArticleModel extends RelationModel{
+use Think\Model;
+class ArticleModel extends Model{
 
 	// protected $_validate = array(
 	// 	array('title', 'require', '标题不能为空', self::MUST_VALIDATE, 'regex', self::MODEL_BOTH),
@@ -21,17 +21,6 @@ class ArticleModel extends RelationModel{
 		array('is_hot', 'judgeCheck', self::MODEL_BOTH, 'function'),
 		array('is_recommend', 'judgeCheck', self::MODEL_BOTH, 'function'),
 		array('status', 'judgeCheck', self::MODEL_BOTH, 'function'),
-	);
-
-	protected $_link = array(
-		'Category' => array(
-			'mapping_type' => self::BELONGS_TO,
-			'class_name' => 'Category',
-			'foreign_key' => 'cate_id',
-			'mapping_name' => 'category',
-			'as_fields' => 'cate_name',
-		),
-
 	);
 
 	/**
