@@ -11,7 +11,19 @@ class LoginController extends CommonController{
 	 * @return [type] [description]
 	 */
 	public function index(){
+		$this->display();
+	}
 
+
+	/**
+	 * 登录
+	 * @return [type] [description]
+	 */
+	public function login(){
+		if(IS_POST){
+			var_dump(I('post.'));
+		}
+		
 	}
 
 }

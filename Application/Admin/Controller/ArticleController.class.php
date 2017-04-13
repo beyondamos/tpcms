@@ -15,7 +15,7 @@ class ArticleController extends CommonController{
 		// 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
 		$map['status'] = 1;
 		$p = I('get.p') ? I('get.p') : 1;
-		$article_info = $article_model->alias('a')->join("LEFT JOIN __CATEGORY__ c ON a.cate_id = c.cate_id")->field('article_id,a.cate_id,c.cate_name,title,newstime')->where($map)->order('article_id')->page($p.','.C('LIST_NUM'))->select();
+		$article_info = $article_model->alias('a')->join("LEFT JOIN __CATEGORY__ c ON a.cate_id = c.cate_id")->field('article_id,a.cate_id,c.cate_name,title,newstime')->where($map)->order('article_id desc')->page($p.','.C('LIST_NUM'))->select();
 		$this->assign('article_info',$article_info);// 赋值数据集
 		$count = $article_model->where($map)->count();// 查询满足要求的总记录数
 		$Page = new \Think\Page($count,C('LIST_NUM'));// 实例化分页类 传入总记录数和每页显示的记录数
@@ -35,10 +35,8 @@ class ArticleController extends CommonController{
 				//存在标题图片
 				if($_FILES['titleimg']['error'] != 4){
 					$ob_tools = new ToolsController();
-					$big_image = $ob_tools->upload($_FILES['titleimg']);
-					$titleimg = $ob_tools->thumbnail($big_image);
-					$article_model->big_image = C('UPLOAD_IMAGE_DIR').$big_image;
-					$article_model->titleimg = C('UPLOAD_THUMB_DIR').$titleimg;
+					$titleimg = $ob_tools->upload($_FILES['titleimg']);
+					$article_model->titleimg = C('UPLOAD_IMAGE_DIR').$titleimg;
 				}
 				if($article_model->add()){
 					$this->success('文章添加成功', U('listing'), 1);
@@ -85,9 +83,15 @@ class ArticleController extends CommonController{
 	 */
 	public function checkList(){
 		$article_model = D('Article');
+		// 进行分页数据查询 注意page方法的参数的前面部分是当前的页数使用 $_GET[p]获取
 		$map['status'] = 2;  //状态为2 是 未审核
-		$article_info = $article_model->where($map)->field('article_id,cate_id,title,newstime')->select();
-		$this->assign('article_info', $article_info);
+		$p = I('get.p') ? I('get.p') : 1;
+		$article_info = $article_model->alias('a')->join("LEFT JOIN __CATEGORY__ c ON a.cate_id = c.cate_id")->field('article_id,a.cate_id,c.cate_name,title,newstime')->where($map)->order('article_id desc')->page($p.','.C('LIST_NUM'))->select();
+		$this->assign('article_info',$article_info);// 赋值数据集
+		$count = $article_model->where($map)->count();// 查询满足要求的总记录数
+		$Page = new \Think\Page($count,C('LIST_NUM'));// 实例化分页类 传入总记录数和每页显示的记录数
+		$show = $Page->show();	// 分页显示输出
+		$this->assign('page',$show);	// 赋值分页输出
 		$this->display();
 	}
 

@@ -16,7 +16,7 @@ class ToolsController extends Controller{
 		$upload = new \Think\Upload();// 实例化上传类
 	    $upload->maxSize   =     3145728 ;// 设置附件上传大小
 	    $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-	    $upload->rootPath  =      C('UPLOAD_IMAGE_DIR'); // 设置附件上传根目录
+	    $upload->rootPath  =      '.'.C('UPLOAD_IMAGE_DIR'); // 设置附件上传根目录
 	    $upload->saveName  =	time().'_'.mt_rand();	//保存文件名
 	    $upload->autoSub = true;	//开启子目录保存
 		$upload->subName = array('date','Ym');	//子目录

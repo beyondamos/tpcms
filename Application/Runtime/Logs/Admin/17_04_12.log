@@ -1,0 +1,72 @@
+[ 2017-04-12T10:07:43+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_eidt.html
+ERR: 非法操作:user_eidt
+
+[ 2017-04-12T10:07:44+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_list.html
+ERR: 非法操作:user_list
+
+[ 2017-04-12T10:07:44+08:00 ] 127.0.0.1 /index.php/Admin/Index/role_list.html
+ERR: 非法操作:role_list
+
+[ 2017-04-12T10:07:45+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_list.html
+ERR: 非法操作:user_list
+
+[ 2017-04-12T10:07:45+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_eidt.html
+ERR: 非法操作:user_eidt
+
+[ 2017-04-12T10:07:45+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_list.html
+ERR: 非法操作:user_list
+
+[ 2017-04-12T10:07:46+08:00 ] 127.0.0.1 /index.php/Admin/Index/role_list.html
+ERR: 非法操作:role_list
+
+[ 2017-04-12T10:07:46+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_list.html
+ERR: 非法操作:user_list
+
+[ 2017-04-12T10:07:46+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_eidt.html
+ERR: 非法操作:user_eidt
+
+[ 2017-04-12T10:07:46+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_list.html
+ERR: 非法操作:user_list
+
+[ 2017-04-12T10:07:47+08:00 ] 127.0.0.1 /index.php/Admin/Index/role_list.html
+ERR: 非法操作:role_list
+
+[ 2017-04-12T10:07:47+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_list.html
+ERR: 非法操作:user_list
+
+[ 2017-04-12T10:07:47+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_eidt.html
+ERR: 非法操作:user_eidt
+
+[ 2017-04-12T10:07:48+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_list.html
+ERR: 非法操作:user_list
+
+[ 2017-04-12T10:07:48+08:00 ] 127.0.0.1 /index.php/Admin/Index/role_list.html
+ERR: 非法操作:role_list
+
+[ 2017-04-12T10:07:48+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_list.html
+ERR: 非法操作:user_list
+
+[ 2017-04-12T10:07:48+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_eidt.html
+ERR: 非法操作:user_eidt
+
+[ 2017-04-12T10:07:49+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_list.html
+ERR: 非法操作:user_list
+
+[ 2017-04-12T10:07:49+08:00 ] 127.0.0.1 /index.php/Admin/Index/role_list.html
+ERR: 非法操作:role_list
+
+[ 2017-04-12T10:07:49+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_list.html
+ERR: 非法操作:user_list
+
+[ 2017-04-12T10:07:49+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_eidt.html
+ERR: 非法操作:user_eidt
+
+[ 2017-04-12T10:07:53+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_eidt.html
+ERR: 非法操作:user_eidt
+
+[ 2017-04-12T10:08:00+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_eidt.html
+ERR: 非法操作:user_eidt
+
+[ 2017-04-12T10:21:55+08:00 ] 127.0.0.1 /admin/login
+ERR: 模板不存在:./Application/Admin/View/Login/index.html
+
