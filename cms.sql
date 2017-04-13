@@ -4,7 +4,7 @@ create database `tpcms` charset utf8;
  */
 create table tpcms_user(
 	user_id int unsigned not null primary key auto_increment comment '用户id',
-	user_name varchar(32) not null default '' comment '用户名',
+	username varchar(32) not null default '' comment '用户名',
 	password char(32)  not null default '' comment '用户密码',
 	email varchar(32) not null default '' comment '用户邮箱',
 	salt char(4) not null default '' comment '密码盐',

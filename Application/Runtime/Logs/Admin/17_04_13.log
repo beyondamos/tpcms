@@ -341,3 +341,478 @@ ERR: 无法加载控制器:Css
 [ 2017-04-13T13:31:55+08:00 ] 127.0.0.1 /admin/css/font-awesome.min.css
 ERR: 无法加载控制器:Css
 
+[ 2017-04-13T14:57:42+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:57:42+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:57:42+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:57:43+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:57:43+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:58:06+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:58:07+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:58:07+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:58:07+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:58:07+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:58:07+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:58:08+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:58:26+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:58:27+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:58:27+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:58:27+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:58:28+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T14:58:28+08:00 ] 127.0.0.1 /index.php/Admin/Admin/verify.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:12:59+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:13:31+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:18:44+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:43+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:44+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:45+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:45+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:45+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:45+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:45+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:46+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:46+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:46+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:46+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:47+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:47+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:47+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:47+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:19:47+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:20:39+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:20:53+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:30:26+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:30:27+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:30:27+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:30:28+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:30:28+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:30:28+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:30:56+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:30:57+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:30:57+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:31:14+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:31:14+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:31:14+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:31:15+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T15:32:03+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+
+[ 2017-04-13T15:32:04+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+
+[ 2017-04-13T15:32:21+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+
+[ 2017-04-13T15:32:44+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+
+[ 2017-04-13T15:32:45+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+
+[ 2017-04-13T15:32:45+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-04-13T15:32:46+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+
+[ 2017-04-13T15:32:46+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+
+[ 2017-04-13T15:33:22+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-04-13T15:33:24+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+
+[ 2017-04-13T15:33:55+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+
+[ 2017-04-13T15:34:06+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+
+[ 2017-04-13T15:34:07+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+
+[ 2017-04-13T15:34:14+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+
+[ 2017-04-13T15:34:14+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+
+[ 2017-04-13T15:34:14+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+
+[ 2017-04-13T15:34:46+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+
+[ 2017-04-13T15:35:03+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+
+[ 2017-04-13T16:03:35+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-13T16:03:38+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+
+[ 2017-04-13T16:03:40+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+
+[ 2017-04-13T16:03:53+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-13T16:07:28+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+
+[ 2017-04-13T16:07:38+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001658s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-13T16:08:00+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-13T16:08:20+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-13T16:10:45+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-13T16:11:39+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+
+[ 2017-04-13T16:12:11+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001315s ]
+
+[ 2017-04-13T16:12:15+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+
+[ 2017-04-13T16:13:53+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-13T16:14:36+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-13T16:15:31+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001762s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-13T16:16:50+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-13T16:18:55+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: user_mdoel D:\wamp\www\tpcms\Application\Admin\Controller\LoginController.class.php 第 83 行.
+
+[ 2017-04-13T16:20:47+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0003s ]
+SQL: update tpcms_user set `last_login_time` = '1492071647' ,`last_login_ip` = '2130706433', `login_number` = login_number + 1 where `user_id` = '1' [ RunTime:0.0024s ]
+
+[ 2017-04-13T16:20:47+08:00 ] 127.0.0.1 /index.php/Admin/Admin/index.html
+ERR: 无法加载控制器:Admin
+
+[ 2017-04-13T16:21:35+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0002s ]
+SQL: update tpcms_user set `last_login_time` = '1492071695' ,`last_login_ip` = '2130706433', `login_number` = login_number + 1 where `user_id` = '1' [ RunTime:0.0002s ]
+
