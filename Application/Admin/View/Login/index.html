@@ -61,6 +61,7 @@
 		</div>
 	</div>
 	<script src="__LIB__/jquery/jquery-1.11.3.js"></script>
+	<script src="__PUBLIC__/plugins/layer/layer.js"></script>
 	<script src="__LIB__/bootstrap/js/bootstrap.min.js"></script>
 	<script>
 		$().ready(function(){
@@ -98,6 +99,13 @@
 							return false;
 						}
 						if(data.status == 1){
+							layer.open({
+								
+								// area: ['200px', '200px'],
+								title : '登录提示',
+								content: '登录成功',
+								time:3000
+							}); 
 							location.href = "<{:U('Admin/Index/index')}>";
 						}
 					},'json'
