@@ -1,40 +1,62 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html lang="zh-cn">
 <head>
-	<meta charset="UTF-8">	
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>后台登录页面</title>
-	<link rel="stylesheet" href="/Public/Admin/lib/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="/Public/Admin/css/main.css">
+	<title>Login One</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/Public/Admin/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="/Public/Admin/lib/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+	<link href="/Public/Admin/css/templatemo_style.css" rel="stylesheet" type="text/css">	
 </head>
-<body>
-	<div class="container" id="login">
-		<div class="page-header col-md-offset-2">
-			<h1>后台登录 </h1>
+<body class="templatemo-bg-gray">
+	<div class="container">
+		<div class="col-md-12">
+			<h1 class="margin-bottom-15">后台登录</h1>
+			<form class="form-horizontal templatemo-container templatemo-login-form-1 margin-bottom-30" role="form" action="#" method="post">				
+				<div class="form-group">
+					<div class="col-xs-12">		            
+						<div class="control-wrapper">
+							<label for="username" class="control-label fa-label"><i class="glyphicon glyphicon-user"></i></label>
+							<input type="text" class="form-control" id="username" placeholder="Username">
+						</div>		            	            
+					</div>              
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+						<div class="control-wrapper">
+							<label for="password" class="control-label fa-label"><i class="glyphicon glyphicon-lock"></i></label>
+							<input type="password" class="form-control" id="password" placeholder="Password">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+						<div class="control-wrapper">
+							<label for="verify" class="control-label fa-label"><i class="glyphicon glyphicon-check"></i></label>
+							<input type="text" class="form-control" id="verify" placeholder="verify"><br />
+							<img src="/Public/Admin/images/1.png" alt="" width="150" height="50">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+						<div class="checkbox control-wrapper">
+							<label>
+								<input type="checkbox"> Remember me
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-12">
+						<div class="control-wrapper">
+							<button type="submit" id="login" class="btn btn-info"> 登录</button>
+						</div>
+					</div>
+				</div>
+			</form>
 		</div>
-		<form action="<?php echo U('Login/login');?>" method="post" class="form-horizontal">
-			<div class="form-group">
-				<label for="username" class="col-md-2 control-label">用户名</label>
-				<div class="col-md-4">
-					<input  class="form-control" id="username" placeholder="请输入用户名" name="username">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="password" class="col-md-2 control-label">密码</label>
-				<div class="col-md-4">
-					<input type="password" class="form-control" id="password" placeholder="请输入密码" name="password">
-				</div>
-			</div>
-			<div class="checkbox">
-				<label class="col-md-offset-2">
-					<input type="checkbox" > 记住我
-				</label>
-			</div>
-			<input type="submit" class="btn btn-default col-md-offset-2" name="submit" value="登录">
-		</form>
 	</div>
-	<script src="/Public/Admin/lib/jquery/jquery-1.11.3.js"></script>
-	<script src="/Public/Admin/lib/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
