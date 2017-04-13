@@ -32,12 +32,6 @@ class ArticleController extends CommonController{
 			//添加
 			$article_model = D('Article');
 			if($article_model->create(I('post.'), 1)){
-				//存在标题图片
-				if($_FILES['titleimg']['error'] != 4){
-					$ob_tools = new ToolsController();
-					$titleimg = $ob_tools->upload($_FILES['titleimg']);
-					$article_model->titleimg = C('UPLOAD_IMAGE_DIR').$titleimg;
-				}
 				if($article_model->add()){
 					$this->success('文章添加成功', U('listing'), 1);
 				}else{
@@ -57,22 +51,60 @@ class ArticleController extends CommonController{
 	}
 
 	/**
+	 * ajax上传图片
+	 * @return [type] [description]
+	 */
+	public function upload(){
+		// $verifyToken = md5('unique_salt' . $_POST['timestamp']);
+		// if (!empty($_FILES) && $_POST['token'] == $verifyToken) {
+			//存在标题图片
+			$ob_tools = new ToolsController();
+			$img = $ob_tools->upload();
+			if($img['result'] == 0){
+				$data = array('status'=> 0 );
+				$this->ajaxReturn($data);
+			}elseif($img['result'] == 1){
+				$titleimg = C('UPLOAD_IMAGE_DIR').$img['fileinfo']['Filedata']['savepath'].$img['fileinfo']['Filedata']['savename'];
+				$data = array('status'=>1,'imgUrl' => $titleimg);
+				$this->ajaxReturn($titleimg);
+			}
+		
+	}
+
+	/**
 	 * 编辑文章
 	 * @return [type] [description]
 	 */
 	public function edit(){
 		if(IS_POST){
-
+			//更新
+			$article_model = D('Article');
+			$info = $article_model->field('titleimg')->find(I('post.article_id'));
+			$ori_titleimg = $info['titleimg'];
+			if($article_model->create()){
+				if($article_model->save()){
+					//如果图片更改了，那么把原图删掉
+					if($ori_titleimg && $ori_titleimg != I('post.titleimg')){
+						unlink('.'.$ori_titleimg);
+					}
+					$this->success('文章编辑成功', U('listing'), 1);
+				}else{
+					$this->error('文章编辑失败');
+				}
+			}else{
+				$this->error($article_model->getError());
+			}
 		}elseif(IS_GET){
 			$article_id = I('get.article_id');
 			if(!$article_id) $this->error('未知错误');
 			$article_model = D('Article');
 			//文章信息
 			$article_info = $article_model->find($article_id);
+			$this->assign('article_data',$article_info);
 			//文章分类信息
 			$category_model = D('Category');
 			$category_data = $category_model->getSortCategories();
-			$this->assign('article_info',array('category'=> $category_data, 'article'=> $article_info));
+			$this->assign('category_data',$category_data);
 			$this->display();
 		}
 		

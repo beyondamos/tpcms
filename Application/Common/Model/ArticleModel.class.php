@@ -69,10 +69,9 @@ class ArticleModel extends Model{
 			$map['article_id'] = array('in', $id);
 		}
 		
-		$image_info = $this->field('titleimg, big_image')->where($map)->select();
+		$image_info = $this->field('titleimg')->where($map)->select();
 		foreach($image_info as $val){
-			if(is_file($val['titleimg'])) unlink($val['titleimg']);
-			if(is_file($val['big_image'])) unlink($val['big_image']);
+			if(is_file('.'.$val['titleimg'])) unlink('.'.$val['titleimg']);
 		}
 		
 		if( $this->where($map)->delete()){

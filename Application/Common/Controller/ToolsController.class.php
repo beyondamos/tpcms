@@ -8,11 +8,10 @@ use Think\Controller;
 class ToolsController extends Controller{
 
 	/**
-	 * 单文件上传
-	 * @param  array  $file 上传的文件
+	 * 文件上传
 	 * @return string 上传文件的路径名字
 	 */
-	public function upload($file){
+	public function upload(){
 		$upload = new \Think\Upload();// 实例化上传类
 	    $upload->maxSize   =     3145728 ;// 设置附件上传大小
 	    $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
@@ -21,12 +20,14 @@ class ToolsController extends Controller{
 	    $upload->autoSub = true;	//开启子目录保存
 		$upload->subName = array('date','Ym');	//子目录
 	    // 上传单个文件 
-	    $info   =   $upload->uploadOne($file);
+	    $info   =   $upload->upload();
 	    if(!$info) {// 上传错误提示错误信息
-	        $this->error($upload->getError());
+	    	$data = array('result' => 0 , 'fileinfo' => $upload->getError());
 	    }else{// 上传成功 获取上传文件信息
-	         return $info['savepath'].$info['savename'];
+	    	$data = array('result' => 1 , 'fileinfo' => $info);
+	        // return ;
 	    }
+	    return $data;
 	}
 
 	/**

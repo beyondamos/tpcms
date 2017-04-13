@@ -7,6 +7,7 @@
 	<title>文章添加</title>
 	<link rel="stylesheet" href="/Public/Admin/lib/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="/Public/Admin/css/main.css">
+	<link rel="stylesheet" href="/Public/plugins/uploadify/uploadify.css">
 </head>
 <body>
 	<div class="container-fluid">
@@ -61,7 +62,12 @@
 				<div class="form-group">
 					<label for="img" class="col-md-2 control-label">标题图片</label>
 					<div class="col-md-3">
-						<input class="form-control" type="file" id="title" name="titleimg">
+						<!-- <input class="form-control" type="file" id="title" name="titleimg"> -->
+
+		                <input id="file_upload" name="file_upload"  type="file" multiple="true" >
+		                <img style="display: none" id="upload_org_code_img" src="" width="150" height="150">
+		                <input id="file_upload_image" name="titleimg" type="hidden" multiple="true" value="">
+
 					</div>
 				</div>
 				<div class="form-group">
@@ -120,6 +126,7 @@
 		</div>
 	</div>
 	<script src="/Public/Admin/lib/jquery/jquery-1.11.3.js"></script>
+	<script src="/Public/plugins/uploadify/jquery.uploadify.min.js"></script>
 	<script src="/Public/Admin/lib/bootstrap/js/bootstrap.min.js"></script>
 	<!-- 编辑器配置文件 -->
 	<script type="text/javascript" src="/Public/plugins/Ueditor/ueditor.config.js"></script>
@@ -128,6 +135,25 @@
 	<!-- 实例化编辑器 -->
 	<script type="text/javascript">
 		var editor = UE.getEditor('container');
+
+		$(function() {
+		    $('#file_upload').uploadify({
+		        'swf'      : '/Public/plugins/uploadify/uploadify.swf',
+		        'uploader' : '<?php echo U('Article/upload');?>',
+		        'buttonText': '上传图片',
+		        // Put your options here
+		        'onUploadSuccess' : function(file, data, response) {
+            		if(response){
+            			// console.log(data);
+            			// var obj = eval(data); //由JSON字符串转换为JSON对象
+            			var data = $.parseJSON(data);
+            			$('#upload_org_code_img').attr('src', data);
+            			$('#upload_org_code_img').show();
+            			$('#file_upload_image').attr('value', data);
+            		}
+        		}
+		    });
+		});
 	</script>
 </body>
 </html>

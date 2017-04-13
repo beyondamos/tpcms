@@ -7,6 +7,7 @@
 	<title>文章编辑</title>
 	<link rel="stylesheet" href="/Public/Admin/lib/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="/Public/Admin/css/main.css">
+	<link rel="stylesheet" href="/Public/plugins/uploadify/uploadify.css">
 </head>
 <body>
 	<div class="container-fluid">
@@ -20,7 +21,7 @@
 				<div class="form-group">
 					<label for="title" class="col-md-2 control-label">标题</label>
 					<div class="col-md-8">
-						<input class="form-control" id="title" name="title" placeholder="请输入标题" value="<?php echo ($article_info["article"]["title"]); ?>">
+						<input class="form-control" id="title" name="title" placeholder="请输入标题" value="<?php echo ($article_data["title"]); ?>">
 					</div>
 				</div>
 				<div class="form-group">
@@ -28,7 +29,7 @@
 					<div class="col-md-3">
 						<select class="form-control" name="cate_id">
 							<option value="0">请选择分类</option>
-							<?php if(is_array($article_info["category"])): $i = 0; $__LIST__ = $article_info["category"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["cate_id"]); ?>" <?php if($vo['cate_id'] == $article_info['article']['cate_id']): ?>selected<?php endif; ?>><?php echo str_repeat('--',$vo['level']*2); echo ($vo["cate_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+							<?php if(is_array($category_data)): $i = 0; $__LIST__ = $category_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["cate_id"]); ?>" <?php if($vo['cate_id'] == $article_data['cate_id']): ?>selected<?php endif; ?>><?php echo str_repeat('--',$vo['level']*2); echo ($vo["cate_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 						</select>
 					</div>
 				</div>
@@ -37,16 +38,16 @@
 					<div class="col-md-10">
 						<div class="checkbox">
 							<label >
-								<input type="checkbox" name="status" <?php if($article_info['article']['status'] == 1): ?>checked<?php endif; ?>>审核
+								<input type="checkbox" name="status" <?php if($article_data['status'] == 1): ?>checked<?php endif; ?>>审核
 							</label>
 							<label >
-								<input type="checkbox" name="is_new" <?php if($article_info['article']['is_new'] == 1): ?>checked<?php endif; ?> >最新
+								<input type="checkbox" name="is_new" <?php if($article_data['is_new'] == 1): ?>checked<?php endif; ?> >最新
 							</label>
 							<label >
-								<input type="checkbox" name="is_hot" <?php if($article_info['article']['is_hot'] == 1): ?>checked<?php endif; ?>>最热
+								<input type="checkbox" name="is_hot" <?php if($article_data['is_hot'] == 1): ?>checked<?php endif; ?>>最热
 							</label>
 							<label>
-								<input type="checkbox" name="is_recommend" <?php if($article_info['article']['is_recommend'] == 1): ?>checked<?php endif; ?>>推荐
+								<input type="checkbox" name="is_recommend" <?php if($article_data['is_recommend'] == 1): ?>checked<?php endif; ?>>推荐
 							</label>
 						</div>
 					</div>
@@ -54,14 +55,19 @@
 				<div class="form-group">
 					<label for="keywords" class="col-md-2 control-label">关键词</label>
 					<div class="col-sm-8">
-						<input class="form-control" id="keywords" name="keywords" placeholder="请输入关键词" value="<?php echo ($article_info["article"]["keywords"]); ?>">
+						<input class="form-control" id="keywords" name="keywords" placeholder="请输入关键词" value="<?php echo ($article_data["keywords"]); ?>">
 						<p class="help-block">多个关键词用 "," 半角逗号隔开</p>
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="img" class="col-md-2 control-label">标题图片</label>
 					<div class="col-md-3">
-						<input class="form-control" type="file" id="title" name="titleimg">
+						<!-- <input class="form-control" type="file" id="title" name="titleimg"> -->
+
+		                <input id="file_upload" name="file_upload"  type="file" multiple="true" >
+		                <img style="<?php if($article_data['titleimg'] == ''): ?>display: none<?php endif; ?>" id="upload_org_code_img" src="<?php echo ($article_data['titleimg']); ?>" width="150" height="150">
+		                <input id="file_upload_image" name="titleimg" type="hidden" multiple="true" value="<?php echo ($article_data['titleimg']); ?>">
+
 					</div>
 				</div>
 				<div class="form-group">
@@ -74,13 +80,13 @@
 				<div class="form-group">
 					<label for="synopsis" class="col-md-2 control-label">内容简介</label>
 					<div class="col-md-5">
-						<textarea class="form-control" rows="4" name="synopsis" id="synopsis"><?php echo ($article_info["article"]["synopsis"]); ?></textarea>
+						<textarea class="form-control" rows="4" name="synopsis" id="synopsis"><?php echo ($article_data["synopsis"]); ?></textarea>
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="author" class="col-md-2 control-label">作者</label>
 					<div class="col-md-2">
-						<input class="form-control" id="author" name="author" placeholder="请输入作者名字" value="<?php echo ($article_info["aritlce"]["author"]); ?>">
+						<input class="form-control" id="author" name="author" placeholder="请输入作者名字" value="<?php echo ($article_data["author"]); ?>">
 					</div>
 				</div>
 <!-- 				<div class="form-group">
@@ -97,7 +103,7 @@
 				<div class="form-group">
 					<label for="clicks" class="col-md-2 control-label">点击数</label>
 					<div class="col-md-2">
-						<input class="form-control" id="clicks" name="clicks" value="<?php echo ($article_info["article"]["clicks"]); ?>">
+						<input class="form-control" id="clicks" name="clicks" value="<?php echo ($article_data["clicks"]); ?>">
 					</div>
 				</div>
 				<div class="form-group">
@@ -112,8 +118,8 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
-						<textarea id='ue_hidden' style="display:none"><?php echo ($article_info["article"]["content"]); ?></textarea>
-						<input type="hidden" name="article_id" value="<?php echo ($article_info["article"]["article_id"]); ?>">
+						<textarea id='ue_hidden' style="display:none"><?php echo ($article_data["content"]); ?></textarea>
+						<input type="hidden" name="article_id" value="<?php echo ($article_data["article_id"]); ?>">
 						<input class="btn btn-info" type="submit" value="提交">
 						<input class="btn btn-warning" type="reset" value="重置">
 					</div>
@@ -122,6 +128,7 @@
 		</div>
 	</div>
 	<script src="/Public/Admin/lib/jquery/jquery-1.11.3.js"></script>
+	<script src="/Public/plugins/uploadify/jquery.uploadify.min.js"></script>
 	<script src="/Public/Admin/lib/bootstrap/js/bootstrap.min.js"></script>
 	<!-- 编辑器配置文件 -->
 	<script type="text/javascript" src="/Public/plugins/Ueditor/ueditor.config.js"></script>
@@ -135,6 +142,28 @@
 		    //设置编辑器的内容
 		    editor.setContent($("#ue_hidden").val());
 		});
+
+		//上传图片
+		$(function() {
+		    $('#file_upload').uploadify({
+		        'swf'      : '/Public/plugins/uploadify/uploadify.swf',
+		        'uploader' : '<?php echo U('Article/upload');?>',
+		        'buttonText': '上传图片',
+		        // Put your options here
+		        'onUploadSuccess' : function(file, data, response) {
+            		if(response){
+            			// console.log(data);
+            			// var obj = eval(data); //由JSON字符串转换为JSON对象
+            			var data = $.parseJSON(data);
+            			$('#upload_org_code_img').attr('src', data);
+            			$('#upload_org_code_img').show();
+            			$('#file_upload_image').attr('value', data);
+            		}
+        		}
+		    });
+		});
+
+
 	</script>
 </body>
 </html>
