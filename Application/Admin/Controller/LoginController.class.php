@@ -61,7 +61,7 @@ class LoginController extends CommonController{
 		$user_model = D('User');
 		$user_info = $user_model->where(array('username' => $username))->find();
 		if(!$user_info) return false;
-		if($user_info['password'] != md5($password)) return false;
+		if($user_info['password'] != md5($password.$user_info['salt'])) return false;
 		session('user_id',$user_info['user_id']);
 		session('username',$user_info['username']);
 		session('role_id',$user_info['role_id']);

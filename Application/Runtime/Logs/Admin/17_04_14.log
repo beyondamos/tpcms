@@ -1,0 +1,8 @@
+[ 2017-04-14T08:24:52+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0004s ]
+SQL: update tpcms_user set `last_login_time` = '1492129492' ,`last_login_ip` = '2130706433', `login_number` = login_number + 1 where `user_id` = '1' [ RunTime:0.0014s ]
+
