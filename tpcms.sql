@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017-04-13 11:18:42
+-- Generation Time: 2017-04-14 11:16:17
 -- 服务器版本： 5.6.17
 -- PHP Version: 5.5.12
 
@@ -71,6 +71,42 @@ INSERT INTO `tpcms_article` (`article_id`, `cate_id`, `title`, `titleimg`, `cont
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `tpcms_auth`
+--
+
+CREATE TABLE IF NOT EXISTS `tpcms_auth` (
+  `auth_id` smallint(5) unsigned NOT NULL AUTO_INCREMENT COMMENT '权限id',
+  `auth_name` varchar(12) NOT NULL DEFAULT '' COMMENT '权限名称',
+  `parent_id` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT '上级权限类别',
+  `auth_url` varchar(50) NOT NULL DEFAULT '' COMMENT '权限路由',
+  `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '权限状态，是否显示在左侧菜单列表里',
+  PRIMARY KEY (`auth_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
+
+--
+-- 转存表中的数据 `tpcms_auth`
+--
+
+INSERT INTO `tpcms_auth` (`auth_id`, `auth_name`, `parent_id`, `auth_url`, `status`) VALUES
+(1, '信息中心', 0, '', 1),
+(2, '文章管理', 1, 'Article/listing', 1),
+(3, '分类管理', 1, 'Category/listing', 1),
+(4, '未审核信息', 1, 'Article/checkListing', 1),
+(5, '添加文章', 1, 'Article/add', 0),
+(6, '用户中心', 0, '', 1),
+(7, '修改个人资料', 6, 'User/personalEdit', 1),
+(8, '用户管理', 6, 'User/listing', 1),
+(9, '角色管理', 6, 'Role/listing', 1),
+(10, '会员中心', 0, '', 1),
+(11, '会员列表', 10, 'Member/listing', 1),
+(12, '会员组管理', 10, 'MemberLevel/listing', 1),
+(13, '数据统计', 0, '', 1),
+(14, '数据管理', 0, '', 1),
+(15, '网站设置', 0, '', 1);
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `tpcms_category`
 --
 
@@ -101,6 +137,29 @@ INSERT INTO `tpcms_category` (`cate_id`, `cate_name`, `parent_id`, `cate_img`, `
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `tpcms_role`
+--
+
+CREATE TABLE IF NOT EXISTS `tpcms_role` (
+  `role_id` smallint(5) unsigned NOT NULL AUTO_INCREMENT COMMENT '角色id',
+  `role_name` varchar(12) NOT NULL DEFAULT '' COMMENT '角色名称',
+  `role_desc` varchar(256) NOT NULL DEFAULT '' COMMENT '角色描述',
+  `auth_list` varchar(1024) NOT NULL DEFAULT '' COMMENT '角色权限的列表',
+  PRIMARY KEY (`role_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- 转存表中的数据 `tpcms_role`
+--
+
+INSERT INTO `tpcms_role` (`role_id`, `role_name`, `role_desc`, `auth_list`) VALUES
+(1, '管理员', '拥有全部权限', 'all'),
+(2, '信息发布员', '只能使用和信息发布有关的功能', '1,2,3,4,5'),
+(4, '测试角色', '测试角色', '1,2,3,6,7,8,10,11,12,13');
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `tpcms_user`
 --
 
@@ -109,7 +168,7 @@ CREATE TABLE IF NOT EXISTS `tpcms_user` (
   `username` varchar(32) NOT NULL DEFAULT '' COMMENT '用户名',
   `password` char(32) NOT NULL DEFAULT '' COMMENT '用户密码',
   `email` varchar(32) NOT NULL DEFAULT '' COMMENT '用户邮箱',
-  `salt` char(4) NOT NULL DEFAULT '' COMMENT '密码盐',
+  `salt` char(6) NOT NULL DEFAULT '' COMMENT '密码盐',
   `role_id` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT '角色id',
   `last_login_time` int(11) NOT NULL DEFAULT '0' COMMENT '上次登录时间',
   `last_login_ip` int(11) NOT NULL DEFAULT '0' COMMENT '上次登录ip',
@@ -117,14 +176,15 @@ CREATE TABLE IF NOT EXISTS `tpcms_user` (
   `login_number` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '用户登录次数',
   `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '用户状态',
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- 转存表中的数据 `tpcms_user`
 --
 
 INSERT INTO `tpcms_user` (`user_id`, `username`, `password`, `email`, `salt`, `role_id`, `last_login_time`, `last_login_ip`, `add_time`, `login_number`, `status`) VALUES
-(1, 'chunming', 'a118f9d8ae15d27598c134f04530ce63', '328122186@qq.com', '1232', 1, 1492075013, 2130706433, 0, 13, 1);
+(1, 'chunming', 'b897633a5e0f7dc503be11173d669b3a', '328122186@qq.com', '1232', 1, 1492144442, 2130706433, 0, 16, 1),
+(4, 'beyond_amos', 'a1ff9a05c9e50ac2232c10b71a2d068e', '328122186@qq.com', 'IeNX8v', 2, 0, 0, 1492158514, 0, 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
