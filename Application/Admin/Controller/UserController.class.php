@@ -12,7 +12,7 @@ class UserController extends CommonController{
 	 */
 	public function listing(){
 		$user_model = D('User');
-		$user_data = $user_model->select();
+		$user_data = $user_model->alias('u')->join('left join __ROLE__ r on u.role_id = r.role_id')->select();
 		$this->assign('user_data',$user_data);
 		$this->display();
 	}

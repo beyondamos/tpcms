@@ -28,7 +28,7 @@
 				<tr>
 					<td class="text-center"><{$vo.user_id}></td>
 					<td class="text-center"><{$vo.username}></td>
-					<td class="text-center"><{$vo.role_id}></td>
+					<td class="text-center"><{$vo.role_name}></td>
 					<td class="text-center"><{:date('Y-m-d H:i:s',$vo['last_login_time'])}></td>
 					<td class="text-center">
 						<a class="btn btn-info" href="<{:U('User/edit',array('user_id' => $vo['user_id']))}>" role="button">编辑</a>

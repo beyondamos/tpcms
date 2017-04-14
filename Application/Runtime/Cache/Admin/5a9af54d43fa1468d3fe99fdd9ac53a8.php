@@ -27,7 +27,7 @@
 			<?php if(is_array($user_data)): $i = 0; $__LIST__ = $user_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 					<td class="text-center"><?php echo ($vo["user_id"]); ?></td>
 					<td class="text-center"><?php echo ($vo["username"]); ?></td>
-					<td class="text-center"><?php echo ($vo["role_id"]); ?></td>
+					<td class="text-center"><?php echo ($vo["role_name"]); ?></td>
 					<td class="text-center"><?php echo date('Y-m-d H:i:s',$vo['last_login_time']);?></td>
 					<td class="text-center">
 						<a class="btn btn-info" href="<?php echo U('User/edit',array('user_id' => $vo['user_id']));?>" role="button">编辑</a>
