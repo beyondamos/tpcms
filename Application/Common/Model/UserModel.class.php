@@ -88,6 +88,15 @@ class UserModel extends Model{
 	}
 
 
-
+	public function deleteUser($user_id){
+		//第一个管理员不能删除
+		if($user_id == 1) return false;
+		$user_info = $this->find($user_id);
+		//不存在用户
+		if(!$user_info) return false;
+		//删除失败
+		if(!$this->delete($user_id)) return false;
+		return true;
+	}
 
 }

@@ -33,7 +33,7 @@
 					<td class="text-center">
 						<a class="btn btn-info" href="<{:U('User/edit',array('user_id' => $vo['user_id']))}>" role="button">编辑</a>
 						<if condition="$vo['user_id'] != 1 ">
-						<a class="btn btn-danger" href="#" role="button">删除</a>
+						<a class="btn btn-danger" href="<{:U('User/delete',array('user_id' => $vo['user_id']))}>" role="button">删除</a>
 						</if>
 					</td>
 				</tr>

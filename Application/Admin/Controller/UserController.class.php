@@ -73,6 +73,18 @@ class UserController extends CommonController{
 		}
 	}
 
-
+	/**
+	 * 用户删除
+	 * @return [type] [description]
+	 */
+	public function delete(){
+		$user_id = I('get.user_id');
+		if(!$user_id || $user_id == 1 ) $this->error('未知错误');
+		if(D('User')->deleteUser($user_id)){
+			$this->success('用户删除成功', U('User/listing'), 1);
+		}else{
+			$this->error('用户删除失败');
+		}
+	}
 
 }

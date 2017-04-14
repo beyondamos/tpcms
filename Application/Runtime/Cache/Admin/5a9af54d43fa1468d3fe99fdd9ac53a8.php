@@ -31,7 +31,7 @@
 					<td class="text-center"><?php echo date('Y-m-d H:i:s',$vo['last_login_time']);?></td>
 					<td class="text-center">
 						<a class="btn btn-info" href="<?php echo U('User/edit',array('user_id' => $vo['user_id']));?>" role="button">编辑</a>
-						<?php if($vo['user_id'] != 1 ): ?><a class="btn btn-danger" href="#" role="button">删除</a><?php endif; ?>
+						<?php if($vo['user_id'] != 1 ): ?><a class="btn btn-danger" href="<?php echo U('User/delete',array('user_id' => $vo['user_id']));?>" role="button">删除</a><?php endif; ?>
 					</td>
 				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 		</table>
