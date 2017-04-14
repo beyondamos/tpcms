@@ -24,6 +24,14 @@ class LoginController extends CommonController{
 	}
 
 	/**
+	 * 退出登录
+	 */
+	public function logout(){
+		session(null);
+		$this->success('退出成功', U('Admin/Login/index'), 1);
+	}
+
+	/**
 	 * 生成验证码
 	 * @return [type] [description]
 	 */

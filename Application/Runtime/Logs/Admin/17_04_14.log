@@ -243,3 +243,22 @@ ERR: 非法操作:user_eidt
 [ 2017-04-14T15:10:00+08:00 ] 127.0.0.1 /index.php/Admin/Article/
 ERR: 非法操作:index
 
+[ 2017-04-14T15:17:38+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_eidt.html
+ERR: 非法操作:user_eidt
+
+[ 2017-04-14T15:46:48+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'beyond_amos' LIMIT 1   [ RunTime:0.0002s ]
+SQL: update tpcms_user set `last_login_time` = '1492156008' ,`last_login_ip` = '2130706433', `login_number` = login_number + 1 where `user_id` = '3' [ RunTime:0.0002s ]
+
+[ 2017-04-14T15:47:58+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'beyond_amos' LIMIT 1   [ RunTime:0.0003s ]
+SQL: update tpcms_user set `last_login_time` = '1492156078' ,`last_login_ip` = '2130706433', `login_number` = login_number + 1 where `user_id` = '3' [ RunTime:0.0003s ]
+

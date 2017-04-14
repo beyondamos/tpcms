@@ -31,8 +31,10 @@
 					<td class="text-center"><{$vo.role_id}></td>
 					<td class="text-center"><{:date('Y-m-d H:i:s',$vo['last_login_time'])}></td>
 					<td class="text-center">
-						<a class="btn btn-info" href="#" role="button">编辑</a>
+						<a class="btn btn-info" href="<{:U('User/edit',array('user_id' => $vo['user_id']))}>" role="button">编辑</a>
+						<if condition="$vo['user_id'] != 1 ">
 						<a class="btn btn-danger" href="#" role="button">删除</a>
+						</if>
 					</td>
 				</tr>
 			</volist>

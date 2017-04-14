@@ -40,7 +40,28 @@ class UserController extends CommonController{
 		}
 	}
 
+	/**
+	 * 用户编辑
+	 * @return [type] [description]
+	 */
+	public function edit(){
+		if(IS_POST){
 
+		}elseif(IS_GET){
+			$user_id = I('get.user_id');
+			if(!$user_id) $this->error('未知错误');
+			$user_model = D('User');
+			//用户信息
+			$user_data = $user_model->find($user_id);
+			if(!$user_data) $this->error('不存在的用户');
+			$this->assign('user_data', $user_data);
+			//角色信息
+			$role_model = D('Role');
+			$role_data = $role_model->select();
+			$this->assign('role_data',$role_data);
+			$this->display();
+		}
+	}
 
 
 

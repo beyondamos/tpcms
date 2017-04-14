@@ -30,8 +30,8 @@
 					<td class="text-center"><?php echo ($vo["role_id"]); ?></td>
 					<td class="text-center"><?php echo date('Y-m-d H:i:s',$vo['last_login_time']);?></td>
 					<td class="text-center">
-						<a class="btn btn-info" href="#" role="button">编辑</a>
-						<a class="btn btn-danger" href="#" role="button">删除</a>
+						<a class="btn btn-info" href="<?php echo U('User/edit',array('user_id' => $vo['user_id']));?>" role="button">编辑</a>
+						<?php if($vo['user_id'] != 1 ): ?><a class="btn btn-danger" href="#" role="button">删除</a><?php endif; ?>
 					</td>
 				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 		</table>

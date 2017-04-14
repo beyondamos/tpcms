@@ -10,9 +10,9 @@ class UserModel extends Model{
 	protected $_validate = array(
 		array('username', 'require', '用户名不能为空', self::MUST_VALIDATE, 'regex', self::MODEL_BOTH),
 		array('username', '', '用户名已经存在', self::MUST_VALIDATE, 'unique', self::MODEL_BOTH),
-		array('password', 'require', '密码不能为空', self::MUST_VALIDATE, 'regex', self::MODEL_BOTH),
+		array('password', 'require', '密码不能为空', self::MUST_VALIDATE, 'regex', self::MODEL_INSERT),
 		array('password', 'checkPassword', '密码必须为8-16的大小写字母、数字、下划线的组合', self::MUST_VALIDATE, 'callback', self::MODEL_BOTH),
-		array('password2', 'require', '重复密码不能为空', self::MUST_VALIDATE, 'regex', self::MODEL_BOTH),
+		array('password2', 'require', '重复密码不能为空', self::MUST_VALIDATE, 'regex', self::MODEL_INSERT),
 		array('password2', 'password', '两次密码不一致', self::MUST_VALIDATE, 'confirm', self::MODEL_BOTH),
 		array('email', 'email', '邮箱格式不正确', self::VALUE_VALIDATE, 'regex', self::MODEL_BOTH),
 		array('role_id', '0', '必须选择用户角色', self::MUST_VALIDATE, 'notequal', self::MODEL_BOTH),
@@ -27,6 +27,7 @@ class UserModel extends Model{
 		array('login_number', '0', self::MODEL_INSERT, 'string'),
 		array('status', '1', self::MODEL_INSERT, 'string'),
 		array('password', 'generatePassword', self::MODEL_INSERT, 'callback'),
+		array('password', '', self::MODEL_UPDATE, 'ignore'),
 	);
 
 	/**
