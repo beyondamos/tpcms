@@ -292,3 +292,6 @@ ERR: 非法操作:user_eidt
 [ 2017-04-14T16:42:48+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_eidt.html
 ERR: 非法操作:user_eidt
 
+[ 2017-04-14T17:14:55+08:00 ] 127.0.0.1 /index.php/Admin/Role/delete/role_id/2.html
+ERR: Think\Model:deleteRole方法不存在！
+

@@ -39,7 +39,9 @@ class RoleController extends CommonController{
 		}
 	}
 
-
+	/**
+	 * 角色编辑
+	 */
 	public function edit(){
 		if(IS_POST){
 			$role_model = D('Role');
@@ -68,5 +70,18 @@ class RoleController extends CommonController{
 		}
 	}
 
+	/**
+	 * 删除角色
+	 * @return [type] [description]
+	 */
+	public function delete(){
+		$role_id = (int)I('get.role_id');
+		if(!$role_id || $role_id == 1) $this->error('未知错误');
+		$role_model = D('Role');
+		$result = $role_model->deleteRole($role_id);
+		if($result == 1) $this->error('该角色下存在用户不能删除');
+		if($result == 3) $this->error('角色删除失败');
+		if($result == 2) $this->success('角色删除成功', U('Role/listing') ,1); 
+	}
 
 }

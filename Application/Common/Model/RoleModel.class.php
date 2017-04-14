@@ -47,4 +47,17 @@ class RoleModel extends Model{
 		return $role_data;
 	}
 
+	public function deleteRole($role_id){
+		//判断该角色下是否有存在用户，有不能删除，没有才能删除
+		$user_model = D('User');
+		$user_info = $user_model->field('user_id')->where(array('role_id' => $role_id))->find();
+		if($user_info) return 1; //存在用户,不能删除
+		if($this->delete($role_id)){
+			return 2; //删除成功
+		}else{
+			return 3; //删除失败
+		}
+	}
+
+
 }
