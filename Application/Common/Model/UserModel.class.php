@@ -79,15 +79,6 @@ class UserModel extends Model{
 	}
 
 
-	/**
-	 * 获取用户信息
-	 * @return [type] [description]
-	 */
-	public function getUsers(){
-		// $this->join("LEFT JOIN __ROLE__ ")
-	}
-
-
 	public function deleteUser($user_id){
 		//第一个管理员不能删除
 		if($user_id == 1) return false;

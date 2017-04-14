@@ -286,3 +286,9 @@ SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0026s ]
 SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'beyond_amos' LIMIT 1   [ RunTime:0.0004s ]
 SQL: update tpcms_user set `last_login_time` = '1492157614' ,`last_login_ip` = '2130706433', `login_number` = login_number + 1 where `user_id` = '3' [ RunTime:0.0005s ]
 
+[ 2017-04-14T16:42:46+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_eidt.html
+ERR: 非法操作:user_eidt
+
+[ 2017-04-14T16:42:48+08:00 ] 127.0.0.1 /index.php/Admin/Index/user_eidt.html
+ERR: 非法操作:user_eidt
+

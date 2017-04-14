@@ -28,8 +28,8 @@
 					<td class="text-center"><?php echo ($vo["role_name"]); ?></td>
 					<td class="text-center"><?php echo ($vo["role_desc"]); ?></td>
 					<?php if($vo['role_id'] != 1): ?><td class="text-center">
-						<a class="btn btn-info" href="#" role="button">编辑</a>
-						<a class="btn btn-danger" href="#" role="button">删除</a>
+						<a class="btn btn-info" href="<?php echo U('Role/edit',array('role_id' => $vo['role_id']));?>" role="button">编辑</a>
+						<a class="btn btn-danger" href="<?php echo U('Role/delete',array('role_id' => $vo['role_id']));?>" role="button">删除</a>
 					</td><?php endif; ?>
 				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 		</table>

@@ -30,8 +30,8 @@
 					<td class="text-center"><{$vo.role_desc}></td>
 					<if condition="$vo['role_id'] != 1">
 					<td class="text-center">
-						<a class="btn btn-info" href="#" role="button">编辑</a>
-						<a class="btn btn-danger" href="#" role="button">删除</a>
+						<a class="btn btn-info" href="<{:U('Role/edit',array('role_id' => $vo['role_id']))}>" role="button">编辑</a>
+						<a class="btn btn-danger" href="<{:U('Role/delete',array('role_id' => $vo['role_id']))}>" role="button">删除</a>
 					</td>
 					</if>
 				</tr>

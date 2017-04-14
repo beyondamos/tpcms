@@ -36,4 +36,15 @@ class RoleModel extends Model{
 		return implode(',',$array);
 	}
 
+	/**
+	 * 获取角色信息 主要是将权限字段信息变成数组
+	 * @param  int $role_id 角色id
+	 * @return [type]          [description]
+	 */
+	public function getRoleInfo($role_id){
+		$role_data = $this->find($role_id);
+		$role_data['auth_list'] = explode(',', $role_data['auth_list']);
+		return $role_data;
+	}
+
 }
