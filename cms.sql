@@ -49,5 +49,43 @@ create table tpcms_category(
 	description text not null comment '分类描述'
 )engine = myisam charset = utf8;
 
+/**
+ * 权限表
+ */
+create table tpcms_auth(
+	auth_id smallint unsigned not null primary key auto_increment comment '权限id',
+	auth_name varchar(12) not null default '' comment '权限名称',
+	parent_id smallint unsigned not null default 0 comment '上级权限类别',
+	auth_url varchar(50) not null default '' comment '权限路由',
+	status tinyint not null default 0 comment '权限状态，是否显示在左侧菜单列表里'
+)engine = myisam charset = utf8;
+
+/**
+ * 角色表
+ */
+create table tpcms_role(
+	role_id smallint unsigned not null primary key auto_increment comment '角色id',
+	role_name varchar(12) not null default '' comment '角色名称',
+	role_desc varchar(256) not null default '' comment '角色描述',
+	auth_list varchar(1024) not null default '' comment '角色权限的列表'
+)engine = myisam charset = utf8;
 
 alter table `tpcms_article` add `big_image` varchar(128) not null default '' comment '文章大图' after `titleimg`;
+
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('1', '信息中心', '0', '', '1');
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('2', '文章管理', '1', 'Article/listing', '1');
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('3', '分类管理', '1', 'Category/listing', '1');
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('4', '未审核信息', '1', 'Article/checkListing', '1');
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('5', '添加文章', '1', 'Article/add', '0');
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('6', '用户中心', '0', '', '1');
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('7', '修改个人资料', '6', 'User/personalEdit', '1');
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('8', '用户管理', '6', 'User/listing', '1');
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('9', '角色管理', '6', 'Role/listing', '1');
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('10', '会员中心', '0', '', '1');
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('11', '会员列表', '10', 'Member/listing', '1');
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('12', '会员组管理', '10', 'MemberLevel/listing', '1');
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('13', '数据统计', '0', '', '1');
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('14', '数据管理', '0', '', '1');
+insert into `tpcms_auth` (`auth_id`,`auth_name`,`parent_id`,`auth_url`,`status`) values ('15', '网站设置', '0', '', '1');
+
+insert into `tpcms_role` (`role_id`,`role_name`,`role_desc`,`auth_list`) values ('1','管理员','拥有全部权限','1,2,3,4,5,6,7,8,9,10,11,12,13,14,15');
