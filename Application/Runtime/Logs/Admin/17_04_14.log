@@ -262,3 +262,27 @@ SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0028s ]
 SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'beyond_amos' LIMIT 1   [ RunTime:0.0003s ]
 SQL: update tpcms_user set `last_login_time` = '1492156078' ,`last_login_ip` = '2130706433', `login_number` = login_number + 1 where `user_id` = '3' [ RunTime:0.0003s ]
 
+[ 2017-04-14T15:48:58+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'beyond_amos' LIMIT 1   [ RunTime:0.0002s ]
+SQL: update tpcms_user set `last_login_time` = '1492156138' ,`last_login_ip` = '2130706433', `login_number` = login_number + 1 where `user_id` = '3' [ RunTime:0.0002s ]
+
+[ 2017-04-14T15:59:39+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'beyondamos' LIMIT 1   [ RunTime:0.0002s ]
+SQL: update tpcms_user set `last_login_time` = '1492156779' ,`last_login_ip` = '2130706433', `login_number` = login_number + 1 where `user_id` = '3' [ RunTime:0.0002s ]
+
+[ 2017-04-14T16:13:34+08:00 ] 127.0.0.1 /index.php/Admin/Login/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `tpcms_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `tpcms_user` WHERE `username` = 'beyond_amos' LIMIT 1   [ RunTime:0.0004s ]
+SQL: update tpcms_user set `last_login_time` = '1492157614' ,`last_login_ip` = '2130706433', `login_number` = login_number + 1 where `user_id` = '3' [ RunTime:0.0005s ]
+

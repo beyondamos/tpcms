@@ -52,6 +52,7 @@
 			</div>
 			<div class="form-group">
 				<div class="col-sm-offset-2 col-sm-10">
+					<input type="hidden" name="user_id" value="<?php echo ($user_data['user_id']); ?>" >
 					<button type="submit" class="btn btn-info">提交</button>
 					<button type="reset" class="btn btn-warning">重置</button>
 				</div>

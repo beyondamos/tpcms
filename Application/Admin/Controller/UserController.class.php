@@ -46,7 +46,17 @@ class UserController extends CommonController{
 	 */
 	public function edit(){
 		if(IS_POST){
-
+			$user_model = D('User');
+			if($user_model->create()){
+				$user_model->password = $user_model->generatePasswordUpdate(I('post.user_id'),I('post.password'));
+				if($user_model->save()){
+					$this->success('用户编辑成功',U('User/listing'),1);
+				}else{
+					$this->error('用户编辑失败');
+				}
+			}else{
+				$this->error($user_model->getError());
+			}
 		}elseif(IS_GET){
 			$user_id = I('get.user_id');
 			if(!$user_id) $this->error('未知错误');

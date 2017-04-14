@@ -16,7 +16,7 @@
 			</div>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="news_list.html" target="main-frame">小名叫小明</a></li>
-				<li><a href="">退出</a></li>
+				<li><a href="<?php echo U('Login/logout');?>" target="_top">退出</a></li>
 			</ul>
 		</div>
 	</nav>

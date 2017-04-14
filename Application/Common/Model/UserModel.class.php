@@ -11,7 +11,7 @@ class UserModel extends Model{
 		array('username', 'require', '用户名不能为空', self::MUST_VALIDATE, 'regex', self::MODEL_BOTH),
 		array('username', '', '用户名已经存在', self::MUST_VALIDATE, 'unique', self::MODEL_BOTH),
 		array('password', 'require', '密码不能为空', self::MUST_VALIDATE, 'regex', self::MODEL_INSERT),
-		array('password', 'checkPassword', '密码必须为8-16的大小写字母、数字、下划线的组合', self::MUST_VALIDATE, 'callback', self::MODEL_BOTH),
+		array('password', 'checkPassword', '密码必须为8-16的大小写字母、数字、下划线的组合', self::VALUE_VALIDATE, 'callback', self::MODEL_BOTH),
 		array('password2', 'require', '重复密码不能为空', self::MUST_VALIDATE, 'regex', self::MODEL_INSERT),
 		array('password2', 'password', '两次密码不一致', self::MUST_VALIDATE, 'confirm', self::MODEL_BOTH),
 		array('email', 'email', '邮箱格式不正确', self::VALUE_VALIDATE, 'regex', self::MODEL_BOTH),
@@ -37,6 +37,18 @@ class UserModel extends Model{
 	protected function generatePassword($password){
 		return md5($password.session('salt'));
 	}
+
+	/**
+	 * 编辑时生成密码
+	 * @param  int $user_id 用户id
+	 * @param  string $password 用户密码
+	 */
+	public function generatePasswordUpdate($user_id,$password){
+		$salt = $this->where(array('user_id' => $user_id))->getField('salt');
+		if(!$salt) return false;
+		return md5($password.$salt);
+	}
+	 
 
 	/**
 	 * 生成密码盐
