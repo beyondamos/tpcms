@@ -48,6 +48,7 @@ class UserController extends CommonController{
 		if(IS_POST){
 			$user_model = D('User');
 			if($user_model->create()){
+				if(I('post.password'))  //如果密码存在，就更改密码
 				$user_model->password = $user_model->generatePasswordUpdate(I('post.user_id'),I('post.password'));
 				if($user_model->save()){
 					$this->success('用户编辑成功',U('User/listing'),1);
@@ -85,6 +86,38 @@ class UserController extends CommonController{
 		}else{
 			$this->error('用户删除失败');
 		}
+	}
+
+	/**
+	 * 修改个人资料
+	 */
+	public function modifypersonal(){
+		if(IS_POST){
+			$user_model = D('User');
+			if($user_model->create()){
+				if(I('post.password'))  //如果密码存在，就更改密码
+				$user_model->password = $user_model->generatePasswordUpdate(I('post.user_id'),I('post.password'));
+				if($user_model->save()){
+					$user_info = $user_model->find(I('post.user_id'));
+					session('user_id',$user_info['user_id']);
+					session('username',$user_info['username']);
+					session('role_id',$user_info['role_id']);
+					session('last_login_time',$user_info['last_login_time']);
+					session('last_login_ip', $user_info['last_login_ip']);
+					$this->success('修改个人资料成功');
+				}else{
+					$this->error('修改个人资料失败');
+				}
+			}else{
+				$this->error($user_model->getError());
+			}
+		}else{
+			$user_model = D('User');
+			$user_data = $user_model->find(session('user_id'));
+			$this->assign('user_data', $user_data);
+			$this->display();
+		}
+
 	}
 
 }
