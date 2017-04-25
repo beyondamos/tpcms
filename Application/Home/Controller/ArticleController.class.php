@@ -57,7 +57,7 @@ class ArticleController extends CommonController{
         $this->assign('new_data', $new_data);
         //分页数据
         $count = $article_model->where(array('status' => 1, 'is_new' => 1, 'cate_id' =>  $cate_data['cate_id']))->count();
-        $page = new \Think\Page($count,10);
+        $page = new \Think\Pagehome($count,10);
         $show = $page->show();
         $this->assign('show',$show);
         //推荐
@@ -69,7 +69,7 @@ class ArticleController extends CommonController{
 
         //分页数据
         $count = $article_model->where(array('status' => 1, 'is_recommend' => 1, 'cate_id' =>  $cate_data['cate_id']))->count();
-        $page = new \Think\Page($count,10);
+        $page = new \Think\Pagehome($count,10);
         $show = $page->show();
         $this->assign('show1',$show);
 
