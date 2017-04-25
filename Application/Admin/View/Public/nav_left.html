@@ -1,0 +1,17 @@
+<div style="float:left" id="my_menu" class="sdmenu">
+	<div>
+		<span><a href="<{:U('Admin/Index/index')}>">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></span>
+	</div>
+	<volist name="user_auth_list" id="vo">
+	<div>
+		<span><{$vo[0]['auth_name']}><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></span>
+		<volist name="vo" id="val" offset ="1">
+			<if condition="$val['status'] == 1">
+		<a href="<php>echo U($val['auth_url'])</php>"><{$val.auth_name}></a>
+			</if>
+		</volist>
+	</div>
+	</volist>
+</div>
+
+

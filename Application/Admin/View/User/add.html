@@ -1,66 +1,63 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>用户添加</title>
-	<link rel="stylesheet" href="__LIB__/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="__CSS__/main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <title>甫劳科技后台管理系统</title>
+	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+	<script src="__JS__/jquery-1.11.1.min.js"></script>
+	
+    <script src="__JS__/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container-fluid">
-		<ol class="breadcrumb">
-			<li><a href="#">首页</a></li>
-			<li>用户中心</li>
-			<li class="active">用户添加</li>
-		</ol>
-		<a class="btn btn-primary" href="<{:U('User/listing')}>" role="button"><span class="glyphicon glyphicon-remove"></span> 取消</a>
-		<form action="<{:U('add')}>" class="form-horizontal" method="post">
-			<div class="form-group">
-				<label for="username" class="col-md-2 control-label">用户名称</label>
-				<div class="col-md-2">
-					<input type="text" class="form-control" id="username" placeholder="角色名称" name="username">
+<include file="Public:nav_top" />
+<include file="Public:nav_left" />
+
+<div class="cont">
+	<div class="contmain">
+		
+		<div class="boxi">
+			<h1>添加管理员</h1>
+			
+			<form action="<{:U('User/add')}>" method="post">
+				<div class="boxin">
+					<span>用&nbsp;&nbsp;户&nbsp;&nbsp;名</span><input type="text" name="username" class="form-control">
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="password" class="col-md-2 control-label">密码</label>
-				<div class="col-md-2">
-					<input type="password" name="password" id="password" class="form-control" placeholder="密码">
+				<div class="boxin">
+					<span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</span><input type="text" name="email" class="form-control">
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="password2" class="col-md-2 control-label">重复密码</label>
-				<div class="col-md-2">
-					<input type="password" name="password2" id="password2" class="form-control" placeholder="重复密码">
+				<div class="boxin">
+					<span>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</span><input type="password" name="password" class="form-control">
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="email" class="col-md-2 control-label">邮箱</label>
-				<div class="col-md-2">
-					<input type="email" name="email" id="email" class="form-control" placeholder="邮箱">
+				<div class="boxin">
+					<span>重复密码</span><input type="password" name="password2" class="form-control">
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="role_id" class="col-md-2 control-label">用户角色</label>
-				<div class="col-md-2">
-					<select class="form-control" name="role_id">
+				<div class="boxin">
+					<span>所属角色</span>
+					<select name="role_id" class="form-control">
 						<option value="0">请选择角色</option>
-						<volist name="role_data" id="vo">
+						<volist name="role_data" id="vo"> 
 						<option value="<{$vo.role_id}>"><{$vo.role_name}></option>
 						</volist>
 					</select>
 				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-info">提交</button>
-					<button type="reset" class="btn btn-warning">重置</button>
+								
+				<div class="boxinbtn">
+					<input type="submit" name="" value="确定" class="btn btna" />
+					<input type="submit" name="" value="重置" class="btn btnb" />
 				</div>
-			</div>
-		</form>
+				
+			</form>
+		</div>
+	
 	</div>
-	<script src="__LIB__/jquery/jquery-1.11.3.js"></script>
-	<script src="__LIB__/bootstrap/js/bootstrap.min.js"></script>
+</div>
+<script src="__JS__/sdmenu.js"></script>
 </body>
 </html>

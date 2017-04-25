@@ -1,0 +1,11 @@
+
+<!--相关推荐-->
+<div class="artsug">
+    <h1>相关推荐</h1>
+    <volist name="related_data" id="vo">
+    <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>">
+        <div class="imglimtb"><img src="<{$vo.titleimg}>" alt="<{$vo.title}>" /></div>
+        <{$vo.title}><h3><{$vo.newstime}></h3>
+    </a>
+    </volist>
+</div>

@@ -1,0 +1,84 @@
+
+<!--收藏区-->
+<div style="clear:both;"></div>
+<div class="praise">
+    <img src="__IMG__/iconeye.png" alt="" /><span>13</span>
+    <img src="__IMG__/iconstar.png" alt="" />
+    <span id="zan_num">0</span>
+
+</div>
+
+<div class="rwmarti">
+    <h3>*用户在社圈网发表的内容仅代表其个人观点，与社圈网无关，如对您造成影响、侵权等请联系发布用户或客服</h3>
+    <h4>关注微信公众号奉贤社圈网（ishequan-cn）定期推送，福利互动精彩多</h4>
+    <img src="__IMG__/qrc.jpg" alt="" /></div>
+
+<a href="javascript:" id="zan"><div class="zanarti"><img src="__IMG__/zan.png" alt="" /></div></a>
+
+<!-- 分享 JiaThis  -->
+<div class="jiathis_style_24x24" style="position:absolute;bottom:-30px;right:0;">
+    <a class="jiathis_button_weixin"></a>
+    <a class="jiathis_button_cqq"></a>
+    <a class="jiathis_button_tsina"></a>
+    <a class="jiathis_button_qzone"></a>
+    <a class="jiathis_button_douban"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+        url:"http://www.ishequan.cn/index-21-20-4529.html",
+        title:document.getElementById(“article_title”).innerHTML,
+            data_track_clickback:true,
+            siteName:"肌肉拉伤怎么办 ",
+            shortUrl:false,
+            hideMore:false
+    }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+</div>
+
+<script>
+    $(function () {
+        $(function () {
+            $("#showmore").click(function () {
+                $.post("/home/ajax_reply.php",{uid:4529},function (date) {
+                    $("#showmore").before(date);
+                    $("#showmore").css('display','none');
+                })
+            })
+        })
+
+        $("#head_img1").attr("src","__IMG__/20170419030445.jpg");
+        var dian = true;
+        var url ='/home/m/m_ajax.php';
+        $("#zan").click(function(){
+            if( dian ) {
+                dian = false;
+                $.ajax({
+                    type:'post',
+                    url: url,
+                    data:{
+                        action : 'add',
+                        uid : 4529,
+                    },
+                    success:(function(data){
+                        $("#zan_num").html(data);
+                    })
+                });
+            }else{
+                dian = true;
+                $.ajax({
+                    type:'post',
+                    url:url,
+                    data:{
+                        action : 'sub',
+                        uid : 4529,
+                    },
+                    success:(function(data){
+                        $("#zan_num").html(data);
+                    })
+                });
+            }
+        })
+    });
+</script>

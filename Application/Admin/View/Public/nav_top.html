@@ -1,0 +1,25 @@
+<div class="nav-top">
+	<div class="nav-top-center">
+		<div class="nav-top-left">
+			<a href="<{:U('Admin/Index/index')}>"><img src="__IMG__/logo.png" alt=""/><span>后台管理</span></a>
+		</div>
+		<div class="nav-top-right">
+			
+			<!--用户及下拉列表-->
+			<ul id="topnav">
+				<li>
+					<a href="javascript:;"><{$login_user_data.username}><!-- <img src="__IMG__/ard.png" alt="" /> --></a><!--用户名-->
+					<img src="__IMG__/head.jpg" alt=""/><!--用户头像-->
+<!-- 					<span><dl>
+						<a href="javascript:;">基本资料</a><br/>
+						<a href="javascript:;">账号信息</a><br/>
+					</dl></span> -->
+				</li>
+			</ul>
+			
+			<a href="<{:U('Login/logout')}>" class="topnavimg">退出登录</a>
+			<a href="<{:U('Home/Index/index')}>" target="_blank" class="topnavimg">网站首页</a>
+		</div>
+	</div>
+</div>
+<div class="nav-topb"></div>

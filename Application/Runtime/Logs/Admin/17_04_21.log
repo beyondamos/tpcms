@@ -1,0 +1,9 @@
+[ 2017-04-21T13:17:48+08:00 ] 127.0.0.1 /Admin/System/navlisting.html
+ERR: 无法加载控制器:System
+
+[ 2017-04-21T13:33:25+08:00 ] 127.0.0.1 /Admin/Nav/add.html
+ERR: 非法操作:add
+
+[ 2017-04-21T15:05:29+08:00 ] 127.0.0.1 /Admin/System/index.html
+ERR: 非法操作:index
+

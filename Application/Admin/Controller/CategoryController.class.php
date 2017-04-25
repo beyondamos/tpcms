@@ -1,95 +1,94 @@
 <?php
 /**
- * 分类控制器
+ * 文章分类控制器
  */
 namespace Admin\Controller;
 use Admin\Controller\CommonController;
-use Common\Controller\ToolsController;
 
 class CategoryController extends CommonController{
-	/**
-	 * 分类列表
-	 * @return [type] [description]
-	 */
-	public function listing(){
-		$category_model = D('Category');
-		$category_data = $category_model->getSortCategories();
-		$this->assign('category_data',$category_data);
-		$this->display();
-	}
-
-	/**
-	 * 分类添加
-	 */
-	public function add(){
-		if(IS_POST){
-			//提交
-			$category_model = D('Category');
-			if($category_model->create()){
-				if($_FILES['cate_img']['error'] != 4){
-					//上传图片
-					$ob_tools = new ToolsController();
-					$cate_image = $ob_tools->upload($_FILES['cate_img']);
-					$cate_thumb = $ob_tools->thumbnail($cate_image);
-					$category_model->cate_image = C('UPLOAD_IMAGE_DIR').$cate_image;
-					$category_model->cate_thumb = C('UPLOAD_THUMB_DIR').$cate_thumb;
-
-				}	
-				if($category_model->add()){
-					$this->success('分类添加成功',U('listing'),1);
-				}else{
-					$this->error('分类添加失败');
-				}
-			}else{
-				$this->error($category_model->getError());
-			}
-		}else{
-			//展示表单
-			$category_model = D('Category');
-			$category_data = $category_model->getSortCategories();
-			$this->assign('category_data',$category_data);
-			$this->display();
-		}
-		
-	}
+    /**
+     * 分类列表
+     */
+    public function listing(){
+        $category_model = D('Category');
+        $category_data = $category_model->getSortCategories();
+        $this->assign('category_data',$category_data);
+        //文章数和点击数
+        $article_model = D('Article');
+        $count_data = $article_model->field('cate_id , count(article_id) as article_num , sum(clicks) as clicks')->group('cate_id')->select();
+        //整理获得的内容，将数组的键变成分类id
+        foreach($count_data as $key => $val){
+            $list[$val['cate_id']] = $val;
+        }
+        $this->assign('count_data',$list);
+        $this->display();
+    }
 
 
-	/**
-	 * 单文件上传
-	 * @param  array  $file 上传的文件
-	 * @return string 上传文件的路径名字
-	 */
-	public function upload($file){
-		$upload = new \Think\Upload();// 实例化上传类
-	    $upload->maxSize   =     3145728 ;// 设置附件上传大小
-	    $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-	    $upload->rootPath  =      './Public/Upload/thumbnail/'; // 设置附件上传根目录
-	    $upload->saveName  =	time().'_'.mt_rand();	//保存文件名
-	    $upload->autoSub = true;	//开启子目录保存
-		$upload->subName = array('date','Ym');	//子目录
-	    // 上传单个文件 
-	    $info   =   $upload->uploadOne($file);
-	    if(!$info) {// 上传错误提示错误信息
-	        $this->error($upload->getError());
-	    }else{// 上传成功 获取上传文件信息
-	         return $info['savepath'].$info['savename'];
-	    }
-	}
+    /**
+     * 添加分类
+     */
+    public function add(){
+        if(IS_POST){
+            $category_model = D('Category');
+            if($category_model->create()){
+                if($category_model->add()){
+                    $this->success('分类添加成功', U('Category/listing'),1);
+                }else{
+                    $this->error('分类添加失败');
+                }
+            }else{
+                $this->error($category_model->getError());
+            }
+        }elseif(IS_GET){
+            $category_model = D('Category');
+            $category_data = $category_model->getSortCategories();
+            $this->assign('categroy_data', $category_data);
+            $this->display();
+        }
+    }
 
-	/**
-	 * 制作缩略图
-	 * @param  string $file 源文件
-	 * @return string 缩略图文件地址
-	 * 
-	 */
-	public function thumbnail($file){
-		$image = new \Think\Image();
-		$image->open(C('THUMB_DIR').$file);
-		$tmp_array = explode('/',$file);
-		$thumb_name = $tmp_array[0].'/thumb_'.$tmp_array[1];
-		$image->thumb(300, 150)->save(C('THUMB_DIR').$thumb_name);
-		return $thumb_name;
-	}
+    /**
+     * 分类编辑
+     * @return [type] [description]
+     */
+    public function edit(){
+        if(IS_POST){
+            $category_model = D('Category');
+            if(!$category_model->judgeParentClass(I('post.cate_id'),I('post.parent_id'))) $this->error('分类选择错误');
+            if($category_model->create()){
+                if($category_model->save()){
+                    $this->success('编辑分类成功',U('Category/listing'),1);
+                }else{  
+                    $this->error('分类编辑失败');
+                }
+            }else{
+                $this->error($category_model->getError());
+            }
+        }elseif(IS_GET){
+            $cate_id = I('get.cate_id');
+            $category_model = D('Category');
+            $category_info = $category_model->find($cate_id);
+            $this->assign('category_info', $category_info);
+            $category_data = $category_model->getSortCategories();
+            $this->assign('categroy_data', $category_data);
+            $this->display();
+        }
+    }
 
+    /**
+     * 删除分类
+     * 分类下存在子类不能删除
+     * 分类下存在文章不能删除
+     */
+    public function delete(){
+        $cate_id = I('get.cate_id');
+        $category_model = D('Category');
+        if($category_model->deleteCategory($cate_id)){
+            $this->success('分类删除成功');
+        }else{
+            $this->error('删除分类失败');
+        }
+    }
 
-} 
+}

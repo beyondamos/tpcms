@@ -1,13 +1,12 @@
 <?php
 return array(
-	/* 模板相关配置 */
-    'TMPL_PARSE_STRING' => array(
-        '__IMG__'    => __ROOT__ . '/Public/' . MODULE_NAME . '/images',
-        '__CSS__'    => __ROOT__ . '/Public/' . MODULE_NAME . '/css',
-        '__JS__'     => __ROOT__ . '/Public/' . MODULE_NAME . '/js',
-        '__LIB__'    => __ROOT__ . '/Public/' . MODULE_NAME . '/lib',
+	//'配置项'=>'配置值'
+    'TMPL_PARSE_STRING'  => array(
+        '__JS__'     => '/Public/Admin/js',
+        '__CSS__'     => '/Public/Admin/css',
+        '__FONTS__'     => '/Public/Admin/fonts',
+        '__IMG__'     => '/Public/Admin/images',
     ),
 
-    'LIST_NUM'		 => 	10,	//后台列表页的每页显示数量
-
+    
 );

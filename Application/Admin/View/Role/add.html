@@ -1,62 +1,94 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>角色添加</title>
-	<link rel="stylesheet" href="__LIB__/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="__CSS__/main.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <title>甫劳科技后台管理系统</title>
+	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+	<script src="__JS__/jquery-1.11.1.min.js"></script>
+	
+    <script src="__JS__/bootstrap.min.js"></script>
+	<script src="__JS__/laydate/laydate.js"></script>
 </head>
 <body>
-	<div class="container-fluid">
-		<ol class="breadcrumb">
-			<li><a href="#">首页</a></li>
-			<li>用户中心</li>
-			<li class="active">角色添加</li>
-		</ol>
-		<a class="btn btn-primary" href="<{:U('Role/listing')}>" role="button"><span class="glyphicon glyphicon-remove"></span> 取消</a>
-		<form action="<{:U('add')}>" class="form-horizontal" method="post">
-			<div class="form-group">
-				<label for="role_name" class="col-md-2 control-label">角色名称</label>
-				<div class="col-md-2">
-					<input type="text" class="form-control" id="role_name" placeholder="角色名称" name="role_name">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="role_desc" class="col-md-2 control-label">角色描述</label>
-				<div class="col-md-2">
-					<textarea class="form-control" id="role_desc" rows="4" name="role_desc"></textarea>
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="col-md-2 control-label">权限分配</label>
-			</div>
+<include file="Public:nav_top" />
+<include file="Public:nav_left" />
 
-			<volist name="auth_data" id="vo">
-			<div class="form-group">
-				<div class="checkbox">
-					<label class="col-md-2 control-label"><{$vo['0']['auth_name']}></label>
-					<label class="control-label"><input type="checkbox" >全选</label>
+<div class="cont">
+	<div class="contmain">
+		
+		<div class="boxi">
+			<h1>添加角色</h1>
+			
+			<form action="<{:U('Role/add')}>" method="post">
+				<div class="boxinb">
+					<div class="boxinbh">
+						<span>角色名称</span><input type="text"  class="form-control" name="role_name"> 
+					</div>
+					<div class="boxinbh">
+						<span>角色描述</span><input type="text" class="form-control" name="role_desc" >
+					</div>
 				</div>
-			</div>
-			<div class="form-group">
-				<div class="checkbox col-md-offset-2">
-					<volist name="vo" id="val">
-					<label class="checkbox-inline"><input type="checkbox" value="<{$val.auth_id}>" name="auth_list[]"><{$val.auth_name}></label>
+				<div class="boxinr">
+					<div class="boxinrtitl">权限分配</div>
+						<div class="boxcektitl"><label><input type="checkbox" id="chooseAll"/>全选</label></div>
+					
+<!-- 					<ul>
+						<div class="boxcektitl"><span class="lets2">首&nbsp;&nbsp;&nbsp;&nbsp;页</span><label><input type="checkbox" name=""/>全选</label></div>
+						<li><label><input type="checkbox" name=""/>系统信息</label></li>
+						<li><label><input type="checkbox" name=""/>访问来源</label></li>
+					</ul> -->
+					
+					<volist name="auth_data" id="vo">
+					<ul>
+						<div class="boxcektitl"><span><{$vo[0]['auth_name']}></span><label><input type="checkbox" class="subAll"/>全选</label></div>
+						<li>
+							<volist name="vo" id="val">
+							<label><input type="checkbox" name="auth_list[]" value="<{$val.auth_id}>"/><{$val.auth_name}></label>
+							</volist>
+						</li>
+					</ul>
 					</volist>
 				</div>
-			</div>
-			</volist>
-			  <div class="form-group">
-    		<div class="col-sm-offset-2 col-sm-10">
-      		<button type="submit" class="btn btn-info">提交</button>
-      		<button type="reset" class="btn btn-warning">重置</button>
-    			</div>
-  </div>
-		</form>
+				<div class="boxinbtn">
+					<input type="submit" name="" value="确定" class="btn btna" />
+					<input type="reset" name="" value="重置" class="btn btnb" />
+				</div>
+			</form>
+		</div>
+	
 	</div>
-	<script src="__LIB__/jquery/jquery-1.11.3.js"></script>
-	<script src="__LIB__/bootstrap/js/bootstrap.min.js"></script>
+</div>
+<script src="__JS__/sdmenu.js"></script>
+<script>
+	$().ready(function(){
+		$("#chooseAll").click(function(){
+			var status = $('#chooseAll').is(':checked');
+			if(status){
+				$(":checkbox").prop('checked',true);
+			}else{
+				$(":checkbox").prop('checked',false);
+			}
+
+		});
+
+		$(".subAll").click(function(){
+			var status = $(this).is(':checked');
+			if(status){
+				$(this).parent().parent().next().find(":checkbox").prop('checked',true);
+			}else{
+				$(this).parent().parent().next().find(":checkbox").prop('checked',false);
+			}
+		});
+
+
+	});
+</script>
 </body>
 </html>

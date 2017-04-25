@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="Zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="__PUBLIC__/Mobile/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Mobile/css/basem.css" rel="stylesheet" type="text/css">
+    <script src="__PUBLIC__/Mobile/js/jquery-2.1.1.min.js"></script>
+    <script src="__PUBLIC__/Mobile/js/item.js"></script>
+    <script src="__PUBLIC__/Mobile/js/bootstrap.min.js"></script>
+    <title></title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?236971c0a464e1b54ed9392a9f6a3d5a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+
+<include file="Public::nav" />
+
+<div class="cont">
+    <!--头部选项开始-->
+    <div class="headbt"></div>
+    <div class="headbtn">
+        <a href="/" id="btna" class="headbtnact" >全部</a>
+        <volist name="nav_data" id="vo">
+            <a href="<{:U('/'.$vo['nav_url'])}>" class="headbtnact" ><{$vo.nav_name}></a>
+        </volist>
+    </div>
+    <!--头部选项结束-->
+
+    <div class="boxcont">
+        <volist name="new_data" id="vo">
+        <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>">
+            <div class="boxitem">
+                <div class="imglimt"><img src="<{$vo.titleimg}>" alt=""/></div>
+                <h2><{$vo.title}></h2>
+                <div class="praise">
+                    <img src="__PUBLIC__/Mobile/images/iconeye.png" alt=""/><span><{$vo.clicks}></span>
+                    <img src="__PUBLIC__/Mobile/images/iconstar.png" alt=""/><span>20</span>
+                    <span><{$vo.newstime}></span>
+                </div>
+            </div>
+        </a>
+    </div>
+    </volist>
+    <div id="Loading"></div>
+</div>
+</body>
+</html>

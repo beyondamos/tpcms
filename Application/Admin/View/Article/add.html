@@ -1,161 +1,136 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>文章添加</title>
-	<link rel="stylesheet" href="__LIB__/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="__CSS__/main.css">
-	<link rel="stylesheet" href="__PUBLIC__/plugins/uploadify/uploadify.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <title>甫劳科技后台管理系统</title>
+	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+	<script src="__JS__/jquery-1.11.1.min.js"></script>
+	
+    <script src="__JS__/bootstrap.min.js"></script>
+	<script src="__JS__/laydate/laydate.js"></script>
+	
+	<script type="text/javascript" charset="utf-8" src="__JS__/utf8-php/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__JS__/utf8-php/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="__JS__/utf8-php/lang/zh-cn/zh-cn.js"></script>
+	
 </head>
 <body>
-	<div class="container-fluid">
-		<ol class="breadcrumb">
-			<li><a href="#">首页</a></li>
-			<li><a href="news_list.html">信息中心</a></li>
-			<li class="active">文章添加</li>
-		</ol>
-		<div class="row">
-			<form class="form-horizontal col-md-8" action="<{:U('add')}>" method="post" enctype="multipart/form-data">
-				<div class="form-group">
-					<label for="title" class="col-md-2 control-label">标题</label>
-					<div class="col-md-8">
-						<input class="form-control" id="title" name="title" placeholder="请输入标题">
-					</div>
+
+<include file="Public:nav_top" />
+<include file="Public:nav_left" />
+
+<div class="cont">
+	<div class="contmain">
+		
+		<div class="boxi">
+			<h1>添加文章</h1>
+			
+			<form action="<{:U('Article/add')}>" method="post" enctype="multipart/form-data">
+				<div class="boxinb">
+					<span>文章标题</span><input type="text" class="form-control"  name="title">
 				</div>
-				<div class="form-group">
-					<label class="col-md-2 control-label">文章分类</label>
-					<div class="col-md-3">
-						<select class="form-control" name="cate_id">
-							<option value="0">请选择分类</option>
+				<div class="boxinb">
+					<div class="boxinbl">
+						<span>文章分类</span>
+						<select name="cate_id" class="form-control">
+							<option value="0">请选择栏目分类</option>
 							<volist name="category_data" id="vo">
-								<option value="<{$vo.cate_id}>"><{:str_repeat('--',$vo['level']*2)}><{$vo.cate_name}></option>
+							<option value="<{$vo.cate_id}>"><{:str_repeat('----',$vo['level'])}><{$vo.cate_name}></option>
 							</volist>
 						</select>
 					</div>
+<!-- 					<div class="boxinbr">
+						<span class="lets2">排&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="" class="form-control">
+					</div> -->
 				</div>
-				<div class="form-group">
-					<label for="content" class="col-md-2 control-label">信息属性</label>
-					<div class="col-md-10">
-						<div class="checkbox">
-							<label >
-								<input type="checkbox" name="status" checked>审核
-							</label>
-							<label >
-								<input type="checkbox" name="is_new">最新
-							</label>
-							<label >
-								<input type="checkbox" name="is_hot">最热
-							</label>
-							<label>
-								<input type="checkbox" name="is_recommend">推荐
-							</label>
-						</div>
+				<div class="boxinb">
+					<span>信息属性</span>
+					<label><input type="checkbox" name="status" checked/>审核</label>
+					<label><input type="checkbox" name="is_new"/>最新</label>
+					<label><input type="checkbox" name="is_hot"/>最热</label>
+					<label><input type="checkbox" name="is_recommend"/>推荐</label>
+				</div>
+				<div class="boxinb">
+					<div class="boxinbl">
+						<span class="lets2">作&nbsp;&nbsp;&nbsp;&nbsp;者</span><input type="text" class="form-control" name="author" value="<{$login_user_data.username}>">
+					</div>
+					<div class="boxinbr">
+						<span class="lets2">日&nbsp;&nbsp;&nbsp;&nbsp;期</span><input type="text" id="demo"  class="form-control laydate-icon" name="newstime"  value="">
 					</div>
 				</div>
-				<div class="form-group">
-					<label for="keywords" class="col-md-2 control-label">关键词</label>
-					<div class="col-sm-8">
-						<input class="form-control" id="keywords" name="keywords" placeholder="请输入关键词">
-						<p class="help-block">多个关键词用 "," 半角逗号隔开</p>
-					</div>
+				
+				<div class="boxinb">
+					<span class="lets3">点&nbsp;击&nbsp;数</span><input type="text" class="form-control" name="clicks" value="1">
 				</div>
-				<div class="form-group">
-					<label for="img" class="col-md-2 control-label">标题图片</label>
-					<div class="col-md-3">
-						<!-- <input class="form-control" type="file" id="title" name="titleimg"> -->
-
-		                <input id="file_upload" name="file_upload"  type="file" multiple="true" >
-		                <img style="display: none" id="upload_org_code_img" src="" width="150" height="150">
-		                <input id="file_upload_image" name="titleimg" type="hidden" multiple="true" value="">
-
-					</div>
+				<div class="boxinb">
+					<span class="lets3">关&nbsp;键&nbsp;词</span><input type="text"  class="form-control" placeholder="多个关键词用“,”半角逗号隔开"  name="keywords">
 				</div>
-				<div class="form-group">
-					<label for="tags" class="col-md-2 control-label">标签</label>
-					<div class="col-sm-8">
-						<input class="form-control" id="tags" name="tags" placeholder="请输入标签">
-						<p class="help-block">多个标签用 "," 半角逗号隔开</p>
-					</div>
+				<div class="boxinb">
+					<span>标题图片</span><input class="form-control" name="file_upload"  type="file" >
 				</div>
-				<div class="form-group">
-					<label for="synopsis" class="col-md-2 control-label">内容简介</label>
-					<div class="col-md-5">
-						<textarea class="form-control" rows="4" name="synopsis" id="synopsis"></textarea>
-					</div>
+				<div class="boxinb">
+					<span class="lets2">标&nbsp;&nbsp;&nbsp;&nbsp;签</span><input type="text" name="" class="form-control" placeholder="多个标签用“,”半角逗号隔开">
 				</div>
-				<div class="form-group">
-					<label for="author" class="col-md-2 control-label">作者</label>
-					<div class="col-md-2">
-						<input class="form-control" id="author" name="author" placeholder="请输入作者名字">
-					</div>
+				<div class="boxtextb">
+					<span>内容简介</span><textarea  rows="6" class="form-control" name="synopsis"></textarea>
 				</div>
-<!-- 				<div class="form-group">
-					<label for="newstime" class="col-md-2 control-label">发布时间</label>
-					<div class="col-md-3">
-						<div class="input-group">
-							<input class="form-control " id="newstime" name="newstime">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button">设为当前时间</button>
-							</span>
-						</div>
-					</div>
-				</div> -->
-				<div class="form-group">
-					<label for="clicks" class="col-md-2 control-label">点击数</label>
-					<div class="col-md-2">
-						<input class="form-control" id="clicks" name="clicks" value="1">
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="content" class="col-md-2 control-label">正文</label>
-					<div class="col-md-10">
-						<!-- <textarea class="form-control" rows="10" id="content"> -->
-						<!-- 加载编辑器的容器 -->
-						<script id="container" name="content" type="text/plain">
+				
+				<div class="boxuediter">
+					<div class="lets2">正&nbsp;&nbsp;&nbsp;&nbsp;文</div>
+					<div class="uediter">
+						
+						 <!-- 加载编辑器的容器 -->
+						<script id="container" name="content" type="text/plain" style="height:500px;"></script>
+						<!-- 配置文件 -->
+						<script type="text/javascript" src="__JS__/utf8-php/ueditor.config.js"></script>
+						<!-- 编辑器源码文件 -->
+						<script type="text/javascript" src="__JS__/utf8-php/ueditor.all.js"></script>
+						<!-- 实例化编辑器 -->
+						<script type="text/javascript">
+							var ue = UE.getEditor('container');
 						</script>
-						<!-- </textarea> -->
+	
 					</div>
 				</div>
-				<div class="form-group">
-					<div class="col-sm-offset-2 col-sm-10">
-						<input class="btn btn-info" type="submit" value="提交">
-						<input class="btn btn-warning" type="reset" value="重置">
-					</div>
+				<div class="boxinbtn">
+					<input type="submit"  value="确定" class="btn btna" />
+					<input type="reset" value="重置" class="btn btnb" />
 				</div>
+				
 			</form>
 		</div>
+	
 	</div>
-	<script src="__LIB__/jquery/jquery-1.11.3.js"></script>
-	<script src="__PUBLIC__/plugins/uploadify/jquery.uploadify.min.js"></script>
-	<script src="__LIB__/bootstrap/js/bootstrap.min.js"></script>
-	<!-- 编辑器配置文件 -->
-	<script type="text/javascript" src="__PUBLIC__/plugins/Ueditor/ueditor.config.js"></script>
-	<!-- 编辑器源码文件 -->
-	<script type="text/javascript" src="__PUBLIC__/plugins/Ueditor/ueditor.all.js"></script>
-	<!-- 实例化编辑器 -->
-	<script type="text/javascript">
-		var editor = UE.getEditor('container');
+</div>
+<script>
+	;!function(){
+		laydate({
+		   elem: '#demo'
+		})
+	}();
+</script>
+<script src="__JS__/sdmenu.js"></script>
+<script>
+	$().ready(function(){
+		var date = new Date();
+		var dateStr = date.getFullYear()+'-';
+		var month = date.getMonth()+ 1;
+		if(month < 10){
+			month = '0'+month;
+		}
+		dateStr += month + '-';
+		dateStr += date.getDate();
+//		alert(dateStr);
+		$('#demo').val(dateStr);
+	});
 
-		$(function() {
-		    $('#file_upload').uploadify({
-		        'swf'      : '__PUBLIC__/plugins/uploadify/uploadify.swf',
-		        'uploader' : '<{:U('Article/upload')}>',
-		        'buttonText': '上传图片',
-		        // Put your options here
-		        'onUploadSuccess' : function(file, data, response) {
-            		if(response){
-            			// console.log(data);
-            			// var obj = eval(data); //由JSON字符串转换为JSON对象
-            			var data = $.parseJSON(data);
-            			$('#upload_org_code_img').attr('src', data);
-            			$('#upload_org_code_img').show();
-            			$('#file_upload_image').attr('value', data);
-            		}
-        		}
-		    });
-		});
-	</script>
+</script>
 </body>
 </html>

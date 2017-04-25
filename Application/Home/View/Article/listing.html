@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="__CSS__/base0405a.css" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+    <script src="__JS__/jquery-2.1.1.min.js"></script>
+    <script src="__JS__/item.js"></script>
+    <script src="__JS__/bootstrap.min.js"></script>
+    <title>奉贤社圈网--奉贤网络社区平台，奉贤网络社交圈</title>
+    <meta name="keywords" content="奉贤社圈网,奉贤社区网站,奉贤社交圈,奉贤朋友圈,奉贤兴趣爱好圈,奉贤活动圈"/>
+    <meta name="description" content="奉贤社圈网,奉贤社区网站,奉贤社交圈,奉贤朋友圈,奉贤兴趣爱好圈,奉贤活动圈"/>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?236971c0a464e1b54ed9392a9f6a3d5a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+
+<!--头部模块-->
+<include file="Public::header" />
+
+<style>
+    .l_num {
+        clear: both;
+        float: left;
+        font-size: 14px;
+        padding: 60px 0;
+        text-align: center;
+        width: 750px;
+    }
+</style>
+
+<div class="cont">
+    <!--左侧内容区-->
+    <div class="contl">
+
+        <!--面包屑导航-->
+        <div class="navbred"><span>您当前的位置：</span><a href="/">首页</a>
+            &gt;<span><{$cate_data.cate_name}></span>
+        </div>
+        <!--选项按钮-->
+        <div class="headbtn">
+            <a href="javascript:;" id="btna" class="headbtnact">最新</a>
+            <a href="javascript:;" id="btnb">推荐</a>
+        </div>
+
+        <!--选项 最新-->
+        <div class="boxcont" id="areaa">
+            <volist name="new_data" id="vo">
+            <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>"><div class="boxitem">
+                <div class="imglimt"><img src="<{$vo.titleimg}>" alt="" /> </div>
+                <h2><{$vo.title}></h2>
+                <h3><{$vo.synopsis}></h3>
+                <h4><img src="__IMG__/iconclock.png" alt="" /><{$vo.newstime}></h4>
+                <h5><img src="__IMG__/iconeye.png" alt="" /><{$vo.clicks}></h5>
+                <h5><img src="__IMG__/iconstar.png" alt="" />0</h5>
+            </div></a>
+            </volist>
+            <!--&lt;!&ndash;再显示10条&ndash;&gt;-->
+            <!--<div class="l_num">-->
+                <!--<ul>-->
+                    <!--<b><span class='lk7'>1</span></b>&nbsp;<a href='/index-3page=2.html?' class='lk6'>2</a>&nbsp;<a href='/index-3page=3.html?' class='lk6'>3</a>&nbsp;<a href='/index-3page=2.html?' class='lk9'>下页&nbsp;</a><a href='/index-3page=41.html?' class='lk9'>末页</a>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;再显示10条&ndash;&gt;-->
+            <div class="l_num">
+            <{$show}>
+            </div>
+        </div>
+        <!--选项 推荐-->
+        <div class="boxcont" id="areab" style="display:none;">
+
+            <volist name="recommed_data" id="vo">
+            <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>"><div class="boxitem">
+                <div class="imglimt"><img src="<{$vo.titleimg}>" alt="" /> </div>
+                <h2><{$vo.title}></h2>
+                <h3><{$vo.synopsis}></h3>
+                <h4><img src="__IMG__/iconclock.png" alt="" /><{$vo.newstime}></h4>
+                <h5><img src="__IMG__/iconeye.png" alt="" /><{$vo.clicks}></h5>
+                <h5><img src="__IMG__/iconstar.png" alt="" />7</h5>
+            </div></a>
+            </volist>
+
+            <!--&lt;!&ndash;再显示10条&ndash;&gt;-->
+            <!--<div class="l_num">-->
+                <!--<ul>-->
+                    <!--<b><span class='lk7'>1</span></b>&nbsp;<a href='/index-3page=2.html?' class='lk6'>2</a>&nbsp;<a href='/index-3page=3.html?' class='lk6'>3</a>&nbsp;<a href='/index-3page=2.html?' class='lk9'>下页&nbsp;</a><a href='/index-3page=41.html?' class='lk9'>末页</a>-->
+                <!--</ul>-->
+            <!--</div>-->
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            var obj = $('.contr');
+            var offset = obj.offset();
+            var topOffset = offset.top;
+            var leftOffset = 900;
+            var marginTop = obj.css("marginTop");
+            var marginLeft = obj.css("marginLeft");
+            $(window).scroll(function() {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop >= topOffset){
+                    obj.css({
+                        marginTop: -140,
+                        marginLeft: leftOffset,
+                        position: 'fixed',
+                    });
+                }
+                if (scrollTop < topOffset){
+
+                    obj.css({
+                        marginTop: marginTop,
+                        marginLeft: marginLeft,
+                        position: 'relative',
+                    });
+                }
+            });
+        });
+
+    </script>
+
+    <!--右侧列表模块-->
+    <include file="Public::right" />
+
+</div>
+
+<!--底部模块-->
+<include file="Public::footer" />
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var obj = $('.docl');
+        var offset = obj.offset();
+        var topOffset = offset.top;
+        var marginTop = obj.css("marginTop");
+        var marginLeft = obj.css("marginLeft");
+        $(window).scroll(function() {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop >= topOffset){
+                obj.css({
+                    marginTop: -160,
+                    position: 'fixed',
+                });
+            }
+            if (scrollTop < topOffset){
+
+                obj.css({
+                    marginTop: marginTop,
+                    position: 'fixed',
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+<!--右侧列表区-->
+<div class="contr">
+    <h1>大家都爱看</h1>
+    <!--右侧列表区主推文章-->
+    <div class="contlarta">
+        <volist name="right_data" id="vo" offset="0" length="3">
+        <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>">
+            <img src="<{$vo.titleimg}>" alt="<{$vo.title}>" />
+            <h2><{$vo.title}></h2>
+            <h3><{$vo.newstime}></h3>
+        </a>
+        </volist>
+    </div>
+    <!--右侧列表区次要文章-->
+    <div class="contlartb">
+        <volist name="right_data" id="vo" offset="3">
+        <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>">
+            <{:mb_substr($vo['title'],0,14,'utf-8')}><span><{$vo.newstime}></span>
+        </a>
+        </volist>
+    </div>
+</div>

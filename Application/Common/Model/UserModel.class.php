@@ -24,7 +24,6 @@ class UserModel extends Model{
 		array('last_login_time', '0', self::MODEL_INSERT, 'string'),
 		array('last_login_ip', '0', self::MODEL_INSERT, 'string'),
 		array('add_time', 'time', self::MODEL_INSERT, 'function'),
-		array('login_number', '0', self::MODEL_INSERT, 'string'),
 		array('status', '1', self::MODEL_INSERT, 'string'),
 		array('password', 'generatePassword', self::MODEL_INSERT, 'callback'),
 		array('password', '', self::MODEL_UPDATE, 'ignore'),
@@ -78,7 +77,11 @@ class UserModel extends Model{
 		return false;
 	}
 
-
+	/**
+	 * 删除用户
+	 * @param  [type] $user_id [description]
+	 * @return [type]          [description]
+	 */
 	public function deleteUser($user_id){
 		//第一个管理员不能删除
 		if($user_id == 1) return false;
@@ -89,5 +92,55 @@ class UserModel extends Model{
 		if(!$this->delete($user_id)) return false;
 		return true;
 	}
+
+	/**
+	 * 登录判断
+	 * @param  string $username 用户名
+	 * @param  string $password 用户密码
+	 * @return boolean 成功返回true 失败返回false
+	 */
+	public function login($username,$password){
+		$username = trim($username);
+		$password = trim($password);
+		$user_info = $this->where(array('username' => $username))->find();
+		if(!$user_info) return false;
+		$salt = $user_info['salt'];
+		if($user_info['password'] != md5($password.$salt)) return false;
+		session('user_id',$user_info['user_id']);
+		return true;
+	}
+
+	/**
+	 * 验证密码是否正确
+	 * @param int $user_id	用户id
+	 * @param string $password 提交上来的密码
+	 * @return 验证密码相同 返回true  否则返回false
+	 */
+	public function validatePassword($user_id,$password){
+		$user_info = $this->field('password,salt')->find($user_id);
+		if($user_info['password'] == md5($password.$user_info['salt'])) return true;
+		return false;
+	}
+
+	/**
+	 * 登录成功之后的操作
+	 * 通过session中保存的user_id 获取信息和保存信息
+	 */
+	public function afterLogin(){
+		$user_id = session('user_id');
+		$user_info = $this->find($user_id);
+		session('login_times', $user_info['login_times']);
+		session('last_login_time', $user_info['last_login_time']);
+		session('last_login_ip', $user_info['last_login_ip']);
+		$login_times = $user_info['login_times'] + 1;
+		$data = array(
+			'user_id' => $user_id,
+			'login_times' => $login_times,
+			'last_login_time' => time(),
+			'last_login_ip' => ip2long(get_client_ip()),
+		);
+		$this->save($data);
+	}
+
 
 }

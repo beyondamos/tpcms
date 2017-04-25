@@ -1,0 +1,152 @@
+[ 2017-04-21T09:42:28+08:00 ] 127.0.0.1 /index-3.html
+ERR: 无法加载控制器:Index-3
+
+[ 2017-04-21T10:44:00+08:00 ] 127.0.0.1 /shangjia/1.html
+ERR: 无法加载控制器:Shangjia
+
+[ 2017-04-21T10:44:08+08:00 ] 127.0.0.1 /shangjia/id_1.html
+ERR: 无法加载控制器:Shangjia
+
+[ 2017-04-21T10:44:21+08:00 ] 127.0.0.1 /shangjia/id_11.html
+ERR: 无法加载控制器:Shangjia
+
+[ 2017-04-21T10:44:34+08:00 ] 127.0.0.1 /shangjia/id_11.html
+ERR: 无法加载控制器:Shangjia
+
+[ 2017-04-21T10:47:27+08:00 ] 127.0.0.1 /shangjia/id/11.html
+ERR: 无法加载控制器:Shangjia
+
+[ 2017-04-21T10:51:39+08:00 ] 127.0.0.1 /shangjia.html
+ERR: 无法加载控制器:Shangjia
+
+[ 2017-04-21T10:51:51+08:00 ] 127.0.0.1 /Public/Home/images/20170215110225.jpeg
+ERR: 无法加载控制器:Public
+
+[ 2017-04-21T10:57:04+08:00 ] 127.0.0.1 /shangjia/shangjia.html
+ERR: 无法加载控制器:Shangjia
+
+[ 2017-04-21T10:57:09+08:00 ] 127.0.0.1 /Public/Home/images/20170215110225.jpeg
+ERR: 无法加载控制器:Public
+
+[ 2017-04-21T11:05:00+08:00 ] 127.0.0.1 /category/shangjia.html
+ERR: 无法加载控制器:Category
+
+[ 2017-04-21T11:05:13+08:00 ] 127.0.0.1 /111/11.html
+ERR: 无法加载控制器:111
+
+[ 2017-04-21T11:05:28+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:06:30+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:06:30+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:06:31+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:06:31+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:06:31+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:06:31+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:06:38+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:07:19+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:07:19+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:07:20+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:07:22+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:07:30+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:07:31+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:07:44+08:00 ] 127.0.0.1 /acb/abc/11.html
+ERR: 无法加载控制器:Acb
+
+[ 2017-04-21T11:09:00+08:00 ] 127.0.0.1 /shan/gjia/11.html
+ERR: 无法加载控制器:Shan
+
+[ 2017-04-21T11:09:19+08:00 ] 127.0.0.1 /shan/gjia/11.html
+ERR: 无法加载控制器:Shan
+
+[ 2017-04-21T11:09:20+08:00 ] 127.0.0.1 /shan/gjia/11.html
+ERR: 无法加载控制器:Shan
+
+[ 2017-04-21T11:09:22+08:00 ] 127.0.0.1 /shan/gjia/11.html
+ERR: 无法加载控制器:Shan
+
+[ 2017-04-21T11:10:30+08:00 ] 127.0.0.1 /shan/12312/123123/13123gjia/11.html
+ERR: 无法加载控制器:Shan
+
+[ 2017-04-21T11:18:00+08:00 ] 127.0.0.1 /shan/bdasd/asdasdas/asdasdgjia.html
+ERR: 无法加载控制器:Shan
+
+[ 2017-04-21T11:47:51+08:00 ] 127.0.0.1 /shangjai.html
+ERR: 无法加载控制器:Shangjai
+
+[ 2017-04-21T11:51:17+08:00 ] 127.0.0.1 /shangjai.html
+ERR: 无法加载控制器:Shangjai
+
+[ 2017-04-21T11:56:19+08:00 ] 127.0.0.1 /shangjai.html
+ERR: 无法加载控制器:Shangjai
+
+[ 2017-04-21T11:56:20+08:00 ] 127.0.0.1 /shangjai.html
+ERR: 无法加载控制器:Shangjai
+
+[ 2017-04-21T11:56:22+08:00 ] 127.0.0.1 /shangjai.html
+ERR: 无法加载控制器:Shangjai
+
+[ 2017-04-21T11:56:52+08:00 ] 127.0.0.1 /shangjai.html
+ERR: 无法加载控制器:Shangjai
+
+[ 2017-04-21T12:36:34+08:00 ] 127.0.0.1 /Public/Home/images/20170215110225.jpeg
+ERR: 1054:Champ 'is_status' inconnu dans where clause
+ [ SQL语句 ] : SELECT `article_id`,`title`,`titleimg`,`newstime`,`url` FROM isq_article a left join isq_category c on sc.cate_id = a.cate_id  WHERE `is_hot` = 1 AND `is_status` = 1 ORDER BY article_id desc LIMIT 11  
+
+[ 2017-04-21T12:36:35+08:00 ] 127.0.0.1 /Public/Home/images/20170215110225.jpeg
+ERR: 1054:Champ 'is_status' inconnu dans where clause
+ [ SQL语句 ] : SELECT `article_id`,`title`,`titleimg`,`newstime`,`url` FROM isq_article a left join isq_category c on sc.cate_id = a.cate_id  WHERE `is_hot` = 1 AND `is_status` = 1 ORDER BY article_id desc LIMIT 11  
+
+[ 2017-04-21T12:36:36+08:00 ] 127.0.0.1 /Public/Home/images/20170215110225.jpeg
+ERR: 1054:Champ 'is_status' inconnu dans where clause
+ [ SQL语句 ] : SELECT `article_id`,`title`,`titleimg`,`newstime`,`url` FROM isq_article a left join isq_category c on sc.cate_id = a.cate_id  WHERE `is_hot` = 1 AND `is_status` = 1 ORDER BY article_id desc LIMIT 11  
+
+[ 2017-04-21T12:36:39+08:00 ] 127.0.0.1 /
+ERR: 1054:Champ 'is_status' inconnu dans where clause
+ [ SQL语句 ] : SELECT `article_id`,`title`,`titleimg`,`newstime`,`url` FROM isq_article a left join isq_category c on sc.cate_id = a.cate_id  WHERE `is_hot` = 1 AND `is_status` = 1 ORDER BY article_id desc LIMIT 11  
+
+[ 2017-04-21T12:36:51+08:00 ] 127.0.0.1 /
+ERR: 1054:Champ 'is_status' inconnu dans where clause
+ [ SQL语句 ] : SELECT `article_id`,`title`,`titleimg`,`newstime`,`url` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `is_hot` = 1 AND `is_status` = 1 ORDER BY article_id desc LIMIT 11  
+
+[ 2017-04-21T12:36:52+08:00 ] 127.0.0.1 /
+ERR: 1054:Champ 'is_status' inconnu dans where clause
+ [ SQL语句 ] : SELECT `article_id`,`title`,`titleimg`,`newstime`,`url` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `is_hot` = 1 AND `is_status` = 1 ORDER BY article_id desc LIMIT 11  
+
+[ 2017-04-21T15:38:45+08:00 ] 127.0.0.1 /meishi.html
+ERR: 1052:Champ: 'cate_id' dans where clause est ambigu
+ [ SQL语句 ] : SELECT `article_id`,`title`,`titleimg`,`newstime`,`synopsis`,`clicks`,`url` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `is_new` = 1 AND `cate_id` = '3' ORDER BY article_id desc LIMIT 10  
+
+[ 2017-04-21T15:44:58+08:00 ] 127.0.0.1 /index-3page=2.html?
+ERR: 无法加载控制器:Index-3page=2
+
+[ 2017-04-21T15:51:45+08:00 ] 127.0.0.1 /shangjia/11.html
+ERR: 1051:Table 'b' inconnue
+ [ SQL语句 ] : SELECT a.*,b.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '11' LIMIT 1  
+

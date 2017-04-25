@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="__CSS__/base0405a.css" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+    <script src="__JS__/jquery-2.1.1.min.js"></script>
+    <script src="__JS__/item.js"></script>
+    <script src="__JS__/bootstrap.min.js"></script>
+    <title>奉贤社圈网--奉贤网络社区平台，奉贤网络社交圈</title>
+    <meta name="keywords" content="奉贤社圈网,奉贤社区网站,奉贤社交圈,奉贤朋友圈,奉贤兴趣爱好圈,奉贤活动圈"/>
+    <meta name="description" content="奉贤社圈网,奉贤社区网站,奉贤社交圈,奉贤朋友圈,奉贤兴趣爱好圈,奉贤活动圈"/>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?236971c0a464e1b54ed9392a9f6a3d5a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+
+<!--头部模块-->
+<include file="Public::header" />
+
+<div class="cont">
+    <div class="logcont">
+        <h1>用户注册</h1>
+        <form action="" method="post" target="pastTo">
+            <input type="text" name="email" class="inorm" placeholder="邮箱" />
+
+            <!--			<span><input type="text" name="yzm" class="inorm" placeholder="验证码" /><input type="button" name="" value="获取验证码" class="btnyzm" /><span>-->
+
+            <input type="text" name="user" class="inorm" placeholder="用户名" />
+
+            <input type="password" name="pw1" class="inorm" placeholder="密码" />
+            <input type="password" name="pw2" class="inorm" placeholder="重复密码" />
+
+            <p><input id="check" type="checkbox" />&nbsp;本来已仔细阅读并完全同意<a href="#">《注册协议》</a></p>
+            <input type="text" id="submit1" name="" value="注册" class="inbtnb" style="background-color:#2b303a;text-align: center;display: block"/>
+
+            <input type="submit" id="submit" name="" value="注册" class="inbtnb" style="display: none"/>
+
+            <a href="index.php?id=40">返回登录》</a>
+        </form>
+    </div>
+</div>
+<iframe name="postTo" style="display:none"></iframe>
+
+<script>
+    document.onkeypress = function(){ if(event.keyCode == 13) {return false;}};
+    $(function(){
+        $("#check").click(function(){
+            if($(this).is(':checked')){
+                $("#submit").css('display','block');
+                $("#submit1").css('display','none');
+            }else{
+                $("#submit").css('display','none');
+                $("#submit1").css('display','block');
+            }
+        })
+
+        $("#submit").click(function(){
+            var email = $("[name='email']").val();
+            var user = $("[name='user']").val();
+            var pw1 = $("[name='pw1']").val();
+            var pw2 = $("[name='pw2']").val();
+            var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+            if(email == '' || !myreg.test(email)){
+                alert("请输入正确的邮箱");
+                return false;
+            }
+            if( user == '' ){
+                alert("请输入用户名");
+                return false;
+            }
+            if(pw1 =='' || pw2 ==''){
+                alert("请输入密码");
+                return false;
+            }
+            if(pw1 !== pw2 ){
+                alert("请输入相同的密码");
+                return false;
+            }
+            return true;
+        })
+    })
+
+</script>
+
+<!--底部模块-->
+<include file="Public::footer" />
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var obj = $('.docl');
+        var offset = obj.offset();
+        var topOffset = offset.top;
+        var marginTop = obj.css("marginTop");
+        var marginLeft = obj.css("marginLeft");
+        $(window).scroll(function() {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop >= topOffset){
+                obj.css({
+                    marginTop: -160,
+                    position: 'fixed',
+                });
+            }
+            if (scrollTop < topOffset){
+
+                obj.css({
+                    marginTop: marginTop,
+                    position: 'fixed',
+                });
+            }
+        });
+    });
+</script></body>
+</html>

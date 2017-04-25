@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="__CSS__/base0405a.css" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+    <script src="__JS__/jquery-2.1.1.min.js"></script>
+    <script src="__JS__/item.js"></script>
+    <script src="__JS__/bootstrap.min.js"></script>
+    <title>奉贤社圈网--奉贤网络社区平台，奉贤网络社交圈</title>
+    <meta name="keywords" content="奉贤社圈网,奉贤社区网站,奉贤社交圈,奉贤朋友圈,奉贤兴趣爱好圈,奉贤活动圈"/>
+    <meta name="description" content="奉贤社圈网,奉贤社区网站,奉贤社交圈,奉贤朋友圈,奉贤兴趣爱好圈,奉贤活动圈"/>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?236971c0a464e1b54ed9392a9f6a3d5a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+
+<!--头部模块-->
+<include file="Public::header" />
+
+<div class="contbk">
+    <div class="cont">
+        <!--左侧内容区-->
+        <!--左侧导航-->
+        <include file="Public::custom_left" />
+        <div class="docr">
+            <h1> 广告服务</h1>
+            <p>
+            <h4>
+                基本数据
+            </h4>
+            <p>
+                每月100万浏览量<br />
+                用户平均浏览页面4.75，平均访问时长18分钟
+            </p>
+            <h4>
+                社圈用户
+            </h4>
+            <p>
+                女性用户占比79.26%<br />
+                75%用户分布北上广、浙江、海外<br />
+                移动设备访问占比30%<br />
+                18-45岁用户占比70%<br />
+                本科以上学历用户占比70%
+            </p>
+            <h4>
+                社圈服务
+            </h4>
+            <p>
+                <a href="index.php?id=3" target="_blank">旅行</a><br />
+                <a href="index.php?id=4" target="_blank">养生</a><br />
+                <a href="index.php?id=5" target="_blank">生活</a><br />
+                <a href="index.php?id=6" target="_blank">植物</a><br />
+                <a href="index.php?id=7" target="_blank">美食</a><br />
+                <a href="index.php?id=8" target="_blank">笑话</a><br />
+                <a href="index.php?id=18" target="_blank">萌宝</a><br />
+                <a href="index.php?id=20" target="_blank">运动</a><br />
+                <a href="index.php?id=22" target="_blank">贤人</a><br />
+                <a href="index.php?id=24" target="_blank">招聘</a><br />
+            </p>
+            <p>
+                如果您希望与社圈网开展广告及其它商务合作，请发邮件至robin@it－flower.com
+                邮件中请注明公司名称，联系方式，具体合作需求，我们将在24小时之内尽快与您联系。
+                媒体合作请联系021-60523954   jenny@fanstar.com (内容转载、联合活动)
+            </p>        </p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // $(document).ready(function(){
+    // $('.docl a').each(function(){
+    // if($($(this))[0].href==String(window.location)){
+    // //$(this).parent().addClass('docl-act');
+    // $('.docl a').removeClass("docl-act");
+
+    // }
+    // });
+    // });
+</script>
+
+<script type="text/javascript">
+    currentActive("navId","docl-act");
+    function currentActive(navId,curClass){
+        var navId=document.getElementById(navId);
+        var links=navId.getElementsByTagName("a");
+        var currentLink=window.location.href;
+        for(var i=0;i<links.length;i++){
+            var menuLink=links[i].href;
+            if(currentLink.indexOf(menuLink)!=-1){
+                links[i].className=curClass;
+            }else{
+                links[i].className="";
+            }
+        }
+    }
+</script>
+
+<!--底部模块-->
+<include file="Public::footer" />
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var obj = $('.docl');
+        var offset = obj.offset();
+        var topOffset = offset.top;
+        var marginTop = obj.css("marginTop");
+        var marginLeft = obj.css("marginLeft");
+        $(window).scroll(function() {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop >= topOffset){
+                obj.css({
+                    marginTop: -160,
+                    position: 'fixed',
+                });
+            }
+            if (scrollTop < topOffset){
+
+                obj.css({
+                    marginTop: marginTop,
+                    position: 'fixed',
+                });
+            }
+        });
+    });
+</script></body>
+</html>

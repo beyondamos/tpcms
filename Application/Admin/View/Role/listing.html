@@ -1,44 +1,91 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>角色列表</title>
-	<link rel="stylesheet" href="__LIB__/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="__CSS__/main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <title>甫劳科技后台管理系统</title>
+	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+	<script src="__JS__/jquery-1.11.1.min.js"></script>
+	
+    <script src="__JS__/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container-fluid">
-		<ol class="breadcrumb">
-			<li><a href="#">首页</a></li>
-			<li>用户中心</li>
-			<li class="active">角色管理</li>
-		</ol>
-		<a class="btn btn-primary" href="<{:U('add')}>" role="button"><span class="glyphicon glyphicon-plus"></span> 角色添加</a>
-		<table class="table table-striped table-bordered">
-			<tr class="text-center">
-				<th class="text-center">角色id</th>
-				<th class="text-center">角色名称</th>
-				<th class="text-center">角色描述</th>
-				<th class="text-center">操作</th>
-			</tr>
-			<volist name="role_data" id="vo">
-				<tr>
-					<td class="text-center"><{$vo.role_id}></td>
-					<td class="text-center"><{$vo.role_name}></td>
-					<td class="text-center"><{$vo.role_desc}></td>
-					<if condition="$vo['role_id'] != 1">
-					<td class="text-center">
-						<a class="btn btn-info" href="<{:U('Role/edit',array('role_id' => $vo['role_id']))}>" role="button">编辑</a>
-						<a class="btn btn-danger" href="<{:U('Role/delete',array('role_id' => $vo['role_id']))}>" role="button">删除</a>
-					</td>
-					</if>
-				</tr>
-			</volist>
-		</table>
+<include file="Public:nav_top" />
+<include file="Public:nav_left" />
+
+<div class="cont">
+	<div class="contmain">
+		
+		<div class="boxi">
+			<h1>角色列表</h1>
+			
+			<!-- 表格顶部搜索区 -->
+			<div class="boxoper">
+				<a href="<{:U('Role/add')}>">添加角色</a>
+				<!--<div class="boxoper-seh">-->
+					<!--<form action="" method="post">-->
+						<!--<button class="btn btn-default" type="submit"><img src="__IMG__/iconseh.png" /></button>-->
+						<!--<input type="text" class="form-control" placeholder="搜索用户名或角色">-->
+						<!--<select class="form-control">-->
+							<!--<option>全部</option>-->
+							<!--<option>分类</option>-->
+							<!--<option>分类</option>-->
+							<!--<option>分类</option>-->
+							<!--<option>分类</option>-->
+						<!--</select>-->
+					<!--</form>-->
+				<!--</div>-->
+			</div>
+			
+			<!-- 表格 -->
+			<table class="table table-hover boxtable">
+				<thead>
+					<tr>
+					   <th class="col-md-1 text-vm">序号</th>
+					   <th class="col-md-2 text-vm">角色名称</th>
+					   <th class="col-md-6 text-vm">描述</th>
+					   <th class="col-md-1 text-vm text-center">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="role_data" id="vo">
+					<tr>
+						<td class="text-vm"><{$vo.role_id}></td>
+						<td class="text-vm"><{$vo.role_name}></td>
+						<td class="text-vm"><{$vo.role_desc}></td>
+						<td class="text-vm">
+							<if condition="$vo['role_id'] != 1">
+							<a href="<{:U('Role/edit',array('role_id' => $vo['role_id']) )}>">编辑</a>
+							<a href="<{:U('Role/delete',array('role_id' => $vo['role_id']) )}>">删除</a>
+							</if>
+						</td>
+					</tr>
+					</volist>
+				</tbody>
+			</table>
+			
+			<!-- 分页 -->
+<!-- 			<div class="boxpage">
+				<a href="javascript:;"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>
+				<a href="javascript:;"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span></a>
+				<a href="javascript:;">1</a>
+				<a href="javascript:;">2</a>
+				<a href="javascript:;" class="boxpage-act">3</a>
+				<a href="javascript:;">4</a>
+				<a href="javascript:;">5</a>
+				<a href="javascript:;"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a>
+				<a href="javascript:;"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>
+			</div> -->
+		</div>
+	
 	</div>
-	<script src="__LIB__/jquery/jquery-1.11.3.js"></script>
-	<script src="__LIB__/bootstrap/js/bootstrap.min.js"></script>
+</div>
+<script src="__JS__/sdmenu.js"></script>
 </body>
 </html>

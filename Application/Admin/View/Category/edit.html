@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <title>甫劳科技后台管理系统</title>
+	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+	<script src="__JS__/jquery-1.11.1.min.js"></script>
+	
+    <script src="__JS__/bootstrap.min.js"></script>
+</head>
+<body>
+<include file="Public:nav_top" />
+<include file="Public:nav_left" />
+
+<div class="cont">
+	<div class="contmain">
+		<div class="boxi">
+			<h1>编辑分类</h1>
+			<form action="<{:U('Category/edit')}>" method="post">
+				<div class="boxin">
+					<span>分类名称</span><input type="text"  class="form-control" name="cate_name" value="<{$category_info['cate_name']}>">
+				</div>
+				<div class="boxin">
+					<span>上级分类</span>
+					<select name="parent_id" class="form-control">
+						<option value="0">请选择分类</option>
+						<volist name="categroy_data" id="vo">
+							<option value="<{$vo['cate_id']}>" <if condition="$vo['cate_id'] == $category_info['parent_id']"> selected </if>><{:str_repeat('----',$vo['level'])}><{$vo['cate_name']}></option>
+						</volist>
+					</select>
+				</div>
+				<div class="boxin">
+					<span>路由名称</span><input type="text" class="form-control" name="url" value="<{$category_info['url']}>">
+				</div>
+				<div class="boxin">
+					<span>栏目标题</span><input type="text" class="form-control" name="cate_title" value="<{$category_info['cate_title']}>">
+				</div>
+				<div class="boxin">
+					<span>关键词</span><input type="text" class="form-control" name="cate_keywords" value="<{$category_info['cate_keywords']}>">
+				</div>
+				<div class="boxtext">
+					<span>分类描述</span><textarea rows="6" class="form-control" name="description"><{$category_info.description}></textarea>
+				</div>
+				
+				<div class="boxinbtn">
+					<input type="hidden" name="cate_id" value="<{$category_info['cate_id']}>">
+					<input type="submit" value="确定" class="btn btna" />
+					<input type="submit" value="重置" class="btn btnb" />
+				</div>
+				
+			</form>
+		</div>
+	
+	</div>
+</div>
+<script src="__JS__/sdmenu.js"></script>
+</body>
+</html>

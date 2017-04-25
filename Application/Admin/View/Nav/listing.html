@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <title>甫劳科技后台管理系统</title>
+	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+	<script src="__JS__/jquery-1.11.1.min.js"></script>
+	
+    <script src="__JS__/bootstrap.min.js"></script>
+</head>
+<body>
+<include file="Public:nav_top" />
+<include file="Public:nav_left" />
+
+<div class="cont">
+	<div class="contmain">
+		
+		<div class="boxi">
+			<h1>导航列表</h1>
+			
+			<!-- 表格顶部搜索区 -->
+			<div class="boxoper">
+				<a href="<{:U('Nav/add')}>">添加导航</a>
+				<!---->
+				<!--<div class="boxoper-seh">-->
+					<!--<form action="" method="post">-->
+						<!--<button class="btn btn-default" type="submit"><img src="__IMG__/iconseh.png" /></button>-->
+						<!--<input type="text" class="form-control" placeholder="搜索导航">-->
+						<!--<select class="form-control">-->
+							<!--<option>全部</option>-->
+							<!--<option>分类</option>-->
+							<!--<option>分类</option>-->
+							<!--<option>分类</option>-->
+							<!--<option>分类</option>-->
+						<!--</select>-->
+					<!--</form>-->
+				<!--</div>-->
+			</div>
+			
+			<!-- 表格 -->
+			<table class="table table-hover boxtable">
+				<thead>
+					<tr>
+					   <th class="col-md-2 text-vm">导航名称</th>
+					   <th class="col-md-5 text-vm">链接地址</th>
+					   <th class="col-md-1 text-vm">是否显示</th>
+					   <th class="col-md-1 text-vm">是否新页面</th>
+					   <th class="col-md-1 text-vm">排序</th>
+					   <th class="col-md-1 text-vm text-center">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					<volist name="nav_data" id="vo">
+					<tr>
+						<td class="text-vm"><{$vo.nav_name}></td>
+						<td class="text-vm"><{$vo.nav_url}></td>
+						<td class="text-vm"><if condition="$vo['is_show'] == 1">是<else />否</if></td>
+						<td class="text-vm"><if condition="$vo['is_blank'] == 1">是<else />否</if></td>
+						<td class="text-vm"><{$vo.sort}></td>
+						<td class="text-vm">
+							<a href="<{:U('Nav/edit',array('nav_id' => $vo['nav_id']))}>">编辑</a>
+							<a href="<{:U('Nav/delete', array('nav_id' => $vo['nav_id']))}>">删除</a>
+						</td>
+					</tr>
+					</volist>
+
+				</tbody>
+			</table>
+			<!--&lt;!&ndash; 分页 &ndash;&gt;-->
+			<!--<div class="boxpage">-->
+				<!--<a href="javascript:;"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span></a>-->
+				<!--<a href="javascript:;"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span></a>-->
+				<!--<a href="javascript:;">1</a>-->
+				<!--<a href="javascript:;">2</a>-->
+				<!--<a href="javascript:;" class="boxpage-act">3</a>-->
+				<!--<a href="javascript:;">4</a>-->
+				<!--<a href="javascript:;">5</a>-->
+				<!--<a href="javascript:;"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a>-->
+				<!--<a href="javascript:;"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span></a>-->
+			<!--</div>-->
+		</div>
+	</div>
+</div>
+<script src="__JS__/sdmenu.js"></script>
+</body>
+</html>
