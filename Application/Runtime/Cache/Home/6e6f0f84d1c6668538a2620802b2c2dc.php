@@ -120,9 +120,9 @@
                 <!--</ul>-->
             <!--</div>-->
             <!--&lt;!&ndash;再显示10条&ndash;&gt;-->
-            <div class="l_num">
+
             <?php echo ($show); ?>
-            </div>
+
         </div>
         <!--选项 推荐-->
         <div class="boxcont" id="areab" style="display:none;">
@@ -142,7 +142,7 @@
                     <!--<b><span class='lk7'>1</span></b>&nbsp;<a href='/index-3page=2.html?' class='lk6'>2</a>&nbsp;<a href='/index-3page=3.html?' class='lk6'>3</a>&nbsp;<a href='/index-3page=2.html?' class='lk9'>下页&nbsp;</a><a href='/index-3page=41.html?' class='lk9'>末页</a>-->
                 <!--</ul>-->
             <!--</div>-->
-
+            <?php echo ($show); ?>
         </div>
 
     </div>

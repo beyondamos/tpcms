@@ -3394,7 +3394,14 @@ progress {
 
 
 
-
+.l_num {
+	clear: both;
+	float: left;
+	font-size: 14px;
+	padding: 60px 0;
+	text-align: center;
+	width: 750px;
+}
 
 
 

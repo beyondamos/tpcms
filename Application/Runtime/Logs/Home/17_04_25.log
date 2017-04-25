@@ -67,3 +67,7 @@ ERR: 无法加载控制器:11
 [ 2017-04-25T10:16:29+08:00 ] 10.168.77.122 /11.html
 ERR: 无法加载控制器:11
 
+[ 2017-04-25T10:31:41+08:00 ] 127.0.0.1 /lvxing.html
+ERR: 1054:Champ 'c.cate_id' inconnu dans where clause
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `isq_article` WHERE `status` = 1 AND `is_new` = 1 AND c.cate_id = '1' LIMIT 1  
+

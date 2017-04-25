@@ -45,25 +45,33 @@ class ArticleController extends CommonController{
         $cate_data = $category_model->where(array('url' => $cate_name))->find();
         if(!$cate_data) $this->error('不存在栏目分类');
         $this->assign('cate_data', $cate_data);
+
+        $p = I('get.p') ? I('get.p') : 1;
+
         //最新信息
         $article_model = D('Article');
         $map = array('status' => 1, 'is_new' => 1 , 'c.cate_id' => $cate_data['cate_id']);
         $new_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
             ->field('article_id,title,titleimg,newstime,synopsis,clicks,url')->where($map)
-            ->order('article_id desc')->limit('10')->select();
+            ->order('article_id desc')->page($p.',10')->select();
         $this->assign('new_data', $new_data);
-//        $count = $article_model->count();
-//        $page = new \Think\Page($count,1);
-//        $show = $page->show();
-//        $this->assign('show',$show);
+        //分页数据
+        $count = $article_model->where(array('status' => 1, 'is_new' => 1, 'cate_id' =>  $cate_data['cate_id']))->count();
+        $page = new \Think\Page($count,10);
+        $show = $page->show();
+        $this->assign('show',$show);
         //推荐
         $map = array('status' => 1, 'is_recommend' => 1 , 'c.cate_id' => $cate_data['cate_id']);
         $recommed_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
             ->field('article_id,title,titleimg,newstime,synopsis,clicks,url')->where($map)
-            ->order('article_id desc')->limit('10')->select();
+            ->order('article_id desc')->page($p.',10')->select();
         $this->assign('recommed_data', $recommed_data);
 
-
+        //分页数据
+        $count = $article_model->where(array('status' => 1, 'is_recommend' => 1, 'cate_id' =>  $cate_data['cate_id']))->count();
+        $page = new \Think\Page($count,10);
+        $show = $page->show();
+        $this->assign('show1',$show);
 
 
         //右侧信息
