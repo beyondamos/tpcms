@@ -17,6 +17,7 @@ return array(
         'Search/index'  => 'Search/index',
         'Member/login'  => 'Member/login',
         'Member/register'  => 'Member/register',
+        'Index/showMore'    => 'Index/showMore',
 //		'/^blog\/(\d+)$/'        => 'Blog/read?id=:1',
 //		'/^blog\/(\d+)\/(\d+)$/' => 'Blog/achive?year=:1&month=:2',
 //		'/^blog\/(\d+)_(\d+)$/'  => 'blog.php?id=:1&page=:2',

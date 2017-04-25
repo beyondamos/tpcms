@@ -96,7 +96,7 @@
                     }
                     if(stop==true){
                         stop=false;
-                        $.post("/home/xiala.php", {start:s, },function(txt){
+                        $.post("<?php echo U('Index/showMore');?>", {start:s, },function(txt){
                             $("#showmore").before(txt);
                             stop=true;
                             s= s+1;
@@ -111,7 +111,7 @@
                     }
                     if(stop==true){
                         stop=false;
-                        $.post("/home/xiala.php", {start:s, },function(txt){
+                        $.post("<?php echo U('Index/showMore');?>", {start:s, },function(txt){
                             $("#showmoreb").before(txt);
                             stop=true;
                             s= s+1;
