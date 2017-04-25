@@ -20,6 +20,7 @@ return array(
         'Index/showMore'    => 'Index/showMore',
         'Member/wechatLogin'    => 'Member/wechatLogin',
         'Member/wechatLoginCallback'    => 'Member/wechatLoginCallback',
+        'Index/index'   => 'Index/index',
 //		'/^blog\/(\d+)$/'        => 'Blog/read?id=:1',
 //		'/^blog\/(\d+)\/(\d+)$/' => 'Blog/achive?year=:1&month=:2',
 //		'/^blog\/(\d+)_(\d+)$/'  => 'blog.php?id=:1&page=:2',

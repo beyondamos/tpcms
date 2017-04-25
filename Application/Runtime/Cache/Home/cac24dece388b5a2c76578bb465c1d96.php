@@ -99,7 +99,7 @@
             <img style="visibility:hidden;" src="/Public/Mobile/images/iconcomm.png" alt=""/><span style="visibility:hidden;">18</span>
         </div>
 
-        <div class="rwmarti"><img src="<?php echo $webconfig['wx_code'];?>" alt="" /></div>
+        <div class="rwmarti"><img src="/Public/Mobile/images/qrc.jpg" alt="" /></div>
         <div class="praisezan"><a href="javascript:" id="zan"><img src="/Public/Mobile/images/zan.png" alt="" /></a></div>
 
     </div>
