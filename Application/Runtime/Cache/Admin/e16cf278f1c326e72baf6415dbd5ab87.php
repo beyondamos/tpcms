@@ -1,25 +1,31 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="renderer" content="webkit">
-    <title>甫劳科技后台管理系统</title>
+	<title>甫劳科技后台管理系统</title>
 	<link href="/Public/Admin/css/base.css" rel="stylesheet" type="text/css"/>
-    <link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="/Public/Admin/js/html5shiv.js"></script>
-    <script src="/Public/Admin/js/respond.min.js"></script>
-    <![endif]-->
+	<link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="/Public/Admin/js/html5shiv.js"></script>
+	<script src="/Public/Admin/js/respond.min.js"></script>
+	<![endif]-->
 	<script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
-	
-    <script src="/Public/Admin/js/bootstrap.min.js"></script>
+
+	<script src="/Public/Admin/js/bootstrap.min.js"></script>
 	<script src="/Public/Admin/js/laydate/laydate.js"></script>
-	
-	<script type="text/javascript" charset="utf-8" src="/Public/Admin/js/utf8-php/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/Public/Admin/js/utf8-php/ueditor.all.min.js"> </script>
-    <script type="text/javascript" charset="utf-8" src="/Public/Admin/js/utf8-php/lang/zh-cn/zh-cn.js"></script>
-	
+	<script charset="utf-8" src="/Public/Admin/kindeditor/kindeditor.js"></script>
+	<script charset="utf-8" src="/Public/Admin/kindeditor/lang/zh-CN.js"></script>
+	<script>
+		KindEditor.ready(function(K) {
+			window.editor = K.create('#editor_id');
+		});
+	</script>
+
+
+	<script type="text/javascript" charset="utf-8" src="/Public/Admin/js/utf8-php/lang/zh-cn/zh-cn.js"></script>
+
 </head>
 <body>
 
@@ -63,10 +69,10 @@
 
 <div class="cont">
 	<div class="contmain">
-		
+
 		<div class="boxi">
 			<h1>添加文章</h1>
-			
+
 			<form action="<?php echo U('Article/add');?>" method="post" enctype="multipart/form-data">
 				<div class="boxinb">
 					<span>文章标题</span><input type="text" class="form-control"  name="title">
@@ -79,9 +85,6 @@
 							<?php if(is_array($category_data)): $i = 0; $__LIST__ = $category_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["cate_id"]); ?>"><?php echo str_repeat('----',$vo['level']); echo ($vo["cate_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 						</select>
 					</div>
-<!-- 					<div class="boxinbr">
-						<span class="lets2">排&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="" class="form-control">
-					</div> -->
 				</div>
 				<div class="boxinb">
 					<span>信息属性</span>
@@ -98,7 +101,7 @@
 						<span class="lets2">日&nbsp;&nbsp;&nbsp;&nbsp;期</span><input type="text" id="demo"  class="form-control laydate-icon" name="newstime"  value="">
 					</div>
 				</div>
-				
+
 				<div class="boxinb">
 					<span class="lets3">点&nbsp;击&nbsp;数</span><input type="text" class="form-control" name="clicks" value="1">
 				</div>
@@ -114,38 +117,33 @@
 				<div class="boxtextb">
 					<span>内容简介</span><textarea  rows="6" class="form-control" name="synopsis"></textarea>
 				</div>
-				
+
 				<div class="boxuediter">
 					<div class="lets2">正&nbsp;&nbsp;&nbsp;&nbsp;文</div>
+
+
 					<div class="uediter">
 						
-						 <!-- 加载编辑器的容器 -->
-						<script id="container" name="content" type="text/plain" style="height:500px;"></script>
-						<!-- 配置文件 -->
-						<script type="text/javascript" src="/Public/Admin/js/utf8-php/ueditor.config.js"></script>
-						<!-- 编辑器源码文件 -->
-						<script type="text/javascript" src="/Public/Admin/js/utf8-php/ueditor.all.js"></script>
-						<!-- 实例化编辑器 -->
-						<script type="text/javascript">
-							var ue = UE.getEditor('container');
-						</script>
-	
+						<textarea id="editor_id" name="content" style="width:700px;height:300px;">
+
+						</textarea>
+
 					</div>
 				</div>
 				<div class="boxinbtn">
 					<input type="submit"  value="确定" class="btn btna" />
 					<input type="reset" value="重置" class="btn btnb" />
 				</div>
-				
+
 			</form>
 		</div>
-	
+
 	</div>
 </div>
 <script>
 	;!function(){
 		laydate({
-		   elem: '#demo'
+			elem: '#demo'
 		})
 	}();
 </script>

@@ -15,9 +15,14 @@
 	
     <script src="/Public/Admin/js/bootstrap.min.js"></script>
 	<script src="/Public/Admin/js/laydate/laydate.js"></script>
-	
-	<script type="text/javascript" charset="utf-8" src="/Public/Admin/js/utf8-php/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/Public/Admin/js/utf8-php/ueditor.all.min.js"> </script>
+	<script charset="utf-8" src="/Public/Admin/kindeditor/kindeditor.js"></script>
+	<script charset="utf-8" src="/Public/Admin/kindeditor/lang/zh-CN.js"></script>
+	<script>
+		KindEditor.ready(function(K) {
+			window.editor = K.create('#editor_id');
+		});
+	</script>
+
     <script type="text/javascript" charset="utf-8" src="/Public/Admin/js/utf8-php/lang/zh-cn/zh-cn.js"></script>
 	
 </head>
@@ -120,13 +125,10 @@
 				<div class="boxuediter">
 					<div class="lets2">正&nbsp;&nbsp;&nbsp;&nbsp;文</div>
 					<div class="uediter">
-						
-						 <!-- 加载编辑器的容器 -->
-						<script id="container" name="content" type="text/plain" style="height:500px;"></script>
-						<!-- 配置文件 -->
-						<script type="text/javascript" src="/Public/Admin/js/utf8-php/ueditor.config.js"></script>
-						<!-- 编辑器源码文件 -->
-						<script type="text/javascript" src="/Public/Admin/js/utf8-php/ueditor.all.js"></script>
+
+						<textarea id="editor_id" name="content" style="width:700px;height:300px;">
+							<?php echo ($article_data["content"]); ?>
+						</textarea>
 
 					</div>
 				</div>
