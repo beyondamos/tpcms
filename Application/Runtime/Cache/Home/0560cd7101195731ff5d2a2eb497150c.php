@@ -54,8 +54,8 @@
     <a href="#nav-left"><img src="/Public/Mobile/images/iconhead.png" /></a>
     <a href="javascript:;" style="visibility:hidden;"></a>
     <a href="index.php"><span><img src="/Public/Mobile/images/logo.png" alt="" /></span></a>
-    <a href="index.php?id=15"><img src="/Public/Mobile/images/iconmore.png" /></a>
-    <a href="index.php?id=16"><img src="/Public/Mobile/images/iconsearch.png" /></a>
+    <a href="/"><img src="/Public/Mobile/images/iconmore.png" /></a>
+    <a href="<?php echo U('Search/index');?>"><img src="/Public/Mobile/images/iconsearch.png" /></a>
 </div>
 
 <div class="cont">
@@ -63,7 +63,7 @@
     <div class="headbt"></div>
     <div class="headbtn">
         <a href="/" id="btna" class="headbtnact" >全部</a>
-        <?php if(is_array($nav_data)): $i = 0; $__LIST__ = $nav_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/'.$vo['nav_url']);?>" class="headbtnact" ><?php echo ($vo["nav_name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+        <?php if(is_array($nav_data)): $i = 0; $__LIST__ = $nav_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/'.$vo['nav_url']);?>"  ><?php echo ($vo["nav_name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
     </div>
     <!--头部选项结束-->
 

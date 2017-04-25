@@ -31,3 +31,33 @@ ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'ishequan'@'@loca
 [ 2017-04-25T08:12:11+08:00 ] 127.0.0.1 /
 ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'ishequan'@'@localhost' (mot de passe: OUI)
 
+[ 2017-04-25T09:00:29+08:00 ] 127.0.0.1 /home/wx_log.php
+ERR: 无法加载控制器:Wx_log.php
+
+[ 2017-04-25T09:10:51+08:00 ] 127.0.0.1 /home/xiala.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'xiala' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-25T09:10:56+08:00 ] 127.0.0.1 /home/xiala.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'xiala' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-25T09:10:57+08:00 ] 127.0.0.1 /home/xiala.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'xiala' LIMIT 1   [ RunTime:0.0003s ]
+
