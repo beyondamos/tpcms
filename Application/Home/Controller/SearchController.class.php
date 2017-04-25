@@ -15,6 +15,7 @@ class SearchController extends CommonController{
             $map = array('status' => 1, 'title' => array('like',"%{$search}%"));
             $search_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')->field('a.*,c.*')
                                 ->where($map)->order('article_id desc')->select();
+//            print_r($search_data);
             $this->assign('search_data', $search_data);
             //右侧信息
             $this->rightInfo();

@@ -61,3 +61,9 @@ SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.
 SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0026s ]
 SQL: SELECT * FROM `isq_category` WHERE `url` = 'xiala' LIMIT 1   [ RunTime:0.0003s ]
 
+[ 2017-04-25T10:06:52+08:00 ] 10.168.77.122 /11.html
+ERR: 无法加载控制器:11
+
+[ 2017-04-25T10:16:29+08:00 ] 10.168.77.122 /11.html
+ERR: 无法加载控制器:11
+
