@@ -12,15 +12,6 @@
     <title></title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?236971c0a464e1b54ed9392a9f6a3d5a";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
 </head>
 <body>
 
@@ -59,28 +50,16 @@
 </div>
 
 <div class="cont">
-    <!--头部选项开始-->
     <div class="headbt"></div>
-    <div class="headbtn">
-        <a href="/" id="btna"  >全部</a>
-        <?php if(is_array($nav_data)): $i = 0; $__LIST__ = $nav_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/'.$vo['nav_url']);?>" <?php if($_GET['cate_name'] == $vo['nav_url']): ?>class="headbtnact"<?php endif; ?> ><?php echo ($vo["nav_name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+    <div class="boxchan">
+        <h1>频道</h1>
+        <?php if(is_array($category_data)): $i = 0; $__LIST__ = array_slice($category_data,0,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/'.$vo['url']);?>" ><?php echo ($vo["cate_name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
     </div>
-    <!--头部选项结束-->
 
-    <div class="boxcont">
-        <?php if(is_array($new_data)): $i = 0; $__LIST__ = $new_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>">
-                <div class="boxitem">
-                    <div class="imglimt"><img src="<?php echo ($vo["titleimg"]); ?>" alt=""/></div>
-                    <h2><?php echo ($vo["title"]); ?></h2>
-                    <div class="praise">
-                        <img src="/Public/Mobile/images/iconeye.png" alt=""/><span><?php echo ($vo["clicks"]); ?></span>
-                        <img src="/Public/Mobile/images/iconstar.png" alt=""/><span>20</span>
-                        <span><?php echo ($vo["newstime"]); ?></span>
-                    </div>
-                </div>
-            </a>
-    </div><?php endforeach; endif; else: echo "" ;endif; ?>
-    <div id="Loading"></div>
+    <div class="boxchan">
+        <h1>推荐</h1>
+        <?php if(is_array($category_data)): $i = 0; $__LIST__ = array_slice($category_data,10,10,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('/'.$vo['url']);?>" ><?php echo ($vo["cate_name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
+    </div>
 </div>
 </body>
 </html>

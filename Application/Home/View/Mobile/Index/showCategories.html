@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="Zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="__PUBLIC__/Mobile/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Mobile/css/basem.css" rel="stylesheet" type="text/css">
+    <script src="__PUBLIC__/Mobile/js/jquery-2.1.1.min.js"></script>
+    <script src="__PUBLIC__/Mobile/js/item.js"></script>
+    <script src="__PUBLIC__/Mobile/js/bootstrap.min.js"></script>
+    <title></title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+</head>
+<body>
+
+<include file="Public::nav" />
+
+<div class="cont">
+    <div class="headbt"></div>
+    <div class="boxchan">
+        <h1>频道</h1>
+        <volist name="category_data" id="vo" offset="0" length="10">
+        <a href="<{:U('/'.$vo['url'])}>" ><{$vo.cate_name}></a>
+        </volist>
+    </div>
+
+    <div class="boxchan">
+        <h1>推荐</h1>
+        <volist name="category_data" id="vo" offset="10" length="10">
+            <a href="<{:U('/'.$vo['url'])}>" ><{$vo.cate_name}></a>
+        </volist>
+    </div>
+</div>
+</body>
+</html>

@@ -40,5 +40,19 @@ class IndexController extends CommonController {
         $this->display();
     }
 
+    /**
+     * 展示所有栏目名称
+     */
+     public function showCategories(){
+         $category_model = D('Category');
+         $category_data = $category_model->select();
+         $this->assign('category_data', $category_data);
+         $this->display();
+     }
+
+
+
+
+
 
 }
