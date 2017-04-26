@@ -54,7 +54,7 @@
     <a href="#nav-left"><img src="/Public/Mobile/images/iconhead.png" /></a>
     <a href="javascript:;" style="visibility:hidden;"></a>
     <a href="index.php"><span><img src="/Public/Mobile/images/logo.png" alt="" /></span></a>
-    <a href="/"><img src="/Public/Mobile/images/iconmore.png" /></a>
+    <a href="<?php echo U('Index/showCategories');?>"><img src="/Public/Mobile/images/iconmore.png" /></a>
     <a href="<?php echo U('Search/index');?>"><img src="/Public/Mobile/images/iconsearch.png" /></a>
 </div>
 

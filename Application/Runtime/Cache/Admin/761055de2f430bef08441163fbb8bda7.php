@@ -7,23 +7,22 @@
     <title>甫劳科技后台管理系统</title>
 	<link href="/Public/Admin/css/base.css" rel="stylesheet" type="text/css"/>
     <link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/Public/Admin/uploadify/uploadify.css" />
     <!--[if lt IE 9]>
     <script src="/Public/Admin/js/html5shiv.js"></script>
     <script src="/Public/Admin/js/respond.min.js"></script>
     <![endif]-->
 	<script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
-	
     <script src="/Public/Admin/js/bootstrap.min.js"></script>
 	<script src="/Public/Admin/js/laydate/laydate.js"></script>
 	<script charset="utf-8" src="/Public/Admin/kindeditor/kindeditor.js"></script>
-	<script charset="utf-8" src="/Public/Admin/kindeditor/lang/zh-CN.js"></script>
+	<script charset="utf-8" src="/Public/Admin/kindeditor/lang/zh_CN.js"></script>
 	<script>
 		KindEditor.ready(function(K) {
 			window.editor = K.create('#editor_id');
 		});
 	</script>
 
-    <script type="text/javascript" charset="utf-8" src="/Public/Admin/js/utf8-php/lang/zh-cn/zh-cn.js"></script>
 	
 </head>
 <body>
@@ -85,9 +84,6 @@
 							><?php echo str_repeat('----',$vo['level']); echo ($vo["cate_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 						</select>
 					</div>
-<!-- 					<div class="boxinbr">
-						<span class="lets2">排&nbsp;&nbsp;&nbsp;&nbsp;序</span><input type="text" name="" class="form-control">
-					</div> -->
 				</div>
 				<div class="boxinb">
 					<span>信息属性</span>
@@ -112,8 +108,10 @@
 					<span class="lets3">关&nbsp;键&nbsp;词</span><input type="text"  class="form-control" placeholder="多个关键词用“,”半角逗号隔开"  name="keywords" value="<?php echo ($article_data["keywords"]); ?>">
 				</div>
 				<div class="boxinb">
-					<span>标题图片</span><input class="form-control" name="file_upload"  type="file" >
-					<img src="<?php echo ($article_data["titleimg"]); ?>" alt="" height="150" width="150">
+					<span>标题图片</span>
+					<a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"><?php echo ($article_data["titleimg"]); ?></i>
+					<br /><br />
+					<img src="<?php echo ($article_data["titleimg"]); ?>" alt="" height="150" width="150" style="margin-left: 60px;">
 				</div>
 				<div class="boxinb">
 					<span class="lets2">标&nbsp;&nbsp;&nbsp;&nbsp;签</span><input type="text" name="" class="form-control" placeholder="多个标签用“,”半角逗号隔开">
@@ -133,7 +131,7 @@
 					</div>
 				</div>
 				<div class="boxinbtn">
-					<textarea id='ue_hidden' style="display:none"><?php echo ($article_data["content"]); ?></textarea>
+
 					<input type="hidden" name="article_id" value="<?php echo ($article_data["article_id"]); ?>">
 					<input type="submit"  value="确定" class="btn btna" />
 					<input type="reset" value="重置" class="btn btnb" />
@@ -152,14 +150,13 @@
 	}();
 </script>
 <script src="/Public/Admin/js/sdmenu.js"></script>
-						<!-- 实例化编辑器 -->
-						<script type="text/javascript">
-							var ue = UE.getEditor('container');
-								//对编辑器的操作最好在编辑器ready之后再做
-								ue.ready(function() {
-								    //设置编辑器的内容
-								    ue.setContent($("#ue_hidden").val());
-								});
-						</script>
+<script>
+	$(".upfn").on("change","input[type='file']",function(){
+	var filePath = $(this).val();
+	var arr = filePath.split('\\');
+	var fileName = arr[arr.length-1];
+	$(".upfnb").html(fileName);
+	});
+</script>
 </body>
 </html>

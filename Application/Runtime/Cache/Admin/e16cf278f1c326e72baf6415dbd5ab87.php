@@ -7,24 +7,22 @@
 	<title>甫劳科技后台管理系统</title>
 	<link href="/Public/Admin/css/base.css" rel="stylesheet" type="text/css"/>
 	<link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/Public/Admin/uploadify/uploadify.css" />
 	<!--[if lt IE 9]>
 	<script src="/Public/Admin/js/html5shiv.js"></script>
 	<script src="/Public/Admin/js/respond.min.js"></script>
 	<![endif]-->
 	<script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
-
 	<script src="/Public/Admin/js/bootstrap.min.js"></script>
 	<script src="/Public/Admin/js/laydate/laydate.js"></script>
 	<script charset="utf-8" src="/Public/Admin/kindeditor/kindeditor.js"></script>
-	<script charset="utf-8" src="/Public/Admin/kindeditor/lang/zh-CN.js"></script>
+	<script charset="utf-8" src="/Public/Admin/kindeditor/lang/zh_CN.js"></script>
 	<script>
 		KindEditor.ready(function(K) {
 			window.editor = K.create('#editor_id');
 		});
 	</script>
 
-
-	<script type="text/javascript" charset="utf-8" src="/Public/Admin/js/utf8-php/lang/zh-cn/zh-cn.js"></script>
 
 </head>
 <body>
@@ -109,7 +107,8 @@
 					<span class="lets3">关&nbsp;键&nbsp;词</span><input type="text"  class="form-control" placeholder="多个关键词用“,”半角逗号隔开"  name="keywords">
 				</div>
 				<div class="boxinb">
-					<span>标题图片</span><input class="form-control" name="file_upload"  type="file" >
+					<span>标题图片</span>
+					<a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"></i>
 				</div>
 				<div class="boxinb">
 					<span class="lets2">标&nbsp;&nbsp;&nbsp;&nbsp;签</span><input type="text" name="" class="form-control" placeholder="多个标签用“,”半角逗号隔开">
@@ -160,8 +159,18 @@
 		dateStr += date.getDate();
 //		alert(dateStr);
 		$('#demo').val(dateStr);
-	});
 
+
+
+		$(".upfn").on("change","input[type='file']",function(){
+			var filePath = $(this).val();
+			var arr = filePath.split('\\');
+			var fileName = arr[arr.length-1];
+			$(".upfnb").html(fileName);
+		});
+
+
+	});
 </script>
 </body>
 </html>
