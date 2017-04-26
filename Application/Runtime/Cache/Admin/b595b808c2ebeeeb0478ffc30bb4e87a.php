@@ -69,7 +69,7 @@
 					
 					
 					<div class="btnblue">
-						<a href="<?php echo U('User/password');?>" class="btn btna">修改密码</a>
+						<a href="<?php echo U('User/password');?>" class="btn btna">修改个人信息</a>
 					</div>
 				
 				</div>

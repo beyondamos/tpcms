@@ -94,31 +94,22 @@ class UserController extends CommonController{
      */
     public function password(){
         if(IS_POST){
-            //先判断获得的密码是否正确
-            if(!I('post.oldpassword')) $this->error('原密码必须填写');
             $user_model = D('User');
-            if($user_model->validatePassword(I('post.user_id'), I('post.oldpassword'))){
-                if(I('post.password') && I('post.password2')){
-                    if($user_model->create()){
-                        $user_model->password = $user_model->generatePasswordUpdate(I('post.user_id'), I('post.password'));
-                        if($user_model->save()){
-                            $this->success('密码修改成功', U('Admin/Index/index'), 1);
-                        }else{
-                            $this->error('密码修改失败');
-                        }
-                    }else{
-                        $this->error($user_model->getError());
-                    }
+            if($user_model->create()){
+                if(I('post.password')) //如果密码不为空
+                    $user_model->password = $user_model->generatePasswordUpdate(I('post.user_id'),I('post.password'));
+                if($user_model->save()){
+                    $this->success('个人信息修改成功',U('Admin/Index/index'),1);
                 }else{
-                    $this->error('无效的修改密码操作');
+                    $this->error('个人信息修改成功');
                 }
             }else{
-                $this->error('旧密码输入错误');
+                $this->error($user_model->getError());
             }
-
         }else{
             $this->display();
-        }   
+        }
+
     }
 
 }

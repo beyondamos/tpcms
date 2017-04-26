@@ -16,6 +16,7 @@ class UserModel extends Model{
 		array('password2', 'password', '两次密码不一致', self::MUST_VALIDATE, 'confirm', self::MODEL_BOTH),
 		array('email', 'email', '邮箱格式不正确', self::VALUE_VALIDATE, 'regex', self::MODEL_BOTH),
 		array('role_id', '0', '必须选择用户角色', self::MUST_VALIDATE, 'notequal', self::MODEL_BOTH),
+		array('nickname', 'require', '昵称不能为空', self::MUST_VALIDATE, 'regex', self::MODEL_BOTH),
  
 	);
 

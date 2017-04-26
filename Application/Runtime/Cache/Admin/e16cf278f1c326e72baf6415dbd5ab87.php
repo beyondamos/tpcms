@@ -95,7 +95,7 @@
 				</div>
 				<div class="boxinb">
 					<div class="boxinbl">
-						<span class="lets2">作&nbsp;&nbsp;&nbsp;&nbsp;者</span><input type="text" class="form-control" name="author" value="<?php echo ($login_user_data["username"]); ?>">
+						<span class="lets2">作&nbsp;&nbsp;&nbsp;&nbsp;者</span><input type="text" class="form-control" name="author" value="<?php echo ($login_user_data["nickname"]); ?>">
 					</div>
 					<div class="boxinbr">
 						<span class="lets2">日&nbsp;&nbsp;&nbsp;&nbsp;期</span><input type="text" id="demo"  class="form-control laydate-icon" name="newstime"  value="">
