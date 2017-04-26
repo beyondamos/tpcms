@@ -1,0 +1,201 @@
+[ 2017-04-26T08:48:31+08:00 ] 127.0.0.1 /15.html
+ERR: 无法加载控制器:15
+
+[ 2017-04-26T08:48:50+08:00 ] 127.0.0.1 /home/m/m_ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+ERR: 无法加载控制器:M
+
+[ 2017-04-26T08:48:51+08:00 ] 127.0.0.1 /home/m/m_ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+ERR: 无法加载控制器:M
+
+[ 2017-04-26T08:48:52+08:00 ] 127.0.0.1 /home/m/m_ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+ERR: 无法加载控制器:M
+
+[ 2017-04-26T08:48:53+08:00 ] 127.0.0.1 /home/m/m_ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+ERR: 无法加载控制器:M
+
+[ 2017-04-26T08:48:53+08:00 ] 127.0.0.1 /home/m/m_ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+ERR: 无法加载控制器:M
+
+[ 2017-04-26T08:48:54+08:00 ] 127.0.0.1 /home/m/m_ajax.php
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+ERR: 无法加载控制器:M
+
+[ 2017-04-26T09:39:48+08:00 ] 127.0.0.1 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'zan' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-26T09:40:17+08:00 ] 127.0.0.1 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'zan' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-26T09:42:29+08:00 ] 127.0.0.1 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'zan' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-26T09:44:18+08:00 ] 127.0.0.1 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'zan' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-04-26T09:45:23+08:00 ] 127.0.0.1 /Public/Home/js/jquery.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-04-26T09:45:55+08:00 ] 127.0.0.1 /Public/Home/js/jquery.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-04-26T09:46:08+08:00 ] 127.0.0.1 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'zan' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2017-04-26T09:46:53+08:00 ] 127.0.0.1 /Public/Home/js/jquery.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-04-26T09:46:58+08:00 ] 127.0.0.1 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0035s ]
+SQL: UPDATE `isq_article` SET `zan`=zan+1 WHERE `article_id` = 3 [ RunTime:0.0024s ]
+
+[ 2017-04-26T09:47:06+08:00 ] 127.0.0.1 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0028s ]
+
+[ 2017-04-26T09:47:08+08:00 ] 127.0.0.1 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0037s ]
+
+[ 2017-04-26T09:47:27+08:00 ] 127.0.0.1 /Public/Home/js/jquery.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-04-26T09:49:28+08:00 ] 127.0.0.1 /Public/Home/js/jquery.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-04-26T09:49:32+08:00 ] 127.0.0.1 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0028s ]
+
+[ 2017-04-26T09:49:35+08:00 ] 127.0.0.1 /10.html
+ERR: 无法加载控制器:10
+
+[ 2017-04-26T09:49:38+08:00 ] 127.0.0.1 /Public/Home/js/jquery.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-04-26T09:49:44+08:00 ] 127.0.0.1 /Public/Home/js/jquery.min.map
+ERR: 无法加载控制器:Public
+
+[ 2017-04-26T09:49:48+08:00 ] 127.0.0.1 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0027s ]
+SQL: UPDATE `isq_article` SET `zan`=zan+1 WHERE `article_id` = 4 [ RunTime:0.0002s ]
+
+[ 2017-04-26T09:49:50+08:00 ] 127.0.0.1 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0027s ]
+
+[ 2017-04-26T09:49:55+08:00 ] 127.0.0.1 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0030s ]
+
+[ 2017-04-26T09:57:34+08:00 ] 10.168.77.122 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0034s ]
+SQL: UPDATE `isq_article` SET `zan`=zan+1 WHERE `article_id` = 7 [ RunTime:0.0004s ]
+
+[ 2017-04-26T09:57:35+08:00 ] 10.168.77.122 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0030s ]
+
+[ 2017-04-26T09:57:38+08:00 ] 10.168.77.122 /Article/zan.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001718s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0034s ]
+

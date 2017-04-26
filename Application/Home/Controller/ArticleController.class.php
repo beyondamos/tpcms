@@ -79,4 +79,37 @@ class ArticleController extends CommonController{
         $this->display();
     }
 
+    /**
+     * 文章点赞功能
+     */
+    public function zan(){
+        $article_id = I('post.article_id');
+        $article_model = D('Article');
+        if(cookie('zanArticles')){
+            //判断是否存在 赞过的文章cookie
+            $zanArticles = unserialize(cookie('zanArticles'));
+            //判断当前文章是否在这个数组中
+            if(in_array($article_id, $zanArticles)){
+                $this->ajaxReturn(array('status' => 0));
+            }else{
+                //如果文章没有点过赞
+                $article_model->where(array('article_id' => $article_id))->setInc('zan');
+                $zanArticles[] = $article_id;
+                cookie('zanArticles',serialize($zanArticles), 3600*24);
+                $this->ajaxReturn(array('status' => 1));
+            }
+        }else{
+            //点赞 存cookie
+            $article_model->where(array('article_id' => $article_id))->setInc('zan');
+            $zanArticles[] = $article_id;
+            cookie('zanArticles',serialize($zanArticles), 3600*24);
+            $this->ajaxReturn(array('status' => 1));
+        }
+
+
+    }
+
+
+
+
 }

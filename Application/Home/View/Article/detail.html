@@ -100,30 +100,30 @@
     <include file="Public::footer" />
 
 
-<script type="text/javascript">
-    $(document).ready(function(){
-        var obj = $('.docl');
-        var offset = obj.offset();
-        var topOffset = offset.top;
-        var marginTop = obj.css("marginTop");
-        var marginLeft = obj.css("marginLeft");
-        $(window).scroll(function() {
-            var scrollTop = $(window).scrollTop();
-            if (scrollTop >= topOffset){
-                obj.css({
-                    marginTop: -160,
-                    position: 'fixed',
-                });
-            }
-            if (scrollTop < topOffset){
+<!--<script type="text/javascript">-->
+    <!--$(document).ready(function(){-->
+        <!--var obj = $('.docl');-->
+        <!--var offset = obj.offset();-->
+        <!--var topOffset = offset.top;-->
+        <!--var marginTop = obj.css("marginTop");-->
+        <!--var marginLeft = obj.css("marginLeft");-->
+        <!--$(window).scroll(function() {-->
+            <!--var scrollTop = $(window).scrollTop();-->
+            <!--if (scrollTop >= topOffset){-->
+                <!--obj.css({-->
+                    <!--marginTop: -160,-->
+                    <!--position: 'fixed',-->
+                <!--});-->
+            <!--}-->
+            <!--if (scrollTop < topOffset){-->
 
-                obj.css({
-                    marginTop: marginTop,
-                    position: 'fixed',
-                });
-            }
-        });
-    });
-</script>
+                <!--obj.css({-->
+                    <!--marginTop: marginTop,-->
+                    <!--position: 'fixed',-->
+                <!--});-->
+            <!--}-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
 </body>
 </html>

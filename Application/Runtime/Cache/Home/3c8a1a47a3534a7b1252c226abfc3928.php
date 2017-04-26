@@ -42,7 +42,7 @@
             <span>或</span>
             <a href="<?php echo U('Member/login');?>">[登录]</a>
             <span>请</span>
-            <a href="/home/wx_log.php"><img src="/Public/Home/images/icon32_wx_logo.png" style="width: 20px;margin-top:6px;margin-right:10px;" id="wx_log"></a>
+            <a href="<?php echo U('Member/wechatLogin');?>"><img src="/Public/Home/images/icon32_wx_logo.png" style="width: 20px;margin-top:6px;margin-right:10px;" id="wx_log"></a>
             <!--<a href="/home/qq_log.php"><img src="/Public/Home/images/qq.png" style="width: 15px;margin-top:6px;margin-right:10px;" id="wx_log"></a>-->
 
         </div>
@@ -106,10 +106,8 @@
 <!--收藏区-->
 <div style="clear:both;"></div>
 <div class="praise">
-    <img src="/Public/Home/images/iconeye.png" alt="" /><span>13</span>
-    <img src="/Public/Home/images/iconstar.png" alt="" />
-    <span id="zan_num">0</span>
-
+    <img src="/Public/Home/images/iconeye.png" alt="" /><span><?php echo ($article_data["clicks"]); ?></span>
+    <img src="/Public/Home/images/iconstar.png" alt="" /><span id="zan_num"><?php echo ($article_data["zan"]); ?></span>
 </div>
 
 <div class="rwmarti">
@@ -131,7 +129,7 @@
 <script type="text/javascript" >
     var jiathis_config={
         url:"http://www.ishequan.cn/index-21-20-4529.html",
-        title:document.getElementById(“article_title”).innerHTML,
+        title:document.getElementById("article_title").innerHTML,
             data_track_clickback:true,
             siteName:"肌肉拉伤怎么办 ",
             shortUrl:false,
@@ -142,49 +140,22 @@
 </div>
 
 <script>
-    $(function () {
-        $(function () {
-            $("#showmore").click(function () {
-                $.post("/home/ajax_reply.php",{uid:4529},function (date) {
-                    $("#showmore").before(date);
-                    $("#showmore").css('display','none');
-                })
-            })
-        })
-
-        $("#head_img1").attr("src","/Public/Home/images/20170419030445.jpg");
-        var dian = true;
-        var url ='/home/m/m_ajax.php';
-        $("#zan").click(function(){
-            if( dian ) {
-                dian = false;
-                $.ajax({
-                    type:'post',
-                    url: url,
-                    data:{
-                        action : 'add',
-                        uid : 4529,
-                    },
-                    success:(function(data){
-                        $("#zan_num").html(data);
-                    })
-                });
-            }else{
-                dian = true;
-                $.ajax({
-                    type:'post',
-                    url:url,
-                    data:{
-                        action : 'sub',
-                        uid : 4529,
-                    },
-                    success:(function(data){
-                        $("#zan_num").html(data);
-                    })
-                });
-            }
-        })
+    $().ready(function(){
+        $('#zan').click(function(){
+            $.post("<?php echo U('Article/zan');?>",{
+                'article_id':'<?php echo ($article_data["article_id"]); ?>'
+            },function(msg){
+                if(msg.status == 1){
+                    var zan_num = parseInt($('#zan_num').html());
+                        zan_num += 1;
+                        $('#zan_num').html(zan_num);
+                }else{
+                    alert('今天已经点过赞了！');
+                }
+            },'json');
+        });
     });
+
 </script>
 
         
@@ -276,30 +247,30 @@
 </script>
 
 
-<script type="text/javascript">
-    $(document).ready(function(){
-        var obj = $('.docl');
-        var offset = obj.offset();
-        var topOffset = offset.top;
-        var marginTop = obj.css("marginTop");
-        var marginLeft = obj.css("marginLeft");
-        $(window).scroll(function() {
-            var scrollTop = $(window).scrollTop();
-            if (scrollTop >= topOffset){
-                obj.css({
-                    marginTop: -160,
-                    position: 'fixed',
-                });
-            }
-            if (scrollTop < topOffset){
+<!--<script type="text/javascript">-->
+    <!--$(document).ready(function(){-->
+        <!--var obj = $('.docl');-->
+        <!--var offset = obj.offset();-->
+        <!--var topOffset = offset.top;-->
+        <!--var marginTop = obj.css("marginTop");-->
+        <!--var marginLeft = obj.css("marginLeft");-->
+        <!--$(window).scroll(function() {-->
+            <!--var scrollTop = $(window).scrollTop();-->
+            <!--if (scrollTop >= topOffset){-->
+                <!--obj.css({-->
+                    <!--marginTop: -160,-->
+                    <!--position: 'fixed',-->
+                <!--});-->
+            <!--}-->
+            <!--if (scrollTop < topOffset){-->
 
-                obj.css({
-                    marginTop: marginTop,
-                    position: 'fixed',
-                });
-            }
-        });
-    });
-</script>
+                <!--obj.css({-->
+                    <!--marginTop: marginTop,-->
+                    <!--position: 'fixed',-->
+                <!--});-->
+            <!--}-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
 </body>
 </html>

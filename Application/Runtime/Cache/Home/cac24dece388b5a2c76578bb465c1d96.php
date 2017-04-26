@@ -95,7 +95,7 @@
 
         <div class="praise">
             <img src="/Public/Mobile/images/iconeye.png" alt="" /><span><?php echo ($article_data["clicks"]); ?></span>
-            <img src="/Public/Mobile/images/iconstar.png" alt="" /><span id="zan_num">20</span>
+            <img src="/Public/Mobile/images/iconstar.png" alt="" /><span id="zan_num"><?php echo ($article_data["zan"]); ?></span>
             <img style="visibility:hidden;" src="/Public/Mobile/images/iconcomm.png" alt=""/><span style="visibility:hidden;">18</span>
         </div>
 
@@ -104,40 +104,23 @@
 
     </div>
 
-    <script>
-        $(function () {
-            var dian = true;
-            var url ='/home/m/m_ajax.php';
-            $("#zan").click(function(){
-                if( dian ) {
-                    dian = false;
-                    $.ajax({
-                        type:'post',
-                        url: url,
-                        data:{
-                            action : 'add',
-                            uid : <?php echo $info['id']?>,
-						},
-						success:(function(data){
-							$("#zan_num").html(data);
-						})
-					});
-				}else{
-					dian = true;
-					$.ajax({
-						type:'post',
-						url:url,
-						data:{
-							action : 'sub',
-							uid : <?php echo $info['id']?>,
-						},
-						success:(function(data){
-							$("#zan_num").html(data);
-						})
-					});
-				}
-			})
-		});
+
+        <script>
+        $().ready(function(){
+            $('#zan').click(function(){
+                $.post("<?php echo U('Article/zan');?>",{
+                    'article_id':'<?php echo ($article_data["article_id"]); ?>'
+                },function(msg){
+                    if(msg.status == 1){
+                        var zan_num = parseInt($('#zan_num').html());
+                        zan_num += 1;
+                        $('#zan_num').html(zan_num);
+                    }else{
+                        alert('今天已经点过赞了！');
+                    }
+                },'json');
+            });
+        });
     </script>
 
     <div class="space"></div><!--间隔-->
