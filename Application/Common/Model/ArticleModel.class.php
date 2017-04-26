@@ -18,7 +18,6 @@ class ArticleModel extends Model{
 
 	protected $_auto = array(
 		array('newstime', 'maketime', self::MODEL_BOTH, 'function'),
-		array('is_new', 'judgeCheck', self::MODEL_BOTH, 'function'),
 		array('is_hot', 'judgeCheck', self::MODEL_BOTH, 'function'),
 		array('is_recommend', 'judgeCheck', self::MODEL_BOTH, 'function'),
 		array('status', 'judgeCheck', self::MODEL_BOTH, 'function'),
