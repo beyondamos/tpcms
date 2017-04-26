@@ -28,7 +28,7 @@ class ArticleController extends CommonController{
         //相关推荐
         $map = array('status' => 1, 'is_recommend' => 1);
         $related_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
-                                    ->field('article_id,titleimg,title,newstime,url')->where($map)
+                                    ->field('article_id,titleimg,title,newstime,url,clicks,zan')->where($map)
                                     ->order('article_id desc')->limit('6')->select();
         $this->assign('related_data', $related_data);
         $this->display();
@@ -50,13 +50,13 @@ class ArticleController extends CommonController{
 
         //最新信息
         $article_model = D('Article');
-        $map = array('status' => 1, 'is_new' => 1 , 'c.cate_id' => $cate_data['cate_id']);
+        $map = array('status' => 1,  'c.cate_id' => $cate_data['cate_id']);
         $new_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
             ->field('article_id,title,titleimg,newstime,synopsis,clicks,url')->where($map)
             ->order('article_id desc')->page($p.',10')->select();
         $this->assign('new_data', $new_data);
         //分页数据
-        $count = $article_model->where(array('status' => 1, 'is_new' => 1, 'cate_id' =>  $cate_data['cate_id']))->count();
+        $count = $article_model->where(array('status' => 1,  'cate_id' =>  $cate_data['cate_id']))->count();
         $page = new \Think\Pagehome($count,10);
         $show = $page->show();
         $this->assign('show',$show);

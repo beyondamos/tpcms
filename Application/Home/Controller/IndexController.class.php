@@ -12,7 +12,7 @@ class IndexController extends CommonController {
         $this->rightInfo();
         //最新信息
         $article_model = D('Article');
-        $map = array('status' => 1, 'is_new' => 1 );
+        $map = array('status' => 1 );
         $new_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
                                     ->field('article_id,title,titleimg,newstime,synopsis,clicks,url')->where($map)
                                   ->order('article_id desc')->limit('10')->select();
@@ -32,7 +32,7 @@ class IndexController extends CommonController {
     public function showMore(){
         $start = I('post.start') * 10;
         $article_model = D('Article');
-        $map = array('status' => 1, 'is_new' => 1 );
+        $map = array('status' => 1);
         $new_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
             ->field('article_id,title,titleimg,newstime,synopsis,clicks,url')->where($map)
             ->order('article_id desc')->limit($start.',10')->select();

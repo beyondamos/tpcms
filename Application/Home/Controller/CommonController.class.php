@@ -35,7 +35,7 @@ class CommonController extends Controller{
         $article_model = D('Article');
         $map['is_hot'] = 1;
         $map['status'] = 1;
-        $right_data = $article_model->alias('a')->field('article_id,title,titleimg,newstime,url')
+        $right_data = $article_model->alias('a')->field('article_id,title,titleimg,newstime,url,clicks,zan')
             ->join('left join __CATEGORY__ c on c.cate_id = a.cate_id')->where($map)->limit('11')
             ->order('article_id desc')->select();
         $this->assign('right_data', $right_data);

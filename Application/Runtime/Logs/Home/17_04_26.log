@@ -424,3 +424,81 @@ ERR: 无法加载控制器:Public
 [ 2017-04-26T13:15:01+08:00 ] 127.0.0.1 /Public/Admin/kindeditor/lang/zh-CN.js
 ERR: 无法加载控制器:Public
 
+[ 2017-04-26T15:32:04+08:00 ] 127.0.0.1 /Home/Index/index.html
+ERR: 1054:Champ 'is_hot' inconnu dans where clause
+ [ SQL语句 ] : SELECT `article_id`,`title`,`titleimg`,`newstime`,`url` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `is_hot` = 1 AND `status` = 1 ORDER BY article_id desc LIMIT 11  
+
+[ 2017-04-26T15:35:24+08:00 ] 127.0.0.1 /Home/Index/index.html
+ERR: 1054:Champ 'is_hot' inconnu dans where clause
+ [ SQL语句 ] : SELECT `article_id`,`title`,`titleimg`,`newstime`,`url` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `is_hot` = 1 AND `status` = 1 ORDER BY article_id desc LIMIT 11  
+
+[ 2017-04-26T15:35:32+08:00 ] 127.0.0.1 /
+ERR: 1054:Champ 'is_hot' inconnu dans where clause
+ [ SQL语句 ] : SELECT `article_id`,`title`,`titleimg`,`newstime`,`url` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `is_hot` = 1 AND `status` = 1 ORDER BY article_id desc LIMIT 11  
+
+[ 2017-04-26T15:45:10+08:00 ] 127.0.0.1 /Index/showMore.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0032s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`synopsis`,`clicks`,`url` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 10,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2017-04-26T15:45:13+08:00 ] 127.0.0.1 /Index/showMore.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0033s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`synopsis`,`clicks`,`url` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 20,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2017-04-26T15:45:15+08:00 ] 127.0.0.1 /Index/showMore.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0028s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`synopsis`,`clicks`,`url` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 30,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+

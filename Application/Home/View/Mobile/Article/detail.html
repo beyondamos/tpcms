@@ -97,11 +97,11 @@
         <volist name="right_data" id="vo">
         <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>">
             <div class="boxitem">
-                <div class="imglimt"><img src="<{$vo.titleimg}>" alt="" /></div>
+                <div class="imglimt"><img src="__ROOT__/<{$vo.titleimg}>" alt="" /></div>
                 <h2><{$vo.title}></h2>
                 <div class="praise">
                     <img src="__PUBLIC__/Mobile/images/iconeye.png" alt="" /><span><{$vo.clicks}></span>
-                    <img src="__PUBLIC__/Mobile/images/iconstar.png" alt="" /><span>20</span>
+                    <img src="__PUBLIC__/Mobile/images/iconstar.png" alt="" /><span><{$vo.zan}></span>
                     <span><{$vo.newstime}></span>
                 </div>
             </div>

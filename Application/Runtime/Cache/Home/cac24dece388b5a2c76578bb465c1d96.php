@@ -128,11 +128,11 @@
         <div class="titblue">精彩推荐</div>
         <?php if(is_array($right_data)): $i = 0; $__LIST__ = $right_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>">
             <div class="boxitem">
-                <div class="imglimt"><img src="<?php echo ($vo["titleimg"]); ?>" alt="" /></div>
+                <div class="imglimt"><img src="/<?php echo ($vo["titleimg"]); ?>" alt="" /></div>
                 <h2><?php echo ($vo["title"]); ?></h2>
                 <div class="praise">
                     <img src="/Public/Mobile/images/iconeye.png" alt="" /><span><?php echo ($vo["clicks"]); ?></span>
-                    <img src="/Public/Mobile/images/iconstar.png" alt="" /><span>20</span>
+                    <img src="/Public/Mobile/images/iconstar.png" alt="" /><span><?php echo ($vo["zan"]); ?></span>
                     <span><?php echo ($vo["newstime"]); ?></span>
                 </div>
             </div>
