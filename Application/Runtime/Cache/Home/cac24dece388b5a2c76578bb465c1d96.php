@@ -126,7 +126,7 @@
     <!--精彩推荐-->
     <div class="boxcont">
         <div class="titblue">精彩推荐</div>
-        <?php if(is_array($right_data)): $i = 0; $__LIST__ = $right_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>">
+        <?php if(is_array($mobile_recommend_data)): $i = 0; $__LIST__ = $mobile_recommend_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>">
             <div class="boxitem">
                 <div class="imglimt"><img src="/<?php echo ($vo["titleimg"]); ?>" alt="" /></div>
                 <h2><?php echo ($vo["title"]); ?></h2>

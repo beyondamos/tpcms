@@ -29,7 +29,7 @@ class ArticleController extends CommonController{
         //文章数据
         $article_model = D('Article');
         $p = I('get.p') ? I('get.p') : 1;
-        $article_data = $article_model->alias('a')->field('article_id,a.cate_id,title,cate_name,author,newstime,clicks')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')->where($map)->order('article_id desc')->page($p.',5')->select();
+        $article_data = $article_model->alias('a')->field('article_id,a.cate_id,title,cate_name,author,newstime,real_clicks')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')->where($map)->order('article_id desc')->page($p.',5')->select();
         $this->assign('article_data',$article_data);
         //分页数据
         $count = $article_model->alias('a')->where($map)->count();

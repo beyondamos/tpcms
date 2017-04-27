@@ -99,7 +99,7 @@
 							<td class="text-vm"><?php echo ($vo["cate_name"]); ?></td>
 							<td class="text-vm"><?php echo ($vo["author"]); ?></td>
 							<td class="text-vm"><?php echo ($vo["newstime"]); ?></td>
-							<td class="text-vm"><?php echo ($vo["clicks"]); ?></td>
+							<td class="text-vm"><?php echo ($vo["real_clicks"]); ?></td>
 							<td class="text-vm">2</td>
 							<td class="text-vm">
 								<a href="<?php echo U('Article/edit',array('article_id' => $vo['article_id']));?>">编辑</a>

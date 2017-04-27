@@ -15,7 +15,7 @@ class CategoryController extends CommonController{
         $this->assign('category_data',$category_data);
         //文章数和点击数
         $article_model = D('Article');
-        $count_data = $article_model->field('cate_id , count(article_id) as article_num , sum(clicks) as clicks')->group('cate_id')->select();
+        $count_data = $article_model->field('cate_id , count(article_id) as article_num , sum(real_clicks) as clicks')->group('cate_id')->select();
         //整理获得的内容，将数组的键变成分类id
         foreach($count_data as $key => $val){
             $list[$val['cate_id']] = $val;
