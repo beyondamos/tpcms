@@ -18,6 +18,10 @@ class ArticleController extends CommonController{
 
         $article_id = I('get.article_id');
         if(!$article_id || $article_id <= 0) $this->error('不存在的页面');
+
+        //增加点击量
+        $this->clicks();
+
         //文章信息
         $article_model = D('Article');
         $article_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')->field('a.*,c.*')->find($article_id);
@@ -149,6 +153,44 @@ class ArticleController extends CommonController{
         $this->assign('empty', $empty);
         $this->display();
 
+    }
+
+    /**
+     * 增加点击量
+     */
+    public function clicks(){
+        $article_id = I('get.article_id');
+        $time = time();
+        //首先只要浏览器刷新就会增加点击量
+        $article_model = D('Article');
+        $article_model->where(array('article_id' => $article_id))->setInc('clicks');
+        //判断是否增加真实点击量
+//        $ip = get_client_ip();
+        //将点击的页面都保存到cookie中去
+        if(cookie('real_clicks')){
+            $real_clicks = unserialize(cookie('real_clicks'));
+//            var_dump($real_clicks);
+        }else{
+            $real_clicks = array();
+        }
+        //判断是否有点击过的记录,如果有，那么判断是否过期并清除
+        $info = array();
+        if($real_clicks){
+            foreach($real_clicks as $key => $val){
+                if(($time - $val) < 3600*24){
+                    $info[$key] = $val;
+                }
+            }
+            //如果记录里面没有该文章的信息了 增加真实
+            if(!array_key_exists($article_id, $info)){
+                $info[$article_id] = $time;
+                $article_model->where(array('article_id' => $article_id))->setInc('real_clicks');
+            }
+        }else{
+            $info[$article_id] = $time;
+            $article_model->where(array('article_id' => $article_id))->setInc('real_clicks');
+        }
+        cookie('real_clicks',serialize($info));
     }
 
 
