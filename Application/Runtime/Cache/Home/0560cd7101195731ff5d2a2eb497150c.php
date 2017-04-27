@@ -67,6 +67,31 @@
     </div>
     <!--头部选项结束-->
 
+
+    <script>
+        var stop=true;
+        var s = 1;
+        $(window).scroll(function(){
+            totalheight = parseFloat($(window).height()) + parseFloat($(window).scrollTop());
+            if($(document).height() <= totalheight){
+                var  none = $("#none").html();
+                if(none != undefined){
+                    stop = false;
+                    $("#Loading").css('display','none');
+                }
+                if(stop==true){
+                    stop=false;
+                    $.post("<?php echo U('Article/dropDown');?>", {start:s,cate_name: "<?php echo I('get.cate_name');?>" },function(txt){
+                    $("#Loading").before(txt);
+                    stop=true;
+                    s= s+1;
+                },"text");
+			}
+		}
+	});
+    </script>
+
+
     <div class="boxcont">
         <?php if(is_array($new_data)): $i = 0; $__LIST__ = $new_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>">
             <div class="boxitem">

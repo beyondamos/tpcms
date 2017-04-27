@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="/Public/Home/css/base0405a.css" rel="stylesheet" type="text/css"/>
+    <link rel="SHORTCUT ICON" href="<?php echo 'http://'.$_SERVER['HTTP_HOST']; ?>/favicon.ico">
     <!--[if lt IE 9]>
     <script src="/Public/Home/js/html5shiv.js"></script>
     <script src="/Public/Home/js/respond.min.js"></script>

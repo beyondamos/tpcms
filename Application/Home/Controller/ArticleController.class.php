@@ -106,9 +106,32 @@ class ArticleController extends CommonController{
             $this->ajaxReturn(array('status' => 1));
         }
 
-
     }
 
+
+    /**
+     * 下拉
+     */
+    public function dropDown(){
+        $cate_name = I('post.cate_name');
+        $i = I('post.start') * 10;
+        $category_model = D('Category');
+        $category_data = $category_model->where(array('url' => $cate_name))->find();
+
+        if($category_data){
+            $map['c.cate_id'] = $category_data['cate_id'];
+        }
+        $map['status'] = 1;
+        $article_model = D('Article');
+        $article_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
+                        ->field('article_id,title,titleimg,newstime,synopsis,clicks,url')
+                        ->where($map)->order('article_id desc')->limit($i.',10')->select();
+        $empty = '<div id="none"></div>';
+        $this->assign('article_data', $article_data);
+        $this->assign('empty', $empty);
+        $this->display();
+
+    }
 
 
 
