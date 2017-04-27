@@ -31,6 +31,24 @@ class ArticleController extends CommonController{
                                     ->field('article_id,titleimg,title,newstime,url,clicks,zan')->where($map)
                                     ->order('article_id desc')->limit('6')->select();
         $this->assign('related_data', $related_data);
+
+        //移动端精彩推荐
+        $mobile_recommend_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
+                                                ->field('article_id,titleimg,title,newstime,url,clicks,zan')
+                                                ->where(array('a.cate_id'=> $article_data['cate_id']))->order('article_id desc')
+                                                ->limit('10')->select();
+        //如果不满10条信息，那么从其他地方凑满10条
+        $num = count($mobile_recommend_data);
+        if($num < 10){
+            $other_num = 10 - $num;
+            $mobile_recommend_data_other = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
+                                            ->field('article_id,titleimg,title,newstime,url,clicks,zan')
+                                            ->where(array('a.cate_id' => array('neq' => $article_data['cate_id'])))->order('article_id desc')
+                                            ->limit($other_num)->select();
+            $mobile_recommend_data = array_merge($mobile_recommend_data,$mobile_recommend_data_other);
+        }
+
+        $this->assign('mobile_recommend_data', $mobile_recommend_data);
         $this->display();
     }
 
