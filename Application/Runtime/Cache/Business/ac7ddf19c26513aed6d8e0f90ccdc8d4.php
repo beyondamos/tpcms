@@ -16,7 +16,7 @@
     <img src="/Public/Business/images/logo.png" alt="" />
     <h4>商家后台管理系统</h4>
     <div class="logcont">
-        <form action="" method="post">
+        <form action="<?php echo U('Login/index');?>" method="post">
             <input type="text" name="user_name" class="inuser" placeholder="用户名" />
             <input type="password" name="pwd" class="inmm" placeholder="密码" />
             <input type="submit" name="submit" value="登录" class="inbtn" />

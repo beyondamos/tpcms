@@ -17,7 +17,7 @@
 <div class="head">
     <a onclick="javascript:history.back(-1);" class="head-icon-l"><img src="__IMG__/back.png" /></a>
     <span>商家后台管理系统</span>
-    <a href="index.php?act=logout" class="head-icon-r"><img src="__IMG__/exit.png" /></a>
+    <a href="<{:U('Login/logout')}>" class="head-icon-r"><img src="__IMG__/exit.png" /></a>
 </div>
 <div class="blank50"></div>
 
@@ -25,16 +25,16 @@
 <div class="wrap">
     <!--头部信息区-->
     <div class="boxhead">
-        <h1><?php echo $business_info['business_name'];?></h1>
-        <a href="#">总活动数<br/><?php echo $activity_count;?></a>
-        <a href="#">总参与人数<br/><?php echo $business_info['partake_count'];?></a>
-        <a href="#">总获奖人数<br/><?php echo $business_info['win_count'];?></a>
+        <h1><{$business_data.business_name}></h1>
+        <a href="">总活动数<br/><{$activity_count}></a>
+        <a href="">总参与人数<br/><{$business_data.partake_count}></a>
+        <a href="">总获奖人数<br/><{$business_data.win_count}></a>
     </div>
 
     <!--按钮区-->
     <div class="boxbtn">
-        <a href="list.php"><img src="__IMG__/iconevent.png" alt="" /><br/>活动列表
-            <a href="search.php"><img src="__IMG__/iconchange.png" alt="" /><br/>查询兑奖
+        <a href="<{:U('Activity/index')}>"><img src="__IMG__/iconevent.png" alt="" /><br/>活动列表
+            <a href="<{:U('Partake/search')}>"><img src="__IMG__/iconchange.png" alt="" /><br/>查询兑奖
     </div>
 </div>
 
