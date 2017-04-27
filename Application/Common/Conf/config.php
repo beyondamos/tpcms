@@ -7,7 +7,7 @@ return array(
     'TMPL_R_DELIM'    =>    '}>',
 
     // 允许访问的模块列表
-	'MODULE_ALLOW_LIST'    =>    array('Home','Admin'),
+	'MODULE_ALLOW_LIST'    =>    array('Home','Admin','Business'),
 	'DEFAULT_MODULE'       =>    'Home',  // 默认模块
 
 	/* URL设置 */
