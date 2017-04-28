@@ -6,7 +6,7 @@
     <div class="contlarta">
         <volist name="right_data" id="vo" offset="0" length="3">
         <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>">
-            <img src="__ROOT__/<{$vo.titleimg}>" alt="" />
+            <img src="<{$vo.titleimg}>" alt="" />
             <h2><{$vo.title}></h2>
             <h3><{$vo.newstime}></h3>
         </a>

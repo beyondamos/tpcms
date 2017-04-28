@@ -27,12 +27,10 @@
     <!--查询-->
     <div class="boxseh">
         <form action="" method="post">
-            <select name="activity_name" class="selseh">
-                <?php foreach($activities as $val):?>
-                <option value="<?php echo $val['activity_id'];?>"><?php echo $val['activity_name'];?></option>
-                <?php endforeach;?>
+            <select name="activity_id" class="selseh">
+                <?php if(is_array($activity_data)): $i = 0; $__LIST__ = $activity_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["activity_id"]); ?>"><?php echo ($vo["activity_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
-            <input type="text" name="plate_number" class="inseh" placeholder="请输入" />
+            <input type="text" name="voucher" class="inseh" placeholder="请输入" />
             <input type="submit" name="submit" value="查询" id="test" class="inbtn" />
         </form>
     </div>
@@ -43,26 +41,24 @@
             <li>
                 <span>用户名</span>
                 <span>兑奖凭证</span>
-                <span>是否兑奖</span>
                 <span>兑奖时间</span>
                 <span>操作</span>
             </li>
         </ul>
-        <?php foreach($user_info as $val):?>
-        <ul>
+
+        <?php if(is_array($partake_data)): $i = 0; $__LIST__ = $partake_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><ul>
             <li>
-                <span><?php echo $val['user_name'];?></span>
-                <span><?php echo $val['voucher'];?></span>
-                <span><?php echo $val['business_confirm'] == 1 ? '已经兑奖' : '未兑奖' ;?></span>
-                <span><?php echo $val['confirm_time'] == 0 ? '&nbsp;' : date('m-d H:i:s',$val['confirm_time']);?></span>
-                <?php if($val['business_confirm'] == 0):?>
-                <span><a class="btn btn-default btn-xs" href="search.php?activity_id=<?php echo $activity_name;?>&id=<?php echo $val['id'];?>" role="button">确认兑奖</a></span>
-                <?php else:?>
-                <span></span>
-                <?php endif;?>
+                <span><?php echo ($vo["user_name"]); ?></span>
+                <span><?php echo ($vo["voucher"]); ?></span>
+
+                <span><?php echo $vo['confirm_time'] == 0 ? '' : date('Y-m-d H:i:s', $vo['confirm_time']); ?></span>
+                <span>
+                <?php if($vo['business_confirm'] == 0): ?><a class="btn btn-default btn-xs" href="<?php echo U('Partake/confirm', array('id' => $vo['id'], 'activity_id'=> $vo['activity_id']));?>" role="button">确认兑奖</a>
+                    <?php else: ?>已兑奖<?php endif; ?>
+                </span>
             </li>
-        </ul>
-        <?php endforeach;?>
+        </ul><?php endforeach; endif; else: echo "" ;endif; ?>
+
     </div>
 </div>
 

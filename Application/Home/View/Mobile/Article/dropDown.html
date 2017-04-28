@@ -2,7 +2,7 @@
     <volist name="article_data" id="vo" empty="$empty">
     <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>">
         <div class="boxitem">
-            <div class="imglimt"><img src="__ROOT__<{$vo.titleimg}>" alt=""/></div>
+            <div class="imglimt"><img src="<{$vo.titleimg}>" alt=""/></div>
             <h2><{$vo.title}></h2>
             <h3><{:substr($vo['synopsis'],0,15)}></h3>
             <div class="praise">

@@ -32,15 +32,16 @@
             </li></a>
         </ul>
         <ul>
-            <?php $i = 1 ;foreach($list as $val):?>
-            <a href="detail.php?activity_id=<?php echo $val['activity_id'];?>"><li>
-                <span><?php echo $i;?></span>
-                <span><?php echo $val['activity_name'];?></span>
-                <span><?php echo $val['partake_count'];?></span>
-                <span><?php echo $val['win_count'];?></span>
-                <span><?php echo $val['cashprize_count'];?></span>
-            </li></a>
-            <?php $i++; endforeach;?>
+            <volist name="activity_data" id="vo" key="k">
+            <a href="<{:U('Partake/index',array('activity_id'=> $vo['activity_id']))}>"><li>
+                <span><{$k}></span>
+                <span><{$vo.activity_name}></span>
+                <span><{$vo.partake_count}></span>
+                <span><{$vo.win_count}></span>
+                <span><{$vo.cashprize_count}></span>
+            </li>
+            </a>
+            </volist>
         </ul>
     </div>
 </div>

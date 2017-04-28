@@ -32,15 +32,14 @@
             </li></a>
         </ul>
         <ul>
-            <?php $i = 1 ;foreach($list as $val):?>
-            <a href="detail.php?activity_id=<?php echo $val['activity_id'];?>"><li>
-                <span><?php echo $i;?></span>
-                <span><?php echo $val['activity_name'];?></span>
-                <span><?php echo $val['partake_count'];?></span>
-                <span><?php echo $val['win_count'];?></span>
-                <span><?php echo $val['cashprize_count'];?></span>
-            </li></a>
-            <?php $i++; endforeach;?>
+            <?php if(is_array($activity_data)): $k = 0; $__LIST__ = $activity_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><a href="<?php echo U('Partake/index',array('activity_id'=> $vo['activity_id']));?>"><li>
+                <span><?php echo ($k); ?></span>
+                <span><?php echo ($vo["activity_name"]); ?></span>
+                <span><?php echo ($vo["partake_count"]); ?></span>
+                <span><?php echo ($vo["win_count"]); ?></span>
+                <span><?php echo ($vo["cashprize_count"]); ?></span>
+            </li>
+            </a><?php endforeach; endif; else: echo "" ;endif; ?>
         </ul>
     </div>
 </div>

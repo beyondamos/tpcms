@@ -7,8 +7,7 @@ mysqli_query($link,'set names utf8');
 $sql = "select `article_id`,`titleimg` from `isq_news`";
 $query = mysqli_query($link,$sql);
 while($row = mysqli_fetch_assoc($query)){
-    $titleimg = str_replace('..','Public/Upload',$row['titleimg']);
-
+    $titleimg = str_replace('Public','/Public',$row['titleimg']);
     echo $titleimg;
     mysqli_query($link,"update `isq_news` set `titleimg` = '{$titleimg}' where `article_id` = '{$row['article_id']}'");
 }

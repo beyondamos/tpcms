@@ -15,9 +15,9 @@
 
 <!--标题栏-->
 <div class="head">
-    <a href="list.php" class="head-icon-l"><img src="/Public/Business/images/back.png" /></a>
+    <a href="<?php echo U('Activity/index');?>" class="head-icon-l"><img src="/Public/Business/images/back.png" /></a>
     <span>活动详情</span>
-    <a href="index.php?act=logout" class="head-icon-r"><img src="/Public/Business/images/exit.png" /></a>
+    <a href="<?php echo U('Login/logout');?>" class="head-icon-r"><img src="/Public/Business/images/exit.png" /></a>
 </div>
 <div class="blank50"></div>
 
@@ -27,25 +27,22 @@
             <a href="javascript:;"><li>
                 <span>用户名</span>
                 <span>兑奖凭证</span>
-                <span>是否兑奖</span>
+                <!--<span>是否兑奖</span>-->
                 <span>兑奖时间</span>
                 <span>操作</span>
             </li></a>
         </ul>
         <ul>
-            <?php foreach($activity_info as $val):?>
-            <li>
-                <span><?php echo $val['user_name'];?></span>
-                <span><?php echo $val['voucher'];?></span>
-                <span><?php echo $val['business_confirm'] == 0 ? '未兑奖' : '已经兑奖';?></span>
-                <span><?php echo $val['confirm_time'] == 0 ? '': date('Y-m-d H:i:s',$val['confirm_time']);?></span>
-                <?php if($val['business_confirm'] == 0):?>
-                <span><a class="btn btn-default btn-xs" href="detail.php?activity_id=<?php echo $_GET['activity_id']?>&id=<?php echo $val['id'];?>" role="button">确认兑奖</a></span>
-                <?php else:?>
-                <span></span>
-                <?php endif;?>
-            </li>
-            <?php endforeach;?>
+            <?php if(is_array($partake_data)): $i = 0; $__LIST__ = $partake_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
+                <span><?php echo ($vo["user_name"]); ?></span>
+                <span><?php echo ($vo["voucher"]); ?></span>
+                <!--<span><?php if($vo['business_confirm'] == 0 ): ?>未兑奖<?php else: ?>已经兑奖<?php endif; ?></span>-->
+                <span><?php echo $vo['confirm_time'] == 0 ? '' : date('Y-m-d H:i:s', $vo['confirm_time']); ?></span>
+                <span>
+                <?php if($vo['business_confirm'] == 0): ?><a class="btn btn-default btn-xs" href="<?php echo U('Partake/confirm', array('id' => $vo['id'], 'activity_id'=> $vo['activity_id']));?>" role="button">确认兑奖</a>
+                    <?php else: ?>已兑奖<?php endif; ?>
+                </span>
+            </li><?php endforeach; endif; else: echo "" ;endif; ?>
         </ul>
     </div>
 </div>

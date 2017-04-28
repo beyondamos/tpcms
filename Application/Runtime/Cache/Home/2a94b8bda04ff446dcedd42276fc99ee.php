@@ -201,7 +201,7 @@
     <!--右侧列表区主推文章-->
     <div class="contlarta">
         <?php if(is_array($right_data)): $i = 0; $__LIST__ = array_slice($right_data,0,3,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>">
-            <img src="/<?php echo ($vo["titleimg"]); ?>" alt="" />
+            <img src="<?php echo ($vo["titleimg"]); ?>" alt="" />
             <h2><?php echo ($vo["title"]); ?></h2>
             <h3><?php echo ($vo["newstime"]); ?></h3>
         </a><?php endforeach; endif; else: echo "" ;endif; ?>
