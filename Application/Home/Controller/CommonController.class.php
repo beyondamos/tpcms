@@ -33,7 +33,7 @@ class CommonController extends Controller{
      */
     public function rightInfo(){
         $article_model = D('Article');
-        $map['is_hot'] = 1;
+        // $map['is_hot'] = 1;
         $map['status'] = 1;
         $right_data = $article_model->alias('a')->field('article_id,title,titleimg,newstime,url,clicks,zan')
             ->join('left join __CATEGORY__ c on c.cate_id = a.cate_id')->where($map)->limit('11')

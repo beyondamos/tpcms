@@ -88,7 +88,7 @@
 				<div class="boxinb">
 					<span>信息属性</span>
 					<label><input type="checkbox" name="status" <?php if($article_data['status'] == 1): ?>checked<?php endif; ?> />审核</label>
-					<label><input type="checkbox" name="is_new" <?php if($article_data['is_new'] == 1): ?>checked<?php endif; ?> />最新</label>
+
 					<label><input type="checkbox" name="is_hot" <?php if($article_data['is_hot'] == 1): ?>checked<?php endif; ?> />最热</label>
 					<label><input type="checkbox" name="is_recommend" <?php if($article_data['is_recommend'] == 1): ?>checked<?php endif; ?> />推荐</label>
 				</div>
