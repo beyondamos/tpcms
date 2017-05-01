@@ -1,6 +1,6 @@
 <?php
 return array(
-	'SHOW_PAGE_TRACE' 		=>	true, //页面追踪
+	// 'SHOW_PAGE_TRACE' 		=>	true, //页面追踪
 	'LOAD_EXT_CONFIG' 		=>  'db',			 //加载数据库配置
 	//'配置项'=>'配置值'
     'TMPL_L_DELIM'    =>    '<{',
