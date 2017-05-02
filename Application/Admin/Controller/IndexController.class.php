@@ -14,7 +14,7 @@ class IndexController extends CommonController {
         $article_model = D('Article');
         $article_total = $article_model->count();
         $this->assign('article_total' , $article_total);
-        $article_uncheck_num  = $article_model->where(array('status' => 2))->count();
+        $article_uncheck_num  = $article_model->where(array('status' => 0))->count();
         $this->assign('article_uncheck_num', $article_uncheck_num);
 
         //服务器信息
