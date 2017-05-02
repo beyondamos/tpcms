@@ -54,7 +54,7 @@ class ArticleModel extends Model{
 			$id = implode(',', $id);
 			$map['article_id'] = array('in', $id);
 		}
-		$data = array('status' => 2);
+		$data = array('status' => 0);
 		if($this->where($map)->save($data)){
 			return true;
 		}

@@ -148,7 +148,7 @@ class ArticleController extends CommonController{
             $this->assign('search_cate_id',$cate_id);
             $this->assign('search_article',$search_article);
         }
-        $map['status'] = 2;
+        $map['status'] = 0;
         //分类数据
         $category_model = D('Category');
         $category_data = $category_model->getSortCategories();
