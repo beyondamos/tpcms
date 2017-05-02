@@ -11,9 +11,14 @@ class CommonController extends Controller{
      * 页面初始化
      */
     public function _initialize(){
+        //判断是否是手机访问，切换主题
         if(is_mobile()){
             C('DEFAULT_THEME','Mobile');
         }
+
+        //统计流量
+//        $this->flow();
+        //导航
         $this->nav();
     }
 
@@ -45,5 +50,13 @@ class CommonController extends Controller{
         $this->assign('right_data', $right_data);
     }
 
+    /**
+     * 统计流量
+     */
+    public function flow(){
+        echo $_SERVER['REQUEST_URI'];
+        echo '<br />';
+        echo get_client_ip();
+    }
 
 }

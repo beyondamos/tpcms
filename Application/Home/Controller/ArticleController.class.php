@@ -161,9 +161,37 @@ class ArticleController extends CommonController{
     public function clicks(){
         $article_id = I('get.article_id');
         $time = time();
-        //首先只要浏览器刷新就会增加点击量
+
+        //首先只要浏览器刷新就会增加点击量  第一次增加随机1-10个点击，然后每次刷新增加1个点击
         $article_model = D('Article');
-        $article_model->where(array('article_id' => $article_id))->setInc('clicks');
+        //判断是否存在第一次点击的cookie数组
+        if(cookie('first_click')){
+            $first_click = unserialize(cookie('first_click'));
+        }else{
+            $first_click = array();
+        }
+        $clicks = array();
+        if($first_click){
+            foreach($first_click as $key => $val){
+                if(($time - $val) < 3600*24){
+                    $clicks[$key] = $val;
+                }
+            }
+            //如果记录里面没有该文章的信息了 增加真实
+            if(!array_key_exists($article_id, $clicks)){
+                $clicks[$article_id] = $time;
+                $article_model->where(array('article_id' => $article_id))->setInc('clicks',mt_rand(1,10));
+            }else{
+                $article_model->where(array('article_id' => $article_id))->setInc('clicks');
+            }
+        }else{
+            $clicks[$article_id] = $time;
+            $article_model->where(array('article_id' => $article_id))->setInc('clicks',mt_rand(1,10));
+        }
+        cookie('first_click', serialize($clicks));
+
+
+
         //判断是否增加真实点击量
 //        $ip = get_client_ip();
         //将点击的页面都保存到cookie中去
