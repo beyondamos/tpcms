@@ -32,4 +32,5 @@ function is_mobile() {
         }
     }
     return $is_mobile;
+
 }

@@ -17,7 +17,7 @@ class CommonController extends Controller{
         }
 
         //统计流量
-//        $this->flow();
+        $this->flow();
         //导航
         $this->nav();
     }
@@ -54,9 +54,29 @@ class CommonController extends Controller{
      * 统计流量
      */
     public function flow(){
-        echo $_SERVER['REQUEST_URI'];
-        echo '<br />';
-        echo get_client_ip();
+        $flow_model = D('Flow');
+        $url = $_SERVER['REQUEST_URI'];
+        $ip = get_client_ip();
+        $date = date('Y-m-d',time());
+        $time = date('H:i:s',time());
+        //判断该页面是否被访问过
+        if(!cookie($url)){
+           $info =  getIpLookup($ip);
+           if(!$info) return false;
+
+           if($info['city']){
+               $area = $info['city'];
+           }elseif($info['province']){
+               $area = $info['province'];
+           }else{
+               $area = '';
+           }
+           $data = array('ip' => $ip, 'date' => $date, 'time' => $time, 'area' => $area);
+           $flow_model->add($data);
+            cookie($url,$url,3600);
+        }
+
+
     }
 
 }

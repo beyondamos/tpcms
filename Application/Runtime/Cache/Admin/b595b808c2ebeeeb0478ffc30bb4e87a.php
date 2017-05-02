@@ -78,7 +78,7 @@
 			<div class="boxir">
 				<div>
 					<a href="javascript:;"><?php echo ($article_total); ?><br/><span>全部文章</span></a>
-					<a href="javascript:;"><?php echo ($article_uncheck_num); ?><br/><span>未审核文章</span></a>
+					<a href="<?php echo U('Article/checkListing');?>"><?php echo ($article_uncheck_num); ?><br/><span>未审核文章</span></a>
 					<a href="javascript:;">4<br/><span>未审核留言</span></a>
 					
 				</div>
