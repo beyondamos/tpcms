@@ -39,13 +39,19 @@
             <!--<a href="javascript:;">网站导航</a>-->
         </div>
         <div class="nav-top-right">
+
+            <?php if(session('member_id')): ?><a href="<?php echo U('Member/logout');?>">[退出]</a>
+                <span>&nbsp;</span>
+                <a href=""><?php echo (session('member_name')); ?></a>
+                <?php else: ?>
             <a href="<?php echo U('Member/register');?>">[注册]</a>
             <span>或</span>
             <a href="<?php echo U('Member/login');?>">[登录]</a>
             <span>请</span>
-            <a href="<?php echo U('Member/wechatLogin');?>"><img src="/Public/Home/images/icon32_wx_logo.png" style="width: 20px;margin-top:6px;margin-right:10px;" id="wx_log"></a>
-            <!--<a href="/home/qq_log.php"><img src="/Public/Home/images/qq.png" style="width: 15px;margin-top:6px;margin-right:10px;" id="wx_log"></a>-->
+            <a href="<?php echo U('Member/wechatLogin');?>"><img src="/Public/Home/images/icon32_wx_logo.png" style="width: 20px;margin-top:6px;margin-right:10px;" id="wx_log"></a><?php endif; ?>
 
+
+            <!--<a href="/home/qq_log.php"><img src="/Public/Home/images/qq.png" style="width: 15px;margin-top:6px;margin-right:10px;" id="wx_log"></a>-->
         </div>
     </div>
 </div>
@@ -210,7 +216,7 @@
     <div class="contlarta">
         <?php if(is_array($right_data)): $i = 0; $__LIST__ = array_slice($right_data,0,3,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>">
             <img src="<?php echo ($vo["titleimg"]); ?>" alt="" />
-            <h2><?php echo ($vo["title"]); ?></h2>
+            <h2><?php echo mb_substr($vo['title'],0,30,'utf-8');?></h2>
             <h3><?php echo ($vo["newstime"]); ?></h3>
         </a><?php endforeach; endif; else: echo "" ;endif; ?>
     </div>

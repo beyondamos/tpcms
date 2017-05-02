@@ -20,6 +20,15 @@ class MemberController extends CommonController{
         $this->display();
     }
 
+    /**
+     * 退出登录
+     */
+    public function logout(){
+        session('url', $_SERVER['HTTP_REFERER']);
+        session('member_id',null);
+        session('member_name',null);
+        header("Location:".session('url'));
+    }
 
     /**
      * 微信扫码登录

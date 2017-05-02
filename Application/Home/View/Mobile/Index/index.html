@@ -67,7 +67,8 @@
         <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>">
             <div class="boxitem">
                 <div class="imglimt"><img src="<{$vo.titleimg}>" alt=""/></div>
-                <h2><{$vo.title}></h2>
+                <h2><php>echo mb_substr($vo['title'],0,24,'utf-8');</php></h2>
+                <h3><php>echo mb_substr(strip_tags(htmlspecialchars_decode(trim($vo['content']))),0,12,'utf-8');</php></h3>
                 <div class="praise">
                     <img src="__PUBLIC__/Mobile/images/iconeye.png" alt=""/><span><{$vo.clicks}></span>
                     <img src="__PUBLIC__/Mobile/images/iconstar.png" alt=""/><span>20</span>

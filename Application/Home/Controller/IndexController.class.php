@@ -14,13 +14,15 @@ class IndexController extends CommonController {
         $article_model = D('Article');
         $map = array('status' => 1 );
         $new_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
-                                    ->field('article_id,title,titleimg,newstime,synopsis,clicks,url')->where($map)
+                                    ->field('article_id,title,titleimg,newstime,synopsis,clicks,url,content')->where($map)
                                   ->order('article_id desc')->limit('10')->select();
+
+
         $this->assign('new_data', $new_data);
         //推荐
         $map = array('status' => 1, 'is_recommend' => 1 );
         $recommed_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
-                                        ->field('article_id,title,titleimg,newstime,synopsis,clicks,url')->where($map)
+                                        ->field('article_id,title,titleimg,newstime,synopsis,clicks,url,content')->where($map)
                                        ->order('article_id desc')->limit('10')->select();
         $this->assign('recommed_data', $recommed_data);
         $this->display();
@@ -34,7 +36,7 @@ class IndexController extends CommonController {
         $article_model = D('Article');
         $map = array('status' => 1);
         $new_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
-            ->field('article_id,title,titleimg,newstime,synopsis,clicks,url')->where($map)
+            ->field('article_id,title,titleimg,newstime,synopsis,clicks,url,content')->where($map)
             ->order('article_id desc')->limit($start.',10')->select();
         $this->assign('new_data', $new_data);
         $this->display();

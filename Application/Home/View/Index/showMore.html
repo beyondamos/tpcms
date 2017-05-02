@@ -3,7 +3,7 @@
         <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>"><div class="boxitem">
             <div class="imglimt"><img src="<{$vo.titleimg}>" alt="<{$vo.title}>" /></div>
             <h2><{$vo.title}></h2>
-            <h3><{$vo.synopsis}></h3>
+            <h3><php>echo mb_substr(strip_tags(htmlspecialchars_decode($vo['content'])),0,40,'utf-8');</php></h3>
             <h4><img src="__IMG__/iconclock.png" alt="" /><{$vo.newstime}></h4>
             <h5><img src="__IMG__/iconeye.png" alt="" /><{$vo.clicks}></h5>
             <h5><img src="__IMG__/iconstar.png" alt="" />0</h5>

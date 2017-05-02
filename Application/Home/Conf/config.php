@@ -20,6 +20,7 @@ return array(
         'Index/showMore'    => 'Index/showMore',
         'Member/wechatLogin'    => 'Member/wechatLogin',
         'Member/wechatLoginCallback'    => 'Member/wechatLoginCallback',
+        'Member/logout'    => 'Member/logout',
         'Index/index'   => 'Index/index',
         'Article/zan'   => 'Article/zan',
         'Index/showCategories'   => 'Index/showCategories',

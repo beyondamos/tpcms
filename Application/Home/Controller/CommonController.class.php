@@ -35,9 +35,13 @@ class CommonController extends Controller{
         $article_model = D('Article');
         // $map['is_hot'] = 1;
         $map['status'] = 1;
+//        $today = date('Y-m-d',time());
+        $five_day_ago = date('Y-m-d', strtotime('-5 day'));
+        $map['newstime']  = array('egt',$five_day_ago);
         $right_data = $article_model->alias('a')->field('article_id,title,titleimg,newstime,url,clicks,zan')
             ->join('left join __CATEGORY__ c on c.cate_id = a.cate_id')->where($map)->limit('11')
-            ->order('article_id desc')->select();
+            ->order('clicks desc')->select();
+//        var_dump($right_data);
         $this->assign('right_data', $right_data);
     }
 

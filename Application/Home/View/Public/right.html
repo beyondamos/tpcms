@@ -7,7 +7,7 @@
         <volist name="right_data" id="vo" offset="0" length="3">
         <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>">
             <img src="<{$vo.titleimg}>" alt="" />
-            <h2><{$vo.title}></h2>
+            <h2><{:mb_substr($vo['title'],0,30,'utf-8')}></h2>
             <h3><{$vo.newstime}></h3>
         </a>
         </volist>
