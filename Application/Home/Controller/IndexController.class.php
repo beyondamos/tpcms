@@ -8,6 +8,12 @@ use Home\Controller\CommonController;
 class IndexController extends CommonController {
 
     public function index(){
+        //seo信息
+        $config_model = D('Config');
+        $this->assign('site_title', $config_model->where(array('conf_name' => 'site_title'))->getField('conf_value'));
+        $this->assign('site_keywords', $config_model->where(array('conf_name' => 'site_keywords'))->getField('conf_value'));
+        $this->assign('site_desc', $config_model->where(array('conf_name' => 'site_desc'))->getField('conf_value'));
+
         //右侧信息
         $this->rightInfo();
         //最新信息
