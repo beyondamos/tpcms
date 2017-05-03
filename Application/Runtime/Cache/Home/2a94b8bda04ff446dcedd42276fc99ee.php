@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit">
-    <title>Title</title>
+    <title><?php echo ($site_title); ?></title>
+    <meta name="keywords" content="<?php echo ($site_keywords); ?>"/>
+    <meta name="description" content="<?php echo ($site_desc); ?>"/>
     <link href="/Public/Home/css/base.css" rel="stylesheet" type="text/css"/>
     <link href="/Public/Home/css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -156,25 +158,7 @@
 
                 <h1>生活馆专享</h1>
 
-                <!--轮播图-->
-                <div class="carousel slide" id="carousel-exampleb"  data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="item active"><a href="#"><img alt="" src="/Public/Home/images/imglb1.jpg" /></a></div>
-                        <div class="item"><a href="#"><img alt="" src="/Public/Home/images/imglb2.jpg" /></a></div>
-                        <div class="item"><a href="#"><img alt="" src="/Public/Home/images/imglb3.jpg" /></a></div>
-                    </div>
-                    <a class="left carousel-control" href="#carousel-exampleb" data-slide="prev"></a>
-                    <a class="right carousel-control" href="#carousel-exampleb" role="button" data-slide="next"></a>
-                </div>
-                <script>
-                    $(function(){
-                        $('.carousel').carousel({
-                            interval: 2000,
-                            pause:"none"
-                        });
-                    });
-                </script>
-                <!--轮播图 end-->
+                <?php echo htmlspecialchars_decode($life_adv);?>
 
             </div><!--生活馆专享 end-->
 
@@ -196,7 +180,7 @@
 
     <!--广告-->
     <div class="advi">
-        <a href="javascript:;"><img src="/Public/Home/images/advvc.jpg" alt="" /></a>
+        <?php echo htmlspecialchars_decode($adv_1);?>
     </div><!--广告 end-->
 
 
@@ -227,7 +211,7 @@
 
     <!--广告-->
     <div class="advi">
-        <a href="javascript:;"><img src="/Public/Home/images/advvb.jpg" alt="" /></a>
+        <?php echo htmlspecialchars_decode($adv_2);?>
     </div><!--广告 end-->
 
     <!--第三块 内容-->
@@ -270,7 +254,7 @@
 
     <!--广告-->
     <div class="advi">
-        <a href="javascript:;"><img src="/Public/Home/images/advvd.jpg" alt="" /></a>
+        <?php echo htmlspecialchars_decode($adv_3);?>
     </div><!--广告 end-->
 
     <!--第四块 内容-->
@@ -293,41 +277,28 @@
 
     <!--友情链接-->
     <div class="contfrl">
-
         <h1>友情链接</h1>
+        <?php if(is_array($friendlink_data)): $i = 0; $__LIST__ = $friendlink_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo ($vo["url"]); ?>"><?php echo ($vo["url_name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
 
-        <a href="#">上海业主论坛</a>
-        <a href="#">广州论坛购物论坛</a>
-        <a href="#">返利网</a>
-        <a href="#">江阴论坛</a>
-        <a href="#">进口红酒</a>
-        <a href="#">婚庆酒店</a>
-        <a href="#">南昌论坛</a>
-        <a href="#">一日游</a>
-        <a href="#">上海团购</a>
-        <a href="#">茶图</a>
-        <a href="#">素材网</a>
-        <a href="#">POCO论坛</a>
-        <a href="#">团800论坛</a>
-        <a href="#">上海一日游</a>
-        <a href="#">上海地图</a>
-        <a href="#">三明小鱼</a>
-        <a href="#">郑州论坛</a>
-        <a href="#">狗狗网</a>
-        <a href="#">上海汽车网</a>
-        <a href="#">上海爱卡</a>
-        <a href="#">汽车婚宴</a>
-        <a href="#">电子商务</a>
-        <a href="#">上海租房</a>
-        <a href="#">开饭喇美食网</a>
-        <a href="#">汽车视频</a>
-        <a href="#">上海婚纱摄影</a>
-        <a href="#">大玩家超乐论坛</a>
-        <a href="#">上海团购</a>
-        <a href="#">浦江镇社区</a>
     </div><!--友情链接 end-->
 </div>
 <div style="clear:both;"></div>
-<?php include_once('nav_foot.php'); ?>
+
+<!--底部模块-->
+<div class="nav-footb col-sm-12 padlr">
+    <div class="navfoot-center">
+        <a href="aboutus.php">关于社区</a>&nbsp;|
+        <a href="javascript:;">服务协议</a>&nbsp;|
+        <a href="javascript:;">隐私政策</a>&nbsp;|
+        <a href="javascript:;">广告服务</a>&nbsp;|
+        <a href="javascript:;">客户中心</a>&nbsp;|
+        <a href="javascript:;">网站导航</a>&nbsp;|
+        <a href="javascript:;">法律声明</a>
+    </div>
+    <div class="navfootb-center">
+        copyright@2016-2017&nbsp;shequ234.All Rights Reserved.
+    </div>
+</div>
+
 </body>
 </html>

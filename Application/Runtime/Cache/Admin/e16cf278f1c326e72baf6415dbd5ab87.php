@@ -156,7 +156,12 @@
 			month = '0'+month;
 		}
 		dateStr += month + '-';
-		dateStr += date.getDate();
+
+		var day = date.getDate();
+		if(day < 10){
+			day = '0' + day;
+		}
+		dateStr += day;
 //		alert(dateStr);
 		$('#demo').val(dateStr);
 

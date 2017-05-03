@@ -118,7 +118,7 @@
                 <h3><?php echo mb_substr(strip_tags(htmlspecialchars_decode(trim($vo['content']))),0,40,'utf-8'); ?></h3>
                 <h4><img src="/Public/Home/images/iconclock.png" alt="" /><?php echo ($vo["newstime"]); ?></h4>
                 <h5><img src="/Public/Home/images/iconeye.png" alt="" /><?php echo ($vo["clicks"]); ?></h5>
-                <h5><img src="/Public/Home/images/iconstar.png" alt="" />0</h5>
+                <h5><img src="/Public/Home/images/iconstar.png" alt="" /><?php echo ($vo["zan"]); ?></h5>
             </div></a><?php endforeach; endif; else: echo "" ;endif; ?>
             <!--&lt;!&ndash;再显示10条&ndash;&gt;-->
             <!--<div class="l_num">-->

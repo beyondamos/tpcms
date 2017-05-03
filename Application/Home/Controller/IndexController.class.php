@@ -14,9 +14,29 @@ class IndexController extends CommonController {
         $this->assign('site_keywords', $config_model->where(array('conf_name' => 'site_keywords'))->getField('conf_value'));
         $this->assign('site_desc', $config_model->where(array('conf_name' => 'site_desc'))->getField('conf_value'));
 
-        //右侧信息
-        $this->rightInfo();
-        //最新信息
+        //友情链接
+        $friendlink_data = D('Friendlink')->select();
+        $this->assign('friendlink_data', $friendlink_data);
+
+        //广告
+        $adv_model = D('Adv');
+        //生活馆专享广告
+        $life_adv = $adv_model->where(array('id' => 1))->getField('adv_code');
+        $this->assign('life_adv', $life_adv);
+        //首页上广告
+        $adv_1 = $adv_model->where(array('id' => 2))->getField('adv_code');
+        $this->assign('adv_1', $adv_1);
+        //首页中广告
+        $adv_2 = $adv_model->where(array('id' => 3))->getField('adv_code');
+        $this->assign('adv_2', $adv_2);
+        //首页下广告
+        $adv_3 = $adv_model->where(array('id' => 4))->getField('adv_code');
+        $this->assign('adv_3', $adv_3);
+
+
+
+
+        //最新信息(移动端)
         $article_model = D('Article');
         $map = array('status' => 1 );
         $new_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
@@ -25,12 +45,6 @@ class IndexController extends CommonController {
 
 
         $this->assign('new_data', $new_data);
-        //推荐
-        $map = array('status' => 1, 'is_recommend' => 1 );
-        $recommed_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
-                                        ->field('article_id,title,titleimg,newstime,synopsis,clicks,url,content')->where($map)
-                                       ->order('newstime desc')->limit('10')->select();
-        $this->assign('recommed_data', $recommed_data);
         $this->display();
     }
 
