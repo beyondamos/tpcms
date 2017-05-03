@@ -13,7 +13,7 @@
     <script src="/Public/Home/js/jquery-2.1.1.min.js"></script>
     <script src="/Public/Home/js/item.js"></script>
     <script src="/Public/Home/js/bootstrap.min.js"></script>
-    <title><?php echo ($article_data["title"]); ?></title>
+    <title><?php echo ($article_data["title"]); echo ($article_data["cate_title"]); ?></title>
     <meta name="keywords" content="<?php echo ($article_data["keywords"]); ?>"/>
     <meta name="description" content="<?php echo ($article_data["synopsis"]); ?>"/>
     <script>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="__CSS__/base0405a.css" rel="stylesheet" type="text/css"/>
+    <link rel="SHORTCUT ICON" href="<php> echo 'http://'.$_SERVER['HTTP_HOST'];</php>/favicon.ico">
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+    <script src="__JS__/jquery-2.1.1.min.js"></script>
+    <script src="__JS__/item.js"></script>
+    <script src="__JS__/bootstrap.min.js"></script>
+    <title><{$site_title}></title>
+    <meta name="keywords" content="<{$site_keywords}>"/>
+    <meta name="description" content="<{$site_desc}>"/>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?236971c0a464e1b54ed9392a9f6a3d5a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+
+<!--头部模块-->
+<include file="Public::header" />
+
+<div class="cont">
+    <!--左侧内容区-->
+    <div class="contl">
+
+        <!--面包屑导航-->
+        <div class="navbred"><span>您当前的位置：</span><a href="/">首页</a>
+        </div>
+        <script>
+            var stop=true;
+            var s = 1;
+            $(function(){
+                $("#showmore").click(function(){
+                    var  none = $("#none").html();
+                    if(none != undefined){
+                        stop = false;
+                        $("#showmore").css('display','none');
+                    }
+                    if(stop==true){
+                        stop=false;
+                        $.post("<{:U('Index/showMore')}>", {start:s, },function(txt){
+                            $("#showmore").before(txt);
+                            stop=true;
+                            s= s+1;
+                        },"text");
+                    }
+                })
+                $("#showmoreb").click(function(){
+                    var  none = $("#none").html();
+                    if(none != undefined){
+                        stop = false;
+                        $("#showmoreb").css('display','none');
+                    }
+                    if(stop==true){
+                        stop=false;
+                        $.post("<{:U('Index/showMore')}>", {start:s, },function(txt){
+                            $("#showmoreb").before(txt);
+                            stop=true;
+                            s= s+1;
+                        },"text");
+                    }
+                })
+            });
+        </script>
+
+        <!--选项按钮-->
+        <div class="headbtn">
+            <a href="javascript:;" id="btna" class="headbtnact">最新</a>
+            <a href="javascript:;" id="btnb">推荐</a>
+        </div>
+
+        <!--选项 最新-->
+        <div class="boxcont" id="areaa">
+            <volist name="new_data" id="vo">
+            <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>"><div class="boxitem">
+                <div class="imglimt"><img src="<{$vo.titleimg}>" alt="<{$vo.title}>" /></div>
+                <h2><{$vo.title}></h2>
+                <h3><php>echo mb_substr(strip_tags(htmlspecialchars_decode($vo['content'])),0,40,'utf-8');</php></h3>
+                <h4><img src="__IMG__/iconclock.png" alt="" /><{$vo.newstime}></h4>
+                <h5><img src="__IMG__/iconeye.png" alt="" /><{$vo.clicks}></h5>
+                <h5><img src="__IMG__/iconstar.png" alt="" /><{$vo.zan}></h5>
+            </div></a>
+            </volist>
+            <!--再显示10条-->
+            <a href="javascript:" class="showmore" id="showmore">再显示10条新闻</a>
+            <!--再显示10条-->
+
+        </div>
+        <!--选项 推荐-->
+        <div class="boxcont" id="areab" style="display:none;">
+
+            <volist name="recommed_data" id="vo">
+            <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>"><div class="boxitem">
+                <div class="imglimt"><img src="<{$vo.titleimg}>" alt="<{$vo.title}>" /></div>
+                <h2><{$vo.title}></h2>
+                <h3><php>echo mb_substr(strip_tags(htmlspecialchars_decode($vo['content'])),0,40,'utf-8');</php></h3>
+                <h4><img src="__IMG__/iconclock.png" alt="" /><{$vo.newstime}></h4>
+                <h5><img src="__IMG__/iconeye.png" alt="" /><{$vo.clicks}></h5>
+                <h5><img src="__IMG__/iconstar.png" alt="" />32</h5>
+            </div></a>
+            </volist>
+
+            <!--再显示10条-->
+            <a href="javascript:;" class="showmore" id="showmoreb">再显示10条新闻</a>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            var obj = $('.contr');
+            var offset = obj.offset();
+            var topOffset = offset.top;
+            var leftOffset = 900;
+            var marginTop = obj.css("marginTop");
+            var marginLeft = obj.css("marginLeft");
+            $(window).scroll(function() {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop >= topOffset){
+                    obj.css({
+                        marginTop: -140,
+                        marginLeft: leftOffset,
+                        position: 'fixed',
+                    });
+                }
+                if (scrollTop < topOffset){
+
+                    obj.css({
+                        marginTop: marginTop,
+                        marginLeft: marginLeft,
+                        position: 'relative',
+                    });
+                }
+            });
+        });
+
+    </script>
+
+    <!--右侧列表模块-->
+    <include file="Public::right" />
+
+</div>
+
+<!--底部模块-->
+<include file="Public::footer" />
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var obj = $('.docl');
+        var offset = obj.offset();
+        var topOffset = offset.top;
+        var marginTop = obj.css("marginTop");
+        var marginLeft = obj.css("marginLeft");
+        $(window).scroll(function() {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop >= topOffset){
+                obj.css({
+                    marginTop: -160,
+                    position: 'fixed',
+                });
+            }
+            if (scrollTop < topOffset){
+
+                obj.css({
+                    marginTop: marginTop,
+                    position: 'fixed',
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>
