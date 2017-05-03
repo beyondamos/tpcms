@@ -1,0 +1,296 @@
+[ 2017-05-03T13:13:20+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001033s ]
+
+[ 2017-05-03T13:13:22+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `isq_user` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2017-05-03T13:13:22+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `isq_user` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2017-05-03T13:14:07+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+
+[ 2017-05-03T13:14:10+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_user` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2017-05-03T13:14:10+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `isq_user` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2017-05-03T13:14:20+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `isq_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `isq_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `isq_user` SET `login_times`='18',`last_login_time`='1493788460',`last_login_ip`='2130706433' WHERE `user_id` = 1 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2017-05-03T13:14:21+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `isq_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `isq_article` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0068s ]
+NOTIC: [8192] mysql_get_server_info(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\tpcms\Application\Admin\Controller\IndexController.class.php 第 24 行.
+SQL: SELECT `article_id`,`title`,`cate_name`,`author`,`clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY clicks desc LIMIT 0,10   [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0064s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2017-05-03T13:14:28+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0028s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000650s ]
+
+[ 2017-05-03T13:16:33+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0027s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0064s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002402s ]
+
+[ 2017-05-03T13:16:39+08:00 ] 127.0.0.1 /Admin/Friendlink/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+ERR: 无法加载控制器:Friendlink
+
+[ 2017-05-03T13:18:10+08:00 ] 127.0.0.1 /Admin/Friendlink/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+ERR: 无法加载控制器:Friendlink
+
+[ 2017-05-03T13:18:13+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0028s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002287s ]
+
