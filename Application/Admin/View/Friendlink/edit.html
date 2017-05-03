@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+    <title>甫劳科技后台管理系统</title>
+	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+	<script src="__JS__/jquery-1.11.1.min.js"></script>
+	
+    <script src="__JS__/bootstrap.min.js"></script>
+</head>
+<body>
+<include file="Public:nav_top" />
+<include file="Public:nav_left" />
+
+<div class="cont">
+	<div class="contmain">
+		
+		<div class="boxi">
+			<h1>编辑友情链接</h1>
+			
+			<form action="<{:U('Friendlink/edit')}>" method="post">
+				<div class="boxin">
+					<span>链&nbsp;接&nbsp;名&nbsp;称</span><input type="text" name="url_name" class="form-control" value="<{$friendlink_data.url_name}>">
+				</div>
+				<div class="boxin">
+					<span>链&nbsp;接&nbsp;地&nbsp;址</span><input type="text" name="url" class="form-control" value="<{$friendlink_data.url}>">
+				</div>
+
+				<div class="boxinbtn">
+					<input type="hidden" name="id" value="<{$friendlink_data.id}>">
+					<input type="submit"  value="确定" class="btn btna" />
+					<input type="reset"  value="重置" class="btn btnb" />
+				</div>
+				
+			</form>
+		</div>
+	
+	</div>
+</div>
+<script src="__JS__/sdmenu.js"></script>
+</body>
+</html>

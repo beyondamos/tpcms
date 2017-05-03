@@ -58,35 +58,20 @@
 	<div class="contmain">
 		
 		<div class="boxi">
-			<h1>添加管理员</h1>
+			<h1>编辑友情链接</h1>
 			
-			<form action="<?php echo U('User/add');?>" method="post">
+			<form action="<?php echo U('Friendlink/edit');?>" method="post">
 				<div class="boxin">
-					<span>用&nbsp;&nbsp;户&nbsp;&nbsp;名</span><input type="text" name="username" class="form-control">
+					<span>链&nbsp;接&nbsp;名&nbsp;称</span><input type="text" name="url_name" class="form-control" value="<?php echo ($friendlink_data["url_name"]); ?>">
 				</div>
 				<div class="boxin">
-					<span>昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</span><input type="text" name="nickname" class="form-control">
+					<span>链&nbsp;接&nbsp;地&nbsp;址</span><input type="text" name="url" class="form-control" value="<?php echo ($friendlink_data["url"]); ?>">
 				</div>
-				<div class="boxin">
-					<span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</span><input type="text" name="email" class="form-control">
-				</div>
-				<div class="boxin">
-					<span>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</span><input type="password" name="password" class="form-control">
-				</div>
-				<div class="boxin">
-					<span>重复密码</span><input type="password" name="password2" class="form-control">
-				</div>
-				<div class="boxin">
-					<span>所属角色</span>
-					<select name="role_id" class="form-control">
-						<option value="0">请选择角色</option>
-						<?php if(is_array($role_data)): $i = 0; $__LIST__ = $role_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["role_id"]); ?>"><?php echo ($vo["role_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-					</select>
-				</div>
-								
+
 				<div class="boxinbtn">
-					<input type="submit" name="" value="确定" class="btn btna" />
-					<input type="submit" name="" value="重置" class="btn btnb" />
+					<input type="hidden" name="id" value="<?php echo ($friendlink_data["id"]); ?>">
+					<input type="submit"  value="确定" class="btn btna" />
+					<input type="reset"  value="重置" class="btn btnb" />
 				</div>
 				
 			</form>
