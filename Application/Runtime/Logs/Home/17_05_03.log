@@ -9983,3 +9983,24 @@ INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
 
+[ 2017-05-03T16:18:42+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'head' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+
