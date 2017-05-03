@@ -75,7 +75,7 @@ class ArticleController extends CommonController{
         $map = array('status' => 1,  'c.cate_id' => $cate_data['cate_id']);
         $new_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
             ->field('article_id,title,titleimg,newstime,synopsis,clicks,url,content')->where($map)
-            ->order('article_id desc')->page($p.',10')->select();
+            ->order('newstime desc')->page($p.',10')->select();
         $this->assign('new_data', $new_data);
         //分页数据
         $count = $article_model->where(array('status' => 1,  'cate_id' =>  $cate_data['cate_id']))->count();
@@ -86,7 +86,7 @@ class ArticleController extends CommonController{
         $map = array('status' => 1, 'is_recommend' => 1 , 'c.cate_id' => $cate_data['cate_id']);
         $recommed_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
             ->field('article_id,title,titleimg,newstime,synopsis,clicks,url,content')->where($map)
-            ->order('article_id desc')->page($p.',10')->select();
+            ->order('newstime desc')->page($p.',10')->select();
         $this->assign('recommed_data', $recommed_data);
 
         //分页数据

@@ -13,9 +13,9 @@
     <script src="/Public/Home/js/jquery-2.1.1.min.js"></script>
     <script src="/Public/Home/js/item.js"></script>
     <script src="/Public/Home/js/bootstrap.min.js"></script>
-    <title>奉贤社圈网--奉贤网络社区平台，奉贤网络社交圈</title>
-    <meta name="keywords" content="奉贤社圈网,奉贤社区网站,奉贤社交圈,奉贤朋友圈,奉贤兴趣爱好圈,奉贤活动圈"/>
-    <meta name="description" content="奉贤社圈网,奉贤社区网站,奉贤社交圈,奉贤朋友圈,奉贤兴趣爱好圈,奉贤活动圈"/>
+    <title><?php echo ($cate_data["cate_title"]); ?></title>
+    <meta name="keywords" content="<?php echo ($cate_data["cate_keywords"]); ?>"/>
+    <meta name="description" content="<?php echo ($cate_data["description"]); ?>"/>
     <script>
         var _hmt = _hmt || [];
         (function() {

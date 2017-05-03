@@ -21,7 +21,7 @@ class IndexController extends CommonController {
         $map = array('status' => 1 );
         $new_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
                                     ->field('article_id,title,titleimg,newstime,synopsis,clicks,url,content')->where($map)
-                                  ->order('article_id desc')->limit('10')->select();
+                                  ->order('newstime desc')->limit('10')->select();
 
 
         $this->assign('new_data', $new_data);
@@ -29,7 +29,7 @@ class IndexController extends CommonController {
         $map = array('status' => 1, 'is_recommend' => 1 );
         $recommed_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
                                         ->field('article_id,title,titleimg,newstime,synopsis,clicks,url,content')->where($map)
-                                       ->order('article_id desc')->limit('10')->select();
+                                       ->order('newstime desc')->limit('10')->select();
         $this->assign('recommed_data', $recommed_data);
         $this->display();
     }
@@ -43,7 +43,7 @@ class IndexController extends CommonController {
         $map = array('status' => 1);
         $new_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
             ->field('article_id,title,titleimg,newstime,synopsis,clicks,url,content')->where($map)
-            ->order('article_id desc')->limit($start.',10')->select();
+            ->order('newstime desc')->limit($start.',10')->select();
         $this->assign('new_data', $new_data);
         $this->display();
     }

@@ -17,7 +17,7 @@ class CommonController extends Controller{
         }
 
         //统计流量
-        $this->flow();
+//        $this->flow();
         //导航
         $this->nav();
     }
@@ -56,7 +56,10 @@ class CommonController extends Controller{
     public function flow(){
         $flow_model = D('Flow');
         $url = $_SERVER['REQUEST_URI'];
-        $ip = get_client_ip();
+        $ip = getIP();
+//        echo $ip;
+        $ip = explode(',', $ip);
+        $real_ip = $ip[0];
         $date = date('Y-m-d',time());
         $time = date('H:i:s',time());
         //判断该页面是否被访问过
