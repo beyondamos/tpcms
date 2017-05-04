@@ -133,7 +133,7 @@
 
                 <h1>生活馆专享</h1>
 
-                <?php echo htmlspecialchars_decode($life_adv);?>
+                <div class="item"><a href="<?php echo ($life_adv["adv_url"]); ?>"><img alt="" src="<?php echo ($life_adv["adv_img"]); ?>" width="320" height="100"/></a></div>
 
             </div><!--生活馆专享 end-->
 
@@ -150,7 +150,7 @@
 
     <!--广告-->
     <div class="advi">
-        <?php echo htmlspecialchars_decode($adv_1);?>
+        <a href="<?php echo ($adv_upper["adv_url"]); ?>"><img src="<?php echo ($adv_upper["adv_img"]); ?>" alt="" height="300"/></a>
     </div><!--广告 end-->
 
 
@@ -175,7 +175,7 @@
 
     <!--广告-->
     <div class="advi">
-        <?php echo htmlspecialchars_decode($adv_2);?>
+        <a href="<?php echo ($adv_middle["adv_url"]); ?>"><img src="<?php echo ($adv_middle["adv_img"]); ?>" alt="" height="300"/></a>
     </div><!--广告 end-->
 
     <!--第三块 内容-->
@@ -200,7 +200,7 @@
 
     <!--广告-->
     <div class="advi">
-        <?php echo htmlspecialchars_decode($adv_3);?>
+        <a href="<?php echo ($adv_lower["adv_url"]); ?>"><img src="<?php echo ($adv_lower["adv_img"]); ?>" alt="" height="300"/></a>
     </div><!--广告 end-->
 
     <!--第四块 内容-->
@@ -240,6 +240,12 @@
         Copyright@2016-2017&nbsp;www.ishequan.cn All Rights Reserved.
     </div>
 </div>
+<script>
+    (function(){
+        var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?bcc5ec07e29939b4c6dc2a929bcc0e9b":"https://jspassport.ssl.qhimg.com/11.0.1.js?bcc5ec07e29939b4c6dc2a929bcc0e9b";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+</script>
 
 </body>
 </html>

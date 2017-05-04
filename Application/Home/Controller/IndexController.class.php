@@ -21,17 +21,17 @@ class IndexController extends CommonController {
         //广告
         $adv_model = D('Adv');
         //生活馆专享广告
-        $life_adv = $adv_model->where(array('id' => 1))->getField('adv_code');
+        $life_adv = $adv_model->find('1');
         $this->assign('life_adv', $life_adv);
         //首页上广告
-        $adv_1 = $adv_model->where(array('id' => 2))->getField('adv_code');
-        $this->assign('adv_1', $adv_1);
+        $adv_upper = $adv_model->find('2');
+        $this->assign('adv_upper', $adv_upper);
         //首页中广告
-        $adv_2 = $adv_model->where(array('id' => 3))->getField('adv_code');
-        $this->assign('adv_2', $adv_2);
+        $adv_middle = $adv_model->find('3');
+        $this->assign('adv_middle', $adv_middle);
         //首页下广告
-        $adv_3 = $adv_model->where(array('id' => 4))->getField('adv_code');
-        $this->assign('adv_3', $adv_3);
+        $adv_lower = $adv_model->find('4');
+        $this->assign('adv_lower', $adv_lower);
 
 
         $article_model = D('Article');

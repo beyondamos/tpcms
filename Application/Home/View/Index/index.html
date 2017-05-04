@@ -90,7 +90,7 @@
 
                 <h1>生活馆专享</h1>
 
-                <{:htmlspecialchars_decode($life_adv)}>
+                <div class="item"><a href="<{$life_adv.adv_url}>"><img alt="" src="<{$life_adv.adv_img}>" width="320" height="100"/></a></div>
 
             </div><!--生活馆专享 end-->
 
@@ -111,7 +111,7 @@
 
     <!--广告-->
     <div class="advi">
-        <{:htmlspecialchars_decode($adv_1)}>
+        <a href="<{$adv_upper.adv_url}>"><img src="<{$adv_upper.adv_img}>" alt="" height="300"/></a>
     </div><!--广告 end-->
 
 
@@ -142,7 +142,7 @@
 
     <!--广告-->
     <div class="advi">
-        <{:htmlspecialchars_decode($adv_2)}>
+        <a href="<{$adv_middle.adv_url}>"><img src="<{$adv_middle.adv_img}>" alt="" height="300"/></a>
     </div><!--广告 end-->
 
     <!--第三块 内容-->
@@ -175,7 +175,7 @@
 
     <!--广告-->
     <div class="advi">
-        <{:htmlspecialchars_decode($adv_3)}>
+        <a href="<{$adv_lower.adv_url}>"><img src="<{$adv_lower.adv_img}>" alt="" height="300"/></a>
     </div><!--广告 end-->
 
     <!--第四块 内容-->
