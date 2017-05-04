@@ -1,0 +1,58 @@
+
+<!--头部 登录 注册区-->
+<div class="nav-top">
+    <div class="nav-top-center">
+        <div class="nav-top-left">
+            <img src="__IMG__/iconphone.png" alt=""/>
+            <a href="javascript:;" class="wx">手机网<i><img src="__IMG__/rwmsj.png" alt="" /></i></a>
+            <!--<a href="javascript:;">网站导航</a>-->
+        </div>
+        <div class="nav-top-right">
+
+            <if condition="session('member_id')">
+                <a href="<{:U('Member/logout')}>">[退出]</a>
+                <span>&nbsp;</span>
+                <a href=":U('Member/index')"><{$Think.session.member_name}></a>
+                <else />
+            <a href="<{:U('Member/register')}>">[注册]</a>
+            <span>或</span>
+            <a href="<{:U('Member/login')}>">[登录]</a>
+            <span>请</span>
+            <a href="<{:U('Member/wechatLogin')}>"><img src="__IMG__/icon32_wx_logo.png" style="width: 20px;margin-top:6px;margin-right:10px;" id="wx_log"></a>
+            </if>
+
+
+            <!--<a href="/home/qq_log.php"><img src="__IMG__/qq.png" style="width: 15px;margin-top:6px;margin-right:10px;" id="wx_log"></a>-->
+        </div>
+    </div>
+</div>
+
+<!--logo 搜索区-->
+<div class="nav-topb">
+    <div class="nav-topb-center">
+        <div class="nav-topb-left">
+            <a href="/"><img src="__IMG__/logo.png" alt=""/><span>奉贤</span></a>
+        </div>
+        <div class="nav-topb-right">
+            <div class="serh">
+                <form action="<{:U('Search/index')}>" method="post">
+                    <input type="text" name="search" placeholder="请输入搜索内容">
+                    <button name="ss" type="submit" value=""><img src="__IMG__/iconsearch.png" /></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--导航区-->
+<div class="nav-topc">
+    <div class="nav-topc-center">
+        <div class="nav-topc-left">
+            <a href="/">首页</a>
+            <volist name="nav_data" id="vo">
+            <a href="<{:U('/'.$vo['nav_url'])}>"><{$vo.nav_name}></a>
+            </volist>
+        </div>
+    </div>
+</div>
+

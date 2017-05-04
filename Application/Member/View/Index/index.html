@@ -16,17 +16,18 @@
     <script src="__JS__/bootstrap.min.js"></script>
 </head>
 <body style="background-color:#F2F2F2; float:left;">
-<?php include_once('nav_top.php'); ?>
+
+<include file="Public::header"/>
 
 <div class="cont">
 
     <!--面包屑导航-->
-    <div class="navbred"><span>您当前的位置：</span><a href="/">首页</a>&gt;<span>养生</span></div>
+    <div class="navbred"><span>您当前的位置：</span><a href="/">首页</a>&gt;<span>会员中心</span></div>
 
     <!--左侧-->
     <div class="contul">
         <div class="contulhed">
-            <img src="images/head.jpg" />
+            <img src="__IMG__/head.jpg" />
             <a href="#">修改头像</a>
             <h2>比二鱼</h2>
             <h3>圈龄：0.5年&nbsp;&nbsp;|&nbsp;&nbsp;发帖：90</h3>
@@ -42,7 +43,7 @@
 
         <div class="contulinfo">
             <h2>发帖信息</h2>
-            <a href="userinfo.php">我的帖子<span>》</span></a>
+            <a href="<{:U('Post/index')}>">我的帖子<span>》</span></a>
             <a href="userinfo.php">我的回帖<span>》</span></a>
             <a href="userinfo.php">我的回复<span>》</span></a>
             <a href="userinfo.php">草稿箱<span>》</span></a>
@@ -77,6 +78,6 @@
 
 </div>
 
-<?php include_once('nav_foot.php'); ?>
+<inlcude file="Public::footer"/>
 </body>
 </html>
