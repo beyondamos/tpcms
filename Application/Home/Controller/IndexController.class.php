@@ -34,10 +34,58 @@ class IndexController extends CommonController {
         $this->assign('adv_3', $adv_3);
 
 
+        $article_model = D('Article');
+        //PC端信息
+        //6条推荐
+        $pc_recommend_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
+                                            ->field('article_id,title,titleimg,url,content')->where(array('status' => 1, 'is_recommend' => 1))
+                                            ->order('newstime desc')->limit('6')->select();
+        $this->assign('pc_recommend_data', $pc_recommend_data);
+        //16条最新信息
+        $pc_new_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
+                                    ->field('article_id,title,url,cate_name')->where(array('status' => 1))
+                                    ->order('newstime desc')->limit('16')->select();
+        $this->assign('pc_new_data', $pc_new_data);
+        //今日热点 6条信息
+        $newstime = date('Y-m-d',strtotime('-1 day'));
+        $pc_hot_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
+                                    ->where(array('status'=> 1, 'newstime' => array('egt',$newstime)))
+                                    ->field('article_id,title,url,titleimg,cate_name,content')->order('real_clicks desc')
+                                    ->limit('6')->select();
+        $this->assign('pc_hot_data', $pc_hot_data);
+        //生活9张图片
+        $pc_life_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
+                                        ->field('article_id,title,url,titleimg')
+                                        ->where(array('status' => 1, 'a.cate_id' => '5'))->order('newstime desc')
+                                        ->limit('9')->select();
+        $this->assign('pc_life_data', $pc_life_data);
+        //圈子4条信息
+        $pc_quanzi_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
+                                        ->field('article_id,title,url,titleimg,content')
+                                        ->where(array('status' => 1, 'a.cate_id' => '33'))->order('newstime desc')
+                                        ->limit('4')->select();
+        $this->assign('pc_quanzi_data', $pc_quanzi_data);
+        //运动4条信息
+        $pc_yundong_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
+            ->field('article_id,title,url,titleimg,content')
+            ->where(array('status' => 1, 'a.cate_id' => '20'))->order('newstime desc')
+            ->limit('4')->select();
+        $this->assign('pc_yundong_data', $pc_yundong_data);
+        //旅行9条信息
+        $pc_lvxing_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
+            ->field('article_id,title,url,titleimg,content')
+            ->where(array('status' => 1, 'a.cate_id' => '3'))->order('newstime desc')
+            ->limit('9')->select();
+        $this->assign('pc_lvxing_data', $pc_lvxing_data);
+        //商家推荐6条信息
+        $pc_shangjia_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
+            ->field('article_id,url,titleimg')
+            ->where(array('status' => 1, 'a.cate_id' => '36'))->order('newstime desc')
+            ->limit('6')->select();
+        $this->assign('pc_shangjia_data', $pc_shangjia_data);
 
 
         //最新信息(移动端)
-        $article_model = D('Article');
         $map = array('status' => 1 );
         $new_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
                                     ->field('article_id,title,titleimg,newstime,synopsis,clicks,url,content')->where($map)

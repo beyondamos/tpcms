@@ -1,0 +1,1473 @@
+[ 2017-05-04T09:57:02+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+
+[ 2017-05-04T09:57:04+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `isq_user` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2017-05-04T09:57:04+08:00 ] 127.0.0.1 /Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `isq_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2017-05-04T09:57:13+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `isq_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `isq_user` WHERE `username` = 'chunming' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `isq_user` SET `login_times`='19',`last_login_time`='1493863033',`last_login_ip`='2130706433' WHERE `user_id` = 1 [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2017-05-04T09:57:14+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `isq_article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `isq_article` WHERE `status` = 0 LIMIT 1   [ RunTime:0.0066s ]
+NOTIC: [8192] mysql_get_server_info(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\tpcms\Application\Admin\Controller\IndexController.class.php 第 24 行.
+SQL: SELECT `article_id`,`title`,`cate_name`,`author`,`clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY clicks desc LIMIT 0,10   [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0062s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000629s ]
+
+[ 2017-05-04T09:57:18+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0028s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001310s ]
+
+[ 2017-05-04T09:57:19+08:00 ] 127.0.0.1 /Admin/Article/checkListing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0025s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 0 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 0 LIMIT 1   [ RunTime:0.0062s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010978s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2017-05-04T09:57:20+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0028s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2017-05-04T09:57:20+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0026s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002324s ]
+
+[ 2017-05-04T09:57:24+08:00 ] 127.0.0.1 /Admin/Article/edit/article_id/4971.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_article` WHERE `article_id` = 4971 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2017-05-04T09:57:35+08:00 ] 127.0.0.1 /Admin/Article/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `isq_article` SET `title`='如何让肌肤更好的吸收！',`cate_id`='5',`status`='1',`is_recommend`='1',`author`='WHJ',`newstime`='2017-05-04',`clicks`='126',`keywords`='奉贤社圈网,奉贤生活小妙招,奉贤生活小常识,奉贤居家小窍门,生活态度',`synopsis`='奉贤社圈网,奉贤生活小妙招,奉贤生活小常识,奉贤居家小窍门,生活态度',`content`='&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428091335_21088.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428091345_68836.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428095935_16232.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100039_22317.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100113_72771.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100137_48950.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100208_37803.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100302_58974.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100315_40935.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100341_67949.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100401_87971.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100434_25848.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100455_26014.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100518_53514.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100540_39697.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100610_90037.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100624_12879.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100656_80162.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100715_85922.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100742_59047.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100752_13163.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100844_86530.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100901_40639.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428100932_58029.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428101009_92670.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428101033_89001.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428101112_32645.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428101145_33302.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170428/20170428101152_53926.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p style=&quot;text-align:right;&quot;&gt;
+	&lt;span style=&quot;color:#CCCCCC;font-size:10px;&quot;&gt;声明：本文部分图文来自网络&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color:#CCCCCC;font-size:10px;&quot;&gt;&lt;/span&gt; 
+&lt;/p&gt;' WHERE `article_id` = 4971 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2017-05-04T09:57:36+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0028s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0075s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002490s ]
+
+[ 2017-05-04T09:58:32+08:00 ] 127.0.0.1 /Admin/Article/edit/article_id/4953.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_article` WHERE `article_id` = 4953 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2017-05-04T09:58:36+08:00 ] 127.0.0.1 /Admin/Article/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `isq_article` SET `title`='2017年4月民用15kg瓶装液化气价格变动通知 ',`cate_id`='22',`status`='1',`is_recommend`='1',`author`='WHJ',`newstime`='2017-05-04',`clicks`='42',`keywords`='奉贤社圈网,奉贤社区,奉贤生活',`synopsis`='奉贤社圈网,奉贤社区,奉贤生活',`content`='&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427155039_25847.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427155044_10413.gif&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427155050_21544.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	原文来源于：2017-04-10 &amp;nbsp;奉贤燃气管理
+&lt;/p&gt;' WHERE `article_id` = 4953 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2017-05-04T09:58:37+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0061s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0064s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0072s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003906s ]
+
+[ 2017-05-04T09:58:39+08:00 ] 127.0.0.1 /Admin/Article/edit/article_id/4951.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_article` WHERE `article_id` = 4951 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2017-05-04T09:58:43+08:00 ] 127.0.0.1 /Admin/Article/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `isq_article` SET `title`='中国美协画家来奉贤采风，他们感觉如何？',`cate_id`='22',`status`='1',`is_recommend`='1',`author`='WHJ',`newstime`='2017-05-04',`clicks`='20',`keywords`='奉贤社圈网,奉贤社区,奉贤生活',`synopsis`='奉贤社圈网,奉贤社区,奉贤生活',`content`='&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427154254_13800.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	近日，在四团镇的小荡村里，来了五位中国当代实力派画家，他们离开城市的喧嚣，来到幽静的偏远乡村采风创作，到底有没有找到作画的灵感呢？
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/php/../attached/image/20170427/20170427154308_74442.jpg&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/admin_cms/editor/php/../attached/image/20170427/20170427154309_22850.jpg&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/admin_cms/editor/php/../attached/image/20170427/20170427154310_34507.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	记者在四团镇小荡村的一户民宿里，看到画家们正在挥毫作画。据了解，这五位画家都是中国美术家协会的会员，他们的风格也是各具特色，有的擅长山水画，有的擅长花鸟画，这次通过来奉采风之行，画家们对小荡村的村容村貌、风土人情留下了深刻的印象。
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427154324_21866.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	中国当代画家赵刚说：我国南方我们也去了很多地方，最大特点，我觉得这边的农村非常讲究文明，文明建设做得非常好，注重绿化，注重村民的协调谐的社会关系，我觉得对这个印象非常深刻。
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427154334_48376.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	这次五位画家是受政府之邀来四团镇小荡村采风，让画家们在原生态的优美环境中寻找灵感，创作出更多优秀的画作，同时，也通过展出画家作品的方式，为当地百姓提供文化交流的平台，也为下一步小荡村创建“生态村组、和美宅基”营造良好的氛围。
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427154342_63126.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	四团镇小荡村村委会党支部书记吴卫忠说：为了小荡村打造一个“天空农场” ，叫画家来设计和采风，今后吸引更多的画家来奉，准备在小荡村打造一个“画家村”。
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/php/../attached/image/20170427/20170427154352_34607.jpg&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/admin_cms/editor/php/../attached/image/20170427/20170427154353_43268.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+据悉，此次五位画家的来奉采风之行为期十天，共作画近50幅。&lt;br /&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	原文来源于：2017-04-26 &amp;nbsp;爱看奉贤
+&lt;/p&gt;' WHERE `article_id` = 4951 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2017-05-04T09:58:44+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0037s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0082s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002407s ]
+
+[ 2017-05-04T09:58:46+08:00 ] 127.0.0.1 /Admin/Article/edit/article_id/4950.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_article` WHERE `article_id` = 4950 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2017-05-04T09:58:49+08:00 ] 127.0.0.1 /Admin/Article/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001558s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `isq_article` SET `title`='淘宝打假第一案在奉贤开庭，电商VS卖家正面交锋',`cate_id`='22',`status`='1',`is_recommend`='1',`author`='WHJ',`newstime`='2017-05-04',`clicks`='69',`keywords`='奉贤社圈网,奉贤社区,奉贤生活',`synopsis`='奉贤社圈网,奉贤社区,奉贤生活',`content`='&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427153546_19074.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;span style=&quot;color:#999999;&quot;&gt;马云打假动真格&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;span style=&quot;line-height:1.5;color:#999999;&quot;&gt;不再只是漫画了&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;span style=&quot;line-height:1.5;color:#999999;&quot;&gt;&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427153559_24102.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	国内第一起网购平台打假案，昨天上午在奉贤区人民法院开庭审理，原告浙江淘宝网络有限公司诉售假卖家姚某，认为其行为损害了淘宝网声誉，要求姚某赔偿淘宝网265万元的损失。
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427153610_76990.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;span style=&quot;line-height:1.5;color:#999999;&quot;&gt;（这是一场由猫粮引发的打假案）&lt;/span&gt; 
+&lt;/div&gt;
+&lt;p&gt;
+	原告淘宝称，去年5月，皇家猫粮商标持有人发现被告姚某的网络店铺内销售该的公司旗下品牌猫粮存在假货的嫌疑，淘宝遂以“神秘购买”的方式购进猫粮一袋，经鉴定确属假货，淘宝遂将相关线索移送上海警方，并于去年8月立案侦查。淘宝已违反了双方签署的《淘宝服务协议》中的约定，将姚某告上法庭，并要求姚某赔偿损失265万元，以及在媒体上刊登声明消除影响。
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427153632_72926.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	原告代理律师称：&lt;span style=&quot;color:#E53333;&quot;&gt;&lt;strong&gt;被告利用淘宝网的技术服务，销售假货，容易给消费者造成淘宝网销售假货的影响，危害原告十多年来经过不懈努力，好不容易打造出来的消费者对于网络购物的信任，给淘宝网的声誉造成了巨大的负面影响。&lt;/strong&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;span style=&quot;color:#E53333;&quot;&gt;&lt;strong&gt;&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427153651_98501.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;/strong&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;span style=&quot;line-height:1.5;color:#999999;&quot;&gt;（原告提供的在被告处购买的假冒猫粮物证）&lt;/span&gt; 
+&lt;/div&gt;
+&lt;p&gt;
+	庭上，被告姚某承认了售假事实并承诺不再售价，但是对于被告提出的赔偿数额以及要求，原告并不认可。
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427153716_26446.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	被告代理律师则称：&lt;span style=&quot;color:#337FE5;&quot;&gt;&lt;strong&gt;原告自成立经营以来，其平台上售假行为一直存在，初期被告并不售假。我们认为原告没有给被告提供一个公平竞争的环境，反而让低价恶性竞争一直存在，原告作为平台的管理者也是难辞其咎。&lt;/strong&gt;&lt;/span&gt;被告代理律师还表示：&lt;span style=&quot;color:#337FE5;&quot;&gt;&lt;strong&gt;另外本案涉假证实的只有原告的神秘买家购买的这一单记录，涉案的猫粮也只有皇家K36这一个猫粮品种，原告不能推测被告销售的所有皇家产品都是假货。&lt;/strong&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;span style=&quot;color:#337FE5;&quot;&gt;&lt;strong&gt;&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427153745_88062.jpg&quot; alt=&quot;&quot; /&gt;&lt;br /&gt;
+&lt;/strong&gt;&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	围绕着巨额赔偿是否有事实和法律依据，双方进行了激烈辩论。被告认为淘宝网根据上一年度平均每位活跃买家对中国零售平台的年度收入贡献，即184元/人乘以被告店铺购买过的淘宝会员数14421人，得出265万元损失。这种计算方式被告认为不合理。
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427153755_46215.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;span style=&quot;line-height:1.5;&quot;&gt;法院表示该起案件将择期宣判&lt;/span&gt; 
+&lt;/div&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	原文来源于：2017-04-26 &amp;nbsp;爱看奉贤
+&lt;/p&gt;' WHERE `article_id` = 4950 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2017-05-04T09:58:50+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0029s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002635s ]
+
+[ 2017-05-04T09:58:52+08:00 ] 127.0.0.1 /Admin/Article/edit/article_id/4949.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `isq_article` WHERE `article_id` = 4949 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2017-05-04T09:58:55+08:00 ] 127.0.0.1 /Admin/Article/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `isq_article` SET `title`='中国顶尖耳鼻咽喉头颈外科专家要来奉贤义诊啦！别错过！',`cate_id`='22',`status`='1',`is_recommend`='1',`author`='WHJ',`newstime`='2017-05-04',`clicks`='15',`keywords`='奉贤社圈网,奉贤社区,奉贤生活',`synopsis`='奉贤社圈网,奉贤社区,奉贤生活',`content`='&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427152738_32633.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427152746_63518.png&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;
+	&lt;img src=&quot;/admin_cms/editor/attached/image/20170427/20170427152757_85921.jpg&quot; alt=&quot;&quot; /&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+	原文来源于：2017-04-26 &amp;nbsp;微奉贤
+&lt;/p&gt;' WHERE `article_id` = 4949 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2017-05-04T09:58:56+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0038s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0069s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002356s ]
+
+[ 2017-05-04T10:01:47+08:00 ] 127.0.0.1 /Admin/Article/listing/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0027s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 5,5   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2017-05-04T10:01:49+08:00 ] 127.0.0.1 /Admin/Article/edit/article_id/4948.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_article` WHERE `article_id` = 4948 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2017-05-04T10:01:54+08:00 ] 127.0.0.1 /Admin/Article/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `isq_article` SET `title`='德人堂招聘助理顾问/寻访员',`cate_id`='24',`status`='1',`is_recommend`='1',`author`='Jessica',`newstime`='2017-05-04',`clicks`='39',`keywords`='奉贤社圈网,奉贤社区,奉贤人才,奉贤招聘,奉贤求职,奉贤找工作,南桥找工作，南桥求职',`synopsis`='奉贤社圈网,奉贤社区,奉贤人才,奉贤招聘,奉贤求职,奉贤找工作,南桥找工作，南桥求职',`content`='&lt;span style=&quot;font-size:16px;&quot;&gt;德人堂一家拥有专业合法资质的高级人才顾问公司，主要从事高管搜寻、中层招聘、人才测评、培训及企业个人教练和团队教练业务。自 2007 年创立至今，一直致力于为国际跨国公司以及国内有增长潜力的优质企业提供优秀的中高层管理人员以及专业技术人员人才甄选服务，为客户打造量身定制的招聘解决方案。&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;color:#FFFFFF;background-color:#003399;&quot;&gt;&lt;strong&gt;招聘岗位&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;color:#E53333;&quot;&gt;&lt;strong&gt;助理顾问/寻访员&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;职责描述：&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;1、在顾问的指导下，分析客户需求、制定人才寻访计划并付诸实施；&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;2、通过各种途径及方法（人才库，网站，Cold &amp;nbsp;Call等）完成候选人搜寻工作；&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;3、协助顾问对候选人进行初步筛选和评估；&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;4、面试安排及协调，协助顾问跟踪项目进度；&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;5、资料整理并录入公司系统；&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;6、能完成主管分配的工作任务与指标。&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;职位要求：&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;1、对人力资源招聘、销售类工作感兴趣，有相关经验者优先考虑；&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;2、英语四级，读写熟练；&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;3、勤奋、好学，良好的沟通能力及亲和力；&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;4、责任心强，能承受较大工作压力；&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;5、熟练运用互联网及办公软件。&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;福利待遇&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;1、薪酬：5000元左右/月；&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;2、提供年休假、员工体检、各种不定期团队活动&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-size:16px;&quot;&gt;联系电话 &amp;nbsp; 陶小姐 &amp;nbsp; &amp;nbsp;18017718176&lt;/span&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+	&lt;span style=&quot;font-size:16px;&quot;&gt;&lt;br /&gt;
+&lt;/span&gt; 
+&lt;/p&gt;
+&lt;span style=&quot;font-size:16px;&quot;&gt;联系时请说在&lt;span style=&quot;color:#E53333;&quot;&gt;&lt;strong&gt;奉贤社圈网&lt;/strong&gt;&lt;/span&gt;看到的（如有疑问请加微信号：13611929627，添加时请注明“求职”，另有更多招聘信息提供）&lt;/span&gt;' WHERE `article_id` = 4948 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2017-05-04T10:01:55+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0005s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0026s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0082s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002268s ]
+
+[ 2017-05-04T10:02:05+08:00 ] 127.0.0.1 /Admin/Article/listing/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0030s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 5,5   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0069s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002331s ]
+
+[ 2017-05-04T10:02:06+08:00 ] 127.0.0.1 /Admin/Article/listing/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0027s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-05-04T10:02:08+08:00 ] 127.0.0.1 /Admin/Article/listing/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0027s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 5,5   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0079s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002411s ]
+
+[ 2017-05-04T10:02:15+08:00 ] 127.0.0.1 /Admin/Article/listing/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0027s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002336s ]
+
+[ 2017-05-04T10:11:01+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0036s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num,sum(real_clicks) as clicks FROM `isq_article` GROUP BY cate_id  [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 102 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 103 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 102 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 103 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 102 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2017-05-04T10:33:52+08:00 ] 127.0.0.1 /Admin/Article/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0028s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE `status` = 1 LIMIT 1   [ RunTime:0.0065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002316s ]
+
+[ 2017-05-04T10:33:56+08:00 ] 127.0.0.1 /Admin/Article/listing.html?search_article=&cate_id=33
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0027s ]
+SQL: SELECT `article_id`,a.cate_id,`title`,`cate_name`,`author`,`newstime`,`real_clicks` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE a.cate_id IN ('33') AND `status` = 1 ORDER BY article_id desc LIMIT 0,5   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM isq_article a WHERE a.cate_id IN ('33') AND `status` = 1 LIMIT 1   [ RunTime:0.0069s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2017-05-04T10:35:42+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0027s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num,sum(real_clicks) as clicks FROM `isq_article` GROUP BY cate_id  [ RunTime:0.0069s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 102 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 103 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 102 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 103 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 102 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2017-05-04T10:36:42+08:00 ] 127.0.0.1 /Admin/Category/listing.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001758s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_category`  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0029s ]
+SQL: SELECT `cate_id`,count(article_id) as article_num,sum(real_clicks) as clicks FROM `isq_article` GROUP BY cate_id  [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 102 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 103 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 102 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 103 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 102 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\fe4a2da36ec2334f40689dbcaa35c1a5.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002693s ]
+

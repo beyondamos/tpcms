@@ -12,7 +12,7 @@
             <if condition="session('member_id')">
                 <a href="<{:U('Member/logout')}>">[退出]</a>
                 <span>&nbsp;</span>
-                <a href=""><{$Think.session.member_name}></a>
+                <a href=":U('Member/index')"><{$Think.session.member_name}></a>
                 <else />
             <a href="<{:U('Member/register')}>">[注册]</a>
             <span>或</span>

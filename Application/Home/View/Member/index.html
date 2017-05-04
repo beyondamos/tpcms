@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>Title</title>
+    <link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+    <script src="__JS__/jquery-2.1.1.min.js"></script>
+    <script src="__JS__/item.js"></script>
+    <script src="__JS__/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#F2F2F2; float:left;">
+
+<include file="Public::header"/>
+
+<div class="cont">
+
+    <!--面包屑导航-->
+    <div class="navbred"><span>您当前的位置：</span><a href="/">首页</a>&gt;<span>会员中心</span></div>
+
+    <!--左侧-->
+    <div class="contul">
+        <div class="contulhed">
+            <img src="__IMG__/head.jpg" />
+            <a href="#">修改头像</a>
+            <h2>比二鱼</h2>
+            <h3>圈龄：0.5年&nbsp;&nbsp;|&nbsp;&nbsp;发帖：90</h3>
+        </div>
+
+        <div class="contulinfo">
+            <h2>账号信息</h2>
+            <a href="usercent.php">修改资料<span>》</span></a>
+            <a href="usercent.php">修改密码<span>》</span></a>
+            <a href="#">邮箱绑定<span>》</span></a>
+            <a href="#">手机认证<span>》</span></a>
+        </div>
+
+        <div class="contulinfo">
+            <h2>发帖信息</h2>
+            <a href="userinfo.php">我的帖子<span>》</span></a>
+            <a href="userinfo.php">我的回帖<span>》</span></a>
+            <a href="userinfo.php">我的回复<span>》</span></a>
+            <a href="userinfo.php">草稿箱<span>》</span></a>
+        </div>
+    </div><!--左侧 end-->
+
+
+    <!--右侧-->
+    <div class="contur">
+
+        <h1>基本信息</h1>
+
+        <div class="contallm">
+            <form action="" method="post">
+                <div class="topicinc"><span>用户名</span><input type="text" name="" class="intopic" /></div>
+                <div class="topicinc"><span>性别</span><input type="text" name="" class="intopic" /></div>
+
+                <div class="topicinc"><span>居住地</span><input type="text" name="" class="intopic" /></div>
+                <div class="topicinc"><span>出生地</span><input type="text" name="" class="intopic" /></div>
+                <div class="topicinc"><span>个人简介</span><input type="text" name="" class="intopic" /></div>
+
+                <div class="topicinb">
+                    <input type="submit" name="" value="确定修改" class="btnnext" />
+                    <input type="submit" name="" value="取消" class="btncanl" />
+                </div>
+            </form>
+        </div>
+
+    </div><!--右侧 end-->
+
+
+
+</div>
+
+<include file="Public::footer"/>
+</body>
+</html>

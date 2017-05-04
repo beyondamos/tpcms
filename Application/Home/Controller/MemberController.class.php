@@ -7,6 +7,13 @@ use Home\Controller\CommonController;
 
 class MemberController extends CommonController{
     /**
+     * 会员中心
+     */
+    public function index(){
+        $this->display();
+    }
+
+    /**
      * 会员登录
      */
     public function login(){
