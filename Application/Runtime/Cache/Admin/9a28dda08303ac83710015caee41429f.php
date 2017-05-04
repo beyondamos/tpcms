@@ -1,19 +1,19 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="renderer" content="webkit">
-    <title>甫劳科技后台管理系统</title>
+	<title>甫劳科技后台管理系统</title>
 	<link href="/Public/Admin/css/base.css" rel="stylesheet" type="text/css"/>
-    <link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="/Public/Admin/js/html5shiv.js"></script>
-    <script src="/Public/Admin/js/respond.min.js"></script>
-    <![endif]-->
+	<link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="/Public/Admin/js/html5shiv.js"></script>
+	<script src="/Public/Admin/js/respond.min.js"></script>
+	<![endif]-->
 	<script src="/Public/Admin/js/jquery-1.11.1.min.js"></script>
-	
-    <script src="/Public/Admin/js/bootstrap.min.js"></script>
+
+	<script src="/Public/Admin/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="nav-top">
@@ -56,30 +56,43 @@
 
 <div class="cont">
 	<div class="contmain">
-		
 		<div class="boxi">
 			<h1>编辑广告</h1>
-			<form action="<?php echo U('Adv/edit');?>" method="post">
+			<form action="<?php echo U('Adv/edit');?>" method="post" enctype="multipart/form-data">
 				<div class="boxin">
 					<span>广&nbsp;告&nbsp;名&nbsp;称</span><input type="text" name="adv_name" class="form-control" value="<?php echo ($adv_data["adv_name"]); ?>">
 				</div>
 				<div class="boxin">
 					<span>广&nbsp;告&nbsp;位&nbsp;置</span></span><input type="text" name="adv_position" class="form-control" value="<?php echo ($adv_data["adv_position"]); ?>">
 				</div>
-				<div class="boxtextb">
-					<span>广&nbsp;告&nbsp;代&nbsp;码</span><textarea rows="6" class="form-control" name="adv_code"><?php echo ($adv_data["adv_code"]); ?></textarea>
+				<div class="boxin">
+					<span>广&nbsp;告&nbsp;链&nbsp;接</span></span><input type="text" name="adv_url" class="form-control" value="<?php echo ($adv_data["adv_url"]); ?>">
+				</div>
+				<div class="boxinb">
+					<span>广&nbsp;告&nbsp;图&nbsp;片</span>
+					<a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"></i>
+					<br /><br />
+					<img src="<?php echo ($adv_data["adv_img"]); ?>" alt="" height="150" width="150" style="margin-left: 60px;">
 				</div>
 				<div class="boxinbtn">
 					<input type="hidden" name="id" value="<?php echo ($adv_data["id"]); ?>">
 					<input type="submit"  value="确定" class="btn btna" />
 					<input type="reset"  value="重置" class="btn btnb" />
 				</div>
-				
 			</form>
 		</div>
-	
 	</div>
 </div>
 <script src="/Public/Admin/js/sdmenu.js"></script>
+<script>
+	$().ready(function(){
+		$(".upfn").on("change","input[type='file']",function(){
+			var filePath = $(this).val();
+			var arr = filePath.split('\\');
+			var fileName = arr[arr.length-1];
+			$(".upfnb").html(fileName);
+		});
+	});
+</script>
 </body>
 </html>

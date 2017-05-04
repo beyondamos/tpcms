@@ -32,7 +32,7 @@
 
             <?php if(session('member_id')): ?><a href="<?php echo U('Member/logout');?>">[退出]</a>
                 <span>&nbsp;</span>
-                <a href=""><?php echo (session('member_name')); ?></a>
+                <a href=":U('Member/index')"><?php echo (session('member_name')); ?></a>
                 <?php else: ?>
             <a href="<?php echo U('Member/register');?>">[注册]</a>
             <span>或</span>

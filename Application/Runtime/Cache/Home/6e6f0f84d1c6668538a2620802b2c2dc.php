@@ -42,7 +42,7 @@
 
             <?php if(session('member_id')): ?><a href="<?php echo U('Member/logout');?>">[退出]</a>
                 <span>&nbsp;</span>
-                <a href=""><?php echo (session('member_name')); ?></a>
+                <a href=":U('Member/index')"><?php echo (session('member_name')); ?></a>
                 <?php else: ?>
             <a href="<?php echo U('Member/register');?>">[注册]</a>
             <span>或</span>
@@ -219,16 +219,9 @@
         <a href="<?php echo U('Custom/law');?>">法律声明</a>
     </div>
     <div class="navfootb-center">
-        <div class="backtop"><img src="/Public/Home/images/backtop.png" alt="" id="backtop"/></div>
         Copyright@2016-2017&nbsp;www.ishequan.cn All Rights Reserved.
     </div>
 </div>
-
-<script>
-    $('#backtop').click(function(){
-        $('html,body').animate({scrollTop: '0px'}, 800);
-    });
-</script>
 
 <script type="text/javascript">
     $(document).ready(function(){

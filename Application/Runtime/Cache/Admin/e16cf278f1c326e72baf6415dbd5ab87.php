@@ -88,7 +88,7 @@
 					<span>信息属性</span>
 					<label><input type="checkbox" name="status" checked/>审核</label>
 
-					<label><input type="checkbox" name="is_hot"/>最热</label>
+					<!--<label><input type="checkbox" name="is_hot"/>最热</label>-->
 					<label><input type="checkbox" name="is_recommend"/>推荐</label>
 				</div>
 				<div class="boxinb">

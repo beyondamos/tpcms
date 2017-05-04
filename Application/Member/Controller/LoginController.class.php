@@ -2,21 +2,15 @@
 /**
  * 会员控制器
  */
-namespace Home\Controller;
-use Home\Controller\CommonController;
+namespace Member\Controller;
+use Member\Controller\CommonController;
 
-class MemberController extends CommonController{
-    /**
-     * 会员中心
-     */
-    public function index(){
-        $this->display();
-    }
+class LoginController extends CommonController{
 
     /**
      * 会员登录
      */
-    public function login(){
+    public function index(){
         $this->display();
     }
 

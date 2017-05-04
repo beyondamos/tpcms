@@ -56,29 +56,40 @@
 
 <div class="cont">
 	<div class="contmain">
-		
 		<div class="boxi">
 			<h1>添加广告</h1>
-			<form action="<?php echo U('Adv/add');?>" method="post">
+			<form action="<?php echo U('Adv/add');?>" method="post" enctype="multipart/form-data">
 				<div class="boxin">
 					<span>广&nbsp;告&nbsp;名&nbsp;称</span><input type="text" name="adv_name" class="form-control">
 				</div>
 				<div class="boxin">
 					<span>广&nbsp;告&nbsp;位&nbsp;置</span></span><input type="text" name="adv_position" class="form-control">
 				</div>
-				<div class="boxtextb">
-					<span>广&nbsp;告&nbsp;代&nbsp;码</span><textarea  rows="6" class="form-control" name="adv_code"></textarea>
+				<div class="boxin">
+					<span>广&nbsp;告&nbsp;链&nbsp;接</span></span><input type="text" name="adv_url" class="form-control">
+				</div>
+				<div class="boxinb">
+					<span>广&nbsp;告&nbsp;图&nbsp;片</span>
+					<a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"></i>
 				</div>
 				<div class="boxinbtn">
 					<input type="submit"  value="确定" class="btn btna" />
 					<input type="reset"  value="重置" class="btn btnb" />
 				</div>
-				
 			</form>
 		</div>
-	
 	</div>
 </div>
 <script src="/Public/Admin/js/sdmenu.js"></script>
+<script>
+	$().ready(function(){
+		$(".upfn").on("change","input[type='file']",function(){
+			var filePath = $(this).val();
+			var arr = filePath.split('\\');
+			var fileName = arr[arr.length-1];
+			$(".upfnb").html(fileName);
+		});
+	});
+</script>
 </body>
 </html>

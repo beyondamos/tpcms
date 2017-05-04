@@ -64,7 +64,7 @@
 							<tr>
 								<td class="text-vm"><input type="checkbox" name="article_id[]" value="<{$vo.article_id}>"/></td>
 								<td class="text-vm"><{$vo.article_id}></td>
-								<td class="text-vm"><{$vo.title}></td>
+								<td class="text-vm"><a href="<{:U('Home/Article/detail', array('article_id' => $vo['article_id']))}>" target="_blank"><{$vo.title}></a></td>
 								<td class="text-vm"><{$vo.cate_name}></td>
 								<td class="text-vm"><{$vo.author}></td>
 								<td class="text-vm"><{$vo.newstime}></td>

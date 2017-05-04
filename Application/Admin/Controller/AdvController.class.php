@@ -24,6 +24,9 @@ class AdvController extends CommonController{
         if(IS_POST){
             $adv_model = D('Adv');
             if($adv_model->create()){
+                if($_FILES['file_upload']['error'] != 4 ){
+                    $adv_model->adv_img = ltrim(C('UPLOAD').$this->upload() ,'.');
+                }
                 if($adv_model->add()){
                     $this->success('广告添加成功', U('Adv/index'), 1);
                 }else{
@@ -45,6 +48,10 @@ class AdvController extends CommonController{
 
             $adv_model = D('Adv');
             if($adv_model->create()){
+                if($_FILES['file_upload']['error'] != 4 ){
+                    $adv_model->adv_img = ltrim(C('UPLOAD').$this->upload() ,'.');
+//                    $article_model->deleteImg(I('post.article_id'));
+                }
                 if($adv_model->save()){
                     $this->success('广告编辑成功', U('Adv/index'), 1);
                 }else{
@@ -72,6 +79,30 @@ class AdvController extends CommonController{
             $this->success('广告删除成功', U('Adv/index'), 1);
         }else{
             $this->error('广告删除失败');
+        }
+    }
+
+
+    /**
+     * 文件上传
+     * @return [type] [description]
+     */
+    public function upload(){
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =     3145728 ;// 设置附件上传大小
+        $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+        $upload->rootPath  =      C('UPLOAD'); // 设置附件上传根目录
+        $upload->autoSub = true;
+        $upload->subName = array('date','Ymd');
+        $upload->saveName = time().'_'.mt_rand();
+        // 上传文件
+        $info   =   $upload->upload();
+        if(!$info) {// 上传错误提示错误信息
+            $this->error($upload->getError());
+        }else{// 上传成功 获取上传文件信息
+            foreach($info as $file){
+                return $file['savepath'].$file['savename'];
+            }
         }
     }
 
