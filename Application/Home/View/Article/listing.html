@@ -58,7 +58,7 @@
 
         <!--选项 最新-->
         <div class="boxcont" id="areaa">
-            <volist name="new_data" id="vo">
+            <volist name="new_data" id="vo" offset="0" length="3">
             <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>"><div class="boxitem">
                 <div class="imglimt"><img src="<{$vo.titleimg}>" alt="" /> </div>
                 <h2><{$vo.title}></h2>
@@ -68,13 +68,20 @@
                 <h5><img src="__IMG__/iconstar.png" alt="" /><{$vo.zan}></h5>
             </div></a>
             </volist>
-            <!--&lt;!&ndash;再显示10条&ndash;&gt;-->
-            <!--<div class="l_num">-->
-                <!--<ul>-->
-                    <!--<b><span class='lk7'>1</span></b>&nbsp;<a href='/index-3page=2.html?' class='lk6'>2</a>&nbsp;<a href='/index-3page=3.html?' class='lk6'>3</a>&nbsp;<a href='/index-3page=2.html?' class='lk9'>下页&nbsp;</a><a href='/index-3page=41.html?' class='lk9'>末页</a>-->
-                <!--</ul>-->
-            <!--</div>-->
-            <!--&lt;!&ndash;再显示10条&ndash;&gt;-->
+            <a href="<{$adv_info['adv_url']}>"><img src="<{$adv_info['adv_img']}>" alt="" width="860" height="200"></a>
+            <volist name="new_data" id="vo" offset="3" length="7">
+                <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>"><div class="boxitem">
+                    <div class="imglimt"><img src="<{$vo.titleimg}>" alt="" /> </div>
+                    <h2><{$vo.title}></h2>
+                    <h3><php>echo mb_substr(strip_tags(htmlspecialchars_decode(trim($vo['content']))),0,40,'utf-8');</php></h3>
+                    <h4><img src="__IMG__/iconclock.png" alt="" /><{$vo.newstime}></h4>
+                    <h5><img src="__IMG__/iconeye.png" alt="" /><{$vo.clicks}></h5>
+                    <h5><img src="__IMG__/iconstar.png" alt="" /><{$vo.zan}></h5>
+                </div></a>
+            </volist>
+
+
+
 
             <{$show}>
 

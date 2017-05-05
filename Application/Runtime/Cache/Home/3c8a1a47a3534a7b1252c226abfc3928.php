@@ -44,11 +44,12 @@
                 <span>&nbsp;</span>
                 <a href=":U('Member/index')"><?php echo (session('member_name')); ?></a>
                 <?php else: ?>
-            <a href="<?php echo U('Member/register');?>">[注册]</a>
-            <span>或</span>
-            <a href="<?php echo U('Member/login');?>">[登录]</a>
-            <span>请</span>
-            <a href="<?php echo U('Member/wechatLogin');?>"><img src="/Public/Home/images/icon32_wx_logo.png" style="width: 20px;margin-top:6px;margin-right:10px;" id="wx_log"></a><?php endif; ?>
+            <!--<a href="<?php echo U('Member/register');?>">[注册]</a>-->
+            <!--<span>或</span>-->
+            <!--<a href="<?php echo U('Member/login');?>">[登录]</a>-->
+            <!--<span>请</span>-->
+            <a href="<?php echo U('Member/wechatLogin');?>"><img src="/Public/Home/images/icon32_wx_logo.png" style="width: 20px;margin-top:6px;margin-right:10px;" id="wx_log"></a>
+                <span>微信登录</span><?php endif; ?>
 
 
             <!--<a href="/home/qq_log.php"><img src="/Public/Home/images/qq.png" style="width: 15px;margin-top:6px;margin-right:10px;" id="wx_log"></a>-->

@@ -44,11 +44,12 @@
                 <span>&nbsp;</span>
                 <a href=":U('Member/index')"><?php echo (session('member_name')); ?></a>
                 <?php else: ?>
-            <a href="<?php echo U('Member/register');?>">[注册]</a>
-            <span>或</span>
-            <a href="<?php echo U('Member/login');?>">[登录]</a>
-            <span>请</span>
-            <a href="<?php echo U('Member/wechatLogin');?>"><img src="/Public/Home/images/icon32_wx_logo.png" style="width: 20px;margin-top:6px;margin-right:10px;" id="wx_log"></a><?php endif; ?>
+            <!--<a href="<?php echo U('Member/register');?>">[注册]</a>-->
+            <!--<span>或</span>-->
+            <!--<a href="<?php echo U('Member/login');?>">[登录]</a>-->
+            <!--<span>请</span>-->
+            <a href="<?php echo U('Member/wechatLogin');?>"><img src="/Public/Home/images/icon32_wx_logo.png" style="width: 20px;margin-top:6px;margin-right:10px;" id="wx_log"></a>
+                <span>微信登录</span><?php endif; ?>
 
 
             <!--<a href="/home/qq_log.php"><img src="/Public/Home/images/qq.png" style="width: 15px;margin-top:6px;margin-right:10px;" id="wx_log"></a>-->
@@ -112,7 +113,7 @@
 
         <!--选项 最新-->
         <div class="boxcont" id="areaa">
-            <?php if(is_array($new_data)): $i = 0; $__LIST__ = $new_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>"><div class="boxitem">
+            <?php if(is_array($new_data)): $i = 0; $__LIST__ = array_slice($new_data,0,3,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>"><div class="boxitem">
                 <div class="imglimt"><img src="<?php echo ($vo["titleimg"]); ?>" alt="" /> </div>
                 <h2><?php echo ($vo["title"]); ?></h2>
                 <h3><?php echo mb_substr(strip_tags(htmlspecialchars_decode(trim($vo['content']))),0,40,'utf-8'); ?></h3>
@@ -120,13 +121,18 @@
                 <h5><img src="/Public/Home/images/iconeye.png" alt="" /><?php echo ($vo["clicks"]); ?></h5>
                 <h5><img src="/Public/Home/images/iconstar.png" alt="" /><?php echo ($vo["zan"]); ?></h5>
             </div></a><?php endforeach; endif; else: echo "" ;endif; ?>
-            <!--&lt;!&ndash;再显示10条&ndash;&gt;-->
-            <!--<div class="l_num">-->
-                <!--<ul>-->
-                    <!--<b><span class='lk7'>1</span></b>&nbsp;<a href='/index-3page=2.html?' class='lk6'>2</a>&nbsp;<a href='/index-3page=3.html?' class='lk6'>3</a>&nbsp;<a href='/index-3page=2.html?' class='lk9'>下页&nbsp;</a><a href='/index-3page=41.html?' class='lk9'>末页</a>-->
-                <!--</ul>-->
-            <!--</div>-->
-            <!--&lt;!&ndash;再显示10条&ndash;&gt;-->
+            <a href="<?php echo ($adv_info['adv_url']); ?>"><img src="<?php echo ($adv_info['adv_img']); ?>" alt="" width="860" height="200"></a>
+            <?php if(is_array($new_data)): $i = 0; $__LIST__ = array_slice($new_data,3,7,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>"><div class="boxitem">
+                    <div class="imglimt"><img src="<?php echo ($vo["titleimg"]); ?>" alt="" /> </div>
+                    <h2><?php echo ($vo["title"]); ?></h2>
+                    <h3><?php echo mb_substr(strip_tags(htmlspecialchars_decode(trim($vo['content']))),0,40,'utf-8'); ?></h3>
+                    <h4><img src="/Public/Home/images/iconclock.png" alt="" /><?php echo ($vo["newstime"]); ?></h4>
+                    <h5><img src="/Public/Home/images/iconeye.png" alt="" /><?php echo ($vo["clicks"]); ?></h5>
+                    <h5><img src="/Public/Home/images/iconstar.png" alt="" /><?php echo ($vo["zan"]); ?></h5>
+                </div></a><?php endforeach; endif; else: echo "" ;endif; ?>
+
+
+
 
             <?php echo ($show); ?>
 

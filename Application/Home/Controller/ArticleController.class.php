@@ -30,11 +30,13 @@ class ArticleController extends CommonController{
         //右侧信息
         $this->rightInfo();
         //相关推荐
-        $map = array('status' => 1, 'is_recommend' => 1);
         $related_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
-                                    ->field('article_id,titleimg,title,newstime,url,clicks,zan')->where($map)
-                                    ->order('article_id desc')->limit('6')->select();
+                                    ->field('article_id,titleimg,title,newstime,url,clicks,zan')->where(array('status' => 1, 'article_id'=>array('neq',$article_id), 'a.cate_id'=>  $article_data['cate_id']))
+                                    ->order('newstime desc')->limit('6')->select();
         $this->assign('related_data', $related_data);
+
+
+
 
         //移动端精彩推荐10条 组合
         $mobile_recommend_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
@@ -64,6 +66,11 @@ class ArticleController extends CommonController{
         $cate_data = $category_model->where(array('url' => $cate_name))->find();
         if(!$cate_data) $this->error('不存在栏目分类');
         $this->assign('cate_data', $cate_data);
+
+        //广告
+        $adv_model = D('Adv');
+        $adv_info = $adv_model->where(array('mark' => $cate_name))->find();
+        if($adv_info) $this->assign('adv_info', $adv_info);
 
         $p = I('get.p') ? I('get.p') : 1;
 
