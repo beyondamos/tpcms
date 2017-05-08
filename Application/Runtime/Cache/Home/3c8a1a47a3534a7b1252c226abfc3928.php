@@ -13,7 +13,7 @@
     <script src="/Public/Home/js/jquery-2.1.1.min.js"></script>
     <script src="/Public/Home/js/item.js"></script>
     <script src="/Public/Home/js/bootstrap.min.js"></script>
-    <title><?php echo ($article_data["title"]); echo ($article_data["cate_title"]); ?></title>
+    <title><?php echo ($article_data["title"]); ?>--奉贤社圈网</title>
     <meta name="keywords" content="<?php echo ($article_data["keywords"]); ?>"/>
     <meta name="description" content="<?php echo ($article_data["synopsis"]); ?>"/>
     <script>
@@ -40,15 +40,15 @@
         </div>
         <div class="nav-top-right">
 
-            <?php if(session('member_id')): ?><a href="<?php echo U('Member/logout');?>">[退出]</a>
+            <?php if(session('member_id')): ?><a href="<?php echo U('Member/Login/logout');?>">[退出]</a>
                 <span>&nbsp;</span>
-                <a href=":U('Member/index')"><?php echo (session('member_name')); ?></a>
+                <a href=":U('Member/Index/index')"><?php echo (session('member_name')); ?></a>
                 <?php else: ?>
             <!--<a href="<?php echo U('Member/register');?>">[注册]</a>-->
             <!--<span>或</span>-->
             <!--<a href="<?php echo U('Member/login');?>">[登录]</a>-->
             <!--<span>请</span>-->
-            <a href="<?php echo U('Member/wechatLogin');?>"><img src="/Public/Home/images/icon32_wx_logo.png" style="width: 20px;margin-top:6px;margin-right:10px;" id="wx_log"></a>
+            <a href="<?php echo U('Member/Login/wechatLogin');?>"><img src="/Public/Home/images/icon32_wx_logo.png" style="width: 20px;margin-top:6px;margin-right:10px;" id="wx_log"></a>
                 <span>微信登录</span><?php endif; ?>
 
 

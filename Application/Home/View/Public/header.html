@@ -10,15 +10,15 @@
         <div class="nav-top-right">
 
             <if condition="session('member_id')">
-                <a href="<{:U('Member/logout')}>">[退出]</a>
+                <a href="<{:U('Member/Login/logout')}>">[退出]</a>
                 <span>&nbsp;</span>
-                <a href=":U('Member/index')"><{$Think.session.member_name}></a>
+                <a href=":U('Member/Index/index')"><{$Think.session.member_name}></a>
                 <else />
             <!--<a href="<{:U('Member/register')}>">[注册]</a>-->
             <!--<span>或</span>-->
             <!--<a href="<{:U('Member/login')}>">[登录]</a>-->
             <!--<span>请</span>-->
-            <a href="<{:U('Member/wechatLogin')}>"><img src="__IMG__/icon32_wx_logo.png" style="width: 20px;margin-top:6px;margin-right:10px;" id="wx_log"></a>
+            <a href="<{:U('Member/Login/wechatLogin')}>"><img src="__IMG__/icon32_wx_logo.png" style="width: 20px;margin-top:6px;margin-right:10px;" id="wx_log"></a>
                 <span>微信登录</span>
             </if>
 
