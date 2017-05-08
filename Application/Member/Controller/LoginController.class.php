@@ -39,7 +39,7 @@ class LoginController extends CommonController{
         $AppID = 'wxd004e24814da66b1';
         $AppSecret = '31edaa8a8993099d82d8c2699e8a24f4';
 //        $callback  =  urlencode('http://test.ishequan.cn/home/wx_oauth.php'); //回调地址
-        $callback  =  urlencode(U('Member/wechatLoginCallback','',true,true));//回调地址
+        $callback  =  urlencode(U('Member/Login/wechatLoginCallback','',true,true));//回调地址
         //-------生成唯一随机串防CSRF攻击
         $state  = md5(uniqid(rand(), TRUE));
         session('wx_state',$state);

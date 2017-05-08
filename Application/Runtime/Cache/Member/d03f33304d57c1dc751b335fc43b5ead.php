@@ -81,7 +81,7 @@
     <!--左侧-->
     <div class="contul">
         <div class="contulhed">
-            <img src="images/head.jpg" />
+            <img src="/Public/Home/images/head.jpg" />
             <a href="#">修改头像</a>
             <h2>比二鱼</h2>
             <h3>圈龄：0.5年&nbsp;&nbsp;|&nbsp;&nbsp;发帖：90</h3>
