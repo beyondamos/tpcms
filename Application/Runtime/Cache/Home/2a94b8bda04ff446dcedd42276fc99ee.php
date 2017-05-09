@@ -87,7 +87,7 @@
         <div class="contlb">
             <!--轮播图 城市生活向导-->
             <div class="contlba-news">
-                <div class="contlba-img"><a href="javascript:;"><img alt="" src="/Public/Home/images/advv.jpg" /></a></div>
+                <div class="contlba-img"><iframe allowtransparency="true" frameborder="0" width="385" height="96" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=1&z=3&t=0&v=0&d=2&bd=0&k=000000&f=&q=1&e=1&a=1&c=60298&w=385&h=96&align=left"></iframe></div>
                 <!--轮播图-->
                 <div class="carousel slide" id="carousel-example"  data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -141,9 +141,9 @@
             <!--今日热点-->
             <div class="contrb-news">
 
-                <h1>今日热点</h1>
+                <h1>招聘信息</h1>
                 <?php if(is_array($pc_hot_data)): $i = 0; $__LIST__ = array_slice($pc_hot_data,0,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>"><img src="<?php echo ($vo["titleimg"]); ?>" alt="" /><h2><?php echo mb_substr($vo['title'],0,14,'utf-8');?></h2><h3><?php echo mb_substr(strip_tags(htmlspecialchars_decode($vo['content'])),0,16,'utf-8'); ?></h3></a><?php endforeach; endif; else: echo "" ;endif; ?>
-                <?php if(is_array($pc_hot_data)): $i = 0; $__LIST__ = array_slice($pc_hot_data,1,5,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>"><h2><span>[<?php echo ($vo["cate_name"]); ?>]</span><?php echo mb_substr($vo['title'],0,18,'utf-8');?></h2></a><?php endforeach; endif; else: echo "" ;endif; ?>
+                <?php if(is_array($pc_hot_data)): $i = 0; $__LIST__ = array_slice($pc_hot_data,1,5,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>"><h2><?php echo mb_substr($vo['title'],0,24,'utf-8');?></h2></a><?php endforeach; endif; else: echo "" ;endif; ?>
             </div><!--今日热点 end-->
         </div><!--第一块右侧 end-->
     </div>	<!--第一块 内容 end-->
@@ -151,7 +151,7 @@
 
     <!--广告-->
     <div class="advi">
-        <a href="<?php echo ($adv_upper["adv_url"]); ?>"><img src="<?php echo ($adv_upper["adv_img"]); ?>" alt="" height="300"/></a>
+        <a href="<?php echo ($adv_upper["adv_url"]); ?>"><img src="<?php echo ($adv_upper["adv_img"]); ?>" alt="" height="75"/></a>
     </div><!--广告 end-->
 
 
@@ -176,7 +176,7 @@
 
     <!--广告-->
     <div class="advi">
-        <a href="<?php echo ($adv_middle["adv_url"]); ?>"><img src="<?php echo ($adv_middle["adv_img"]); ?>" alt="" height="300"/></a>
+        <a href="<?php echo ($adv_middle["adv_url"]); ?>"><img src="<?php echo ($adv_middle["adv_img"]); ?>" alt="" height="75"/></a>
     </div><!--广告 end-->
 
     <!--第三块 内容-->
@@ -201,7 +201,7 @@
 
     <!--广告-->
     <div class="advi">
-        <a href="<?php echo ($adv_lower["adv_url"]); ?>"><img src="<?php echo ($adv_lower["adv_img"]); ?>" alt="" height="300"/></a>
+        <a href="<?php echo ($adv_lower["adv_url"]); ?>"><img src="<?php echo ($adv_lower["adv_img"]); ?>" alt="" height="75"/></a>
     </div><!--广告 end-->
 
     <!--第四块 内容-->

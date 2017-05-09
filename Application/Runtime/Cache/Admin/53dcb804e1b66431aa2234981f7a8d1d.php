@@ -67,6 +67,7 @@
 				</div>
 				<div class="boxin">
 					<span>广&nbsp;告&nbsp;标&nbsp;记</span></span><input type="text" name="mark" class="form-control">
+					
 				</div>
 				<div class="boxin">
 					<span>广&nbsp;告&nbsp;链&nbsp;接</span></span><input type="text" name="adv_url" class="form-control">
