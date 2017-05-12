@@ -41,13 +41,13 @@ class ArticleController extends CommonController{
         //移动端精彩推荐10条 组合
         $mobile_recommend_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
                                                 ->field('article_id,titleimg,title,newstime,url,clicks,zan')
-                                                ->where(array('a.cate_id'=> $article_data['cate_id'], 'article_id' => array('NEQ',$article_id)))->order('newstime desc')
+                                                ->where(array('status'=>'1','a.cate_id'=> $article_data['cate_id'], 'article_id' => array('NEQ',$article_id)))->order('newstime desc')
                                                 ->limit('6')->select();
         //从其他地方凑满4条
 
         $mobile_recommend_data_other = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
                                             ->field('article_id,titleimg,title,newstime,url,clicks,zan')
-                                            ->where(array('a.cate_id' => array('neq',$article_data['cate_id'])))->order('newstime desc')
+                                            ->where(array('status'=>'1','a.cate_id' => array('neq',$article_data['cate_id'])))->order('newstime desc')
                                             ->limit('4')->select();
 
         $mobile_recommend_data = array_merge($mobile_recommend_data,$mobile_recommend_data_other);
