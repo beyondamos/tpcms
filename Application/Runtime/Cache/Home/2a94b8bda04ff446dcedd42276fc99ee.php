@@ -104,16 +104,17 @@
                 </div>
                 <!--轮播图 end-->
                 <h1>城市生活向导</h1>
-                <?php if(is_array($pc_new_data)): $i = 0; $__LIST__ = array_slice($pc_new_data,0,5,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>"><h2><span>[<?php echo ($vo["cate_name"]); ?>]</span><?php echo mb_substr($vo['title'],0,18,'utf-8');?></h2></a><?php endforeach; endif; else: echo "" ;endif; ?>
+                <?php if(is_array($pc_new_data)): $i = 0; $__LIST__ = array_slice($pc_new_data,0,7,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>"><h2><span>[<?php echo ($vo["cate_name"]); ?>]</span><?php echo mb_substr($vo['title'],0,18,'utf-8');?></h2></a><?php endforeach; endif; else: echo "" ;endif; ?>
             </div><!--城市生活向导 end-->
 
             <!--城市生活向导 右侧-->
             <div class="contlbar-news">
                 <?php if(is_array($pc_recommend_data)): $i = 0; $__LIST__ = array_slice($pc_recommend_data,4,2,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>"><h4><?php echo ($vo["title"]); ?></h4><h5><?php echo mb_substr(strip_tags(htmlspecialchars_decode($vo['content'])),0,70,'utf-8'); ?></h5></a><?php endforeach; endif; else: echo "" ;endif; ?>
 
-                <?php if(is_array($pc_new_data)): $i = 0; $__LIST__ = array_slice($pc_new_data,5,6,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>"><h2><span>[<?php echo ($vo["cate_name"]); ?>]</span><?php echo mb_substr($vo['title'],0,28,'utf-8');?></h2></a><?php endforeach; endif; else: echo "" ;endif; ?>
+                <?php if(is_array($pc_new_data)): $i = 0; $__LIST__ = array_slice($pc_new_data,7,6,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>"><h2><span>[<?php echo ($vo["cate_name"]); ?>]</span><?php echo mb_substr($vo['title'],0,28,'utf-8');?></h2></a><?php endforeach; endif; else: echo "" ;endif; ?>
+
                 <hr>
-                <?php if(is_array($pc_new_data)): $i = 0; $__LIST__ = array_slice($pc_new_data,11,5,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>"><h2><span>[<?php echo ($vo["cate_name"]); ?>]</span><?php echo mb_substr($vo['title'],0,28,'utf-8');?></h2></a><?php endforeach; endif; else: echo "" ;endif; ?>
+                <?php if(is_array($pc_new_data)): $i = 0; $__LIST__ = array_slice($pc_new_data,13,5,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>"><h2><span>[<?php echo ($vo["cate_name"]); ?>]</span><?php echo mb_substr($vo['title'],0,28,'utf-8');?></h2></a><?php endforeach; endif; else: echo "" ;endif; ?>
             </div><!--城市生活向导 右侧 end-->
 
         </div><!--第一块左侧 end-->

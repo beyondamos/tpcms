@@ -36,8 +36,6 @@ class ArticleController extends CommonController{
         $this->assign('related_data', $related_data);
 
 
-
-
         //移动端精彩推荐10条 组合
         $mobile_recommend_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
                                                 ->field('article_id,titleimg,title,newstime,url,clicks,zan')

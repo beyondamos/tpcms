@@ -41,10 +41,10 @@ class IndexController extends CommonController {
                                             ->field('article_id,title,titleimg,url,content')->where(array('status' => 1, 'is_recommend' => 1))
                                             ->order('newstime desc')->limit('6')->select();
         $this->assign('pc_recommend_data', $pc_recommend_data);
-        //16条最新信息 去除在首页上已经展示的模块
+        //18条最新信息 去除在首页上已经展示的模块
         $pc_new_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
                                     ->field('article_id,title,url,cate_name')->where(array('status' => 1, 'a.cate_id' => array('not in','24,5,3,33,20,36')))
-                                    ->order('newstime desc')->limit('16')->select();
+                                    ->order('newstime desc')->limit('18')->select();
         $this->assign('pc_new_data', $pc_new_data);
 
 
@@ -90,7 +90,7 @@ class IndexController extends CommonController {
         //最新信息(移动端)
         $map = array('status' => 1 );
         $new_data = $article_model->alias('a')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
-                                    ->field('article_id,title,titleimg,newstime,synopsis,clicks,url,content')->where($map)
+                                    ->field('article_id,title,titleimg,newstime,synopsis,clicks,url,content,zan')->where($map)
                                   ->order('newstime desc')->limit('10')->select();
 
 

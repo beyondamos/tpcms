@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>甫劳科技后台管理系统</title>
+    <link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="__JS__/html5shiv.js"></script>
+    <script src="__JS__/respond.min.js"></script>
+    <![endif]-->
+    <script src="__JS__/jquery-1.11.1.min.js"></script>
+
+    <script src="__JS__/bootstrap.min.js"></script>
+</head>
+<body>
+<include file="Public:nav_top" />
+<include file="Public:nav_left" />
+
+<div class="cont">
+    <div class="contmain">
+
+        <div class="boxi">
+            <h1>采集信息</h1>
+
+            <!-- 表格顶部搜索区 -->
+            <!--<div class="boxoper">-->
+                <!--<a href="<{:U('Category/add')}>">添加分类</a>-->
+
+                				<div class="boxoper-seh">
+                                    <form action="" method="post">
+                                        <button class="btn btn-default" type="submit"><img src="__IMG__/iconseh.png" /></button>
+                                        <input type="text" class="form-control" placeholder="搜索分类名称">
+                                        <select class="form-control">
+                                            <option>全部</option>
+                                            <option>分类</option>
+                                            <option>分类</option>
+                                            <option>分类</option>
+                                            <option>分类</option>
+                                        </select>
+                                    </form>
+                                </div>
+            <!--</div>-->
+
+            <!-- 表格 -->
+            <table class="table table-hover boxtable">
+                <thead>
+                <tr>
+                    <th class="col-md-1 text-vm">序号</th>
+                    <th class="col-md-2 text-vm">分类</th>
+                    <th class="col-md-4 text-vm">标题</th>
+                    <th class="col-md-1 text-vm">来源网站</th>
+                    <th class="col-md-1 text-vm text-center">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="collect_data" id="vo">
+                    <tr>
+                        <td class="text-vm"><{$vo.id}></td>
+                        <td class="text-vm"><{$vo.cate_name}></td>
+                        <td class="text-vm"><a href="<{$vo.url}>" target="_blank"><{$vo.title}></a></td>
+                        <td class="text-vm"><{$vo.origin}></td>
+                        <td class="text-vm">
+                            <a href="<{:U('Collect/collect',array('id' => $vo['id']))}>">采集</a>
+                            <a href="<{:U('Collect/delete',array('id' => $vo['id']))}>">删除</a>
+                        </td>
+                    </tr>
+                </volist>
+                </tbody>
+            </table>
+            <div class="boxpage">
+                <{$show}>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="__JS__/sdmenu.js"></script>
+</body>
+</html>

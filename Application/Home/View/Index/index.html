@@ -51,7 +51,7 @@
                 </div>
                 <!--轮播图 end-->
                 <h1>城市生活向导</h1>
-                <volist name="pc_new_data" id="vo" offset="0" length="5">
+                <volist name="pc_new_data" id="vo" offset="0" length="7">
                 <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>"><h2><span>[<{$vo.cate_name}>]</span><{:mb_substr($vo['title'],0,18,'utf-8')}></h2></a>
                 </volist>
             </div><!--城市生活向导 end-->
@@ -60,14 +60,14 @@
             <div class="contlbar-news">
                 <volist name="pc_recommend_data" id="vo" offset="4" length="2">
                 <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>"><h4><{$vo.title}></h4><h5><php>echo mb_substr(strip_tags(htmlspecialchars_decode($vo['content'])),0,70,'utf-8');</php></h5></a>
-
                 </volist>
 
-                <volist name="pc_new_data" id="vo" offset="5" length="6">
+                <volist name="pc_new_data" id="vo" offset="7" length="6">
                     <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>"><h2><span>[<{$vo.cate_name}>]</span><{:mb_substr($vo['title'],0,28,'utf-8')}></h2></a>
                 </volist>
+
                 <hr>
-                <volist name="pc_new_data" id="vo" offset="11" length="5">
+                <volist name="pc_new_data" id="vo" offset="13" length="5">
                     <a href="<{:U($vo['url'].'/'.$vo['article_id'])}>"><h2><span>[<{$vo.cate_name}>]</span><{:mb_substr($vo['title'],0,28,'utf-8')}></h2></a>
                 </volist>
             </div><!--城市生活向导 右侧 end-->
