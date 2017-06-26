@@ -17,7 +17,7 @@
 </head>
 <body>
 
-
+    
 <!--头部 登录 注册区-->
 <div class="nav-top">
     <div class="nav-top-center">
@@ -74,160 +74,121 @@
 
 
 
-<div class="cont">
-    <!--左侧内容区-->
-    <div class="contl">
-    
-        <!--面包屑导航-->
-        <div class="navbred"><span>您当前的位置：</span><a href="index.php">首页</a>&gt;<span>养生</span></div>
-                
-                
-        <!--选项按钮-->
-        <div class="headbtn">
-            <a href="javascript:;" id="btna" class="headbtnact">最新</a>
-            <a href="javascript:;" id="btnb">推荐</a>
+    <div class="cont">
+        <!--左侧内容区-->
+        <div class="contl">
+
+            <!--面包屑导航-->
+            <div class="navbred"><span>您当前的位置：</span><a href="/">首页</a>&gt;<span>房产</span></div>
+
+
+            <!--选项按钮-->
+            <div class="headbtn">
+                <a href="javascript:;" id="btna" class="headbtnact">最新</a>
+                <a href="javascript:;" id="btnb">推荐</a>
+            </div>
+
+            <!--选项 最新-->
+            <div class="boxcont" id="areaa">
+                <?php if(is_array($new_data)): $i = 0; $__LIST__ = $new_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('Home/Fangchan/detail', array('id' => $vo['id']));?>"><div class="boxitem">
+                        <div class="imglimt"><img src="<?php echo ($vo["titleimg"]); ?>" alt="" /></div>
+                        <h2><?php echo ($vo["name"]); ?></h2>
+                        <h3><span><?php echo ($vo["housetype"]); ?></span><span><?php echo ($vo["floor"]); ?></span><span>南向</span><span>建筑年代：<?php echo ($vo["builttime"]); ?></span></h3>
+                        <h4><span><?php echo ($vo["address"]); ?></span></h4>
+                        <dl><dt><?php echo ($vo["total"]); ?><span>万</span></dt><dd><?php echo ($vo["unitprice"]); ?><span>元/平米</span></dd></dl>
+                        <dl><dt><?php echo ($vo["area"]); ?><span>平米</span></dt><dd>建筑面积</dd></dl>
+                    </div></a><?php endforeach; endif; else: echo "" ;endif; ?>  
+
+                <!--再显示10条-->
+                <?php echo ($show); ?>
+
+            </div>
+
+
+            <!--选项 推荐-->
+            <div class="boxcont" id="areab" style="display:none;">
+                <a href="detailfc.php"><div class="boxitem">
+                    <div class="imglimt"><img src="/Public/home/images/imgf01.jpg" alt="" /></div>
+                    <h2>南桥新城上海之鱼里的别墅 考虑别墅的你不要错过这 </h2>
+                    <h3><span>3室2厅</span><span>中层(共6层)</span><span>南向</span><span>建筑年代：2012</span></h3>
+                    <h4><span>海湾旅游区</span><span>海马路888弄666号</span></h4>
+                    <dl><dt>666<span>万</span></dt><dd>33333<span>元/平米</span></dd></dl>
+                    <dl><dt>266<span>平米</span></dt><dd>建筑面积</dd></dl>
+                </div></a>
+                <a href="detailfc.php"><div class="boxitem">
+                    <div class="imglimt"><img src="/Public/home/images/imgf01.jpg" alt="" /></div>
+                    <h2>南桥新城上海之鱼里的别墅 考虑别墅的你不要错过这 </h2>
+                    <h3><span>3室2厅</span><span>中层(共6层)</span><span>南向</span><span>建筑年代：2012</span></h3>
+                    <h4><span>海湾旅游区</span><span>海马路888弄666号</span></h4>
+                    <dl><dt>666<span>万</span></dt><dd>33333<span>元/平米</span></dd></dl>
+                    <dl><dt>266<span>平米</span></dt><dd>建筑面积</dd></dl>
+                </div></a>
+                <a href="detailfc.php"><div class="boxitem">
+                    <div class="imglimt"><img src="/Public/home/images/imgf01.jpg" alt="" /></div>
+                    <h2>南桥新城上海之鱼里的别墅 考虑别墅的你不要错过这 </h2>
+                    <h3><span>3室2厅</span><span>中层(共6层)</span><span>南向</span><span>建筑年代：2012</span></h3>
+                    <h4><span>海湾旅游区</span><span>海马路888弄666号</span></h4>
+                    <dl><dt>666<span>万</span></dt><dd>33333<span>元/平米</span></dd></dl>
+                    <dl><dt>266<span>平米</span></dt><dd>建筑面积</dd></dl>
+                </div></a>
+
+                <!--再显示10条-->
+                <a href="javascript:;" class="showmore">再显示10条新闻</a>
+
+            </div>
+
         </div>
 
-        <!--选项 最新-->
-        <div class="boxcont" id="areaa">
-            <a href="detailfc.php"><div class="boxitem">
-                <div class="imglimt"><img src="/Public/home/images/imgf02.jpg" alt="" /></div>
-                <h2>南桥新城上海之鱼里的别墅 考虑别墅的你不要错过这 </h2>
-                <h3><span>3室2厅</span><span>中层(共6层)</span><span>南向</span><span>建筑年代：2012</span></h3>
-                <h4><span>南桥</span><span>锦绣路2580弄（近内环高架）</span></h4>
-                <dl><dt>230<span>万</span></dt><dd>33333<span>元/平米</span></dd></dl>
-                <dl><dt>96<span>平米</span></dt><dd>建筑面积</dd></dl>
-            </div></a>
-            
-            <a href="detailfc.php"><div class="boxitem">
-                <div class="imglimt"><img src="/Public/home/images/imgf01.jpg" alt="" /></div>
-                <h2>南桥新城上海之鱼里的别墅 考虑别墅的你不要错过这 </h2>
-                <h3><span>3室2厅</span><span>中层(共6层)</span><span>南向</span><span>建筑年代：2012</span></h3>
-                <h4><span>海湾旅游区</span><span>海马路888弄666号</span></h4>
-                <dl><dt>666<span>万</span></dt><dd>33333<span>元/平米</span></dd></dl>
-                <dl><dt>266<span>平米</span></dt><dd>建筑面积</dd></dl>
-            </div></a>
-            
-            <a href="detailfc.php"><div class="boxitem">
-                <div class="imglimt"><img src="/Public/home/images/imgf02.jpg" alt="" /></div>
-                <h2>南桥新城上海之鱼里的别墅 考虑别墅的你不要错过这 </h2>
-                <h3><span>3室2厅</span><span>中层(共6层)</span><span>南向</span><span>建筑年代：2012</span></h3>
-                <h4><span>南桥</span><span>锦绣路2580弄（近内环高架）</span></h4>
-                <dl><dt>230<span>万</span></dt><dd>33333<span>元/平米</span></dd></dl>
-                <dl><dt>96<span>平米</span></dt><dd>建筑面积</dd></dl>
-            </div></a>
-            
-            <a href="detailfc.php"><div class="boxitem">
-                <div class="imglimt"><img src="/Public/home/images/imgf02.jpg" alt="" /></div>
-                <h2>南桥新城上海之鱼里的别墅 考虑别墅的你不要错过这 </h2>
-                <h3><span>3室2厅</span><span>中层(共6层)</span><span>南向</span><span>建筑年代：2012</span></h3>
-                <h4><span>南桥</span><span>锦绣路2580弄（近内环高架）</span></h4>
-                <dl><dt>230<span>万</span></dt><dd>33333<span>元/平米</span></dd></dl>
-                <dl><dt>96<span>平米</span></dt><dd>建筑面积</dd></dl>
-            </div></a>
-            
-            <a href="detailfc.php"><div class="boxitem">
-                <div class="imglimt"><img src="/Public/home/images/imgf01.jpg" alt="" /></div>
-                <h2>南桥新城上海之鱼里的别墅 考虑别墅的你不要错过这 </h2>
-                <h3><span>3室2厅</span><span>中层(共6层)</span><span>南向</span><span>建筑年代：2012</span></h3>
-                <h4><span>海湾旅游区</span><span>海马路888弄666号</span></h4>
-                <dl><dt>666<span>万</span></dt><dd>33333<span>元/平米</span></dd></dl>
-                <dl><dt>266<span>平米</span></dt><dd>建筑面积</dd></dl>
-            </div></a>
-            
-            
-            
-            
-            <!--再显示10条-->
-            <a href="javascript:;" class="showmore">再显示10条新闻</a>
-            
-        </div>
-        
 
-        <!--选项 推荐-->
-        <div class="boxcont" id="areab" style="display:none;">
-            <a href="detailfc.php"><div class="boxitem">
-                <div class="imglimt"><img src="/Public/home/images/imgf01.jpg" alt="" /></div>
-                <h2>南桥新城上海之鱼里的别墅 考虑别墅的你不要错过这 </h2>
-                <h3><span>3室2厅</span><span>中层(共6层)</span><span>南向</span><span>建筑年代：2012</span></h3>
-                <h4><span>海湾旅游区</span><span>海马路888弄666号</span></h4>
-                <dl><dt>666<span>万</span></dt><dd>33333<span>元/平米</span></dd></dl>
-                <dl><dt>266<span>平米</span></dt><dd>建筑面积</dd></dl>
-            </div></a>
-            <a href="detailfc.php"><div class="boxitem">
-                <div class="imglimt"><img src="/Public/home/images/imgf01.jpg" alt="" /></div>
-                <h2>南桥新城上海之鱼里的别墅 考虑别墅的你不要错过这 </h2>
-                <h3><span>3室2厅</span><span>中层(共6层)</span><span>南向</span><span>建筑年代：2012</span></h3>
-                <h4><span>海湾旅游区</span><span>海马路888弄666号</span></h4>
-                <dl><dt>666<span>万</span></dt><dd>33333<span>元/平米</span></dd></dl>
-                <dl><dt>266<span>平米</span></dt><dd>建筑面积</dd></dl>
-            </div></a>
-            <a href="detailfc.php"><div class="boxitem">
-                <div class="imglimt"><img src="/Public/home/images/imgf01.jpg" alt="" /></div>
-                <h2>南桥新城上海之鱼里的别墅 考虑别墅的你不要错过这 </h2>
-                <h3><span>3室2厅</span><span>中层(共6层)</span><span>南向</span><span>建筑年代：2012</span></h3>
-                <h4><span>海湾旅游区</span><span>海马路888弄666号</span></h4>
-                <dl><dt>666<span>万</span></dt><dd>33333<span>元/平米</span></dd></dl>
-                <dl><dt>266<span>平米</span></dt><dd>建筑面积</dd></dl>
-            </div></a>
-            
-            <!--再显示10条-->
-            <a href="javascript:;" class="showmore">再显示10条新闻</a>
-            
-        </div>
-        
-    </div>
-    
-    
-    <!--右侧列表区-->
-    <div class="contr">
-        <h1>房产推荐榜</h1>
-        
-        <!--右侧列表区主推文章-->
-        <div class="contlarta">
-            <a href="javascript:;">
-                <img src="/Public/home/images/imgf01.jpg" alt="" />
-                <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
-                <h6><span>330万</span><span>166平米</span></h6>
-                <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
-            </a>
-            
-            <a href="javascript:;">
-                <img src="/Public/home/images/imgf01.jpg" alt="" />
-                <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
-                <h6><span>330万</span><span>166平米</span></h6>
-                <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
-            </a>
-            
-            <a href="javascript:;">
-                <img src="/Public/home/images/imgf01.jpg" alt="" />
-                <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
-                <h6><span>330万</span><span>166平米</span></h6>
-                <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
-            </a>
-            <a href="javascript:;">
-                <img src="/Public/home/images/imgf01.jpg" alt="" />
-                <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
-                <h6><span>330万</span><span>166平米</span></h6>
-                <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
-            </a>
-            <a href="javascript:;">
-                <img src="/Public/home/images/imgf01.jpg" alt="" />
-                <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
-                <h6><span>330万</span><span>166平米</span></h6>
-                <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
-            </a>
-            <a href="javascript:;">
-                <img src="/Public/home/images/imgf01.jpg" alt="" />
-                <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
-                <h6><span>330万</span><span>166平米</span></h6>
-                <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
-            </a>
+        <!--右侧列表区-->
+        <div class="contr">
+            <h1>房产推荐榜</h1>
+
+            <!--右侧列表区主推文章-->
+            <div class="contlarta">
+                <a href="javascript:;">
+                    <img src="/Public/home/images/imgf01.jpg" alt="" />
+                    <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
+                    <h6><span>330万</span><span>166平米</span></h6>
+                    <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
+                </a>
+
+                <a href="javascript:;">
+                    <img src="/Public/home/images/imgf01.jpg" alt="" />
+                    <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
+                    <h6><span>330万</span><span>166平米</span></h6>
+                    <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
+                </a>
+
+                <a href="javascript:;">
+                    <img src="/Public/home/images/imgf01.jpg" alt="" />
+                    <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
+                    <h6><span>330万</span><span>166平米</span></h6>
+                    <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
+                </a>
+                <a href="javascript:;">
+                    <img src="/Public/home/images/imgf01.jpg" alt="" />
+                    <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
+                    <h6><span>330万</span><span>166平米</span></h6>
+                    <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
+                </a>
+                <a href="javascript:;">
+                    <img src="/Public/home/images/imgf01.jpg" alt="" />
+                    <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
+                    <h6><span>330万</span><span>166平米</span></h6>
+                    <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
+                </a>
+                <a href="javascript:;">
+                    <img src="/Public/home/images/imgf01.jpg" alt="" />
+                    <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
+                    <h6><span>330万</span><span>166平米</span></h6>
+                    <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
+                </a>
+            </div>
         </div>
     </div>
-</div>
 
-
+    
 <div class="nav-footb col-sm-12 padlr">
     <div class="navfoot-center">
         <a href="<?php echo U('Custom/about');?>">关于社圈</a>&nbsp;|
