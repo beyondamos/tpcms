@@ -42,11 +42,18 @@ class FangchanController extends CommonController
         $show = $page->show();
         $this->assign('show', $show);
 
+        //最新信息
         $new_data = $fangchan_model->order('createtime desc')->page($p.',10')->select();
         $this->assign('new_data', $new_data);
 
+        //推荐信息
         $recommend_data = $fangchan_model->order('clicks desc')->page($p.',10')->select();
         $this->assign('recommend_data', $recommend_data);
+
+        //右侧房产排行榜
+        $ranking_list = $fangchan_model->order('clicks desc')->limit(6)->select();
+        $this->assign('ranking_list', $ranking_list);
+
 
         $this->display();
     }

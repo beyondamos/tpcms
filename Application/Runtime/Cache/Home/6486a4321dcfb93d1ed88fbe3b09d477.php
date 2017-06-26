@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
     <meta name="renderer" content="webkit">
-    <title>Title</title>
+    <title>房产信息</title>
     <link href="/Public/home/css/base.css" rel="stylesheet" type="text/css"/>
     <link href="/Public/home/css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -93,7 +93,7 @@
                 <?php if(is_array($new_data)): $i = 0; $__LIST__ = $new_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('Home/Fangchan/detail', array('id' => $vo['id']));?>"><div class="boxitem">
                         <div class="imglimt"><img src="<?php echo ($vo["titleimg"]); ?>" alt="" /></div>
                         <h2><?php echo ($vo["name"]); ?></h2>
-                        <h3><span><?php echo ($vo["housetype"]); ?></span><span><?php echo ($vo["floor"]); ?></span><span>南向</span><span>建筑年代：<?php echo ($vo["builttime"]); ?></span></h3>
+                        <h3><span><?php echo ($vo["housetype"]); ?></span><span><?php echo ($vo["floor"]); ?></span><span><?php echo ($vo["direction"]); ?></span><span>建筑年代：<?php echo ($vo["builttime"]); ?></span></h3>
                         <h4><span><?php echo ($vo["address"]); ?></span></h4>
                         <dl><dt><?php echo ($vo["total"]); ?><span>万</span></dt><dd><?php echo ($vo["unitprice"]); ?><span>元/平米</span></dd></dl>
                         <dl><dt><?php echo ($vo["area"]); ?><span>平米</span></dt><dd>建筑面积</dd></dl>
@@ -107,33 +107,16 @@
 
             <!--选项 推荐-->
             <div class="boxcont" id="areab" style="display:none;">
-                <a href="detailfc.php"><div class="boxitem">
-                    <div class="imglimt"><img src="/Public/home/images/imgf01.jpg" alt="" /></div>
-                    <h2>南桥新城上海之鱼里的别墅 考虑别墅的你不要错过这 </h2>
-                    <h3><span>3室2厅</span><span>中层(共6层)</span><span>南向</span><span>建筑年代：2012</span></h3>
-                    <h4><span>海湾旅游区</span><span>海马路888弄666号</span></h4>
-                    <dl><dt>666<span>万</span></dt><dd>33333<span>元/平米</span></dd></dl>
-                    <dl><dt>266<span>平米</span></dt><dd>建筑面积</dd></dl>
-                </div></a>
-                <a href="detailfc.php"><div class="boxitem">
-                    <div class="imglimt"><img src="/Public/home/images/imgf01.jpg" alt="" /></div>
-                    <h2>南桥新城上海之鱼里的别墅 考虑别墅的你不要错过这 </h2>
-                    <h3><span>3室2厅</span><span>中层(共6层)</span><span>南向</span><span>建筑年代：2012</span></h3>
-                    <h4><span>海湾旅游区</span><span>海马路888弄666号</span></h4>
-                    <dl><dt>666<span>万</span></dt><dd>33333<span>元/平米</span></dd></dl>
-                    <dl><dt>266<span>平米</span></dt><dd>建筑面积</dd></dl>
-                </div></a>
-                <a href="detailfc.php"><div class="boxitem">
-                    <div class="imglimt"><img src="/Public/home/images/imgf01.jpg" alt="" /></div>
-                    <h2>南桥新城上海之鱼里的别墅 考虑别墅的你不要错过这 </h2>
-                    <h3><span>3室2厅</span><span>中层(共6层)</span><span>南向</span><span>建筑年代：2012</span></h3>
-                    <h4><span>海湾旅游区</span><span>海马路888弄666号</span></h4>
-                    <dl><dt>666<span>万</span></dt><dd>33333<span>元/平米</span></dd></dl>
-                    <dl><dt>266<span>平米</span></dt><dd>建筑面积</dd></dl>
-                </div></a>
-
+                <?php if(is_array($recommend_data)): $i = 0; $__LIST__ = $recommend_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('Home/Fangchan/detail');?>"><div class="boxitem">
+                    <div class="imglimt"><img src="<?php echo ($vo["titleimg"]); ?>" alt="" /></div>
+                    <h2><?php echo ($vo["name"]); ?></h2>
+                    <h3><span><?php echo ($vo["housetype"]); ?></span><span><?php echo ($vo["floor"]); ?></span><span><?php echo ($vo["direction"]); ?></span><span>建筑年代：<?php echo ($vo["builttime"]); ?></span></h3>
+                    <h4><span><?php echo ($vo["address"]); ?></span></h4>
+                    <dl><dt><?php echo ($vo["total"]); ?><span>万</span></dt><dd><?php echo ($vo["unitprice"]); ?><span>元/平米</span></dd></dl>
+                    <dl><dt><?php echo ($vo["area"]); ?><span>平米</span></dt><dd>建筑面积</dd></dl>
+                </div></a><?php endforeach; endif; else: echo "" ;endif; ?>  
                 <!--再显示10条-->
-                <a href="javascript:;" class="showmore">再显示10条新闻</a>
+                <?php echo ($show); ?>
 
             </div>
 
@@ -146,44 +129,13 @@
 
             <!--右侧列表区主推文章-->
             <div class="contlarta">
-                <a href="javascript:;">
-                    <img src="/Public/home/images/imgf01.jpg" alt="" />
-                    <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
-                    <h6><span>330万</span><span>166平米</span></h6>
-                    <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
-                </a>
 
-                <a href="javascript:;">
-                    <img src="/Public/home/images/imgf01.jpg" alt="" />
-                    <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
-                    <h6><span>330万</span><span>166平米</span></h6>
-                    <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
-                </a>
-
-                <a href="javascript:;">
-                    <img src="/Public/home/images/imgf01.jpg" alt="" />
-                    <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
-                    <h6><span>330万</span><span>166平米</span></h6>
-                    <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
-                </a>
-                <a href="javascript:;">
-                    <img src="/Public/home/images/imgf01.jpg" alt="" />
-                    <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
-                    <h6><span>330万</span><span>166平米</span></h6>
-                    <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
-                </a>
-                <a href="javascript:;">
-                    <img src="/Public/home/images/imgf01.jpg" alt="" />
-                    <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
-                    <h6><span>330万</span><span>166平米</span></h6>
-                    <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
-                </a>
-                <a href="javascript:;">
-                    <img src="/Public/home/images/imgf01.jpg" alt="" />
-                    <h2>南桥新城上海之鱼里鱼里的别墅...</h2>
-                    <h6><span>330万</span><span>166平米</span></h6>
-                    <h3><span>海湾旅游区</span><span>海马路888弄666号</span></h3>
-                </a>
+                <?php if(is_array($ranking_list)): $i = 0; $__LIST__ = $ranking_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U('Home/Fangchan/detail', array('id' => $vo['id']));?>">
+                        <img src="<?php echo ($vo["titleimg"]); ?>" alt="" />
+                        <h2><?php echo ($vo["name"]); ?></h2>
+                        <h6><span><?php echo ($vo["total"]); ?>万</span><span><?php echo ($vo["area"]); ?>平方</span></h6>
+                        <h3><span><?php echo ($vo["address"]); ?></span></h3>
+                    </a><?php endforeach; endif; else: echo "" ;endif; ?>
             </div>
         </div>
     </div>
