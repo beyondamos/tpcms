@@ -29,11 +29,13 @@ class ArticleController extends CommonController{
         //文章数据
         $article_model = D('Article');
         $p = I('get.p') ? I('get.p') : 1;
-        $article_data = $article_model->alias('a')->field('article_id,a.cate_id,title,cate_name,author,newstime,real_clicks')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')->where($map)->order('article_id desc')->page($p.',5')->select();
+        $article_data = $article_model->alias('a')->field('article_id,a.cate_id,title,cate_name,author,newstime,real_clicks')
+            ->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')
+            ->where($map)->order('article_id desc')->page($p.',10')->select();
         $this->assign('article_data',$article_data);
         //分页数据
         $count = $article_model->alias('a')->where($map)->count();
-        $page_model = new \Think\Page($count,5);
+        $page_model = new \Think\Page($count,10);
         $show = $page_model->show(); //分页输出显示
         $this->assign('show',$show);
         $this->display();
@@ -82,9 +84,13 @@ class ArticleController extends CommonController{
                 }
                 if(!I('post.synopsis')) $article_model->synopsis = $article_model->generateSynopsis();
                 if($article_model->save()){
-                    $this->success('文章添加成功',U('Article/listing'),1);
+                    if(I('post.tag') == 1){
+                        $this->success('文章编辑成功',U('Article/checkListing'),1);
+                    }else{
+                        $this->success('文章编辑成功',U('Article/listing'),1);
+                    }
                 }else{
-                    $this->error('文章添加失败');
+                    $this->error('文章编辑失败');
                 }
             }else{
                 $this->error($article_model->getError());
@@ -156,11 +162,11 @@ class ArticleController extends CommonController{
         //文章数据
         $article_model = D('Article');
         $p = I('get.p') ? I('get.p') : 1;
-        $article_data = $article_model->alias('a')->field('article_id,a.cate_id,title,cate_name,author,newstime,clicks')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')->where($map)->order('article_id desc')->page($p.',5')->select();
+        $article_data = $article_model->alias('a')->field('article_id,a.cate_id,title,cate_name,author,newstime,clicks')->join('left join __CATEGORY__ c on a.cate_id = c.cate_id')->where($map)->order('article_id desc')->page($p.',20')->select();
         $this->assign('article_data',$article_data);
         //分页数据
         $count = $article_model->alias('a')->where($map)->count();
-        $page_model = new \Think\Page($count,5);
+        $page_model = new \Think\Page($count,20);
         $show = $page_model->show(); //分页输出显示
         $this->assign('show',$show);
         $this->display();

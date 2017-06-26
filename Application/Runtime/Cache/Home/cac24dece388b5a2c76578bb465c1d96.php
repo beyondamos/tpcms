@@ -9,9 +9,9 @@
     <script src="/Public/Mobile/js/jquery-2.1.1.min.js"></script>
     <script src="/Public/Mobile/js/item.js"></script>
     <script src="/Public/Mobile/js/bootstrap.min.js"></script>
-    <title></title>
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
+    <title><?php echo ($article_data["title"]); ?>--奉贤社圈网</title>
+    <meta name="keywords" content="<?php echo ($article_data["keywords"]); ?>"/>
+    <meta name="description" content="<?php echo ($article_data["synopsis"]); ?>"/>
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -128,7 +128,7 @@
         <div class="titblue">精彩推荐</div>
         <?php if(is_array($mobile_recommend_data)): $i = 0; $__LIST__ = $mobile_recommend_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U($vo['url'].'/'.$vo['article_id']);?>">
             <div class="boxitem">
-                <div class="imglimt"><img src="/<?php echo ($vo["titleimg"]); ?>" alt="" /></div>
+                <div class="imglimt"><img src="<?php echo ($vo["titleimg"]); ?>" alt="" /></div>
                 <h2><?php echo ($vo["title"]); ?></h2>
                 <div class="praise">
                     <img src="/Public/Mobile/images/iconeye.png" alt="" /><span><?php echo ($vo["clicks"]); ?></span>
@@ -172,5 +172,12 @@
         }
     });
 </script>
+<script>
+    (function(){
+        var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?bcc5ec07e29939b4c6dc2a929bcc0e9b":"https://jspassport.ssl.qhimg.com/11.0.1.js?bcc5ec07e29939b4c6dc2a929bcc0e9b";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+</script>
+
 </body>
 </html>

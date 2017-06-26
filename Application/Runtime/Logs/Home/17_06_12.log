@@ -1,0 +1,612 @@
+[ 2017-06-12T16:22:22+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001492s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0039s ]
+SQL: UPDATE `isq_article` SET `status`='1' WHERE `newstime` = '2017-06-12' AND `status` = 0 [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `isq_config` [ RunTime:0.0039s ]
+SQL: SELECT `conf_value` FROM `isq_config` WHERE `conf_name` = 'site_title' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `conf_value` FROM `isq_config` WHERE `conf_name` = 'site_keywords' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `conf_value` FROM `isq_config` WHERE `conf_name` = 'site_desc' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `isq_friendlink` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `isq_friendlink`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_adv` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `isq_adv` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `isq_adv` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `isq_adv` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `isq_adv` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`url`,`content` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `is_recommend` = 1 ORDER BY newstime desc LIMIT 6   [ RunTime:0.0031s ]
+SQL: SELECT `article_id`,`title`,`url`,`cate_name` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND a.cate_id NOT IN ('24','5','3','33','20','36') ORDER BY newstime desc LIMIT 18   [ RunTime:0.0011s ]
+SQL: SELECT `article_id`,`title`,`url`,`titleimg`,`cate_name`,`content` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND c.cate_id = '24' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0008s ]
+SQL: SELECT `article_id`,`title`,`url`,`titleimg` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND a.cate_id = '5' ORDER BY newstime desc LIMIT 9   [ RunTime:0.0006s ]
+SQL: SELECT `article_id`,`title`,`url`,`titleimg`,`content` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND a.cate_id = '33' ORDER BY newstime desc LIMIT 4   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`title`,`url`,`titleimg`,`content` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND a.cate_id = '20' ORDER BY newstime desc LIMIT 4   [ RunTime:0.0006s ]
+SQL: SELECT `article_id`,`title`,`url`,`titleimg`,`content` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND a.cate_id = '3' ORDER BY newstime desc LIMIT 9   [ RunTime:0.0007s ]
+SQL: SELECT `article_id`,`url`,`titleimg` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND a.cate_id = '36' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`synopsis`,`clicks`,`url`,`content`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 ORDER BY newstime desc LIMIT 10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001292s ]
+
+[ 2017-06-12T16:22:22+08:00 ] ::1 /Public/Home/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+ERR: 非法操作:Home
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170428100449.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0074s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0005s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170428100449' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0012s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170428100449' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170428100449' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001125s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170428100448.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0044s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+5 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170428100448' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0006s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170428100448' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170428100448' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170427030422.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001858s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0028s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+8 WHERE `article_id` = 2147483647 [ RunTime:0.0001s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0001s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170427030422' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170427030422' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170427030422' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001388s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170428100450.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0025s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+6 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0001s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170428100450' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0006s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170428100450' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170428100450' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170428100415.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0046s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0003s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170428100415' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0009s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170428100415' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170428100415' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001323s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170427030433.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0025s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+10 WHERE `article_id` = 2147483647 [ RunTime:0.0003s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0014s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170427030433' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0008s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170427030433' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170427030433' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002702s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170428100409.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0026s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0001s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170428100409' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170428100409' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170428100409' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001007s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170427100415.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0040s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0001s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170427100415' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170427100415' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170427100415' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001476s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170427030401.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0029s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+3 WHERE `article_id` = 2147483647 [ RunTime:0.0001s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0001s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170427030401' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170427030401' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170427030401' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170427040450.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0039s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+4 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0001s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170427040450' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0006s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170427040450' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170427040450' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001895s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170428100426.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0028s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+7 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0001s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170428100426' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170428100426' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170428100426' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170428020424.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0006s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0027s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+2 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170428020424' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0006s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170428020424' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0012s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170428020424' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0012s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001102s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170428020445.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0027s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+8 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0001s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170428020445' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170428020445' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0009s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170428020445' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001361s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170428020456.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0028s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+7 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0003s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170428020456' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0008s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170428020456' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170428020456' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170428020413.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0029s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+6 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0001s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170428020413' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0006s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170428020413' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170428020413' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001340s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170428120422.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0032s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+4 WHERE `article_id` = 2147483647 [ RunTime:0.0002s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0001s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170428120422' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170428120422' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170428120422' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170428030458.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0025s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+4 WHERE `article_id` = 2147483647 [ RunTime:0.0001s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0001s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170428030458' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170428030458' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170428030458' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001285s ]
+
+[ 2017-06-12T16:22:24+08:00 ] ::1 /Public/Upload/pic/20170427010421.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\ArticleModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') D:\wamp\www\tpcms\Application\Common\Model\ArticleModel.class.php 第 107 行.
+SQL: SHOW COLUMNS FROM `isq_article` [ RunTime:0.0030s ]
+SQL: UPDATE `isq_article` SET `clicks`=clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0004s ]
+SQL: UPDATE `isq_article` SET `real_clicks`=real_clicks+1 WHERE `article_id` = 2147483647 [ RunTime:0.0003s ]
+SQL: SELECT a.*,c.* FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `article_id` = '20170427010421' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `article_id`,`title`,`titleimg`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on c.cate_id = a.cate_id  WHERE `status` = 1 AND `newstime` >= '2017-06-07' ORDER BY clicks desc LIMIT 11   [ RunTime:0.0008s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = 1 AND `article_id` <> '20170427010421' AND a.cate_id = null ORDER BY newstime desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id = null AND `article_id` <> '20170427010421' ORDER BY newstime desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT `article_id`,`titleimg`,`title`,`newstime`,`url`,`clicks`,`zan` FROM isq_article a left join isq_category c on a.cate_id = c.cate_id  WHERE `status` = '1' AND a.cate_id <> null ORDER BY newstime desc LIMIT 4   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001051s ]
+

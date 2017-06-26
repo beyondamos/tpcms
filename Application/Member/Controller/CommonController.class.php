@@ -14,6 +14,14 @@ class CommonController extends Controller{
         $this->nav();
     }
 
+    /**
+     * 空操作
+     */
+    public function _empty($name){
+
+        $this->error('您访问的页面不存在',U('Home/Index/index'),1);
+    }
+
 
     /**
      * 导航页面

@@ -96,14 +96,14 @@
 						<?php if(is_array($article_data)): $i = 0; $__LIST__ = $article_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 								<td class="text-vm"><input type="checkbox" name="article_id[]" value="<?php echo ($vo["article_id"]); ?>"/></td>
 								<td class="text-vm"><?php echo ($vo["article_id"]); ?></td>
-								<td class="text-vm"><a href="<?php echo U('Home/Article/detail', array('article_id' => $vo['article_id']));?>" target="_blank"><?php echo ($vo["title"]); ?></a></td>
+								<td class="text-vm"><a href="<?php echo U('Home/Article/detail', array('article_id' => $vo['article_id']));?>" target="_blank"><?php echo mb_substr($vo['title'],0,15,'utf-8');;?></a></td>
 								<td class="text-vm"><?php echo ($vo["cate_name"]); ?></td>
 								<td class="text-vm"><?php echo ($vo["author"]); ?></td>
 								<td class="text-vm"><?php echo ($vo["newstime"]); ?></td>
 								<td class="text-vm"><?php echo ($vo["clicks"]); ?></td>
 								<td class="text-vm">2</td>
 								<td class="text-vm">
-									<a href="<?php echo U('Article/edit',array('article_id' => $vo['article_id']));?>">编辑</a>
+									<a href="<?php echo U('Article/edit',array('article_id' => $vo['article_id'], 'tag' => '1'));?>">编辑</a>
 									<a href="<?php echo U('Article/check', array('article_id' => $vo['article_id']));?>">审核</a>
 									<a href="<?php echo U('Article/delete', array('article_id' => $vo['article_id']));?>">删除</a>
 								</td>

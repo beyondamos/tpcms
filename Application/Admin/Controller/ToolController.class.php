@@ -32,7 +32,11 @@ class ToolController extends CommonController{
             echo "<script>location.href='".U('Tool/collectUrl',array('page' => ++$i))."'</script>";
     }
 
-
+    public function collectPublicNumbers(){
+        header("Content-type:text/html;charset=utf-8");
+        $content = file_get_contents('https://mp.weixin.qq.com/profile?src=3&timestamp=1495418163&ver=1&signature=dktCOmKyNPXzXCUPWs*2WsoI0C4C-ANC3Se*Eyr1rZ0QJykpNpD4avYInKmdN6K5kDToZ5cKPOMPJ44OPklKDA==');
+        echo $content;
+    }
 
 
 

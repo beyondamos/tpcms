@@ -25,6 +25,8 @@ return array(
         'Article/zan'   => 'Article/zan',
         'Index/showCategories'   => 'Index/showCategories',
         'Article/dropDown'   => 'Article/dropDown',
+        'Fangchan/detail'   => 'Fangchan/detail',
+        'Fangchan/index'   => 'Fangchan/index',
 //		'/^blog\/(\d+)$/'        => 'Blog/read?id=:1',
 //		'/^blog\/(\d+)\/(\d+)$/' => 'Blog/achive?year=:1&month=:2',
 //		'/^blog\/(\d+)_(\d+)$/'  => 'blog.php?id=:1&page=:2',

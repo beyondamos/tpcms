@@ -65,15 +65,12 @@
                 <!--<a href="<?php echo U('Category/add');?>">添加分类</a>-->
 
                 				<div class="boxoper-seh">
-                                    <form action="" method="post">
+                                    <form action="<?php echo U('Collect/index');?>" method="post">
                                         <button class="btn btn-default" type="submit"><img src="/Public/Admin/images/iconseh.png" /></button>
-                                        <input type="text" class="form-control" placeholder="搜索分类名称">
-                                        <select class="form-control">
-                                            <option>全部</option>
-                                            <option>分类</option>
-                                            <option>分类</option>
-                                            <option>分类</option>
-                                            <option>分类</option>
+                                        <input type="text" class="form-control" name="title" placeholder="搜索分类名称">
+                                        <select class="form-control" name="cate_id">
+                                            <option value="0">全部</option>
+                                            <?php if(is_array($category_data)): $i = 0; $__LIST__ = $category_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["cate_id"]); ?>"><?php echo str_repeat('--',$vo['level']); echo ($vo["cate_name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                                         </select>
                                     </form>
                                 </div>

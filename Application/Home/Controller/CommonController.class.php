@@ -11,13 +11,13 @@ class CommonController extends Controller{
      * 页面初始化
      */
     public function _initialize(){
+        $this->isClose();
+
         //判断是否是手机访问，切换主题
         if(is_mobile()){
             C('DEFAULT_THEME','Mobile');
         }
 
-        //统计流量
-//        $this->flow();
         //导航
         $this->nav();
     }
@@ -79,7 +79,21 @@ class CommonController extends Controller{
             cookie($url,$url,3600);
         }
 
-
     }
+
+    /**
+     * 判断网站是否开启
+     * 如果关闭着，则显示关闭的情况  
+     */
+    public function isClose()
+    {
+        $config_model = D('Config');
+        $site_status = $config_model->where(array('conf_name' => 'site_status'))->getField('conf_value');
+        if ($site_status == 0) {
+            header("Content-type:text/html;charset=utf-8");
+            exit('网站正在维护');
+        }
+    }
+
 
 }

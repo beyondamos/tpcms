@@ -131,9 +131,9 @@
 					</div>
 				</div>
 				<div class="boxinbtn">
-
+					<input type="hidden" name="tag" value="<?php echo ($_GET['tag']); ?>">
 					<input type="hidden" name="article_id" value="<?php echo ($article_data["article_id"]); ?>">
-					<input type="submit"  value="确定" class="btn btna" />
+					<input type="submit" value="确定" class="btn btna" />
 					<input type="reset" value="重置" class="btn btnb" />
 				</div>
 				

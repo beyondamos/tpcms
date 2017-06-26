@@ -8,6 +8,8 @@ use Home\Controller\CommonController;
 class IndexController extends CommonController {
 
     public function index(){
+        $this->auto_update();
+
         //seo信息
         $config_model = D('Config');
         $this->assign('site_title', $config_model->where(array('conf_name' => 'site_title'))->getField('conf_value'));
@@ -123,7 +125,15 @@ class IndexController extends CommonController {
      }
 
 
-
+    /**
+     * 自动更新文章
+        //区分user_id
+     */
+    public function auto_update(){
+        $newstime = date('Y-m-d', time());
+        $article_model = D('Article');
+        $article_model->where(array('newstime' => $newstime, 'status' => '0'))->setField('status','1');
+    }
 
 
 

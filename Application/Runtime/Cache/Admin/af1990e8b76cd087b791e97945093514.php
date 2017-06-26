@@ -81,6 +81,13 @@
 				<div class="boxinb">
 					<span>网站关键字</span><input type="text" placeholder="多个关键词用“,”半角逗号隔开" class="form-control" name="site_keywords" value="<?php echo ($config_data["site_keywords"]); ?>">
 				</div>
+				<div class="boxinb">
+					<span>网站状态</span>
+					<select name="site_status">
+						<option value="0" <?php if($config_data['site_status'] == 0): ?>selected<?php endif; ?>>关闭网站</option>
+						<option value="1" <?php if($config_data['site_status'] == 1): ?>selected<?php endif; ?> >开启网站</option>
+					</select>
+				</div>
 				<div class="boxinbtn">
 					<input type="submit" value="确定" class="btn btna" />
 					<input type="reset" value="重置" class="btn btnb" />

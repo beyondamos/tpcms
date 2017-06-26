@@ -7,12 +7,14 @@ use Member\Controller\CommonController;
 
 class LoginController extends CommonController{
 
-    /**
-     * 会员登录
-     */
-    public function index(){
-        $this->display();
-    }
+
+
+    // /**
+    //  * 会员登录
+    //  */
+    // public function index(){
+    //     $this->display();
+    // }
 
     /**
      * 会员注册
