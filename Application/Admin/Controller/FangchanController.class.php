@@ -32,9 +32,15 @@ class FangchanController extends CommonController
         if (IS_POST) {
             $fangchan_model = D('Fangchan');
             if ($fangchan_model->create()) {
-                if($_FILES['file_upload']['error'] != 4 ){
-                    $fangchan_model->titleimg = ltrim(C('UPLOAD').$this->upload() ,'.');
+                $i = 0;
+                foreach ($_FILES as $key => $val) {
+                    $name = 'titleimg'.$i;
+                    if ($val['error'] != 4 ) {
+                        $fangchan_model->$name = ltrim(C('UPLOAD').$this->upload() ,'.');
+                    }
+                    $i++;
                 }
+                
                 if ($fangchan_model->add()) {
                     $this->success('添加房产信息成功', U('Fangchan/index'), 1);
                 } else {
@@ -57,9 +63,12 @@ class FangchanController extends CommonController
         $id = (int)$id;
         $fangchan_model = D('Fangchan');
         $info = $fangchan_model->find($id);
-        if (is_file('.'.$info['titleimg'])) {
-            unlink('.'.$val['titleimg']);
+        for ($i=0; $i<=3; $i++) {
+            if (is_file('.'.$info['titleimg'.$i])) {
+                unlink('.'.$val['titleimg'.$i]);
+            }
         }
+
         if ($fangchan_model->delete($id)) {
             $this->success('删除房产信息成功', U('Fangchan/index'), 1);
         } else {
