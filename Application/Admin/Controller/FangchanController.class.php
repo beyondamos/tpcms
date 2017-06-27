@@ -55,6 +55,48 @@ class FangchanController extends CommonController
     }
 
     /**
+     * 房产信息编辑
+     * @return [type] [description]
+     */
+    public function edit()
+    {
+        if(IS_POST){
+            $fangchan_model = D('Fangchan');
+            if($fangchan_model->create()){
+
+                $i = 0;
+                foreach ($_FILES as $key => $val) {
+                    $name = 'titleimg'.$i;
+                    if ($val['error'] != 4 ) {
+                        $fangchan_model->$name = ltrim(C('UPLOAD').$this->upload() ,'.');
+                    }
+                    $i++;
+                }
+
+                if ($fangchan_model->save()) {
+                    $this->success('房产信息编辑成功',U('Fangchan/index'),1);
+                }else{
+                    $this->error('房产信息编辑失败');
+                }
+            }else{
+                $this->error($fangchan_model->getError());
+            }
+
+
+        }elseif(IS_GET){
+            //房产数据
+            $id = I('get.id');
+            $fangchan_model = D('Fangchan');
+            $fangchan_data = $fangchan_model->find($id);
+            $this->assign('fangchan_data' , $fangchan_data);
+            $this->display();
+        }
+
+    }   
+
+
+
+    /**
      * 房产信息删除
      * @return [type] [description]
      */

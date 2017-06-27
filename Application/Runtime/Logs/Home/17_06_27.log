@@ -2630,3 +2630,256 @@ INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000411s ]
 
+[ 2017-06-27T14:29:13+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `isq_config` [ RunTime:0.0032s ]
+SQL: SELECT `conf_value` FROM `isq_config` WHERE `conf_name` = 'site_status' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'head' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+
+[ 2017-06-27T14:29:13+08:00 ] 127.0.0.1 /Public/Admin/uploadify/uploadify.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `isq_config` [ RunTime:0.0033s ]
+SQL: SELECT `conf_value` FROM `isq_config` WHERE `conf_name` = 'site_status' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'uploadify' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000370s ]
+
+[ 2017-06-27T14:29:13+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `isq_config` [ RunTime:0.0029s ]
+SQL: SELECT `conf_value` FROM `isq_config` WHERE `conf_name` = 'site_status' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'head' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+
+[ 2017-06-27T14:47:05+08:00 ] 127.0.0.1 /Public/Admin/uploadify/uploadify.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `isq_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `isq_config` WHERE `conf_name` = 'site_status' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'uploadify' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+
+[ 2017-06-27T14:47:05+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `isq_config` [ RunTime:0.0030s ]
+SQL: SELECT `conf_value` FROM `isq_config` WHERE `conf_name` = 'site_status' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'head' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000441s ]
+
+[ 2017-06-27T14:55:26+08:00 ] 127.0.0.1 /Public/Admin/uploadify/uploadify.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `isq_config` [ RunTime:0.0033s ]
+SQL: SELECT `conf_value` FROM `isq_config` WHERE `conf_name` = 'site_status' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'uploadify' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+
+[ 2017-06-27T14:55:26+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `isq_config` [ RunTime:0.0044s ]
+SQL: SELECT `conf_value` FROM `isq_config` WHERE `conf_name` = 'site_status' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'head' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+
+[ 2017-06-27T14:55:33+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `isq_config` [ RunTime:0.0024s ]
+SQL: SELECT `conf_value` FROM `isq_config` WHERE `conf_name` = 'site_status' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'head' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+
+[ 2017-06-27T14:55:35+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `isq_config` [ RunTime:0.0032s ]
+SQL: SELECT `conf_value` FROM `isq_config` WHERE `conf_name` = 'site_status' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'head' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+
+[ 2017-06-27T14:55:35+08:00 ] 127.0.0.1 /Public/Admin/uploadify/uploadify.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001338s ]
+SQL: SHOW COLUMNS FROM `isq_config` [ RunTime:0.0029s ]
+SQL: SELECT `conf_value` FROM `isq_config` WHERE `conf_name` = 'site_status' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'uploadify' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-06-27T14:55:35+08:00 ] 127.0.0.1 /Public/Admin/images/head.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `isq_config` [ RunTime:0.0038s ]
+SQL: SELECT `conf_value` FROM `isq_config` WHERE `conf_name` = 'site_status' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_nav` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_nav` WHERE `is_show` = 1 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_category` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `isq_category` WHERE `url` = 'head' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+

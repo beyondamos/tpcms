@@ -1656,3 +1656,175 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
 
+[ 2017-06-27T14:29:13+08:00 ] 127.0.0.1 /Admin/Fangchan/edit/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_fangchan` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `isq_fangchan` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001627s ]
+
+[ 2017-06-27T14:47:05+08:00 ] 127.0.0.1 /Admin/Fangchan/edit/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_fangchan` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `isq_fangchan` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2017-06-27T14:55:26+08:00 ] 127.0.0.1 /Admin/Fangchan/edit/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_fangchan` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_fangchan` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2017-06-27T14:55:32+08:00 ] 127.0.0.1 /Admin/Fangchan/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_fangchan` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpcms\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `isq_fangchan` SET `name`='123123213',`num`='',`phone`='123123123213',`total`='0.00',`unitprice`='0',`housetype`='',`area`='',`direction`='',`floor`='',`type`='',`lift`='',`builttime`='',`nature`='',`property_right`='',`decoration`='',`compound_name`='',`address`='',`createtime`='2017-06-27',`clicks`='6',`content`='123123213' WHERE `id` = 10 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2017-06-27T14:55:33+08:00 ] 127.0.0.1 /Admin/Fangchan/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `isq_fangchan` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `isq_fangchan` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `isq_fangchan` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000420s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000798s ]
+NOTIC: [8] Undefined variable: search_article D:\wamp\www\tpcms\Application\Runtime\Cache\Admin\93c1aa38598a79849bedb42bfa2197f5.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2017-06-27T14:55:35+08:00 ] 127.0.0.1 /Admin/Fangchan/edit/id/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `isq_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `isq_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `isq_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_auth` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `isq_auth`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `isq_fangchan` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `isq_fangchan` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002439s ]
+

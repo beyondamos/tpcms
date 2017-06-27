@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<title>甫劳科技后台管理系统</title>
+	<link href="__CSS__/base.css" rel="stylesheet" type="text/css"/>
+	<link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/uploadify/uploadify.css" />
+	<!--[if lt IE 9]>
+	<script src="__JS__/html5shiv.js"></script>
+	<script src="__JS__/respond.min.js"></script>
+	<![endif]-->
+	<script src="__JS__/jquery-1.11.1.min.js"></script>
+	<script src="__JS__/bootstrap.min.js"></script>
+	<script src="__JS__/laydate/laydate.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/Admin/kindeditor/kindeditor.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/Admin/kindeditor/lang/zh_CN.js"></script>
+	<script>
+		KindEditor.ready(function(K) {
+			window.editor = K.create('#editor_id');
+		});
+	</script>
+</head>
+<body>
+	<include file="Public:nav_top" />
+	<include file="Public:nav_left" />
+	<div class="cont">
+		<div class="contmain">
+
+			<div class="boxi">
+				<h1>编辑房产信息</h1>
+
+				<form action="<{:U('Fangchan/edit')}>" method="post" enctype="multipart/form-data">
+					<div class="boxinb">
+						<span>房屋标题</span><input type="text" class="form-control"  name="name" value="<{$fangchan_data.name}>">
+					</div>
+					<div class="boxinb">
+						<span>房源编号</span><input type="text" class="form-control"  name="num" value="<{$fangchan_data.num}>">
+					</div>
+					<div class="boxinb">
+						<span>联系方式</span><input type="text" class="form-control"  name="phone" value="<{$fangchan_data.phone}>">
+					</div>
+					<div class="boxinb">
+						<span>房屋总价</span><input type="text" class="form-control" name="total" value="<{$fangchan_data.total}>">（万元）
+					</div>
+					<div class="boxinb">
+						<span>房屋单价</span><input type="text" class="form-control" name="unitprice" value="<{$fangchan_data.unitprice}>">（元/平方米）
+					</div>
+					<div class="boxinb">
+						<span>户型</span><input type="text" class="form-control" name="housetype" value="<{$fangchan_data.housetype}>">
+					</div>
+					<div class="boxinb">
+						<span>面积</span><input type="text" class="form-control" name="area" value="<{$fangchan_data.area}>">（平方）
+					</div>
+					<div class="boxinb">
+						<span>朝向</span><input type="text" class="form-control" name="direction" value="<{$fangchan_data.direction}>">
+					</div>
+					<div class="boxinb">
+						<span>楼层</span><input type="text" class="form-control" name="floor" value="<{$fangchan_data.floor}>">
+					</div>
+					<div class="boxinb">
+						<span>房屋类型</span><input type="text" class="form-control" name="type" value="<{$fangchan_data.type}>">
+					</div>
+					<div class="boxinb">
+						<span>电梯情况</span><input type="text" class="form-control" name="lift" value="<{$fangchan_data.lift}>">
+					</div>
+					<div class="boxinb">
+						<span>建筑年代</span><input type="text" class="form-control" name="builttime" value="<{$fangchan_data.builttime}>">
+					</div>
+					<div class="boxinb">
+						<span>房屋性质</span><input type="text" class="form-control" name="nature" value="<{$fangchan_data.nature}>">
+					</div>
+					<div class="boxinb">
+						<span>产权</span><input type="text" class="form-control" name="property_right" value="<{$fangchan_data.property_right}>">
+					</div>
+					<div class="boxinb">
+						<span>装修情况</span><input type="text" class="form-control" name="decoration" value="<{$fangchan_data.decoration}>">
+					</div>
+					<div class="boxinb">
+						<span>小区名称</span><input type="text" class="form-control" name="compound_name" value="<{$fangchan_data.compound_name}>">
+					</div>
+					<div class="boxinb">
+						<span>地址</span><input type="text" class="form-control" name="address" value="<{$fangchan_data.address}>">
+					</div>
+					<div class="boxinb">
+						<div class="boxinbl">
+							<span class="lets2">作&nbsp;&nbsp;&nbsp;&nbsp;者</span><input type="text" class="form-control" name="author" value="<{$login_user_data.nickname}>">
+						</div>
+						<div class="boxinbr">
+							<span class="lets2">日&nbsp;&nbsp;&nbsp;&nbsp;期</span><input type="text" id="demo"  class="form-control laydate-icon" name="createtime"  value="">
+						</div>
+					</div>
+
+					<div class="boxinb">
+						<span class="lets3">点&nbsp;击&nbsp;数</span><input type="text" class="form-control" name="clicks" value="<{:mt_rand(1,10)}>">
+					</div>
+					<div class="boxinb">
+						<span>标题图片</span>
+						<a href="javascript:;" class="form-control upfn"><input type="file" id='file_upload'  name="file_upload" /></a><i class="upfnb"></i>
+					</div>
+					<div class="boxinb">
+						<span>房屋图片1</span>
+						<a href="javascript:;" class="form-control"><input type="file" name="file_upload1" /></a>
+					</div>
+					<div class="boxinb">
+						<span>房屋图片2</span>
+						<a href="javascript:;" class="form-control"><input type="file" name="file_upload2" /></a>
+					</div>
+					<div class="boxinb">
+						<span>房屋图片3</span>
+						<a href="javascript:;" class="form-control"><input type="file" name="file_upload3" /></a>
+					</div>
+					<div class="boxuediter">
+						<div class="lets2">正&nbsp;&nbsp;&nbsp;&nbsp;文</div>
+
+
+						<div class="uediter">
+
+							<textarea id="editor_id" name="content" style="width:700px;height:300px;">
+									<{$fangchan_data.content}>
+							</textarea>
+
+						</div>
+					</div>
+					<div class="boxinbtn">
+						<input type="hidden" name="id" value="<{$fangchan_data.id}>">
+						<input type="submit"  value="确定" class="btn btna" />
+						<input type="reset" value="重置" class="btn btnb" />
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+	</div>
+	<script>
+		;!function(){
+			laydate({
+				elem: '#demo'
+			})
+		}();
+	</script>
+	<script src="__JS__/sdmenu.js"></script>
+	<script>
+		$().ready(function(){
+			var date = new Date();
+			var dateStr = date.getFullYear()+'-';
+			var month = date.getMonth()+ 1;
+			if(month < 10){
+				month = '0'+month;
+			}
+			dateStr += month + '-';
+
+			var day = date.getDate();
+			if(day < 10){
+				day = '0' + day;
+			}
+			dateStr += day;
+//		alert(dateStr);
+$('#demo').val(dateStr);
+
+
+
+$(".upfn").on("change","input[type='file']",function(){
+	var filePath = $(this).val();
+	var arr = filePath.split('\\');
+	var fileName = arr[arr.length-1];
+	$(".upfnb").html(fileName);
+});
+
+
+});
+</script>
+</body>
+</html>
